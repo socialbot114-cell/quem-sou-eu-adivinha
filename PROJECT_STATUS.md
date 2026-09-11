@@ -16,7 +16,7 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 - Repositório do app: https://github.com/socialbot114-cell/quem-sou-eu-adivinha
 - Repositório do site: https://github.com/socialbot114-cell/quem-sou-eu-adivinha-site
 
-Metadata inicial, descrição, palavras-chave, copyright, notas de revisão, URLs de suporte e marketing foram salvos no App Store Connect.
+Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de suporte e marketing foram salvos no App Store Connect. Categoria `Games > Trivia`, categoria secundária `Entertainment`, direitos de conteúdo, classificação etária sem conteúdo sensível, preço gratuito e disponibilidade mundial também foram configurados. App Privacy foi publicado como `Data Not Collected`.
 
 ## Submission package
 

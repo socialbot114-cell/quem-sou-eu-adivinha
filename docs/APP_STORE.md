@@ -7,7 +7,7 @@ The copy-ready submission package is in `docs/APP_STORE_SUBMISSION.md`. Screensh
 - [ ] Create a new App ID for `br.com.quemsoueu.adivinha`.
 - [ ] Create the App Store Connect record `Quem Sou Eu? Adivinha`.
 - [ ] Confirm the bundle ID before uploading any build.
-- [ ] Configure Games / Trivia and free pricing.
+- [x] Configure Games / Trivia and free pricing.
 
 ## Build
 
@@ -22,9 +22,9 @@ The copy-ready submission package is in `docs/APP_STORE_SUBMISSION.md`. Screensh
 - [x] Portuguese description and subtitle prepared in `docs/APP_STORE_SUBMISSION.md`.
 - [x] Support URL.
 - [x] Privacy policy URL.
-- [ ] App Privacy: no data collected.
-- [ ] Age rating answered honestly.
-- [ ] Content rights confirmed.
+- [x] App Privacy: no data collected, response published.
+- [x] Age rating answered honestly: no sensitive content, 4+ expected.
+- [x] Content rights confirmed.
 - [x] Review notes explain offline operation and no account requirement.
 
 ## Screenshots
