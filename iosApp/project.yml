@@ -14,7 +14,10 @@ targets:
     sources:
       - path: Sources
     resources:
-      - path: Resources
+      - path: Resources/Assets.xcassets
+      - path: Resources/KnowledgeBase
+      - path: Resources/PrivacyInfo.xcprivacy
+      - path: Resources/Logo.png
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: br.com.quemsoueu.adivinha
