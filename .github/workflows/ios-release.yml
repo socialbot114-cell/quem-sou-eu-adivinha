@@ -60,13 +60,20 @@ jobs:
       - name: Verify app icon metadata
         run: |
           app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "$app/AppIcon-120.png"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "$app/AppIcon-180.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "$app/AppIcon60x60@2x.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "$app/AppIcon60x60@3x.png"
           /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "$app/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "$app/Info.plist"
           /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "$app/Info.plist" || true
           /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon-120.png' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180.png' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon60x60@2x' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon60x60@3x' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIcons' "$app/Info.plist" || true
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons dict' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon dict' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles array' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:0 string AppIcon60x60@2x' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:1 string AppIcon60x60@3x' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName string AppIcon' "$app/Info.plist"
       - name: Export IPA
         run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
       - name: Finalize exported icon metadata
@@ -76,13 +83,20 @@ jobs:
           mkdir -p "$RUNNER_TEMP/ipa-unpacked"
           unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
           app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "${app[0]}/AppIcon-120.png"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "${app[0]}/AppIcon-180.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "${app[0]}/AppIcon60x60@2x.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "${app[0]}/AppIcon60x60@3x.png"
           /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "${app[0]}/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
           /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "${app[0]}/Info.plist" || true
           /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon-120.png' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180.png' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon60x60@2x' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon60x60@3x' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIcons' "${app[0]}/Info.plist" || true
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons dict' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon dict' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles array' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:0 string AppIcon60x60@2x' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:1 string AppIcon60x60@3x' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
           security unlock-keychain -p "$SIGNING_KEYCHAIN_PASSWORD" "$SIGNING_KEYCHAIN"
           codesign --force --sign "$SIGNING_IDENTITY" --keychain "$SIGNING_KEYCHAIN" --preserve-metadata=identifier,entitlements,flags --timestamp=none "${app[0]}"
           rm "${ipa[0]}"
