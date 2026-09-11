@@ -47,6 +47,14 @@ jobs:
       - name: Generate project
         working-directory: iosApp
         run: xcodegen generate --spec project.yml
+      - name: Compile app icon catalog
+        run: |
+          rm -rf "$RUNNER_TEMP/compiled-assets"
+          xcrun actool iosApp/Resources/Assets.xcassets \
+            --compile "$RUNNER_TEMP/compiled-assets" \
+            --platform iphoneos --minimum-deployment-target 17.0 \
+            --target-device iphone --app-icon AppIcon \
+            --output-partial-info-plist "$RUNNER_TEMP/asset-info.plist"
       - name: Archive
         run: |
           xcodebuild -project iosApp/QuemSouEu.xcodeproj -scheme QuemSouEu \
@@ -60,6 +68,7 @@ jobs:
       - name: Verify app icon metadata
         run: |
           app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
+          cp "$RUNNER_TEMP/compiled-assets/Assets.car" "$app/Assets.car"
           cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "$app/AppIcon60x60@2x.png"
           cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "$app/AppIcon60x60@3x.png"
           /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "$app/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "$app/Info.plist"
@@ -83,6 +92,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/ipa-unpacked"
           unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
           app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
+          cp "$RUNNER_TEMP/compiled-assets/Assets.car" "${app[0]}/Assets.car"
           cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "${app[0]}/AppIcon60x60@2x.png"
           cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "${app[0]}/AppIcon60x60@3x.png"
           /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "${app[0]}/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
