@@ -41,21 +41,11 @@ jobs:
           security list-keychains -d user -s "$KEYCHAIN_PATH"
           security default-keychain -s "$KEYCHAIN_PATH"
           SIGNING_IDENTITY=$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | perl -ne 'if (/"(.*)"/) { print $1; exit }')
-          printf 'SIGNING_KEYCHAIN=%s\nSIGNING_KEYCHAIN_PASSWORD=%s\nSIGNING_IDENTITY=%s\n' "$KEYCHAIN_PATH" "$KEYCHAIN_PASSWORD" "$SIGNING_IDENTITY" >> "$GITHUB_ENV"
           mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
           cp "$RUNNER_TEMP/QuemSouEu.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/2bf9e748-a220-4274-a157-c5878696d5dc.mobileprovision"
       - name: Generate project
         working-directory: iosApp
         run: xcodegen generate --spec project.yml
-      - name: Compile app icon catalog
-        run: |
-          rm -rf "$RUNNER_TEMP/compiled-assets"
-          mkdir -p "$RUNNER_TEMP/compiled-assets"
-          xcrun actool iosApp/Resources/Assets.xcassets \
-            --compile "$RUNNER_TEMP/compiled-assets" \
-            --platform iphoneos --minimum-deployment-target 17.0 \
-            --target-device iphone --app-icon AppIcon \
-            --output-partial-info-plist "$RUNNER_TEMP/asset-info.plist"
       - name: Archive
         run: |
           xcodebuild -project iosApp/QuemSouEu.xcodeproj -scheme QuemSouEu \
@@ -69,49 +59,24 @@ jobs:
       - name: Verify app icon metadata
         run: |
           app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
-          cp "$RUNNER_TEMP/compiled-assets/Assets.car" "$app/Assets.car"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "$app/AppIcon60x60@2x.png"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "$app/AppIcon60x60@3x.png"
-          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "$app/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "$app/Info.plist" || true
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon60x60@2x' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon60x60@3x' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIcons' "$app/Info.plist" || true
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons dict' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon dict' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles array' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:0 string AppIcon60x60@2x' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:1 string AppIcon60x60@3x' "$app/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName string AppIcon' "$app/Info.plist"
+          test -f "$app/Assets.car"
+          test -f "$app/KnowledgeBase/knowledge.json"
+          test -f "$app/PrivacyInfo.xcprivacy"
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist"
       - name: Export IPA
         run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
-      - name: Finalize exported icon metadata
+      - name: Validate exported IPA
         run: |
           ipa=("$RUNNER_TEMP"/export/*.ipa)
           rm -rf "$RUNNER_TEMP/ipa-unpacked"
           mkdir -p "$RUNNER_TEMP/ipa-unpacked"
           unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
           app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
-          cp "$RUNNER_TEMP/compiled-assets/Assets.car" "${app[0]}/Assets.car"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "${app[0]}/AppIcon60x60@2x.png"
-          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "${app[0]}/AppIcon60x60@3x.png"
-          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "${app[0]}/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "${app[0]}/Info.plist" || true
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon60x60@2x' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon60x60@3x' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIcons' "${app[0]}/Info.plist" || true
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons dict' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon dict' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles array' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:0 string AppIcon60x60@2x' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconFiles:1 string AppIcon60x60@3x' "${app[0]}/Info.plist"
-          /usr/libexec/PlistBuddy -c 'Add :CFBundleIcons:CFBundlePrimaryIcon:CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
-          security unlock-keychain -p "$SIGNING_KEYCHAIN_PASSWORD" "$SIGNING_KEYCHAIN"
-          codesign --force --sign "$SIGNING_IDENTITY" --keychain "$SIGNING_KEYCHAIN" --preserve-metadata=identifier,entitlements,flags --timestamp=none "${app[0]}"
-          rm "${ipa[0]}"
-          (cd "$RUNNER_TEMP/ipa-unpacked" && zip -qry "$RUNNER_TEMP/export/QuemSouEu.ipa" Payload)
+          test -f "${app[0]}/Assets.car"
+          test -f "${app[0]}/KnowledgeBase/knowledge.json"
+          test -f "${app[0]}/PrivacyInfo.xcprivacy"
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "${app[0]}/Info.plist"
+          codesign --verify --deep --strict "${app[0]}"
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
