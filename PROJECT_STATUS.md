@@ -18,11 +18,17 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 
 Metadata inicial, descrição, palavras-chave, copyright, notas de revisão, URLs de suporte e marketing foram salvos no App Store Connect.
 
+## Submission package
+
+- Copy-ready metadata and review answers: `docs/APP_STORE_SUBMISSION.md`
+- Real screenshot capture instructions: `docs/SCREENSHOT_CAPTURE.md`
+- The screenshots in `prints/` are references only and must not be uploaded.
+
 ## Próximos marcos
 
 - Expandir a base de 12 para 300 personalidades.
 - Criar mascote e avatares finais autorais.
-- Adicionar screenshots reais do build.
+- Adicionar screenshots reais do build 2.
 - Criar site de suporte e privacidade.
 - Criar App ID e registro exclusivo no App Store Connect.
 - Configurar workflow TestFlight.
