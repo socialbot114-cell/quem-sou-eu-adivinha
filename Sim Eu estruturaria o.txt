@@ -1,0 +1,1085 @@
+Sim. Eu estruturaria o **QUEM SOU EU?** como um jogo mobile de adivinhação **offline-first**, com visual extremamente gamificado, partidas rápidas de 30–90 segundos e um motor estatístico local que vai reduzindo e reordenando os candidatos conforme as respostas.
+
+## 1. Identidade visual do app
+
+A personalidade deve ficar entre **Duolingo + jogo casual premium + quiz**, sem copiar interface, mascote ou elementos proprietários. A ideia é parecer divertido para adolescentes, mas suficientemente sofisticado para adultos.
+
+| Elemento           | Definição                                                |
+| ------------------ | -------------------------------------------------------- |
+| Cor principal      | **Lime #A7F432**                                         |
+| Roxo principal     | **#6C2EFF**                                              |
+| Fundo escuro       | **#17152E**                                              |
+| Fundo claro        | **#F7F8FC**                                              |
+| Branco             | **#FFFFFF**                                              |
+| Amarelo/moeda      | **#FFC83D**                                              |
+| Verde sucesso      | **#42D45B**                                              |
+| Vermelho/erro      | **#FF6376**                                              |
+| Azul               | **#388BFF**                                              |
+| Cinza texto        | **#6E7180**                                              |
+| Fonte de interface | **Nunito Sans**                                          |
+| Fonte de títulos   | **Nunito ExtraBold / Black**                             |
+| Logo/display       | **Baloo 2 ExtraBold** ou tipografia custom arredondada   |
+| Ícones             | Material Symbols Rounded ou conjunto próprio arredondado |
+| Cantos             | 18–28 px                                                 |
+| Botões             | Grandes, arredondados, sombra suave, efeito pressionado  |
+| Cards              | Fundo claro, borda quase invisível e sombra curta        |
+
+O mascote pode ser exatamente o conceito que apareceu: uma espécie de **balão de conversa/personagem com uma lupa e um ponto de interrogação**.
+
+Ele não precisa ser humano. Isso é importante porque podemos transformá-lo na personalidade do produto.
+
+Quando pensa:
+
+> 🤔 “Hmmm…”
+
+Quando está confiante:
+
+> 😏 “Acho que já sei…”
+
+Quando acerta:
+
+> 👑 “Eu sabia!”
+
+Quando erra:
+
+> 😵 “Essa você ganhou!”
+
+Isso dá personalidade ao jogo sem precisar de IA.
+
+---
+
+# 2. As telas
+
+Eu expandiria as 6 telas do storyboard para esta estrutura.
+
+### 01 — Splash / abertura
+
+É a primeira impressão.
+
+Fundo **#17152E**, quase preto com tonalidade roxa.
+
+No centro:
+
+**QUEM
+SOU EU?**
+
+Com “QUEM” branco e “SOU EU?” verde-lime.
+
+Acima ou integrado ao nome fica o mascote com ponto de interrogação.
+
+Embaixo:
+
+> Pense em alguém.
+> Eu descubro.
+
+Pode haver pequenas estrelas, interrogações e partículas flutuantes.
+
+A abertura não deve passar de aproximadamente 1–1,5 segundo.
+
+Depois vai automaticamente para Home.
+
+---
+
+### 02 — Home
+
+Essa precisa ser extremamente simples.
+
+No topo:
+
+> Olá! 👋
+> Pronto para descobrir quem você pensou?
+
+Em seguida aparecem três pequenos cards:
+
+🔥 **7**
+Sequência
+
+🪙 **250**
+Moedas
+
+👑 **1.480**
+Pontos
+
+O mascote aparece grande no centro segurando uma lupa.
+
+Botão principal:
+
+> **JOGAR AGORA**
+
+Roxo, grande, quase ocupando toda a largura.
+
+Abaixo podem existir três atalhos:
+
+**Continuar desafio**
+
+**Conquistas**
+
+**Desafio diário**
+
+Barra inferior:
+
+**Início · Categorias · Conquistas · Perfil**
+
+A Home deve conseguir iniciar uma partida com **um único toque**.
+
+---
+
+### 03 — Escolha da categoria
+
+Antes da partida perguntamos:
+
+> Em que universo está a pessoa em quem você está pensando?
+
+Aqui entram inicialmente seis universos.
+
+**Influenciadores TikTok**
+
+Ícone de vídeo curto / play.
+
+Preto + detalhes neon.
+
+---
+
+**Influenciadores Instagram**
+
+Ícone de câmera/social.
+
+Gradiente rosa, laranja e roxo.
+
+---
+
+**Jogadores de Futebol**
+
+Bola.
+
+Verde.
+
+---
+
+**Artistas Brasileiros**
+
+Nota musical/microfone.
+
+Amarelo.
+
+---
+
+**Políticos**
+
+Tribuna/prédio institucional.
+
+Roxo.
+
+---
+
+**Personalidades Mundiais**
+
+Globo.
+
+Azul.
+
+Também colocaria:
+
+> 🎲 Todos
+
+Nesse modo o universo inteiro entra na busca.
+
+Com o tempo poderemos criar:
+
+Cinema
+Games
+YouTube
+História
+Literatura
+Reality shows
+Esportes
+Música internacional
+Empresários
+Personagens fictícios
+
+Isso permite lançar **pacotes de conteúdo** sem alterar o motor do jogo.
+
+---
+
+# 3. Tela principal da partida
+
+É a tela mais importante de todo o aplicativo.
+
+Fundo escuro.
+
+No topo:
+
+> Pergunta **4 de 20**
+
+Barra:
+
+`████████░░░░░░`
+
+Verde.
+
+Ao lado:
+
+🪙 250
+
+No centro existe um card branco enorme.
+
+Por exemplo:
+
+> 🌎
+> **É brasileiro?**
+
+As respostas:
+
+**SIM** — verde
+
+**PROVAVELMENTE SIM** — verde claro
+
+**NÃO SEI** — cinza
+
+**PROVAVELMENTE NÃO** — rosa claro
+
+**NÃO** — vermelho/rosa
+
+No storyboard usamos quatro opções, mas para o motor ficar realmente poderoso, eu recomendo **cinco respostas**.
+
+Isso melhora muito a capacidade do algoritmo de lidar com informações ambíguas.
+
+Exemplo:
+
+> A pessoa é considerada cantora?
+
+Alguém pode pensar:
+
+> “Mais ou menos.”
+
+Não queremos eliminar o candidato por causa disso.
+
+---
+
+# 4. O que acontece por trás dessa tela
+
+Aqui está o coração do produto.
+
+Suponha que começamos com:
+
+**20.000 pessoas.**
+
+O usuário escolheu:
+
+> Jogadores de futebol.
+
+Sobram:
+
+**4.000 candidatos.**
+
+O sistema começa procurando a pergunta que melhor separa esses 4.000.
+
+Por exemplo:
+
+> É brasileiro?
+
+Talvez:
+
+1.850 → sim
+2.050 → não
+100 → desconhecido
+
+Excelente pergunta.
+
+Depois:
+
+> Ainda está em atividade?
+
+900 → sim
+950 → não
+
+Excelente novamente.
+
+Cada resposta modifica a probabilidade de cada candidato.
+
+Não fazemos simplesmente:
+
+> respondeu NÃO → apagar todos.
+
+Fazemos:
+
+```text
+Neymar
+95 pontos
+
+Vinícius Jr.
+92 pontos
+
+Rodrygo
+87 pontos
+
+Ronaldinho
+45 pontos
+
+Pelé
+15 pontos
+```
+
+Nova pergunta:
+
+> Já jogou pelo Barcelona?
+
+Depois da resposta:
+
+```text
+Neymar        98
+Ronaldinho    72
+Vinícius Jr.  31
+Rodrygo       25
+```
+
+O jogo começa a perceber:
+
+> “Tenho um candidato muito mais provável.”
+
+---
+
+# 5. Como escolher a próxima pergunta
+
+Esse é o segredo técnico.
+
+Cada pergunta possui um valor de **ganho de informação**.
+
+Não perguntamos coisas aleatórias.
+
+Imagine 100 candidatos restantes.
+
+Pergunta A:
+
+> É brasileiro?
+
+51 SIM
+49 NÃO
+
+Excelente.
+
+Pergunta B:
+
+> Nasceu em Brasília?
+
+3 SIM
+97 NÃO
+
+Ruim naquele momento.
+
+Então o sistema escolhe a pergunta A.
+
+Matematicamente podemos usar:
+
+**entropia + information gain.**
+
+Mas para o aplicativo isso fica escondido.
+
+O usuário sente apenas:
+
+> “Caramba, ele está chegando perto.”
+
+---
+
+# 6. Banco de pessoas
+
+Cada personalidade teria algo parecido com:
+
+```text
+person_id: 000143
+
+nome: Neymar Jr.
+categoria: futebol
+nacionalidade: brasileira
+sexo: masculino
+vivo: sim
+atividade: jogador
+ativo: sim
+continente: América do Sul
+brasileiro: sim
+jogou_selecao: sim
+jogou_europa: sim
+jogou_barcelona: sim
+jogou_real_madrid: nao
+camisa_10: sim
+ganhou_copa: nao
+bola_de_ouro: nao
+```
+
+Mas internamente boa parte disso pode ser armazenada como IDs e valores compactados.
+
+Não precisamos guardar frases repetidamente.
+
+---
+
+# 7. Banco de perguntas
+
+Outra tabela contém perguntas.
+
+Por exemplo:
+
+```text
+question_id: 253
+
+texto:
+"É brasileiro?"
+
+atributo:
+brasileiro
+
+peso:
+0.92
+
+categoria:
+geral
+```
+
+Outra:
+
+```text
+question_id: 894
+
+texto:
+"Já jogou pelo Barcelona?"
+
+atributo:
+jogou_barcelona
+
+categoria:
+futebol
+```
+
+Assim uma única pergunta pode servir para milhares de pessoas.
+
+---
+
+# 8. Quando o jogo acha que sabe
+
+Não precisamos esperar chegar a apenas um candidato.
+
+Por exemplo:
+
+```text
+Neymar             94%
+Vinícius Jr.        3%
+Ronaldinho          2%
+Outros              1%
+```
+
+O sistema pode decidir:
+
+> Vou tentar.
+
+E entra a tela:
+
+## Você pensou em...
+
+**NEYMAR?**
+
+Foto.
+
+🇧🇷 Brasil
+
+⚽ Futebol
+
+Botões:
+
+**SIM! ACERTOU**
+
+**NÃO**
+
+Aqui entra uma regra importante.
+
+O jogo pode tentar **até três palpites**.
+
+Se errar Neymar, ele continua:
+
+> Hmmm… então tenho outra ideia.
+
+E faz mais algumas perguntas.
+
+---
+
+# 9. Tela de vitória
+
+Quando acerta:
+
+🎉 confetes
+👑 mascote comemorando
+🔥 aumenta sequência
+
+Algo como:
+
+> **ACERTEI!**
+>
+> Neymar Jr.
+>
+> Descobri em
+> **13 perguntas**
+>
+> +80 pontos
+> +20 moedas
+
+Botão:
+
+**JOGAR NOVAMENTE**
+
+E:
+
+**COMPARTILHAR RESULTADO**
+
+Podemos gerar um card compartilhável:
+
+> QUEM SOU EU?
+>
+> 🧠 O jogo descobriu Neymar
+> em apenas 13 perguntas.
+>
+> 🟩🟩🟩🟩🟨
+
+Isso pode ajudar na viralização.
+
+---
+
+# 10. Quando o jogo perde
+
+Essa tela é tão importante quanto quando ele ganha.
+
+Depois de aproximadamente 20–30 perguntas:
+
+> 😵 Você me venceu!
+>
+> Quem era?
+
+Abrimos uma busca:
+
+**Digite o nome**
+
+> Endrick
+
+Se Endrick já existir:
+
+> Ahhh! Era o Endrick.
+>
+> Qual resposta me confundiu?
+
+Isso vira informação local de melhoria.
+
+Se não existir:
+
+> Não conheço essa pessoa ainda.
+
+Podemos coletar:
+
+Nome
+Categoria
+País
+Profissão
+
+Opcionalmente:
+
+> Quer ajudar o jogo a aprender?
+
+Esses dados ficam localmente e, se houver sincronização autorizada, podem ser enviados ao servidor posteriormente para moderação.
+
+---
+
+# 11. Sistema de confiança
+
+Internamente eu trabalharia aproximadamente assim:
+
+**0–40%**
+
+Não sabemos ainda.
+
+Mascote:
+
+> 🤔 Estou investigando.
+
+---
+
+**40–70%**
+
+Temos alguns fortes candidatos.
+
+> 👀 Acho que estou chegando perto…
+
+---
+
+**70–90%**
+
+Começamos a fazer perguntas específicas.
+
+> 😏 Já tenho algumas suspeitas.
+
+---
+
+**90%+**
+
+Fazemos o palpite.
+
+> 🎯 Acho que descobri!
+
+Isso também deixa o mascote parecer “vivo”.
+
+---
+
+# 12. Regras da partida
+
+Eu começaria limitando cada partida a **20 perguntas normais + até 3 palpites**.
+
+O algoritmo pode terminar antes.
+
+Então podemos ter:
+
+**9 perguntas → excelente**
+
+**14 → bom**
+
+**19 → difícil**
+
+**25 → quase me venceu**
+
+Isso vira uma mecânica de pontuação.
+
+Quanto menos perguntas utilizadas, maior a recompensa.
+
+---
+
+# 13. Gamificação
+
+A gamificação não pode afetar a capacidade básica de jogar.
+
+Ou seja:
+
+**nunca cobraria moeda para começar uma partida normal.**
+
+As moedas poderiam desbloquear elementos cosméticos ou modos especiais.
+
+Por exemplo:
+
+🪙 dicas
+🎨 temas
+👑 skins do mascote
+🧩 categorias especiais
+🔥 desafios
+
+A sequência funciona como no modelo:
+
+> Jogou hoje?
+
+🔥 8 dias.
+
+Não precisa necessariamente acertar.
+
+Isso é importante para não frustrar o usuário.
+
+---
+
+# 14. Pontuação
+
+Podemos criar algo como:
+
+```text
+Acertou:
++50
+
+Acertou < 15 perguntas:
++30
+
+Acertou < 10:
++50
+
+Categoria difícil:
++20
+
+Primeira partida do dia:
++20
+
+Desafio diário:
++100
+```
+
+E existe XP separado das moedas.
+
+**XP = evolução**
+
+**Moedas = economia do jogo**
+
+Isso evita misturar os dois sistemas.
+
+---
+
+# 15. Progressão
+
+A pessoa começa:
+
+**Nível 1 — Curioso**
+
+Depois:
+
+**Investigador**
+
+**Detetive**
+
+**Mestre da Intuição**
+
+**Oráculo**
+
+**Lenda**
+
+Cada nível desbloqueia badges, molduras ou desafios.
+
+Não precisa desbloquear as categorias básicas.
+
+---
+
+# 16. Desafios
+
+A tela do storyboard já aponta bem para isso.
+
+Por exemplo:
+
+> 🎯 Acerte três personalidades.
+
+> ⚽ Jogue uma partida de futebol.
+
+> 🌎 Pense em alguém estrangeiro.
+
+> 🔥 Jogue três dias consecutivos.
+
+> 🧠 Faça o jogo errar.
+
+Essa última é excelente:
+
+> **DERROTE O QUEM SOU EU**
+
+Faz o usuário propositalmente pensar em gente difícil.
+
+Isso também gera dados valiosos para melhorar nossa base.
+
+---
+
+# 17. Conquistas
+
+Exemplos:
+
+🏆 **Primeiro Acerto**
+
+🔥 **7 dias seguidos**
+
+⚽ **Mestre do Futebol**
+
+🎤 **Mestre da Música**
+
+🌎 **Cidadão do Mundo**
+
+🧠 **Você me venceu**
+
+👑 **100 partidas**
+
+🔮 **10 acertos consecutivos**
+
+Isso aumenta retenção sem complicar o jogo.
+
+---
+
+# 18. Ranking
+
+Aqui existe uma oportunidade diferente.
+
+Não faria ranking simplesmente de “quem joga mais”.
+
+Criaria rankings como:
+
+**Sequência**
+
+**Pontos semanais**
+
+**Personalidades descobertas**
+
+**Vitórias contra o jogo**
+
+Mas o ranking online é opcional.
+
+O jogo básico continua funcionando offline.
+
+---
+
+# 19. Arquitetura técnica
+
+O aplicativo ficaria aproximadamente assim:
+
+```text
+ANDROID / iOS
+        │
+        │
+        ├── Interface
+        │
+        ├── Game Engine
+        │
+        ├── Question Engine
+        │
+        ├── Scoring Engine
+        │
+        ├── Ranking local
+        │
+        ├── Perfil
+        │
+        └── SQLite
+               │
+               ├── Pessoas
+               ├── Perguntas
+               ├── Atributos
+               ├── Respostas
+               ├── Categorias
+               └── Histórico
+```
+
+Tudo isso roda no celular.
+
+---
+
+# 20. Backend online
+
+O servidor não participa obrigatoriamente da partida.
+
+Ele seria utilizado para:
+
+```text
+Servidor
+   │
+   ├── novos famosos
+   ├── correção de dados
+   ├── novos atributos
+   ├── novas perguntas
+   ├── ranking
+   ├── desafios
+   ├── analytics
+   └── contribuições dos usuários
+```
+
+O celular baixa algo como:
+
+> Banco versão 1.27
+> +3.281 personalidades
+> 4,2 MB
+
+Atualiza SQLite.
+
+Continua jogando offline.
+
+Isso é uma arquitetura muito barata.
+
+---
+
+# 21. Uma regra de negócio fundamental
+
+Precisamos separar:
+
+**fato permanente**
+
+de
+
+**fato mutável**.
+
+Por exemplo:
+
+> Neymar é brasileiro.
+
+Quase permanente.
+
+Mas:
+
+> Neymar joga atualmente no clube X.
+
+Mutável.
+
+Então cada atributo pode possuir:
+
+```text
+value
+confidence
+updated_at
+expires_at
+```
+
+Isso impede o jogo de ficar velho rapidamente.
+
+Para fatos temporais, podemos preferir perguntas mais robustas:
+
+> Já jogou na Europa?
+
+em vez de:
+
+> Joga atualmente na Europa?
+
+A primeira envelhece muito menos.
+
+---
+
+# 22. Personalidades políticas
+
+Eu trataria como **uma categoria factual**, não opinativa.
+
+Perguntas:
+
+> É brasileiro?
+
+> Já foi presidente?
+
+> É deputado?
+
+> Já exerceu cargo executivo?
+
+> É mulher?
+
+Evitaria perguntas subjetivas como:
+
+> É de extrema direita?
+
+> É corrupto?
+
+> É radical?
+
+Além de criarem problemas de qualidade e contestação, são péssimos atributos para um motor determinístico.
+
+---
+
+# 23. Influenciadores
+
+Aqui existe uma particularidade.
+
+Eles mudam muito mais rapidamente.
+
+Então devemos modelar:
+
+```text
+plataforma_principal
+pais
+idioma
+tipo_conteudo
+genero_conteudo
+faixa_seguidores
+presenca_tv
+presenca_youtube
+```
+
+Evitaria números exatos como:
+
+> possui 18.433.293 seguidores.
+
+Melhor:
+
+> Tem mais de 10 milhões?
+
+Essas faixas sobrevivem mais tempo.
+
+---
+
+# 24. Fotos e propriedade intelectual
+
+O algoritmo e a base podem ser nossos.
+
+Para nomes e fatos biográficos, trabalhamos com dados factuais.
+
+Já **fotografias** precisam de atenção à licença e ao direito de uso.
+
+Eu não simplesmente coletaria fotos do Google.
+
+A solução ideal seria usar imagens devidamente licenciadas, bancos permitidos, Wikimedia Commons quando a licença servir, imagens próprias/autorizadas ou até uma identidade baseada inicialmente em **avatar/silhueta**, reduzindo bastante o problema.
+
+Da mesma forma, nas categorias “TikTok” e “Instagram”, eu usaria os logos oficiais apenas seguindo as diretrizes das respectivas marcas; alternativamente podemos usar ícones genéricos de vídeo curto e rede social.
+
+---
+
+# 25. O banco não deve ser pessoa × pergunta
+
+Esse ponto é importante tecnicamente.
+
+Não queremos:
+
+```text
+Neymar:
+pergunta 1
+pergunta 2
+pergunta 3
+...
+```
+
+Queremos:
+
+```text
+PESSOAS
+      ↓
+ATRIBUTOS
+      ↑
+PERGUNTAS
+```
+
+Por exemplo:
+
+```text
+Neymar
+     ↓
+brasileiro = SIM
+
+Anitta
+     ↓
+brasileiro = SIM
+
+Messi
+     ↓
+brasileiro = NÃO
+```
+
+E a pergunta:
+
+> É brasileiro?
+
+consulta apenas o atributo `brasileiro`.
+
+Isso permite crescer de **1.000 para 100.000 personagens** sem explodir a complexidade.
+
+---
+
+# 26. O verdadeiro produto
+
+Eu vejo o produto menos como:
+
+> “um clone do Akinator”
+
+e mais como:
+
+## QUEM SOU EU?
+
+**O jogo que descobre quem está na sua cabeça.**
+
+E o loop principal seria:
+
+```text
+PENSAR EM ALGUÉM
+       ↓
+ESCOLHER UNIVERSO
+       ↓
+RESPONDER PERGUNTAS
+       ↓
+JOGO CRIA HIPÓTESES
+       ↓
+PALPITE
+       ↓
+ACERTOU?
+   ↙          ↘
+ SIM          NÃO
+ ↓             ↓
+RECOMPENSA   CONTINUA
+               ↓
+             PERDEU?
+               ↓
+          APRENDE QUEM ERA
+               ↓
+          PRÓXIMA PARTIDA
+```
+
+Essa é a estrutura que eu usaria como **documento-base de produto** para começar o desenvolvimento. O grande ativo do negócio não será o código do aplicativo: será o **Knowledge Graph de personalidades + perguntas + atributos + histórico de respostas**, porque quanto mais partidas forem feitas, melhor podemos calibrar o jogo — mesmo mantendo o motor de cada partida totalmente offline.
+

@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+DerivedData/
+iosApp/*.xcodeproj
+iosApp/*.xcworkspace
+site/.git/
+*.mobileprovision
+*.p12
+*.cer
+*.key
+AuthKey_*.p8

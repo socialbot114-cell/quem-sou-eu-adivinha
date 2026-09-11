@@ -1,0 +1,26 @@
+name: iOS Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        working-directory: iosApp
+        run: xcodegen generate --spec project.yml
+      - name: Validate content
+        run: python3 scripts/validate_content.py
+      - name: Build and test
+        run: |
+          xcodebuild test \
+            -project iosApp/QuemSouEu.xcodeproj \
+            -scheme QuemSouEu \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro' \
+            CODE_SIGNING_ALLOWED=NO
