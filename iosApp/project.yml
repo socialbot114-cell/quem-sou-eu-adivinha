@@ -38,3 +38,5 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: br.com.quemsoueu.adivinha.tests
+        TEST_HOST: ""
+        BUNDLE_LOADER: ""
