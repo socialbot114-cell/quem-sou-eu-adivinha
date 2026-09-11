@@ -5,7 +5,7 @@
 <key>method</key><string>app-store</string>
 <key>signingStyle</key><string>manual</string>
 <key>signingCertificate</key><string>Apple Distribution</string>
-<key>provisioningProfiles</key><dict><key>br.com.quemsoueu.adivinha</key><string>Quem Sou Eu Adivinha App Store 2026</string></dict>
+<key>provisioningProfiles</key><dict><key>br.com.quemsoueu.adivinha</key><string>Quem Sou Eu Adivinha App Store 2026 v2</string></dict>
 <key>teamID</key><string>SRN7AW424S</string>
 <key>uploadSymbols</key><true/>
 <key>compileBitcode</key><false/>
