@@ -53,6 +53,16 @@ jobs:
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution" \
             PROVISIONING_PROFILE_SPECIFIER="Quem Sou Eu Adivinha App Store 2026 v2" \
             DEVELOPMENT_TEAM=SRN7AW424S TARGETED_DEVICE_FAMILY=1 archive
+      - name: Verify app icon metadata
+        run: |
+          app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "$app/AppIcon-120.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "$app/AppIcon-180.png"
+          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "$app/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "$app/Info.plist" || true
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon-120' "$app/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180' "$app/Info.plist"
       - name: Export IPA
         run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
       - name: Upload IPA
