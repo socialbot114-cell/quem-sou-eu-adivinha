@@ -67,6 +67,23 @@ jobs:
           /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180' "$app/Info.plist"
       - name: Export IPA
         run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
+      - name: Finalize exported icon metadata
+        run: |
+          ipa=("$RUNNER_TEMP"/export/*.ipa)
+          rm -rf "$RUNNER_TEMP/ipa-unpacked"
+          mkdir -p "$RUNNER_TEMP/ipa-unpacked"
+          unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
+          app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png "${app[0]}/AppIcon-120.png"
+          cp iosApp/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png "${app[0]}/AppIcon-180.png"
+          /usr/libexec/PlistBuddy -c 'Set :CFBundleIconName AppIcon' "${app[0]}/Info.plist" || /usr/libexec/PlistBuddy -c 'Add :CFBundleIconName string AppIcon' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Delete :CFBundleIconFiles' "${app[0]}/Info.plist" || true
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles array' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon-120' "${app[0]}/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180' "${app[0]}/Info.plist"
+          codesign --force --sign "Apple Distribution" --preserve-metadata=identifier,entitlements,flags --timestamp=none "${app[0]}"
+          rm "${ipa[0]}"
+          (cd "$RUNNER_TEMP/ipa-unpacked" && zip -qry "$RUNNER_TEMP/export/QuemSouEu.ipa" Payload)
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
