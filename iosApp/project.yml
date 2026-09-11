@@ -19,6 +19,7 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: br.com.quemsoueu.adivinha
         PRODUCT_NAME: "Quem Sou Eu? Adivinha"
+        PRODUCT_MODULE_NAME: QuemSouEu
         INFOPLIST_FILE: Info.plist
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 1.0
