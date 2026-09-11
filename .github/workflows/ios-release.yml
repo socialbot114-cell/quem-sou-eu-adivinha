@@ -40,7 +40,8 @@ jobs:
           security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
           security list-keychains -d user -s "$KEYCHAIN_PATH"
           security default-keychain -s "$KEYCHAIN_PATH"
-          printf 'SIGNING_KEYCHAIN=%s\nSIGNING_KEYCHAIN_PASSWORD=%s\n' "$KEYCHAIN_PATH" "$KEYCHAIN_PASSWORD" >> "$GITHUB_ENV"
+          SIGNING_IDENTITY=$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | perl -ne 'if (/"(.*)"/) { print $1; exit }')
+          printf 'SIGNING_KEYCHAIN=%s\nSIGNING_KEYCHAIN_PASSWORD=%s\nSIGNING_IDENTITY=%s\n' "$KEYCHAIN_PATH" "$KEYCHAIN_PASSWORD" "$SIGNING_IDENTITY" >> "$GITHUB_ENV"
           mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
           cp "$RUNNER_TEMP/QuemSouEu.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/2bf9e748-a220-4274-a157-c5878696d5dc.mobileprovision"
       - name: Generate project
@@ -83,7 +84,7 @@ jobs:
           /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:0 string AppIcon-120' "${app[0]}/Info.plist"
           /usr/libexec/PlistBuddy -c 'Add :CFBundleIconFiles:1 string AppIcon-180' "${app[0]}/Info.plist"
           security unlock-keychain -p "$SIGNING_KEYCHAIN_PASSWORD" "$SIGNING_KEYCHAIN"
-          codesign --force --sign "Apple Distribution" --keychain "$SIGNING_KEYCHAIN" --preserve-metadata=identifier,entitlements,flags --timestamp=none "${app[0]}"
+          codesign --force --sign "$SIGNING_IDENTITY" --keychain "$SIGNING_KEYCHAIN" --preserve-metadata=identifier,entitlements,flags --timestamp=none "${app[0]}"
           rm "${ipa[0]}"
           (cd "$RUNNER_TEMP/ipa-unpacked" && zip -qry "$RUNNER_TEMP/export/QuemSouEu.ipa" Payload)
       - name: Upload IPA
