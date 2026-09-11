@@ -50,6 +50,7 @@ jobs:
       - name: Compile app icon catalog
         run: |
           rm -rf "$RUNNER_TEMP/compiled-assets"
+          mkdir -p "$RUNNER_TEMP/compiled-assets"
           xcrun actool iosApp/Resources/Assets.xcassets \
             --compile "$RUNNER_TEMP/compiled-assets" \
             --platform iphoneos --minimum-deployment-target 17.0 \
