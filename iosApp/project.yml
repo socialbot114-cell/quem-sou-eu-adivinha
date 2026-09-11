@@ -39,5 +39,5 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: br.com.quemsoueu.adivinha.tests
-        TEST_HOST: ""
-        BUNDLE_LOADER: ""
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/$(FULL_PRODUCT_NAME)/$(EXECUTABLE_NAME)"
+        BUNDLE_LOADER: "$(TEST_HOST)"
