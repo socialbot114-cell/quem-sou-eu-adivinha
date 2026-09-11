@@ -52,7 +52,9 @@ jobs:
             -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" \
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution" \
             PROVISIONING_PROFILE_SPECIFIER="Quem Sou Eu Adivinha App Store 2026 v2" \
-            DEVELOPMENT_TEAM=SRN7AW424S TARGETED_DEVICE_FAMILY=1 archive
+            DEVELOPMENT_TEAM=SRN7AW424S TARGETED_DEVICE_FAMILY=1 \
+            ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon \
+            INFOPLIST_KEY_CFBundleIconName=AppIcon archive
       - name: Verify app icon metadata
         run: |
           app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
