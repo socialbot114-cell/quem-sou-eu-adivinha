@@ -34,16 +34,21 @@ struct GameView: View {
         self.category = category
         let base = KnowledgeStore.shared.base
         let filtered = category == .all ? base.people : base.people.filter { $0.categories.contains(category) }
-        _engine = State(initialValue: GameEngine(people: filtered, questions: base.questions))
+        let questions = base.questions.filter { question in
+            question.categories.contains(.all) || question.categories.contains(category) || category == .all
+        }
+        _engine = State(initialValue: GameEngine(people: filtered, questions: questions))
     }
 
     var body: some View {
         ZStack { Theme.ink.ignoresSafeArea()
             VStack(spacing: 18) {
-                HStack { Button { dismiss() } label: { Image(systemName: "xmark").font(.headline).foregroundStyle(.white).padding(12).background(.white.opacity(0.12)).clipShape(Circle()) }; Spacer(); Text("Pergunta \(min(questionNumber + 1, 20)) de 20").foregroundStyle(.white.opacity(0.8)).font(.subheadline.bold()) }.padding(.horizontal)
-                ProgressView(value: Double(questionNumber), total: 20).tint(Theme.lime).padding(.horizontal)
+                HStack { Button { dismiss() } label: { Image(systemName: "xmark").font(.headline).foregroundStyle(.white).padding(12).background(.white.opacity(0.12)).clipShape(Circle()) }; Spacer(); Text("Pergunta \(min(questionNumber + 1, 10)) de 10").foregroundStyle(.white.opacity(0.8)).font(.subheadline.bold()) }.padding(.horizontal)
+                ProgressView(value: Double(questionNumber), total: 10).tint(Theme.lime).padding(.horizontal)
                 Spacer()
-                if let question, !finished { QuestionCard(question: question) { answer in respond(answer, to: question) } }
+                if let error = KnowledgeStore.shared.loadError {
+                    Text(error).foregroundStyle(.white).multilineTextAlignment(.center).padding()
+                } else if let question, !finished { QuestionCard(question: question) { answer in respond(answer, to: question) }.frame(maxWidth: 700) }
                 else if finished, let result { ResultCard(person: result, questions: questionNumber, guessedWrong: guessedWrong) { dismiss() } }
                 Spacer()
                 if !finished { Text("Dica: pense em alguém conhecido").foregroundStyle(.white.opacity(0.65)).font(.footnote) }
@@ -51,8 +56,8 @@ struct GameView: View {
         }.navigationBarBackButtonHidden(true).onAppear { if question == nil { advance() } }
     }
 
-    private func respond(_ answer: Answer, to question: Question) { engine.apply(answer, to: question); questionNumber += 1; if engine.confidence > 0.7 || questionNumber >= 20 { result = engine.bestGuess; finished = true; if engine.confidence > 0.7 { progress.recordWin(questions: questionNumber) } } else { advance() } }
-    private func advance() { question = engine.nextQuestion() }
+    private func respond(_ answer: Answer, to question: Question) { engine.apply(answer, to: question); questionNumber += 1; if (engine.confidence > 0.7 && questionNumber >= 3) || questionNumber >= 10 { result = engine.bestGuess; finished = true; if engine.confidence > 0.7 { progress.recordWin(questions: questionNumber) } } else { advance() } }
+    private func advance() { question = engine.nextQuestion(); if question == nil { result = engine.bestGuess; finished = result != nil } }
 }
 
 struct QuestionCard: View {

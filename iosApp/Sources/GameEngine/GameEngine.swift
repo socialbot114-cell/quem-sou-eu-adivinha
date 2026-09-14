@@ -16,6 +16,7 @@ struct GameEngine {
     var confidence: Double { bestGuess.map { scores[$0.id, default: 0] } ?? 0 }
 
     mutating func nextQuestion() -> Question? {
+        guard !people.isEmpty else { return nil }
         let available = questions.filter { !asked.contains($0.id) }
         guard !available.isEmpty else { return nil }
         let selected = available.max { separation($0) < separation($1) }!

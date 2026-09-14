@@ -3,7 +3,7 @@
 ## App Information
 
 - App name: `Quem Sou Eu? Adivinha`
-- Subtitle: `O jogo que lê sua mente`
+- Subtitle: `Jogo de pistas e perguntas`
 - Primary category: `Games`
 - Secondary category: `Entertainment`
 - Game subcategory: `Trivia`
@@ -25,7 +25,7 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 
 Recursos:
 
-- Partidas rápidas com até 20 perguntas.
+- Partidas rápidas com até 10 perguntas.
 - Categorias de personalidades para escolher.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
@@ -41,7 +41,7 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 
 Primeira versão do Quem Sou Eu? Adivinha.
 
-- Jogo de perguntas offline.
+- Jogo de pistas e perguntas offline.
 - Categorias de personalidades.
 - Pontos, moedas, sequência e conquistas.
 - Interface otimizada para iPhone.

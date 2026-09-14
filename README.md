@@ -20,4 +20,4 @@ xcodegen generate
 xcodebuild -project QuemSouEu.xcodeproj -scheme QuemSouEu -sdk iphonesimulator -configuration Debug build CODE_SIGNING_ALLOWED=NO
 ```
 
-O conteúdo fica em `iosApp/Resources/KnowledgeBase/knowledge.json`. Novas pessoas e perguntas devem passar pelo validador antes de entrar no app.
+O conteúdo fica em `iosApp/Resources/KnowledgeBase/knowledge.json`. Novas pessoas e perguntas devem passar pelo validador antes de entrar no app. A versão atual usa até 10 perguntas por partida.
