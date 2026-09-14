@@ -11,7 +11,7 @@
 - Copyright: `2026 Gustavo De Melo Ferreira`
 - Age rating: `4+`
 - Bundle ID: `br.com.quemsoueu.adivinha`
-- Version: `1.0`
+- Version: `1.0` (build 4)
 
 ## Promotional Text
 
@@ -100,8 +100,8 @@ Recommended screenshot size: `1290x2796` pixels in portrait for the 6.7-inch slo
 
 ## Final Submission Checklist
 
-- [ ] Build 2 is uploaded and marked `VALID`.
-- [ ] Select build 2 for version 1.0.
+- [ ] Build 4 is uploaded and marked `VALID`.
+- [ ] Select build 4 for version 1.0.
 - [ ] Upload five real iPhone screenshots.
 - [ ] Confirm subtitle, description, keywords and URLs.
 - [ ] Set `Games` / `Trivia` and free pricing.
