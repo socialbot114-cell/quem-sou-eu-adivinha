@@ -29,5 +29,5 @@ jobs:
           xcodebuild test \
             -project iosApp/QuemSouEu.xcodeproj \
             -scheme QuemSouEu \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' \
             CODE_SIGNING_ALLOWED=NO
