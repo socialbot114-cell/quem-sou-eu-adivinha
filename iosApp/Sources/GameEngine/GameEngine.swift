@@ -58,8 +58,8 @@ struct GameEngine {
         let expectedEntropy = Answer.allCases.filter { $0 != .unknown }.reduce(0.0) { total, answer in
             var weighted: [String: Double] = [:]
             for person in people {
-                let likelihood = person.attributes[question.attribute].map { likelihood($0, answer) } ?? 1
-                weighted[person.id] = scores[person.id, default: 0] * likelihood
+                let answerWeight = person.attributes[question.attribute].map { likelihood($0, answer) } ?? 1
+                weighted[person.id] = scores[person.id, default: 0] * answerWeight
             }
             let probability = weighted.values.reduce(0, +)
             guard probability > 0 else { return total }
