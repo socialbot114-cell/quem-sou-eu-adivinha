@@ -24,3 +24,10 @@ jobs:
             -scheme QuemSouEu \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO
+      - name: Run unit tests
+        run: |
+          xcodebuild test \
+            -project iosApp/QuemSouEu.xcodeproj \
+            -scheme QuemSouEu \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            CODE_SIGNING_ALLOWED=NO

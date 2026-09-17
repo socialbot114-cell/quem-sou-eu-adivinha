@@ -4,7 +4,7 @@ struct RootView: View {
     @State private var selectedTab = 0
     var body: some View {
         TabView(selection: $selectedTab) {
-            HomeView { selectedTab = 1 }.tabItem { Label("Início", systemImage: "house.fill") }.tag(0)
+            HomeView(play: { selectedTab = 1 }, showProgress: { selectedTab = 2 }).tabItem { Label("Início", systemImage: "house.fill") }.tag(0)
             CategoryView().tabItem { Label("Categorias", systemImage: "square.grid.2x2.fill") }.tag(1)
             ProgressViewScreen().tabItem { Label("Conquistas", systemImage: "trophy.fill") }.tag(2)
             ProfileView().tabItem { Label("Perfil", systemImage: "person.fill") }.tag(3)
@@ -33,6 +33,7 @@ struct Mascot: View {
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     let play: () -> Void
+    let showProgress: () -> Void
     var body: some View {
         NavigationStack {
             ZStack { Theme.soft.ignoresSafeArea()
@@ -43,7 +44,11 @@ struct HomeView: View {
                         HStack(spacing: 10) { StatCard(icon: "flame.fill", value: "\(progress.streak)", label: "sequência", color: .pink); StatCard(icon: "circle.fill", value: "\(progress.coins)", label: "moedas", color: .orange); StatCard(icon: "crown.fill", value: "\(progress.points)", label: "pontos", color: Theme.purple) }
                         HStack { Spacer(); Mascot(); Spacer() }.padding(.vertical, 4)
                         Button(action: play) { Label("Jogar agora", systemImage: "arrow.right").font(.title2.bold()).frame(maxWidth: .infinity).padding().background(Theme.purple).foregroundStyle(.white).clipShape(Capsule()) }
-                        HStack { Shortcut(icon: "gamecontroller.fill", title: "Continuar desafio"); Shortcut(icon: "trophy.fill", title: "Minhas conquistas"); Shortcut(icon: "calendar", title: "Desafios") }
+                        HStack {
+                            Shortcut(icon: "gamecontroller.fill", title: "Nova partida", action: play)
+                            Shortcut(icon: "trophy.fill", title: "Minhas conquistas", action: showProgress)
+                            Shortcut(icon: "calendar", title: "Jogue hoje", action: play)
+                        }
                     }.padding()
                 }
             }.navigationBarHidden(true)
@@ -51,5 +56,5 @@ struct HomeView: View {
     }
 }
 
-struct StatCard: View { let icon: String; let value: String; let label: String; let color: Color; var body: some View { VStack(spacing: 6) { Image(systemName: icon).font(.title2).foregroundStyle(color); Text(value).font(.title3.bold()).foregroundStyle(Theme.ink); Text(label).font(.caption).foregroundStyle(.secondary) }.frame(maxWidth: .infinity).padding(.vertical, 12).background(.white).clipShape(RoundedRectangle(cornerRadius: 18)) } }
-struct Shortcut: View { let icon: String; let title: String; var body: some View { VStack(spacing: 8) { Image(systemName: icon).font(.title2).foregroundStyle(Theme.purple); Text(title).font(.caption.weight(.bold)).multilineTextAlignment(.center).foregroundStyle(Theme.ink) }.frame(maxWidth: .infinity).frame(height: 76).background(.white).clipShape(RoundedRectangle(cornerRadius: 16)) } }
+struct StatCard: View { let icon: String; let value: String; let label: String; let color: Color; var body: some View { VStack(spacing: 6) { Image(systemName: icon).font(.title2).foregroundStyle(color); Text(value).font(.title3.bold()).foregroundStyle(Theme.ink); Text(label).font(.caption).foregroundStyle(.secondary) }.frame(maxWidth: .infinity).padding(.vertical, 12).background(.white).clipShape(RoundedRectangle(cornerRadius: 18)).accessibilityElement(children: .ignore).accessibilityLabel("\(value) \(label)") } }
+struct Shortcut: View { let icon: String; let title: String; let action: () -> Void; var body: some View { Button(action: action) { VStack(spacing: 8) { Image(systemName: icon).font(.title2).foregroundStyle(Theme.purple); Text(title).font(.caption.weight(.bold)).multilineTextAlignment(.center).foregroundStyle(Theme.ink) }.frame(maxWidth: .infinity).frame(height: 76).background(.white).clipShape(RoundedRectangle(cornerRadius: 16)) }.buttonStyle(.plain) } }

@@ -2,13 +2,53 @@ import XCTest
 @testable import QuemSouEu
 
 final class GameEngineTests: XCTestCase {
-    func testEngineUpdatesConfidenceAndAvoidsRepeatedQuestions() {
-        let people = [Person(id: "a", name: "A", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 1], avatarSymbol: "star.fill"), Person(id: "b", name: "B", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0], avatarSymbol: "star.fill")]
-        let question = Question(id: "x", text: "É?", attribute: "x", categories: [.all])
-        var engine = GameEngine(people: people, questions: [question])
-        XCTAssertEqual(engine.nextQuestion()?.id, "x")
-        engine.apply(.yes, to: question)
+    private let people = [
+        Person(id: "a", name: "A", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 1, "y": 0], avatarSymbol: "star.fill"),
+        Person(id: "b", name: "B", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0, "y": 1], avatarSymbol: "star.fill"),
+        Person(id: "c", name: "C", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0, "y": 0], avatarSymbol: "star.fill")
+    ]
+
+    func testEngineSelectsDiscriminativeQuestionAndAvoidsRepeatedAttributes() {
+        let questions = [
+            Question(id: "x-one", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "x-two", text: "Outro X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+
+        let first = try! XCTUnwrap(engine.nextQuestion())
+        engine.apply(.yes, to: first)
+        let second = try! XCTUnwrap(engine.nextQuestion())
+
+        XCTAssertNotEqual(first.attribute, second.attribute)
         XCTAssertEqual(engine.bestGuess?.id, "a")
-        XCTAssertNil(engine.nextQuestion())
+    }
+
+    func testUnknownAnswerDoesNotChangeScores() {
+        let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
+        var engine = GameEngine(people: people, questions: [question], randomIndex: { _ in 0 })
+        let before = engine.scores
+        engine.apply(.unknown, to: question)
+        XCTAssertEqual(engine.scores, before)
+    }
+
+    func testMissingAttributeDoesNotGainEvidence() {
+        let withMissing = [
+            Person(id: "a", name: "A", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 1], avatarSymbol: "star.fill"),
+            Person(id: "b", name: "B", categories: [.all], country: "BR", profession: "Teste", attributes: [:], avatarSymbol: "star.fill")
+        ]
+        let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
+        var engine = GameEngine(people: withMissing, questions: [question], randomIndex: { _ in 0 })
+        engine.apply(.yes, to: question)
+        XCTAssertGreaterThan(engine.scores["a", default: 0], engine.scores["b", default: 0])
+    }
+
+    func testRejectingGuessRemovesItFromRanking() {
+        let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
+        var engine = GameEngine(people: people, questions: [question], randomIndex: { _ in 0 })
+        engine.apply(.yes, to: question)
+        let guess = try! XCTUnwrap(engine.bestGuess)
+        engine.reject(guess)
+        XCTAssertNotEqual(engine.bestGuess?.id, guess.id)
     }
 }
