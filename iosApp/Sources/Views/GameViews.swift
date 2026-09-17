@@ -128,9 +128,9 @@ struct GameView: View {
         case .confirming(let person):
             ResultCard(person: person, questions: questionNumber, mode: .confirmation, confirm: confirmGuess, reject: { reject(person) })
         case .won(let person):
-            ResultCard(person: person, questions: questionNumber, mode: .won, confirm: dismiss, reject: nil)
+            ResultCard(person: person, questions: questionNumber, mode: .won, confirm: { dismiss() }, reject: nil)
         case .lost(let person):
-            ResultCard(person: person, questions: questionNumber, mode: .lost, confirm: dismiss, reject: nil)
+            ResultCard(person: person, questions: questionNumber, mode: .lost, confirm: { dismiss() }, reject: nil)
         case .unavailable:
             UnavailableCard { dismiss() }
         }

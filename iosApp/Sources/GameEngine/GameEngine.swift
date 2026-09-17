@@ -6,12 +6,12 @@ struct GameEngine {
     private(set) var scores: [String: Double]
     private(set) var asked: Set<String> = []
     private(set) var askedAttributes: Set<String> = []
-    private let randomIndex: (Int) -> Int
+    private let chooseCandidateIndex: (Int) -> Int
 
     init(people: [Person], questions: [Question], randomIndex: @escaping (Int) -> Int = { Int.random(in: 0..<$0) }) {
         self.people = people
         self.questions = questions
-        self.randomIndex = randomIndex
+        self.chooseCandidateIndex = randomIndex
         self.scores = Dictionary(uniqueKeysWithValues: people.map { ($0.id, 1.0 / Double(max(people.count, 1))) })
     }
 
@@ -24,7 +24,8 @@ struct GameEngine {
         guard !available.isEmpty else { return nil }
         let bestScore = available.map { informationGain($0) }.max() ?? 0
         let candidates = available.filter { informationGain($0) >= bestScore - 0.01 }
-        let selected = candidates[randomIndex(candidates.count)]
+        let selectedIndex = chooseCandidateIndex(candidates.count)
+        let selected = candidates[selectedIndex]
         asked.insert(selected.id)
         askedAttributes.insert(selected.attribute)
         return selected
@@ -55,10 +56,11 @@ struct GameEngine {
 
         let priorEntropy = entropy(scores.values)
         let expectedEntropy = Answer.allCases.filter { $0 != .unknown }.reduce(0.0) { total, answer in
-            let weighted = Dictionary(uniqueKeysWithValues: people.map { person in
+            var weighted: [String: Double] = [:]
+            for person in people {
                 let likelihood = person.attributes[question.attribute].map { likelihood($0, answer) } ?? 1
-                return (person.id, scores[person.id, default: 0] * likelihood)
-            })
+                weighted[person.id] = scores[person.id, default: 0] * likelihood
+            }
             let probability = weighted.values.reduce(0, +)
             guard probability > 0 else { return total }
             return total + probability * entropy(weighted.values.map { $0 / probability })
