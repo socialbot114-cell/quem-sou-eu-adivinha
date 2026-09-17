@@ -70,9 +70,10 @@ jobs:
         run: |
           app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
           test -f "$app/Assets.car"
-          test -f "$app/KnowledgeBase/knowledge.json"
-          test -f "$app/PrivacyInfo.xcprivacy"
-          /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist"
+           test -f "$app/KnowledgeBase/knowledge.json"
+           test -f "$app/PrivacyInfo.xcprivacy"
+           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "1.1"
+           /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist"
       - name: Export IPA
         run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
       - name: Validate exported IPA
@@ -83,9 +84,10 @@ jobs:
           unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
           app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
           test -f "${app[0]}/Assets.car"
-          test -f "${app[0]}/KnowledgeBase/knowledge.json"
-          test -f "${app[0]}/PrivacyInfo.xcprivacy"
-          /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "${app[0]}/Info.plist"
+           test -f "${app[0]}/KnowledgeBase/knowledge.json"
+           test -f "${app[0]}/PrivacyInfo.xcprivacy"
+           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "${app[0]}/Info.plist")" = "1.1"
+           /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "${app[0]}/Info.plist"
           codesign --verify --deep --strict "${app[0]}"
       - name: Upload IPA
         uses: actions/upload-artifact@v4
