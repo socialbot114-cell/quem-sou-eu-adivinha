@@ -31,7 +31,7 @@ targets:
         INFOPLIST_FILE: Info.plist
         INFOPLIST_KEY_CFBundleIconName: AppIcon
         CURRENT_PROJECT_VERSION: 5
-        MARKETING_VERSION: 1.0
+        MARKETING_VERSION: 1.1
         GENERATE_INFOPLIST_FILE: NO
         CODE_SIGN_STYLE: Automatic
         SWIFT_EMIT_LOC_STRINGS: YES
