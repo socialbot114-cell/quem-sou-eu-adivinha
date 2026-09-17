@@ -34,7 +34,7 @@ struct GameEngine {
     mutating func apply(_ answer: Answer, to question: Question) {
         guard answer != .unknown else { return }
         for person in people {
-            guard let value = person.attributes[question.attribute] else { continue }
+            let value = person.attributes[question.attribute] ?? 0.5
             scores[person.id] = scores[person.id, default: 0.0] * likelihood(value, answer)
         }
         let total = scores.values.reduce(0, +)
@@ -58,7 +58,7 @@ struct GameEngine {
         let expectedEntropy = Answer.allCases.filter { $0 != .unknown }.reduce(0.0) { total, answer in
             var weighted: [String: Double] = [:]
             for person in people {
-                let answerWeight = person.attributes[question.attribute].map { likelihood($0, answer) } ?? 1
+                let answerWeight = likelihood(person.attributes[question.attribute] ?? 0.5, answer)
                 weighted[person.id] = scores[person.id, default: 0] * answerWeight
             }
             let probability = weighted.values.reduce(0, +)
