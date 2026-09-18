@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   release:
-    runs-on: macos-15
+    runs-on: macos-26
     timeout-minutes: 60
     steps:
       - name: Check out repository
@@ -46,6 +46,17 @@ jobs:
       - name: Generate project
         working-directory: iosApp
         run: xcodegen generate --spec project.yml
+
+      - name: Verify release SDK
+        run: |
+          set -euo pipefail
+          xcodebuild -version
+          sdk_version="$(xcrun --sdk iphoneos --show-sdk-version)"
+          sdk_major="${sdk_version%%.*}"
+          if (( sdk_major < 26 )); then
+            printf 'App Store Connect requires iOS SDK 26 or later; found %s.\n' "$sdk_version" >&2
+            exit 1
+          fi
 
       - name: Read project metadata
         run: |
@@ -224,6 +235,7 @@ jobs:
             CODE_SIGN_IDENTITY="$SIGNING_IDENTITY" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
             PROVISIONING_PROFILE_SPECIFIER="$PROFILE_NAME" \
+            TARGETED_DEVICE_FAMILY=1 \
             MARKETING_VERSION="$MARKETING_VERSION" \
             CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
 
