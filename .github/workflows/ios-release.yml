@@ -8,96 +8,336 @@ permissions:
 
 jobs:
   release:
-    runs-on: macos-26
+    runs-on: macos-15
+    timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v5
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Validate required secrets
+        env:
+          APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
+          APPLE_DISTRIBUTION_CERT: ${{ secrets.APPLE_DISTRIBUTION_CERT }}
+          APPLE_DISTRIBUTION_KEY: ${{ secrets.APPLE_DISTRIBUTION_KEY }}
+          APPLE_PROVISIONING_PROFILE: ${{ secrets.APPLE_PROVISIONING_PROFILE }}
+        run: |
+          set -euo pipefail
+          for secret_name in \
+            APPLE_API_KEY_P8 \
+            APPLE_API_KEY_ID \
+            APPLE_API_ISSUER_ID \
+            APPLE_DISTRIBUTION_CERT \
+            APPLE_DISTRIBUTION_KEY \
+            APPLE_PROVISIONING_PROFILE; do
+            if [[ -z "${!secret_name:-}" ]]; then
+              printf 'Required secret %s is not configured.\n' "$secret_name" >&2
+              exit 1
+            fi
+          done
+
       - name: Validate content
         run: python3 scripts/validate_content.py
+
       - name: Install XcodeGen
         run: brew install xcodegen
+
+      - name: Generate project
+        working-directory: iosApp
+        run: xcodegen generate --spec project.yml
+
+      - name: Read project metadata
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project iosApp/QuemSouEu.xcodeproj \
+            -scheme QuemSouEu \
+            -showBuildSettings \
+            -json > "$RUNNER_TEMP/build-settings.json"
+          python3 <<'PY'
+          import json
+          import os
+
+          with open(os.path.join(os.environ["RUNNER_TEMP"], "build-settings.json")) as file:
+              targets = json.load(file)
+
+          target = next((item for item in targets if item.get("target") == "QuemSouEu"), None)
+          if target is None:
+              raise SystemExit("QuemSouEu build settings were not found")
+
+          settings = target["buildSettings"]
+          keys = {
+              "MARKETING_VERSION": "MARKETING_VERSION",
+              "BUILD_NUMBER": "CURRENT_PROJECT_VERSION",
+              "APP_BUNDLE_ID": "PRODUCT_BUNDLE_IDENTIFIER",
+              "FULL_PRODUCT_NAME": "FULL_PRODUCT_NAME",
+          }
+          with open(os.environ["GITHUB_ENV"], "a") as environment:
+              for output_name, setting_name in keys.items():
+                  value = settings.get(setting_name)
+                  if not value:
+                      raise SystemExit(f"Missing build setting: {setting_name}")
+                  environment.write(f"{output_name}={value}\n")
+          PY
+
+      - name: Select available iPhone simulator
+        run: |
+          set -euo pipefail
+          simulator_udid="$(
+            xcrun simctl list devices available -j | python3 -c '
+          import json
+          import re
+          import sys
+
+          devices_by_runtime = json.load(sys.stdin)["devices"]
+          candidates = []
+          for runtime, devices in devices_by_runtime.items():
+              match = re.search(r"iOS-(\d+)(?:-(\d+))?(?:-(\d+))?$", runtime)
+              version = tuple(map(int, match.groups(default="0"))) if match else (0, 0, 0)
+              for device in devices:
+                  if device.get("isAvailable") and device.get("name", "").startswith("iPhone"):
+                      candidates.append((version, device["name"], device["udid"]))
+
+          if not candidates:
+              raise SystemExit("No available iPhone simulator was found")
+          version, name, udid = max(candidates)
+          version_text = ".".join(map(str, version))
+          print(udid)
+          print(f"Selected {name} on iOS {version_text}", file=sys.stderr)
+          '
+          )"
+          test -n "$simulator_udid"
+          printf 'SIMULATOR_UDID=%s\n' "$simulator_udid" >> "$GITHUB_ENV"
+
+      - name: Run unit tests without signing
+        run: |
+          set -euo pipefail
+          xcodebuild test \
+            -project iosApp/QuemSouEu.xcodeproj \
+            -scheme QuemSouEu \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+            CODE_SIGNING_ALLOWED=NO
+
       - name: Restore App Store Connect key
         env:
           APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
         run: |
-          printf '%s' "$APPLE_API_KEY_P8" > "$RUNNER_TEMP/AuthKey.p8"
+          set -euo pipefail
           mkdir -p "$HOME/private_keys"
-          cp "$RUNNER_TEMP/AuthKey.p8" "$HOME/private_keys/AuthKey_${APPLE_API_KEY_ID}.p8"
+          chmod 700 "$HOME/private_keys"
+          api_key_path="$HOME/private_keys/AuthKey_${APPLE_API_KEY_ID}.p8"
+          printf '%s' "$APPLE_API_KEY_P8" > "$api_key_path"
+          chmod 600 "$api_key_path"
+          test -s "$api_key_path"
+          printf 'API_KEY_PATH=%s\n' "$api_key_path" >> "$GITHUB_ENV"
+
       - name: Install signing assets
         env:
           APPLE_DISTRIBUTION_CERT: ${{ secrets.APPLE_DISTRIBUTION_CERT }}
           APPLE_DISTRIBUTION_KEY: ${{ secrets.APPLE_DISTRIBUTION_KEY }}
           APPLE_PROVISIONING_PROFILE: ${{ secrets.APPLE_PROVISIONING_PROFILE }}
         run: |
-          printf '%s' "$APPLE_DISTRIBUTION_CERT" | base64 --decode > "$RUNNER_TEMP/distribution.cer"
-          printf '%s' "$APPLE_DISTRIBUTION_KEY" | base64 --decode > "$RUNNER_TEMP/distribution.key"
-          printf '%s' "$APPLE_PROVISIONING_PROFILE" | base64 --decode > "$RUNNER_TEMP/QuemSouEu.mobileprovision"
-          KEYCHAIN_PATH="$RUNNER_TEMP/signing.keychain-db"
-          KEYCHAIN_PASSWORD=$(openssl rand -hex 32)
-          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
-          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
-          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
-          security import "$RUNNER_TEMP/distribution.key" -k "$KEYCHAIN_PATH" -P "" -A -T /usr/bin/codesign
-          security import "$RUNNER_TEMP/distribution.cer" -k "$KEYCHAIN_PATH" -P "" -T /usr/bin/codesign
-          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
-          security list-keychains -d user -s "$KEYCHAIN_PATH"
-          security default-keychain -s "$KEYCHAIN_PATH"
-          SIGNING_IDENTITY=$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | perl -ne 'if (/"(.*)"/) { print $1; exit }')
-          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
-          cp "$RUNNER_TEMP/QuemSouEu.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/2bf9e748-a220-4274-a157-c5878696d5dc.mobileprovision"
-      - name: Generate project
-        working-directory: iosApp
-        run: xcodegen generate --spec project.yml
-      - name: Run unit tests
+          set -euo pipefail
+          certificate_path="$RUNNER_TEMP/distribution.cer"
+          private_key_path="$RUNNER_TEMP/distribution.key"
+          profile_path="$RUNNER_TEMP/distribution.mobileprovision"
+          profile_plist="$RUNNER_TEMP/distribution-profile.plist"
+          keychain_path="$RUNNER_TEMP/signing.keychain-db"
+          keychain_password="$(openssl rand -hex 32)"
+
+          printf '%s' "$APPLE_DISTRIBUTION_CERT" | base64 --decode > "$certificate_path"
+          printf '%s' "$APPLE_DISTRIBUTION_KEY" | base64 --decode > "$private_key_path"
+          printf '%s' "$APPLE_PROVISIONING_PROFILE" | base64 --decode > "$profile_path"
+          test -s "$certificate_path"
+          test -s "$private_key_path"
+          test -s "$profile_path"
+
+          security cms -D -i "$profile_path" > "$profile_plist"
+          python3 <<'PY'
+          import datetime
+          import os
+          import plistlib
+
+          path = os.path.join(os.environ["RUNNER_TEMP"], "distribution-profile.plist")
+          with open(path, "rb") as file:
+              profile = plistlib.load(file)
+
+          expiration = profile["ExpirationDate"]
+          now = datetime.datetime.now(datetime.timezone.utc)
+          if expiration.tzinfo is None:
+              now = now.replace(tzinfo=None)
+          if expiration <= now:
+              raise SystemExit(f"Provisioning profile expired on {expiration.isoformat()}")
+
+          team_ids = profile.get("TeamIdentifier", [])
+          if not team_ids:
+              raise SystemExit("Provisioning profile has no TeamIdentifier")
+
+          application_identifier = profile.get("Entitlements", {}).get("application-identifier", "")
+          bundle_id = os.environ["APP_BUNDLE_ID"]
+          if not application_identifier.endswith(f".{bundle_id}"):
+              raise SystemExit("Provisioning profile does not match the app bundle identifier")
+
+          values = {
+              "PROFILE_NAME": profile["Name"],
+              "PROFILE_UUID": profile["UUID"],
+              "TEAM_ID": team_ids[0],
+          }
+          with open(os.environ["GITHUB_ENV"], "a") as environment:
+              for key, value in values.items():
+                  environment.write(f"{key}={value}\n")
+          PY
+
+          profile_uuid="$(/usr/libexec/PlistBuddy -c 'Print :UUID' "$profile_plist")"
+          installed_profile="$HOME/Library/MobileDevice/Provisioning Profiles/${profile_uuid}.mobileprovision"
+          mkdir -p "$(dirname "$installed_profile")"
+          cp "$profile_path" "$installed_profile"
+          printf 'INSTALLED_PROFILE_PATH=%s\n' "$installed_profile" >> "$GITHUB_ENV"
+
+          security create-keychain -p "$keychain_password" "$keychain_path"
+          security set-keychain-settings -lut 21600 "$keychain_path"
+          security unlock-keychain -p "$keychain_password" "$keychain_path"
+          security import "$private_key_path" -k "$keychain_path" -P "" -A -T /usr/bin/codesign
+          security import "$certificate_path" -k "$keychain_path" -P "" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$keychain_password" "$keychain_path"
+          security list-keychains -d user -s "$keychain_path"
+
+          signing_identity="$(security find-identity -v -p codesigning "$keychain_path" | perl -ne 'if (/"(.*)"/) { print $1; exit }')"
+          if [[ -z "$signing_identity" ]]; then
+            printf 'No code-signing identity was found in the temporary keychain.\n' >&2
+            exit 1
+          fi
+          printf 'SIGNING_IDENTITY=%s\n' "$signing_identity" >> "$GITHUB_ENV"
+
+      - name: Archive signed app
         run: |
-          xcodebuild test \
+          set -euo pipefail
+          xcodebuild archive \
             -project iosApp/QuemSouEu.xcodeproj \
             -scheme QuemSouEu \
-            -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' \
-            CODE_SIGNING_ALLOWED=NO
-      - name: Archive
-        run: |
-          xcodebuild -project iosApp/QuemSouEu.xcodeproj -scheme QuemSouEu \
-            -destination 'generic/platform=iOS' -configuration Release \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
             -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" \
-            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY="Apple Distribution" \
-            PROVISIONING_PROFILE_SPECIFIER="Quem Sou Eu Adivinha App Store 2026 v2" \
-            DEVELOPMENT_TEAM=SRN7AW424S TARGETED_DEVICE_FAMILY=1 \
-              CURRENT_PROJECT_VERSION=5 \
-            ASSETCATALOG_COMPILER_APPICON_NAME=AppIcon \
-            INFOPLIST_KEY_CFBundleIconName=AppIcon archive
-      - name: Verify app icon metadata
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="$SIGNING_IDENTITY" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            PROVISIONING_PROFILE_SPECIFIER="$PROFILE_NAME" \
+            MARKETING_VERSION="$MARKETING_VERSION" \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
+
+      - name: Verify archived app
         run: |
-          app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/Quem Sou Eu? Adivinha.app"
+          set -euo pipefail
+          app="$RUNNER_TEMP/QuemSouEu.xcarchive/Products/Applications/$FULL_PRODUCT_NAME"
+          test -d "$app"
           test -f "$app/Assets.car"
-           test -f "$app/KnowledgeBase/knowledge.json"
-           test -f "$app/PrivacyInfo.xcprivacy"
-           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "1.1"
-           /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist"
+          test -f "$app/KnowledgeBase/knowledge.json"
+          test -f "$app/Characters/vinicius-junior.jpg"
+          test -f "$app/image-credits.json"
+          test -f "$app/PrivacyInfo.xcprivacy"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "$MARKETING_VERSION"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Info.plist")" = "$BUILD_NUMBER"
+          test -n "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist")"
+          codesign --verify --deep --strict "$app"
+
+      - name: Prepare export options
+        run: |
+          set -euo pipefail
+          python3 <<'PY'
+          import os
+          import plistlib
+
+          with open("iosApp/ExportOptions.plist", "rb") as file:
+              options = plistlib.load(file)
+          options["teamID"] = os.environ["TEAM_ID"]
+          options["provisioningProfiles"] = {
+              os.environ["APP_BUNDLE_ID"]: os.environ["PROFILE_NAME"]
+          }
+          output = os.path.join(os.environ["RUNNER_TEMP"], "ExportOptions.plist")
+          with open(output, "wb") as file:
+              plistlib.dump(options, file)
+          PY
+
       - name: Export IPA
-        run: xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" -exportOptionsPlist iosApp/ExportOptions.plist -exportPath "$RUNNER_TEMP/export"
+        run: |
+          set -euo pipefail
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/QuemSouEu.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -exportPath "$RUNNER_TEMP/export"
+
       - name: Validate exported IPA
         run: |
-          ipa=("$RUNNER_TEMP"/export/*.ipa)
-          rm -rf "$RUNNER_TEMP/ipa-unpacked"
-          mkdir -p "$RUNNER_TEMP/ipa-unpacked"
-          unzip -q "${ipa[0]}" -d "$RUNNER_TEMP/ipa-unpacked"
-          app=("$RUNNER_TEMP"/ipa-unpacked/Payload/*.app)
-          test -f "${app[0]}/Assets.car"
-           test -f "${app[0]}/KnowledgeBase/knowledge.json"
-           test -f "${app[0]}/PrivacyInfo.xcprivacy"
-           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "${app[0]}/Info.plist")" = "1.1"
-           /usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "${app[0]}/Info.plist"
-          codesign --verify --deep --strict "${app[0]}"
-      - name: Upload IPA
+          set -euo pipefail
+          shopt -s nullglob
+          ipa_files=("$RUNNER_TEMP"/export/*.ipa)
+          if [[ ${#ipa_files[@]} -ne 1 ]]; then
+            printf 'Expected exactly one IPA, found %s.\n' "${#ipa_files[@]}" >&2
+            exit 1
+          fi
+
+          unpacked_path="$RUNNER_TEMP/ipa-unpacked"
+          rm -rf "$unpacked_path"
+          mkdir -p "$unpacked_path"
+          unzip -q "${ipa_files[0]}" -d "$unpacked_path"
+
+          apps=("$unpacked_path"/Payload/*.app)
+          if [[ ${#apps[@]} -ne 1 ]]; then
+            printf 'Expected exactly one app in the IPA, found %s.\n' "${#apps[@]}" >&2
+            exit 1
+          fi
+          app="${apps[0]}"
+          test -f "$app/Assets.car"
+          test -f "$app/KnowledgeBase/knowledge.json"
+          test -f "$app/Characters/vinicius-junior.jpg"
+          test -f "$app/image-credits.json"
+          test -f "$app/PrivacyInfo.xcprivacy"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "$MARKETING_VERSION"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Info.plist")" = "$BUILD_NUMBER"
+          test -n "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIconName' "$app/Info.plist")"
+          codesign --verify --deep --strict "$app"
+
+      - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
         with:
-          name: quem-sou-eu-ios-ipa
+          name: quem-sou-eu-ios-${{ env.MARKETING_VERSION }}-${{ env.BUILD_NUMBER }}
           path: ${{ runner.temp }}/export/*.ipa
+          if-no-files-found: error
+          retention-days: 14
+
       - name: Upload to TestFlight
         env:
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
           APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
         run: |
-          ipa=("$RUNNER_TEMP"/export/*.ipa)
-          xcrun altool --upload-app --type ios --file "${ipa[0]}" --apiKey "$APPLE_API_KEY_ID" --apiIssuer "$APPLE_API_ISSUER_ID"
+          set -euo pipefail
+          shopt -s nullglob
+          ipa_files=("$RUNNER_TEMP"/export/*.ipa)
+          if [[ ${#ipa_files[@]} -ne 1 ]]; then
+            printf 'Expected exactly one IPA, found %s.\n' "${#ipa_files[@]}" >&2
+            exit 1
+          fi
+          xcrun altool \
+            --upload-app \
+            --type ios \
+            --file "${ipa_files[0]}" \
+            --apiKey "$APPLE_API_KEY_ID" \
+            --apiIssuer "$APPLE_API_ISSUER_ID"
+
+      - name: Clean up signing assets
+        if: always()
+        run: |
+          security delete-keychain "$RUNNER_TEMP/signing.keychain-db" 2>/dev/null || true
+          if [[ -n "${INSTALLED_PROFILE_PATH:-}" ]]; then
+            rm -f "$INSTALLED_PROFILE_PATH"
+          fi
+          if [[ -n "${API_KEY_PATH:-}" ]]; then
+            rm -f "$API_KEY_PATH"
+          fi
+          rm -f \
+            "$RUNNER_TEMP/distribution.cer" \
+            "$RUNNER_TEMP/distribution.key" \
+            "$RUNNER_TEMP/distribution.mobileprovision" \
+            "$RUNNER_TEMP/distribution-profile.plist"

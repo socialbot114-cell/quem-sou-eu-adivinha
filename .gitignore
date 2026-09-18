@@ -7,5 +7,6 @@ site/.git/
 *.mobileprovision
 *.p12
 *.cer
+*.csr
 *.key
 AuthKey_*.p8

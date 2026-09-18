@@ -51,4 +51,17 @@ final class GameEngineTests: XCTestCase {
         engine.reject(guess)
         XCTAssertNotEqual(engine.bestGuess?.id, guess.id)
     }
+
+    func testRestoringAnswersRebuildsScoresAndSkipsAnsweredQuestion() {
+        let questions = [
+            Question(id: "x", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+
+        engine.restore([RecordedAnswer(questionID: "x", answer: .yes)])
+
+        XCTAssertEqual(engine.bestGuess?.id, "a")
+        XCTAssertEqual(engine.nextQuestion()?.id, "y")
+    }
 }

@@ -3,31 +3,78 @@ name: iOS Build
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: macos-26
+    runs-on: macos-15
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v5
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Validate content
+        run: python3 scripts/validate_content.py
+
       - name: Install XcodeGen
         run: brew install xcodegen
+
       - name: Generate project
         working-directory: iosApp
         run: xcodegen generate --spec project.yml
-      - name: Validate content
-        run: python3 scripts/validate_content.py
-      - name: Build app
+
+      - name: Select available iPhone simulator
         run: |
+          set -euo pipefail
+          simulator_udid="$(
+            xcrun simctl list devices available -j | python3 -c '
+          import json
+          import re
+          import sys
+
+          devices_by_runtime = json.load(sys.stdin)["devices"]
+          candidates = []
+          for runtime, devices in devices_by_runtime.items():
+              match = re.search(r"iOS-(\d+)(?:-(\d+))?(?:-(\d+))?$", runtime)
+              version = tuple(map(int, match.groups(default="0"))) if match else (0, 0, 0)
+              for device in devices:
+                  if device.get("isAvailable") and device.get("name", "").startswith("iPhone"):
+                      candidates.append((version, device["name"], device["udid"]))
+
+          if not candidates:
+              raise SystemExit("No available iPhone simulator was found")
+          version, name, udid = max(candidates)
+          version_text = ".".join(map(str, version))
+          print(udid)
+          print(f"Selected {name} on iOS {version_text}", file=sys.stderr)
+          '
+          )"
+          test -n "$simulator_udid"
+          printf 'SIMULATOR_UDID=%s\n' "$simulator_udid" >> "$GITHUB_ENV"
+
+      - name: Build app without signing
+        run: |
+          set -euo pipefail
           xcodebuild build \
             -project iosApp/QuemSouEu.xcodeproj \
             -scheme QuemSouEu \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO
-      - name: Run unit tests
+
+      - name: Run unit tests without signing
         run: |
+          set -euo pipefail
           xcodebuild test \
             -project iosApp/QuemSouEu.xcodeproj \
             -scheme QuemSouEu \
-            -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
             CODE_SIGNING_ALLOWED=NO

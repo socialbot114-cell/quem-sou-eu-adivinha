@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-18",
+  "assetSpecification": {
+    "format": "JPEG",
+    "width": 1024,
+    "height": 1024,
+    "colorProfile": "sRGB ICC",
+    "quality": 85
+  },
+  "items": [
+    {
+      "id": "rodrigo-santoro",
+      "name": "Rodrigo Santoro",
+      "file": "iosApp/Resources/Characters/rodrigo-santoro.jpg",
+      "sourceCategory": "atores",
+      "sourceFile": "File:Rodrigo Santoro at the 2025 Berlin International Film Festival-2307.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Rodrigo_Santoro_at_the_2025_Berlin_International_Film_Festival-2307.jpg",
+      "author": "Harald Krichel",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado central 2560x2560, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "wagner-moura",
+      "name": "Wagner Moura",
+      "file": "iosApp/Resources/Characters/wagner-moura.jpg",
+      "sourceCategory": "atores",
+      "sourceFile": "File:Wagner Moura-6546.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Wagner_Moura-6546.jpg",
+      "author": "Harald Krichel",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado 2560x2560 a partir de x=0, y=360, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "tais-araujo",
+      "name": "Taís Araújo",
+      "file": "iosApp/Resources/Characters/tais-araujo.jpg",
+      "sourceCategory": "atores",
+      "sourceFile": "File:Web Summit Rio 2025 - 1048 (54487376680).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Web_Summit_Rio_2025_-_1048_(54487376680).jpg",
+      "author": "Web Summit Rio from Rio de Janeiro, Brazil",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Corte quadrado 1771x1771 a partir de x=300, y=0, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "alisson-becker",
+      "name": "Alisson Becker",
+      "file": "iosApp/Resources/Characters/alisson-becker.jpg",
+      "sourceCategory": "jogadores",
+      "sourceFile": "File:Alisson Becker Brazil V Morocco 13 June 2026-117 (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Alisson_Becker_Brazil_V_Morocco_13_June_2026-117_(cropped).jpg",
+      "author": "Bryan Berlin",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado 1617x1617 a partir de x=0, y=100, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "casemiro",
+      "name": "Casemiro",
+      "file": "iosApp/Resources/Characters/casemiro.jpg",
+      "sourceCategory": "jogadores",
+      "sourceFile": "File:Casemiro Brazil V Morocco 13 June 2026-76 (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Casemiro_Brazil_V_Morocco_13_June_2026-76_(cropped).jpg",
+      "author": "Bryan Berlin",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado 2560x2560 a partir de x=0, y=180, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "gabriel-jesus",
+      "name": "Gabriel Jesus",
+      "file": "iosApp/Resources/Characters/gabriel-jesus.jpg",
+      "sourceCategory": "jogadores",
+      "sourceFile": "File:20180610 FIFA Friendly Match Austria vs. Brazil Gabriel Jesus 850 1688.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Gabriel_Jesus_850_1688.jpg",
+      "author": "Granada",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado 2560x2560 a partir de x=0, y=80, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "vinicius-junior",
+      "name": "Vinícius Júnior",
+      "file": "iosApp/Resources/Characters/vinicius-junior.jpg",
+      "sourceCategory": "jogadores",
+      "sourceFile": "File:Vinícius Júnior Brazil V Morocco 13 June 2026-207 (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Vin%C3%ADcius_J%C3%BAnior_Brazil_V_Morocco_13_June_2026-207_(cropped).jpg",
+      "author": "Bryan Berlin",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Corte quadrado 2053x2053 a partir de x=0, y=220, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "sergio-moro",
+      "name": "Sergio Moro",
+      "file": "iosApp/Resources/Characters/sergio-moro.jpg",
+      "sourceCategory": "politicos",
+      "sourceFile": "File:Senadores da 57ª Legislatura (52689302414).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689302414).jpg",
+      "author": "Agência Senado from Brasilia, Brazil",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Corte quadrado central 1123x1123, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "marina-silva",
+      "name": "Marina Silva",
+      "file": "iosApp/Resources/Characters/marina-silva.jpg",
+      "sourceCategory": "politicos",
+      "sourceFile": "File:Marina4.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marina4.jpg",
+      "author": "Ministério da Gestão e da Inovação",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Corte quadrado 1707x1707 a partir de x=420, y=0, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "nathalia-arcuri",
+      "name": "Nathalia Arcuri",
+      "file": "iosApp/Resources/Characters/nathalia-arcuri.jpg",
+      "sourceCategory": "youtubers",
+      "sourceFile": "File:GAM8176 (53041651401).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:GAM8176_(53041651401).jpg",
+      "author": "Campus Party Brasil",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Corte quadrado 2560x2560 a partir de x=0, y=250, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
+      "reviewStatus": "approved-visual-and-credit-review"
+    }
+  ]
+}

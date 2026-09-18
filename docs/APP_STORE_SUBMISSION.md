@@ -9,9 +9,9 @@
 - Game subcategory: `Trivia`
 - Price: `Free`
 - Copyright: `2026 Gustavo De Melo Ferreira`
-- Age rating: `4+`
+- Intended audience: `9+ family experience`
 - Bundle ID: `br.com.quemsoueu.adivinha`
-- Version: `1.0` (build 4)
+- Version: `1.2` (build 6)
 
 ## Promotional Text
 
@@ -25,11 +25,11 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 
 Recursos:
 
-- Partidas rápidas com até 10 perguntas.
-- Categorias de personalidades para escolher.
+- Partidas rápidas com até 14 perguntas.
+- Seis categorias completas e modo livre.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
-- Interface simples, colorida e feita para jogar sozinho ou com amigos.
+- Princesa Detetive, coleção de descobertas e interface premium.
 
 Não é necessário criar uma conta. O jogo não exibe anúncios, não exige internet e não coleta dados pessoais.
 
@@ -39,12 +39,13 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 
 ## What's New
 
-Primeira versão do Quem Sou Eu? Adivinha.
+Uma nova experiência para o Quem Sou Eu? Adivinha.
 
 - Jogo de pistas e perguntas offline.
-- Categorias de personalidades.
-- Pontos, moedas, sequência e conquistas.
-- Interface otimizada para iPhone.
+- 76 personalidades em seis categorias.
+- Onboarding, retomada de partida e coleção de descobertas.
+- Novo visual com a Princesa Detetive.
+- Retratos, compartilhamento, pontos, moedas e sequência.
 
 ## URLs
 
@@ -64,7 +65,7 @@ Select that the app does not use encryption other than the standard encryption p
 
 ## Content Rights
 
-Select that the app does not contain third-party content requiring permission. The app uses original interface artwork, SF Symbols and editorial descriptions of public personalities. Do not add third-party logos or photographs to the screenshots.
+Declare that the app contains third-party editorial photographs and that the developer has the necessary rights. The approved photographs use Creative Commons licenses and include author, source, license and modification details in the in-app credits and `docs/content/image-credits.json`. Do not use any unapproved image from the source collection.
 
 ## Review Notes
 
@@ -75,10 +76,11 @@ O Quem Sou Eu? Adivinha é um jogo de perguntas totalmente offline para iPhone.
 Para testar:
 
 1. Abra o app.
-2. Toque em `Jogar agora` ou abra a aba `Categorias`.
-3. Escolha uma categoria ou `Todas`.
-4. Responda às perguntas usando `Sim`, `Provavelmente sim`, `Não sei`, `Provavelmente não` ou `Não`.
-5. Continue até o app apresentar o palpite.
+2. Conclua ou pule a apresentação inicial.
+3. Toque em `Jogar agora` ou abra a aba `Jogar`.
+4. Escolha uma categoria ou o modo livre.
+5. Responda usando `Sim`, `Provavelmente`, `Não sei`, `Acho que não` ou `Não`.
+6. Continue até o app apresentar o palpite.
 
 Não é necessário criar uma conta, fazer login, conceder permissões ou conectar-se à internet. O progresso é salvo localmente no dispositivo. Não há compras, anúncios, rastreamento ou conteúdo que exija autenticação.
 
@@ -100,12 +102,12 @@ Recommended screenshot size: `1290x2796` pixels in portrait for the 6.7-inch slo
 
 ## Final Submission Checklist
 
-- [ ] Build 4 is uploaded and marked `VALID`.
-- [ ] Select build 4 for version 1.0.
+- [ ] Build 6 is uploaded and marked `VALID`.
+- [ ] Select build 6 for version 1.2.
 - [ ] Upload five real iPhone screenshots.
 - [ ] Confirm subtitle, description, keywords and URLs.
 - [ ] Set `Games` / `Trivia` and free pricing.
-- [ ] Set age rating to 4+ after completing the questionnaire.
+- [ ] Complete the age-rating questionnaire for the intended 9+ family audience.
 - [ ] Set App Privacy to `Data Not Collected`.
 - [ ] Answer export compliance.
 - [ ] Confirm content rights.

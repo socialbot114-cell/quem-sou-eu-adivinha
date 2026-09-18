@@ -1,60 +1,175 @@
 import SwiftUI
 
-struct RootView: View {
-    @State private var selectedTab = 0
-    var body: some View {
-        TabView(selection: $selectedTab) {
-            HomeView(play: { selectedTab = 1 }, showProgress: { selectedTab = 2 }).tabItem { Label("Início", systemImage: "house.fill") }.tag(0)
-            CategoryView().tabItem { Label("Categorias", systemImage: "square.grid.2x2.fill") }.tag(1)
-            ProgressViewScreen().tabItem { Label("Conquistas", systemImage: "trophy.fill") }.tag(2)
-            ProfileView().tabItem { Label("Perfil", systemImage: "person.fill") }.tag(3)
-        }.tint(Theme.purple)
+private enum AppTab: String, CaseIterable, Identifiable {
+    case home = "Início"
+    case categories = "Jogar"
+    case collection = "Coleção"
+    case profile = "Perfil"
+
+    var id: String { rawValue }
+    var symbol: String {
+        switch self {
+        case .home: "house.fill"
+        case .categories: "sparkles"
+        case .collection: "trophy.fill"
+        case .profile: "person.fill"
+        }
     }
 }
 
-struct Theme {
-    static let lime = Color(red: 0.655, green: 0.957, blue: 0.196)
-    static let purple = Color(red: 0.424, green: 0.18, blue: 0.996)
-    static let ink = Color(red: 0.09, green: 0.08, blue: 0.18)
-    static let soft = Color(red: 0.97, green: 0.973, blue: 0.988)
-}
+struct RootView: View {
+    @EnvironmentObject private var progress: ProgressStore
+    @AppStorage("onboarding.completed") private var completedOnboarding = false
+    @State private var selectedTab = AppTab.home
+    @State private var activeCategory: Category?
+    @State private var showingOnboarding = false
 
-struct Mascot: View {
     var body: some View {
         ZStack {
-            Circle().fill(Theme.purple).frame(width: 170, height: 170)
-            Circle().fill(Color.white).frame(width: 132, height: 132)
-            Image(systemName: "questionmark").font(.system(size: 78, weight: .black)).foregroundStyle(Theme.ink)
-            Circle().fill(Theme.lime).frame(width: 66, height: 66).overlay(Text("?").font(.system(size: 42, weight: .black)).foregroundStyle(Theme.ink)).offset(x: 58, y: -58)
-        }.accessibilityLabel("Mascote investigador")
+            switch selectedTab {
+            case .home:
+                HomeView(
+                    play: { selectedTab = .categories },
+                    resume: progress.interruptedRound.map { summary in
+                        { activeCategory = summary.category }
+                    },
+                    showCollection: { selectedTab = .collection }
+                )
+            case .categories:
+                CategoryView(onSelect: { activeCategory = $0 })
+            case .collection:
+                ProgressViewScreen()
+            case .profile:
+                ProfileView(showOnboarding: { showingOnboarding = true })
+            }
+        }
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            BottomNavigation(selected: $selectedTab)
+        }
+        .fullScreenCover(item: $activeCategory) { category in
+            GameView(category: category, playAnotherCategory: {
+                activeCategory = nil
+                selectedTab = .categories
+            })
+        }
+        .fullScreenCover(isPresented: Binding(
+            get: { !completedOnboarding || showingOnboarding },
+            set: { if !$0 { showingOnboarding = false } }
+        )) {
+            OnboardingView {
+                completedOnboarding = true
+                showingOnboarding = false
+                selectedTab = .categories
+            }
+        }
+    }
+}
+
+private struct BottomNavigation: View {
+    @Binding var selected: AppTab
+
+    var body: some View {
+        HStack(spacing: 4) {
+            ForEach(AppTab.allCases) { tab in
+                Button {
+                    withAnimation(.snappy) { selected = tab }
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: tab.symbol)
+                            .font(.system(size: 19, weight: .bold))
+                        Text(tab.rawValue)
+                            .font(.caption2.weight(.bold))
+                    }
+                    .foregroundStyle(selected == tab ? DesignSystem.Palette.violet : .secondary)
+                    .frame(maxWidth: .infinity, minHeight: 52)
+                    .background {
+                        if selected == tab {
+                            Capsule().fill(DesignSystem.Palette.violet.opacity(0.1)).padding(.horizontal, 5)
+                        }
+                    }
+                }
+                .buttonStyle(.plain)
+                .accessibilityAddTraits(selected == tab ? .isSelected : [])
+            }
+        }
+        .padding(.horizontal, 10)
+        .padding(.top, 8)
+        .background(.ultraThinMaterial)
+        .overlay(alignment: .top) { Divider().opacity(0.45) }
     }
 }
 
 struct HomeView: View {
     @EnvironmentObject private var progress: ProgressStore
     let play: () -> Void
-    let showProgress: () -> Void
+    let resume: (() -> Void)?
+    let showCollection: () -> Void
+
     var body: some View {
         NavigationStack {
-            ZStack { Theme.soft.ignoresSafeArea()
+            DSDecorativeBackground {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 22) {
-                        Text("Olá!").font(.system(size: 40, weight: .black, design: .rounded)).foregroundStyle(Theme.ink)
-                        Text("Pronto para descobrir quem você pensou?").font(.title3.weight(.semibold)).foregroundStyle(Theme.ink)
-                        HStack(spacing: 10) { StatCard(icon: "flame.fill", value: "\(progress.streak)", label: "sequência", color: .pink); StatCard(icon: "circle.fill", value: "\(progress.coins)", label: "moedas", color: .orange); StatCard(icon: "crown.fill", value: "\(progress.points)", label: "pontos", color: Theme.purple) }
-                        HStack { Spacer(); Mascot(); Spacer() }.padding(.vertical, 4)
-                        Button(action: play) { Label("Jogar agora", systemImage: "arrow.right").font(.title2.bold()).frame(maxWidth: .infinity).padding().background(Theme.purple).foregroundStyle(.white).clipShape(Capsule()) }
-                        HStack {
-                            Shortcut(icon: "gamecontroller.fill", title: "Nova partida", action: play)
-                            Shortcut(icon: "trophy.fill", title: "Minhas conquistas", action: showProgress)
-                            Shortcut(icon: "calendar", title: "Jogue hoje", action: play)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("QUEM SOU EU?")
+                                .font(.caption.weight(.black))
+                                .tracking(2.2)
+                                .foregroundStyle(DesignSystem.Palette.violet)
+                            Text("Sua próxima investigação começa aqui.")
+                                .font(.system(.largeTitle, design: .rounded, weight: .black))
+                                .foregroundStyle(DesignSystem.Palette.ink)
                         }
-                    }.padding()
+
+                        HStack(spacing: 8) {
+                            DSStatChip(asset: .streakFlame, value: "\(progress.streak)", label: "sequência")
+                            DSStatChip(asset: .achievementTrophy, value: "\(progress.wins)", label: "acertos")
+                        }
+
+                        VStack(spacing: 8) {
+                            DSMascotView(size: 238)
+                            Text("Pense em alguém. Eu sigo as pistas!")
+                                .font(.title3.weight(.bold))
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(DesignSystem.Palette.ink)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .dsCard(padding: 18)
+
+                        Button(action: play) {
+                            Label("Jogar agora", systemImage: "arrow.right")
+                        }
+                        .buttonStyle(PrimaryButtonStyle())
+
+                        if let resume {
+                            Button(action: resume) {
+                                Label("Continuar investigação", systemImage: "arrow.clockwise")
+                            }
+                            .buttonStyle(SecondaryButtonStyle())
+                        }
+
+                        Button(action: showCollection) {
+                            HStack(spacing: 14) {
+                                Image(DesignSystem.Asset.achievementTrophy.rawValue)
+                                    .resizable().scaledToFit().frame(width: 54, height: 54)
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text("Sua coleção").font(.headline.weight(.bold))
+                                    Text("\(progress.discoveredPersonIDs.count) personalidades descobertas")
+                                        .font(.subheadline).foregroundStyle(.secondary)
+                                }
+                                Spacer()
+                                Image(systemName: "chevron.right").foregroundStyle(.secondary)
+                            }
+                            .foregroundStyle(DesignSystem.Palette.ink)
+                            .dsCard()
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    .frame(maxWidth: DesignSystem.Metric.contentMaxWidth)
+                    .padding(20)
+                    .frame(maxWidth: .infinity)
                 }
-            }.navigationBarHidden(true)
+            }
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
 }
-
-struct StatCard: View { let icon: String; let value: String; let label: String; let color: Color; var body: some View { VStack(spacing: 6) { Image(systemName: icon).font(.title2).foregroundStyle(color); Text(value).font(.title3.bold()).foregroundStyle(Theme.ink); Text(label).font(.caption).foregroundStyle(.secondary) }.frame(maxWidth: .infinity).padding(.vertical, 12).background(.white).clipShape(RoundedRectangle(cornerRadius: 18)).accessibilityElement(children: .ignore).accessibilityLabel("\(value) \(label)") } }
-struct Shortcut: View { let icon: String; let title: String; let action: () -> Void; var body: some View { Button(action: action) { VStack(spacing: 8) { Image(systemName: icon).font(.title2).foregroundStyle(Theme.purple); Text(title).font(.caption.weight(.bold)).multilineTextAlignment(.center).foregroundStyle(Theme.ink) }.frame(maxWidth: .infinity).frame(height: 76).background(.white).clipShape(RoundedRectangle(cornerRadius: 16)) }.buttonStyle(.plain) } }

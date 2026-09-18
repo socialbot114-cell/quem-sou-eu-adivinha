@@ -1,8 +1,7 @@
 import Foundation
 
 enum Category: String, Codable, CaseIterable, Identifiable {
-    case tiktok = "TikTok"
-    case instagram = "Instagram"
+    case creators = "Criadores digitais"
     case football = "Futebol"
     case artists = "Artistas brasileiros"
     case politicians = "Políticos"
@@ -10,12 +9,30 @@ enum Category: String, Codable, CaseIterable, Identifiable {
     case world = "Personalidades mundiais"
     case all = "Todos"
     var id: String { rawValue }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        let value = try container.decode(String.self)
+        if value == "TikTok" || value == "Instagram" {
+            self = .creators
+        } else if let category = Category(rawValue: value) {
+            self = category
+        } else {
+            throw DecodingError.dataCorruptedError(in: container, debugDescription: "Categoria desconhecida: \(value)")
+        }
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(rawValue)
+    }
+
     var symbol: String {
-        switch self { case .tiktok: "play.rectangle.fill"; case .instagram: "camera.fill"; case .football: "soccerball"; case .artists: "music.note"; case .politicians: "building.columns.fill"; case .history: "clock.fill"; case .world: "globe.americas.fill"; case .all: "sparkles" }
+        switch self { case .creators: "play.rectangle.fill"; case .football: "soccerball"; case .artists: "music.note"; case .politicians: "building.columns.fill"; case .history: "clock.fill"; case .world: "globe.americas.fill"; case .all: "sparkles" }
     }
 }
 
-enum Answer: String, CaseIterable, Identifiable {
+enum Answer: String, Codable, CaseIterable, Identifiable {
     case yes = "Sim"
     case probablyYes = "Provavelmente sim"
     case unknown = "Não sei"
@@ -33,6 +50,18 @@ struct Person: Codable, Identifiable, Equatable {
     let profession: String
     let attributes: [String: Double]
     let avatarSymbol: String
+    let imageName: String?
+
+    init(id: String, name: String, categories: [Category], country: String, profession: String, attributes: [String: Double], avatarSymbol: String, imageName: String? = nil) {
+        self.id = id
+        self.name = name
+        self.categories = categories
+        self.country = country
+        self.profession = profession
+        self.attributes = attributes
+        self.avatarSymbol = avatarSymbol
+        self.imageName = imageName
+    }
 }
 
 struct Question: Codable, Identifiable, Equatable {

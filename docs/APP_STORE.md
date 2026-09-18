@@ -39,5 +39,5 @@ The copy-ready submission package is in `docs/APP_STORE_SUBMISSION.md`. Screensh
 
 - [ ] Select build 2 after it is marked `VALID`.
 - [ ] Check every required field.
-- [ ] Submit version 1.0 for App Review.
+- [ ] Submit version 1.2 for App Review.
 - [ ] Record version, build, IDs, workflow and date in `PROJECT_STATUS.md`.

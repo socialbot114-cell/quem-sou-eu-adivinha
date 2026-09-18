@@ -48,6 +48,15 @@ struct GameEngine {
         for id in scores.keys { scores[id]! /= total }
     }
 
+    mutating func restore(_ answers: [RecordedAnswer]) {
+        for record in answers {
+            guard let question = questions.first(where: { $0.id == record.questionID }) else { continue }
+            asked.insert(question.id)
+            askedAttributes.insert(question.attribute)
+            apply(record.answer, to: question)
+        }
+    }
+
     private func informationGain(_ question: Question) -> Double {
         let coverage = people.reduce(0.0) { partial, person in
             partial + (person.attributes[question.attribute] == nil ? 0 : scores[person.id, default: 0])
