@@ -198,7 +198,7 @@ import Combine
         let completedGames = defaults.object(forKey: Key.completedGames) == nil
             ? wins + losses
             : max(defaults.integer(forKey: Key.completedGames), wins + losses)
-        let lastCategory = defaults.string(forKey: Key.lastCategory).flatMap { value in
+        let lastCategory: Category? = defaults.string(forKey: Key.lastCategory).flatMap { value -> Category? in
             if value == "TikTok" || value == "Instagram" { return .creators }
             return Category(rawValue: value)
         }
