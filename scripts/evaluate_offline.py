@@ -34,6 +34,7 @@ QUESTION_LIMIT = 14
 EARLY_GUESS_MIN_ANSWERS = 4
 CONFIDENCE_THRESHOLD = 0.68
 MARGIN_THRESHOLD = 0.10
+LIKELIHOOD_FLOOR = 0.25
 
 
 def entropy(values):
@@ -46,8 +47,8 @@ def entropy(values):
 
 def likelihood(value, answer_key):
     evidence = ANSWERS[answer_key]
-    raw = max(0.05, 1.0 - abs(value - evidence))
-    denom = sum(max(0.05, 1.0 - abs(value - ANSWERS[k])) for k in ANSWER_ORDER)
+    raw = max(LIKELIHOOD_FLOOR, 1.0 - abs(value - evidence))
+    denom = sum(max(LIKELIHOOD_FLOOR, 1.0 - abs(value - ANSWERS[k])) for k in ANSWER_ORDER)
     return raw / denom if denom > 0 else 1.0
 
 

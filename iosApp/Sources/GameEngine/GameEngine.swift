@@ -10,17 +10,20 @@ struct GameEngine {
     private(set) var recordedQuestionIDs: Set<String> = []
     private let chooseCandidateIndex: (Int) -> Int
     private let smoothing: Double
+    private let likelihoodFloor: Double
 
     init(
         people: [Person],
         questions: [Question],
         randomIndex: @escaping (Int) -> Int = { Int.random(in: 0..<$0) },
-        smoothing: Double = 1e-9
+        smoothing: Double = 1e-9,
+        likelihoodFloor: Double = 0.25
     ) {
         self.people = people
         self.questions = questions
         self.chooseCandidateIndex = randomIndex
         self.smoothing = smoothing
+        self.likelihoodFloor = likelihoodFloor
         self.scores = Dictionary(uniqueKeysWithValues: people.map { ($0.id, 1.0 / Double(max(people.count, 1))) })
     }
 
@@ -171,10 +174,10 @@ struct GameEngine {
     }
 
     private func likelihood(_ value: Double, _ answer: Answer) -> Double {
-        let raw = max(0.05, 1.0 - abs(value - answer.evidence))
+        let raw = max(likelihoodFloor, 1.0 - abs(value - answer.evidence))
         let total = Answer.allCases
             .filter { $0 != .unknown }
-            .reduce(0.0) { $0 + max(0.05, 1.0 - abs(value - $1.evidence)) }
+            .reduce(0.0) { $0 + max(likelihoodFloor, 1.0 - abs(value - $1.evidence)) }
         return total > 0 ? raw / total : 1.0
     }
 
