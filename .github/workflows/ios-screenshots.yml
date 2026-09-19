@@ -1,0 +1,43 @@
+name: Quem Sou Eu iOS Screenshots
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  screenshots:
+    runs-on: macos-26
+    strategy:
+      matrix:
+        device:
+          - name: iPhone 17
+            slug: iphone
+          - name: iPad Air 13-inch (M4)
+            slug: ipad
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate project
+        working-directory: iosApp
+        run: xcodegen generate --spec project.yml
+      - name: Capture screenshots
+        working-directory: iosApp
+        run: |
+          set -euo pipefail
+          xcodebuild test \
+            -project QuemSouEu.xcodeproj \
+            -scheme QuemSouEu \
+            -destination 'platform=iOS Simulator,name=${{ matrix.device.name }},OS=26.5' \
+            -resultBundlePath "$RUNNER_TEMP/quem-sou-eu-${{ matrix.device.slug }}.xcresult" \
+            -only-testing:QuemSouEuUITests \
+            CODE_SIGNING_ALLOWED=NO
+          xcrun xcresulttool export attachments \
+            --path "$RUNNER_TEMP/quem-sou-eu-${{ matrix.device.slug }}.xcresult" \
+            --output-path "$RUNNER_TEMP/quem-sou-eu-screenshots-${{ matrix.device.slug }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quem-sou-eu-ios-screenshots-${{ matrix.device.slug }}
+          path: ${{ runner.temp }}/quem-sou-eu-screenshots-${{ matrix.device.slug }}
