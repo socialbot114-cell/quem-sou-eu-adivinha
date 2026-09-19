@@ -120,7 +120,7 @@ final class ProgressStoreTests: XCTestCase {
     @MainActor
     func testCategoryHistoryAndGameHistoryAreCapped() {
         let store = ProgressStore(defaults: defaults, calendar: calendar)
-        let categories: [Category] = [.football, .history, .artists, .all]
+        let categories: [QuemSouEu.Category] = [.football, .history, .artists, .all]
         for index in 0..<105 {
             store.recordWin(questions: 3, category: categories[index % categories.count], on: date(2026, 9, 10))
         }
