@@ -112,6 +112,7 @@ private struct CategoryCard: View {
 }
 
 private enum GamePhase {
+    case loading
     case asking
     case confirming(Person)
     case won(Person)
@@ -128,14 +129,17 @@ struct GameView: View {
     @State private var engine: GameEngine
     @State private var question: Question?
     @State private var questionNumber = 0
-    @State private var phase = GamePhase.asking
+    @State private var phase = GamePhase.loading
     @State private var answers: [RecordedAnswer] = []
     @State private var rejectedPersonIDs: [String] = []
     @State private var didLoad = false
     @State private var completed = false
+    @State private var isTransitioning = false
     @State private var showingHelp = false
     @State private var successFeedback = 0
     @State private var failureFeedback = 0
+
+    private static let maxRejected = 4
 
     init(category: Category, playAnotherCategory: @escaping () -> Void) {
         self.category = category
@@ -157,7 +161,7 @@ struct GameView: View {
                 VStack(spacing: 18) {
                     header
                     if let error = KnowledgeStore.shared.loadError {
-                        Text(error).foregroundStyle(.white).multilineTextAlignment(.center).padding()
+                        Text(error.localizedDescription).foregroundStyle(.white).multilineTextAlignment(.center).padding()
                     } else {
                         content
                     }
@@ -208,6 +212,8 @@ struct GameView: View {
 
     @ViewBuilder private var content: some View {
         switch phase {
+        case .loading:
+            ProgressView("Organizando as pistas…").tint(DesignSystem.Palette.lime).foregroundStyle(.white).padding(50)
         case .asking:
             if let question {
                 QuestionCard(question: question, answer: { respond($0, to: question) })
@@ -231,7 +237,10 @@ struct GameView: View {
     private func loadRound() {
         guard !didLoad else { return }
         didLoad = true
-        if let saved = progress.interruptedRound, saved.category == category, !saved.answers.isEmpty {
+        if let saved = progress.interruptedRound,
+           saved.category == category,
+           !saved.answers.isEmpty,
+           isRoundStillValid(saved) {
             answers = saved.answers
             rejectedPersonIDs = saved.rejectedPersonIDs
             questionNumber = saved.answers.count
@@ -239,7 +248,7 @@ struct GameView: View {
             for personID in saved.rejectedPersonIDs {
                 if let person = engine.people.first(where: { $0.id == personID }) { engine.reject(person) }
             }
-            if questionNumber >= questionLimit || (questionNumber >= 4 && engine.confidence >= 0.68) {
+            if questionNumber >= questionLimit || shouldPresentGuess {
                 presentBestGuess()
                 return
             }
@@ -247,27 +256,44 @@ struct GameView: View {
         advance()
     }
 
+    private var shouldPresentGuess: Bool {
+        guard questionNumber >= 4 else { return false }
+        return engine.confidence >= 0.68 && engine.margin >= 0.10
+    }
+
+    private func isRoundStillValid(_ saved: InterruptedRoundSummary) -> Bool {
+        if let fingerprint = saved.knowledgeFingerprint, !fingerprint.isEmpty {
+            guard fingerprint == KnowledgeStore.shared.fingerprint else { return false }
+        }
+        guard saved.updatedAt.addingTimeInterval(7 * 86_400) > Date() else { return false }
+        return true
+    }
+
     private func respond(_ answer: Answer, to question: Question) {
+        guard !completed, !isTransitioning else { return }
+        guard case .asking = phase else { return }
+        guard self.question?.id == question.id else { return }
+        isTransitioning = true
         engine.apply(answer, to: question)
         answers.append(RecordedAnswer(questionID: question.id, answer: answer))
         questionNumber = answers.count
         persistRound()
-        if questionNumber >= 4, engine.confidence >= 0.68 {
-            presentBestGuess()
-        } else if questionNumber >= questionLimit {
+        if questionNumber >= questionLimit || shouldPresentGuess {
             presentBestGuess()
         } else {
             withAnimation(.snappy) { advance() }
         }
+        isTransitioning = false
     }
 
     private func advance() {
         guard !engine.people.isEmpty, questionLimit > 0 else { phase = .unavailable; return }
         question = engine.nextQuestion()
-        if question == nil { presentBestGuess() }
+        if question == nil { presentBestGuess() } else { phase = .asking }
     }
 
     private func presentBestGuess() {
+        question = nil
         guard let guess = engine.bestGuess, engine.confidence >= 0.18 else {
             finishLoss(person: nil)
             return
@@ -276,6 +302,7 @@ struct GameView: View {
     }
 
     private func confirmGuess() {
+        guard !completed else { return }
         guard case .confirming(let person) = phase else { return }
         completed = true
         progress.recordWin(questions: questionNumber, category: category, discoveredPersonID: person.id)
@@ -284,10 +311,13 @@ struct GameView: View {
     }
 
     private func reject(_ person: Person) {
+        guard !completed else { return }
+        guard case .confirming = phase else { return }
+        guard !rejectedPersonIDs.contains(person.id) else { return }
         engine.reject(person)
         rejectedPersonIDs.append(person.id)
         persistRound()
-        if questionNumber >= questionLimit || engine.bestGuess == nil {
+        if rejectedPersonIDs.count >= Self.maxRejected || questionNumber >= questionLimit || engine.bestGuess == nil {
             finishLoss(person: engine.bestGuess)
         } else {
             phase = .asking
@@ -296,11 +326,11 @@ struct GameView: View {
     }
 
     private func finishLoss(person: Person?) {
-        if !completed {
-            completed = true
-            progress.recordLoss(questions: questionNumber, category: category)
-            failureFeedback += 1
-        }
+        question = nil
+        guard !completed else { return }
+        completed = true
+        progress.recordLoss(questions: questionNumber, category: category)
+        failureFeedback += 1
         phase = .lost(person)
     }
 
@@ -312,7 +342,8 @@ struct GameView: View {
             currentQuestionID: question?.id,
             bestGuessPersonID: engine.bestGuess?.id,
             answers: answers,
-            rejectedPersonIDs: rejectedPersonIDs
+            rejectedPersonIDs: rejectedPersonIDs,
+            knowledgeFingerprint: KnowledgeStore.shared.fingerprint
         ))
     }
 

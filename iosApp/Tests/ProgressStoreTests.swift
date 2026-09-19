@@ -105,4 +105,26 @@ final class ProgressStoreTests: XCTestCase {
     private func date(_ year: Int, _ month: Int, _ day: Int) -> Date {
         calendar.date(from: DateComponents(year: year, month: month, day: day, hour: 12))!
     }
+
+    @MainActor
+    func testClockRollbackResetsStreak() {
+        let store = ProgressStore(defaults: defaults, calendar: calendar)
+        store.recordWin(questions: 3, category: .all, on: date(2026, 9, 10))
+        store.recordWin(questions: 3, category: .all, on: date(2026, 9, 11))
+        XCTAssertEqual(store.streak, 2)
+
+        store.recordWin(questions: 3, category: .all, on: date(2026, 9, 9))
+        XCTAssertEqual(store.streak, 1)
+    }
+
+    @MainActor
+    func testCategoryHistoryAndGameHistoryAreCapped() {
+        let store = ProgressStore(defaults: defaults, calendar: calendar)
+        let categories: [Category] = [.football, .history, .artists, .all]
+        for index in 0..<105 {
+            store.recordWin(questions: 3, category: categories[index % categories.count], on: date(2026, 9, 10))
+        }
+        XCTAssertEqual(store.categoryHistory.count, 100)
+        XCTAssertEqual(store.gameHistory.count, 100)
+    }
 }

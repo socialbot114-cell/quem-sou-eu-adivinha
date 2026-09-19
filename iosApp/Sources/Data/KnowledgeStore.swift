@@ -1,19 +1,53 @@
 import Foundation
 
+enum KnowledgeLoadError: Error, Equatable, LocalizedError {
+    case missingResource
+    case unreadableData
+    case decodingFailed
+
+    var errorDescription: String? {
+        switch self {
+        case .missingResource, .unreadableData:
+            return "Não foi possível carregar a base de perguntas."
+        case .decodingFailed:
+            return "A base de perguntas está corrompida ou incompatível."
+        }
+    }
+}
+
 final class KnowledgeStore {
     static let shared = KnowledgeStore()
     let base: KnowledgeBase
-    let loadError: String?
+    let loadError: KnowledgeLoadError?
+    let fingerprint: String
 
     private init() {
-        guard let url = Bundle.main.url(forResource: "knowledge", withExtension: "json", subdirectory: "KnowledgeBase"),
-              let data = try? Data(contentsOf: url),
-              let decoded = try? JSONDecoder().decode(KnowledgeBase.self, from: data) else {
+        do {
+            guard let url = Bundle.main.url(forResource: "knowledge", withExtension: "json", subdirectory: "KnowledgeBase") else {
+                throw KnowledgeLoadError.missingResource
+            }
+            guard let data = try? Data(contentsOf: url) else {
+                throw KnowledgeLoadError.unreadableData
+            }
+            base = try JSONDecoder().decode(KnowledgeBase.self, from: data)
+            loadError = nil
+        } catch let error as KnowledgeLoadError {
             base = KnowledgeBase(people: [], questions: [])
-            loadError = "Não foi possível carregar a base de perguntas."
-            return
+            loadError = error
+        } catch {
+            base = KnowledgeBase(people: [], questions: [])
+            loadError = .decodingFailed
         }
-        base = decoded
-        loadError = nil
+        fingerprint = KnowledgeStore.computeFingerprint(base)
+    }
+
+    private static func computeFingerprint(_ base: KnowledgeBase) -> String {
+        let canonical = base.people.map(\.id).sorted().joined(separator: ",")
+            + "#" + base.questions.map(\.id).sorted().joined(separator: ",")
+        var hash: UInt64 = 1469598103934665603
+        for byte in canonical.utf8 {
+            hash = (hash ^ UInt64(byte)) &* 1099511628211
+        }
+        return String(hash, radix: 16)
     }
 }

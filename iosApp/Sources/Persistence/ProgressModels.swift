@@ -23,6 +23,7 @@ struct InterruptedRoundSummary: Codable, Equatable {
     let answers: [RecordedAnswer]
     let rejectedPersonIDs: [String]
     let updatedAt: Date
+    let knowledgeFingerprint: String?
 
     init(
         category: Category,
@@ -31,7 +32,8 @@ struct InterruptedRoundSummary: Codable, Equatable {
         bestGuessPersonID: String? = nil,
         answers: [RecordedAnswer] = [],
         rejectedPersonIDs: [String] = [],
-        updatedAt: Date = Date()
+        updatedAt: Date = Date(),
+        knowledgeFingerprint: String? = nil
     ) {
         self.category = category
         self.questionsAnswered = max(0, questionsAnswered)
@@ -40,10 +42,11 @@ struct InterruptedRoundSummary: Codable, Equatable {
         self.answers = answers
         self.rejectedPersonIDs = rejectedPersonIDs
         self.updatedAt = updatedAt
+        self.knowledgeFingerprint = knowledgeFingerprint
     }
 
     private enum CodingKeys: String, CodingKey {
-        case category, questionsAnswered, currentQuestionID, bestGuessPersonID, answers, rejectedPersonIDs, updatedAt
+        case category, questionsAnswered, currentQuestionID, bestGuessPersonID, answers, rejectedPersonIDs, updatedAt, knowledgeFingerprint
     }
 
     init(from decoder: Decoder) throws {
@@ -55,6 +58,7 @@ struct InterruptedRoundSummary: Codable, Equatable {
         answers = try container.decodeIfPresent([RecordedAnswer].self, forKey: .answers) ?? []
         rejectedPersonIDs = try container.decodeIfPresent([String].self, forKey: .rejectedPersonIDs) ?? []
         updatedAt = try container.decode(Date.self, forKey: .updatedAt)
+        knowledgeFingerprint = try container.decodeIfPresent(String.self, forKey: .knowledgeFingerprint)
     }
 }
 

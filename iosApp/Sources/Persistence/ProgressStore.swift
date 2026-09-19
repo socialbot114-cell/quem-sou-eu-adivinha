@@ -143,6 +143,9 @@ import Combine
             if let category {
                 progress.lastCategory = category
                 progress.categoryHistory.append(category)
+                if progress.categoryHistory.count > 100 {
+                    progress.categoryHistory.removeFirst(progress.categoryHistory.count - 100)
+                }
             }
             if let discoveredPersonID, !discoveredPersonID.isEmpty {
                 progress.discoveredPersonIDs.insert(discoveredPersonID)
@@ -172,7 +175,13 @@ import Combine
         }
 
         let previousDay = calendar.startOfDay(for: previousDate)
-        guard completedDay > previousDay else { return }
+        if completedDay < previousDay {
+            // Clock rolled back: treat as a fresh start instead of freezing or over-counting.
+            progress.streak = 1
+            progress.lastCompletedAt = completedDay
+            return
+        }
+        if completedDay == previousDay { return }
         let dayDifference = calendar.dateComponents([.day], from: previousDay, to: completedDay).day
         progress.streak = dayDifference == 1 ? progress.streak + 1 : 1
         progress.lastCompletedAt = completedDay
