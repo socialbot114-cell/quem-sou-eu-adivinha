@@ -100,7 +100,7 @@ struct GameEngine {
         guard !recordedQuestionIDs.contains(question.id) else { return }
         recordedQuestionIDs.insert(question.id)
         for person in people {
-            scores[person.id] = scores[person.id, default: 0] * likelihood(person.attributes[question.attribute], answer)
+            scores[person.id] = scores[person.id, default: 0] * likelihood(person.attributes[question.attribute] ?? 0.5, answer)
         }
         normalize()
     }
@@ -160,7 +160,7 @@ struct GameEngine {
         let expectedEntropy = Answer.allCases.filter { $0 != .unknown }.reduce(0.0) { total, answer in
             var weighted: [String: Double] = [:]
             for person in people {
-                let answerWeight = likelihood(person.attributes[question.attribute], answer)
+                let answerWeight = likelihood(person.attributes[question.attribute] ?? 0.5, answer)
                 weighted[person.id] = scores[person.id, default: 0] * answerWeight
             }
             let probability = weighted.values.reduce(0, +)
@@ -170,8 +170,7 @@ struct GameEngine {
         return max(0, priorEntropy - expectedEntropy) * coverage
     }
 
-    private func likelihood(_ value: Double?, _ answer: Answer) -> Double {
-        guard let value else { return 1.0 }
+    private func likelihood(_ value: Double, _ answer: Answer) -> Double {
         let raw = max(0.05, 1.0 - abs(value - answer.evidence))
         let total = Answer.allCases
             .filter { $0 != .unknown }
