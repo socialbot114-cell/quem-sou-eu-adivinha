@@ -25,6 +25,18 @@ jobs:
       - name: Validate content
         run: python3 scripts/validate_content.py
 
+      - name: Evaluate offline engine
+        run: |
+          set -euo pipefail
+          python3 scripts/evaluate_offline.py --seed 42 --report "$RUNNER_TEMP/eval.json"
+          python3 - "$RUNNER_TEMP/eval.json" <<'PY'
+          import json, sys
+          report = json.load(open(sys.argv[1]))
+          ideal = report["summary"]["perScenario"]["ideal"]
+          assert ideal["firstGuessAccuracy"] >= 0.90, f"ideal first-guess accuracy too low: {ideal['firstGuessAccuracy']}"
+          print("Offline engine evaluation passed:", ideal)
+          PY
+
       - name: Install XcodeGen
         run: brew install xcodegen
 
