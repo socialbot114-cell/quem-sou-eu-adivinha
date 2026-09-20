@@ -20,13 +20,12 @@ final class QuemSouEuScreenshots: XCTestCase {
             if app.buttons["category.all"].waitForExistence(timeout: 4) {
                 capture(app, name: "quem-sou-eu-categorias")
 
-                let freeMode = app.buttons["category.all"]
-                if !freeMode.isHittable {
-                    app.swipeUp()
-                }
-                freeMode.tap()
-                if app.buttons["Sim"].waitForExistence(timeout: 8) {
-                    capture(app, name: "quem-sou-eu-jogo")
+                let card = app.buttons["category.Criadores digitais"]
+                if card.waitForExistence(timeout: 4) {
+                    card.tap()
+                    if app.buttons["Sim"].waitForExistence(timeout: 8) {
+                        capture(app, name: "quem-sou-eu-jogo")
+                    }
                 }
             }
         }
