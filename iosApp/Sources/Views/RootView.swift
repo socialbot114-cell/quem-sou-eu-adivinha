@@ -15,6 +15,14 @@ private enum AppTab: String, CaseIterable, Identifiable {
         case .profile: "person.fill"
         }
     }
+    var identifier: String {
+        switch self {
+        case .home: "tab.home"
+        case .categories: "tab.categories"
+        case .collection: "tab.collection"
+        case .profile: "tab.profile"
+        }
+    }
 }
 
 struct RootView: View {
@@ -90,6 +98,7 @@ private struct BottomNavigation: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityAddTraits(selected == tab ? .isSelected : [])
+                .accessibilityIdentifier(tab.identifier)
             }
         }
         .padding(.horizontal, 10)
@@ -139,6 +148,7 @@ struct HomeView: View {
                             Label("Jogar agora", systemImage: "arrow.right")
                         }
                         .buttonStyle(PrimaryButtonStyle())
+                        .accessibilityIdentifier("home.play")
 
                         if let resume {
                             Button(action: resume) {

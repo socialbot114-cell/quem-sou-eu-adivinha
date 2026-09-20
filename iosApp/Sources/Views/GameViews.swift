@@ -51,6 +51,7 @@ struct CategoryView: View {
                             .background(DesignSystem.Gradient.primary, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
                         }
                         .buttonStyle(.plain)
+                        .accessibilityIdentifier("category.all")
                     }
                     .frame(maxWidth: DesignSystem.Metric.contentMaxWidth)
                     .padding(20)
@@ -108,6 +109,7 @@ private struct CategoryCard: View {
         .shadow(color: colors.last!.opacity(0.22), radius: 12, y: 7)
         .accessibilityElement(children: .combine)
         .accessibilityHint("Inicia uma partida")
+        .accessibilityIdentifier("category.\(category.rawValue)")
     }
 }
 

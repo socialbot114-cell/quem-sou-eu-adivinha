@@ -6,21 +6,32 @@ final class QuemSouEuScreenshots: XCTestCase {
         app.launchArguments = ["-onboarding.completed", "YES"]
         app.launch()
 
-        if app.buttons["Pular"].waitForExistence(timeout: 3) {
+        if app.buttons["Pular"].waitForExistence(timeout: 2) {
             app.buttons["Pular"].tap()
         }
 
-        let screenshot = XCTAttachment(screenshot: app.screenshot())
-        screenshot.name = "quem-sou-eu-home"
-        screenshot.lifetime = .keepAlways
-        add(screenshot)
-
-        if app.buttons["Jogar"].waitForExistence(timeout: 3) {
-            app.buttons["Jogar"].tap()
-            let categories = XCTAttachment(screenshot: app.screenshot())
-            categories.name = "quem-sou-eu-categorias"
-            categories.lifetime = .keepAlways
-            add(categories)
+        if app.buttons["home.play"].waitForExistence(timeout: 4) {
+            capture(app, name: "quem-sou-eu-home")
         }
+
+        let categoriesTab = app.buttons["tab.categories"]
+        if categoriesTab.waitForExistence(timeout: 4) {
+            categoriesTab.tap()
+            if app.buttons["category.all"].waitForExistence(timeout: 4) {
+                capture(app, name: "quem-sou-eu-categorias")
+
+                app.buttons["category.all"].tap()
+                if app.buttons["Sim"].waitForExistence(timeout: 6) {
+                    capture(app, name: "quem-sou-eu-jogo")
+                }
+            }
+        }
+    }
+
+    private func capture(_ app: XCUIApplication, name: String) {
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 }
