@@ -20,9 +20,12 @@ final class QuemSouEuScreenshots: XCTestCase {
             if app.buttons["category.all"].waitForExistence(timeout: 4) {
                 capture(app, name: "quem-sou-eu-categorias")
 
-                app.buttons["category.all"].tap()
-                if app.buttons["Sim"].waitForExistence(timeout: 6) {
-                    capture(app, name: "quem-sou-eu-jogo")
+                let firstCard = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'category.'")).element(boundBy: 0)
+                if firstCard.waitForExistence(timeout: 2) {
+                    firstCard.tap()
+                    if app.buttons["Sim"].waitForExistence(timeout: 6) {
+                        capture(app, name: "quem-sou-eu-jogo")
+                    }
                 }
             }
         }
