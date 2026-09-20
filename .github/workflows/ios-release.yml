@@ -92,6 +92,9 @@ jobs:
                   environment.write(f"{output_name}={value}\n")
           PY
 
+      - name: Set build number
+        run: echo "BUILD_NUMBER=${{ github.run_number }}" >> "$GITHUB_ENV"
+
       - name: Select available iPhone simulator
         run: |
           set -euo pipefail
