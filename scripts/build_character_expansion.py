@@ -140,7 +140,7 @@ CANDIDATES = {
         ("bella-hadid", "Bella Hadid", "Estados Unidos", "Modelo", "F", 1996, "0100000"),
         ("gisele-bundchen", "Gisele Bündchen", "Brasil", "Modelo e ativista", "F", 1980, "0100001"),
         ("naomi-campbell", "Naomi Campbell", "Reino Unido", "Modelo e atriz", "F", 1970, "0110001"),
-        ("paris-hilton", "Paris Hilton", "Estados Unidos", "Empresária e personalidade de reality", "F", 1981, "0010111"),
+        ("paris-hilton", "Paris Hilton", "Estados Unidos", "Empresária e personalidade de reality", "F", 1981, "0110111"),
         ("tyra-banks", "Tyra Banks", "Estados Unidos", "Modelo e personalidade de televisão", "F", 1973, "0110011"),
     ],
     "Tecnologia e negócios": [
@@ -168,6 +168,7 @@ SYMBOLS = {
     "Tecnologia e negócios": "lightbulb.fill",
 }
 ARTIST_CATEGORIES = {"Música internacional", "K-pop", "Cinema e TV"}
+ARTIST_EXCEPTIONS = {"naomi-campbell", "tyra-banks"}
 
 
 def build() -> dict:
@@ -199,7 +200,7 @@ def build() -> dict:
                 "born_before_1970": 1 if birth_year < 1970 else 0,
                 "born_before_1990": 1 if birth_year < 1990 else 0,
                 "football": 0,
-                "artist": 1 if category in ARTIST_CATEGORIES else 0,
+                "artist": 1 if category in ARTIST_CATEGORIES or identifier in ARTIST_EXCEPTIONS else 0,
                 "creator": 0,
                 "politician": 0,
                 "historical": 0,
