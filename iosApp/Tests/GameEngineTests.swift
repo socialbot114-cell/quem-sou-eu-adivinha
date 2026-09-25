@@ -8,6 +8,15 @@ final class GameEngineTests: XCTestCase {
         Person(id: "c", name: "C", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0, "y": 0], avatarSymbol: "star.fill")
     ]
 
+    func testCharacterExpansionLoadsIntoTheOfflineKnowledgeBase() {
+        let store = KnowledgeStore.shared
+        XCTAssertNil(store.loadError)
+        XCTAssertTrue(store.base.people.contains { $0.id == "jungkook" })
+        XCTAssertTrue(store.base.people.contains { $0.id == "djavan" })
+        XCTAssertTrue(store.base.questions.contains { $0.attribute == "basketball" })
+        XCTAssertTrue(store.base.people.contains { $0.categories.contains(.technology) })
+    }
+
     func testEngineSelectsDiscriminativeQuestionAndAvoidsRepeatedAttributes() {
         let questions = [
             Question(id: "x-one", text: "X?", attribute: "x", categories: [.all]),

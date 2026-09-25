@@ -79,6 +79,12 @@ private struct CategoryCard: View {
         case .politicians: [Color.indigo, DesignSystem.Palette.violet]
         case .history: [Color.brown, Color.orange]
         case .world: [Color.blue, Color.cyan]
+        case .otherSports: [Color.green, Color.teal]
+        case .internationalMusic: [Color.pink, DesignSystem.Palette.violet]
+        case .kpop: [Color.pink, Color.purple]
+        case .cinema: [Color.indigo, Color.blue]
+        case .fashion: [Color.orange, Color.pink]
+        case .technology: [Color.cyan, DesignSystem.Palette.violet]
         case .all: [DesignSystem.Palette.violet, DesignSystem.Palette.violetLight]
         }
     }
@@ -686,6 +692,7 @@ private struct CreditItem: Decodable, Identifiable {
     let author: String
     let license: String
     let url: URL
+    let modifications: String
 }
 
 private struct CreditsView: View {
@@ -701,6 +708,9 @@ private struct CreditsView: View {
                 Text(credit.name).font(.headline)
                 Text("Foto: \(credit.author)").font(.subheadline)
                 Link("\(credit.license) • Ver fonte", destination: credit.url).font(.caption.weight(.semibold))
+                Text("Modificações: \(credit.modifications)")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
             }.padding(.vertical, 5)
         }
         .navigationTitle("Créditos")

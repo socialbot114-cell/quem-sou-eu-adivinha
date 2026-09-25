@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-09-24",
   "assetSpecification": {
     "format": "JPEG",
     "width": 1024,
@@ -138,6 +138,90 @@
       "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
       "modifications": "Corte quadrado 2560x2560 a partir de x=0, y=250, redimensionamento Lanczos para 1024x1024, conversao para JPEG qualidade 85 e incorporacao do perfil ICC sRGB.",
       "reviewStatus": "approved-visual-and-credit-review"
+    },
+    {
+      "id": "anitta",
+      "name": "Anitta",
+      "file": "iosApp/Resources/Characters/anitta.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:5 - Anitta (5) (16295636217) - cropped.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:5_-_Anitta_(5)_(16295636217)_-_cropped.jpg",
+      "author": "Renan Katayama",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
+    },
+    {
+      "id": "caetano-veloso",
+      "name": "Caetano Veloso",
+      "file": "iosApp/Resources/Characters/caetano-veloso.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:Caetano Veloso (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Caetano_Veloso_(cropped).jpg",
+      "author": "Secretaría de Cultura Ciudad de México",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
+    },
+    {
+      "id": "gilberto-gil",
+      "name": "Gilberto Gil",
+      "file": "iosApp/Resources/Characters/gilberto-gil.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:Gilberto Gil 2012.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gilberto_Gil_2012.jpg",
+      "author": "simenon",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
+    },
+    {
+      "id": "marisa-monte",
+      "name": "Marisa Monte",
+      "file": "iosApp/Resources/Characters/marisa-monte.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:Marisa Monte - Ao Vivo (2012).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Marisa_Monte_-_Ao_Vivo_(2012).jpg",
+      "author": "Larissa Barreto",
+      "license": "CC BY 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
+    },
+    {
+      "id": "xuxa",
+      "name": "Xuxa Meneghel",
+      "file": "iosApp/Resources/Characters/xuxa.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:Xuxa Meneghel.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Xuxa_Meneghel.jpg",
+      "author": "Antonio Cruz/Agência Brasil",
+      "license": "CC BY 3.0 br",
+      "licenseURL": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
+    },
+    {
+      "id": "djavan",
+      "name": "Djavan",
+      "file": "iosApp/Resources/Characters/djavan.jpg",
+      "sourceCategory": "artistas",
+      "sourceFile": "File:Djavan San Javier Jazz 2023 26 (cropped).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Djavan_San_Javier_Jazz_2023_26_(cropped).jpg",
+      "author": "Tsaorin",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+      "modifications": "Recorte quadrado com enquadramento manual, redimensionamento Lanczos para 1024x1024, JPEG qualidade 85 e perfil sRGB ICC incorporado.",
+      "reviewStatus": "approved-visual-and-credit-review",
+      "reviewedAt": "2026-09-24"
     }
   ]
 }

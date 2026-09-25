@@ -42,7 +42,7 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 Uma nova experiência para o Quem Sou Eu? Adivinha.
 
 - Jogo de pistas e perguntas offline.
-- 76 personalidades em seis categorias.
+- 149 personalidades em doze categorias temáticas.
 - Onboarding, retomada de partida e coleção de descobertas.
 - Novo visual com a Princesa Detetive.
 - Retratos, compartilhamento, pontos, moedas e sequência.

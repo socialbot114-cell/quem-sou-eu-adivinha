@@ -26,13 +26,21 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 
 ## Próximos marcos
 
-- Validar a base de 76 personalidades em TestFlight.
-- Ampliar gradualmente o conjunto de retratos licenciados.
-- Adicionar screenshots reais do build 6.
+- Validar a base expandida de 149 personalidades em TestFlight.
+- Concluir revisão editorial dos fatos e respostas com o worker JERV de personagens.
+- Adicionar screenshots e vídeo de demonstração gerados no simulador macOS via GitHub Actions.
 - Criar site de suporte e privacidade.
 - Criar App ID e registro exclusivo no App Store Connect.
 - Configurar workflow TestFlight.
 - Testar em aparelho real e enviar a versão 1.2 para revisão.
+
+## Catálogo expandido
+
+- Base total: 149 personalidades, 102 perguntas e 12 categorias temáticas, além do modo Todos.
+- Lote complementar: `iosApp/Resources/KnowledgeBase/character-expansion.json` (72 nomes de seis novas categorias e Djavan na categoria de artistas brasileiros).
+- Proveniência das respostas: `docs/content/character-sources.json`.
+- Revisão Jev/JERV: `docs/content/jerv-character-review-report.json`, com decisões editoriais adicionais em `docs/content/jerv-character-human-review.json`.
+- Retratos licenciados: 16, com autores, licenças, origens e modificações em `docs/content/image-credits.json`.
 
 ## Identidade planejada
 

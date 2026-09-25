@@ -1,0 +1,1231 @@
+{
+  "questions": [
+    {
+      "id": "basketball",
+      "text": "É conhecido por jogar basquete?",
+      "category": "Outros esportes",
+      "attribute": "basketball"
+    },
+    {
+      "id": "tennis",
+      "text": "É conhecido por jogar tênis?",
+      "category": "Outros esportes",
+      "attribute": "tennis"
+    },
+    {
+      "id": "motorsport",
+      "text": "Compete ou competiu no automobilismo?",
+      "category": "Outros esportes",
+      "attribute": "motorsport"
+    },
+    {
+      "id": "team-sport",
+      "text": "Seu esporte é praticado principalmente em equipe?",
+      "category": "Outros esportes",
+      "attribute": "team_sport"
+    },
+    {
+      "id": "olympic-medalist",
+      "text": "Conquistou medalha olímpica?",
+      "category": "Outros esportes",
+      "attribute": "olympic_medalist"
+    },
+    {
+      "id": "nba-champion",
+      "text": "Conquistou um título da NBA?",
+      "category": "Outros esportes",
+      "attribute": "nba_champion"
+    },
+    {
+      "id": "american-football",
+      "text": "É conhecido por jogar futebol americano?",
+      "category": "Outros esportes",
+      "attribute": "american_football"
+    },
+    {
+      "id": "sports-born-before-1985",
+      "text": "Nasceu em 1984 ou antes?",
+      "category": "Outros esportes",
+      "attribute": "sports_born_before_1985"
+    },
+    {
+      "id": "pop-music",
+      "text": "É conhecido principalmente pela música pop?",
+      "category": "Música internacional",
+      "attribute": "pop_music"
+    },
+    {
+      "id": "hip-hop",
+      "text": "É conhecido por hip-hop ou rap?",
+      "category": "Música internacional",
+      "attribute": "hip_hop"
+    },
+    {
+      "id": "latin-music",
+      "text": "É conhecido por cantar música latina em espanhol?",
+      "category": "Música internacional",
+      "attribute": "latin_music"
+    },
+    {
+      "id": "r-and-b",
+      "text": "É conhecido por R&B?",
+      "category": "Música internacional",
+      "attribute": "r_and_b"
+    },
+    {
+      "id": "country-music",
+      "text": "Gravou álbuns do gênero country?",
+      "category": "Música internacional",
+      "attribute": "country_music"
+    },
+    {
+      "id": "acted-in-film",
+      "text": "Também atuou em filmes ou séries?",
+      "category": "Música internacional",
+      "attribute": "acted_in_film"
+    },
+    {
+      "id": "born-in-barbados",
+      "text": "Nasceu em Barbados?",
+      "category": "Música internacional",
+      "attribute": "born_in_barbados"
+    },
+    {
+      "id": "bts-member",
+      "text": "É integrante do BTS?",
+      "category": "K-pop",
+      "attribute": "bts_member"
+    },
+    {
+      "id": "blackpink-member",
+      "text": "É integrante do BLACKPINK?",
+      "category": "K-pop",
+      "attribute": "blackpink_member"
+    },
+    {
+      "id": "solo-artist",
+      "text": "Começou a carreira musical como artista solo, não como integrante de um grupo?",
+      "category": "K-pop",
+      "attribute": "solo_artist"
+    },
+    {
+      "id": "rapper",
+      "text": "Também atua como rapper?",
+      "category": "K-pop",
+      "attribute": "rapper"
+    },
+    {
+      "id": "born-before-1994",
+      "text": "Nasceu antes de 1994?",
+      "category": "K-pop",
+      "attribute": "born_before_1994"
+    },
+    {
+      "id": "born-before-1993",
+      "text": "Nasceu antes de 1993?",
+      "category": "K-pop",
+      "attribute": "born_before_1993"
+    },
+    {
+      "id": "born-in-south-korea",
+      "text": "Nasceu na Coreia do Sul?",
+      "category": "K-pop",
+      "attribute": "born_in_south_korea"
+    },
+    {
+      "id": "known-for-dance",
+      "text": "É conhecido também por dançar?",
+      "category": "K-pop",
+      "attribute": "known_for_dance"
+    },
+    {
+      "id": "kpop-born-before-1996",
+      "text": "O artista de K-pop nasceu até 1995?",
+      "category": "K-pop",
+      "attribute": "kpop_born_before_1996"
+    },
+    {
+      "id": "oscar-winner",
+      "text": "Recebeu um Oscar por atuação ou produção?",
+      "category": "Cinema e TV",
+      "attribute": "oscar_winner"
+    },
+    {
+      "id": "superhero-film",
+      "text": "Atuou em um filme de super-herói?",
+      "category": "Cinema e TV",
+      "attribute": "superhero_film"
+    },
+    {
+      "id": "tv-series-lead",
+      "text": "Protagonizou uma série de televisão?",
+      "category": "Cinema e TV",
+      "attribute": "tv_series_lead"
+    },
+    {
+      "id": "cinema-director",
+      "text": "Dirigiu um longa-metragem?",
+      "category": "Cinema e TV",
+      "attribute": "cinema_director"
+    },
+    {
+      "id": "born-before-1980",
+      "text": "Nasceu antes de 1980?",
+      "category": "Cinema e TV",
+      "attribute": "born_before_1980"
+    },
+    {
+      "id": "science-fiction-franchise",
+      "text": "Atuou em uma franquia de ficção científica?",
+      "category": "Cinema e TV",
+      "attribute": "science_fiction_franchise"
+    },
+    {
+      "id": "action-franchise",
+      "text": "Atuou em mais de um filme da mesma franquia de ação?",
+      "category": "Cinema e TV",
+      "attribute": "action_franchise"
+    },
+    {
+      "id": "kardashian-family",
+      "text": "Faz parte da família Kardashian-Jenner?",
+      "category": "Moda e reality",
+      "attribute": "kardashian_family"
+    },
+    {
+      "id": "fashion-model",
+      "text": "Trabalhou como modelo de moda?",
+      "category": "Moda e reality",
+      "attribute": "fashion_model"
+    },
+    {
+      "id": "reality-tv",
+      "text": "Participou de reality shows como figura central?",
+      "category": "Moda e reality",
+      "attribute": "reality_tv"
+    },
+    {
+      "id": "beauty-brand-founder",
+      "text": "Fundou uma marca de beleza?",
+      "category": "Moda e reality",
+      "attribute": "beauty_brand_founder"
+    },
+    {
+      "id": "fashion-brand-owner",
+      "text": "Fundou ou lidera uma marca de moda?",
+      "category": "Moda e reality",
+      "attribute": "fashion_brand_owner"
+    },
+    {
+      "id": "lifestyle-brand",
+      "text": "Fundou uma marca própria de produtos, moda, beleza ou estilo de vida?",
+      "category": "Moda e reality",
+      "attribute": "lifestyle_brand"
+    },
+    {
+      "id": "fashion-born-before-1996",
+      "text": "Nasceu em 1995 ou antes?",
+      "category": "Moda e reality",
+      "attribute": "fashion_born_before_1996"
+    },
+    {
+      "id": "technology-company-founder",
+      "text": "Fundou ou cofundou uma empresa de tecnologia?",
+      "category": "Tecnologia e negócios",
+      "attribute": "technology_company_founder"
+    },
+    {
+      "id": "software-company-founder",
+      "text": "Fundou ou cofundou uma empresa de software?",
+      "category": "Tecnologia e negócios",
+      "attribute": "software_company_founder"
+    },
+    {
+      "id": "social-network-founder",
+      "text": "Fundou uma rede social?",
+      "category": "Tecnologia e negócios",
+      "attribute": "social_network_founder"
+    },
+    {
+      "id": "ecommerce-founder",
+      "text": "Fundou uma empresa de comércio eletrônico?",
+      "category": "Tecnologia e negócios",
+      "attribute": "ecommerce_founder"
+    },
+    {
+      "id": "hardware-company",
+      "text": "É conhecido por uma empresa que fabrica chips ou aparelhos eletrônicos?",
+      "category": "Tecnologia e negócios",
+      "attribute": "hardware_company"
+    },
+    {
+      "id": "born-in-russia",
+      "text": "Nasceu na Rússia?",
+      "category": "Tecnologia e negócios",
+      "attribute": "born_in_russia"
+    },
+    {
+      "id": "founded-outside-us",
+      "text": "A empresa de tecnologia que fundou tem sede fora dos EUA?",
+      "category": "Tecnologia e negócios",
+      "attribute": "founded_outside_us"
+    },
+    {
+      "id": "luxury-goods-leader",
+      "text": "Lidera ou liderou uma empresa de marcas de luxo?",
+      "category": "Tecnologia e negócios",
+      "attribute": "luxury_goods_leader"
+    }
+  ],
+  "claims": [
+    {
+      "id": "lebron-james-main-role",
+      "person_id": "lebron-james",
+      "person_name": "LeBron James",
+      "answer": 1,
+      "claim": "The source identifies LeBron James as: Jogador de basquete.",
+      "source_url": "https://en.wikipedia.org/wiki/LeBron_James",
+      "source_title": "LeBron James",
+      "source_excerpt": "LeBron Raymone James is an American professional basketball player for the Philadelphia 76ers of the National Basketball Association (NBA). Nicknamed \"King James\", he is the NBA's all-time leading scorer and has won four NBA championships from 10 NBA Finals appearances, including eight consecutive appearances between 2011 and 2018. He has won three Olympic gold medals as a member of the U.S. national team, and is widely considered to be one of the greatest athletes in history and is considered by some to be the greatest basketball player of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "stephen-curry-main-role",
+      "person_id": "stephen-curry",
+      "person_name": "Stephen Curry",
+      "answer": 1,
+      "claim": "The source identifies Stephen Curry as: Jogador de basquete.",
+      "source_url": "https://en.wikipedia.org/wiki/Stephen_Curry",
+      "source_title": "Stephen Curry",
+      "source_excerpt": "Wardell Stephen Curry II, also known as Steph Curry, is an American professional basketball player for the Golden State Warriors of the National Basketball Association (NBA), where he plays as a point guard. Nicknamed \"Chef Curry\", he is widely regarded as the greatest shooter in basketball history and one of the greatest players of all time. He is credited with revolutionizing the game by popularizing the three-point shot across all levels of basketball.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "giannis-antetokounmpo-main-role",
+      "person_id": "giannis-antetokounmpo",
+      "person_name": "Giannis Antetokounmpo",
+      "answer": 1,
+      "claim": "The source identifies Giannis Antetokounmpo as: Jogador de basquete.",
+      "source_url": "https://en.wikipedia.org/wiki/Giannis_Antetokounmpo",
+      "source_title": "Giannis Antetokounmpo",
+      "source_excerpt": "Giannis Sina Ougko Antetokounmpo is a Greek-Nigerian professional basketball player for the Miami Heat of the National Basketball Association (NBA). His size, speed, and strength have earned him the nickname \"Greek Freak\". He is widely regarded as one of the greatest players and power forwards of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "luka-doncic-main-role",
+      "person_id": "luka-doncic",
+      "person_name": "Luka Dončić",
+      "answer": 1,
+      "claim": "The source identifies Luka Dončić as: Jogador de basquete.",
+      "source_url": "https://en.wikipedia.org/wiki/Luka_Don%C4%8Di%C4%87",
+      "source_title": "Luka Dončić",
+      "source_excerpt": "Luka Dončić is a Slovenian professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). He is a Rookie of the Year, six-time NBA All-Star, six-time All-NBA First Team member and a two-time NBA Scoring Champion. He also represents the Slovenian national team. Nicknamed “Luka Magic,” he is broadly regarded as one of the greatest European players of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "nikola-jokic-main-role",
+      "person_id": "nikola-jokic",
+      "person_name": "Nikola Jokić",
+      "answer": 1,
+      "claim": "The source identifies Nikola Jokić as: Jogador de basquete.",
+      "source_url": "https://en.wikipedia.org/wiki/Nikola_Joki%C4%87",
+      "source_title": "Nikola Jokić",
+      "source_excerpt": "Nikola Jokić is a Serbian professional basketball player who is a center for the Denver Nuggets of the National Basketball Association (NBA). Nicknamed \"Joker\", he is widely regarded as one of the greatest players of all time. Jokić is an eight-time NBA All-Star, eight-time All-NBA Team member and a three-time NBA Most Valuable Player (MVP). He represents the Serbian national team, with which he won a silver medal at the 2016 Summer Olympics, and a bronze medal at the 2024 Summer Olympics.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "serena-williams-main-role",
+      "person_id": "serena-williams",
+      "person_name": "Serena Williams",
+      "answer": 1,
+      "claim": "The source identifies Serena Williams as: Tenista.",
+      "source_url": "https://en.wikipedia.org/wiki/Serena_Williams",
+      "source_title": "Serena Williams",
+      "source_excerpt": "Serena Jameka Williams is an American professional tennis player. She was ranked as the world No. 1 in women's singles by the Women's Tennis Association (WTA) for 319 weeks, and finished as the year-end No. 1 five times. Williams won 73 WTA Tour–level singles titles, including 23 major women's singles titles—the most in the Open Era, and the second-most of all time. She is the only player to accomplish a Career Golden Slam in both singles and doubles, and the only player to have simultaneously held Olympic gold and all four major titles in both singles and doubles.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "roger-federer-main-role",
+      "person_id": "roger-federer",
+      "person_name": "Roger Federer",
+      "answer": 1,
+      "claim": "The source identifies Roger Federer as: Tenista.",
+      "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
+      "source_title": "Roger Federer",
+      "source_excerpt": "Roger Federer is a Swiss former professional tennis player. He was ranked as the world No. 1 in men's singles by the Association of Tennis Professionals (ATP) for 310 weeks, including a record 237 consecutive weeks, and finished as the year-end No. 1 five times. Federer won 103 singles titles on the ATP Tour, the second most since the start of the Open Era in 1968, including 20 major men's singles titles, 28 Masters and six year-end championships.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "novak-djokovic-main-role",
+      "person_id": "novak-djokovic",
+      "person_name": "Novak Djokovic",
+      "answer": 1,
+      "claim": "The source identifies Novak Djokovic as: Tenista.",
+      "source_url": "https://en.wikipedia.org/wiki/Novak_Djokovic",
+      "source_title": "Novak Djokovic",
+      "source_excerpt": "Novak Djokovic is a Serbian professional tennis player. He has been ranked as the world No. 1 in men's singles by the Association of Tennis Professionals (ATP) for a record 428 weeks, finished as the year-end No. 1 a record eight times, and has been ranked No. 1 at least once in a year for a record 13 different years. Djokovic has won 101 ATP Tour–level singles titles, including a record 24 majors, a record 40 Masters titles, a record seven year-end championships, and an Olympic gold medal. Djokovic is the only man in tennis history to be the reigning champion of all four majors at once across three different surfaces. In singles, he is the only man to achieve a triple Career Grand Slam, and the first player to complete a Career Golden Masters, and the only player to accomplish it twice. Djokovic is the only player in singles to have won all of the Big Titles over the course of his career.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "lewis-hamilton-main-role",
+      "person_id": "lewis-hamilton",
+      "person_name": "Lewis Hamilton",
+      "answer": 1,
+      "claim": "The source identifies Lewis Hamilton as: Piloto de automobilismo.",
+      "source_url": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+      "source_title": "Lewis Hamilton",
+      "source_excerpt": "Sir Lewis Carl Davidson Hamilton is a British racing driver who competes in Formula One for Ferrari. Hamilton has won a joint-record seven Formula One World Drivers' Championship titles—tied with Michael Schumacher—and holds the records for most wins (106), pole positions (104), and podium finishes (207), among others.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "max-verstappen-main-role",
+      "person_id": "max-verstappen",
+      "person_name": "Max Verstappen",
+      "answer": 1,
+      "claim": "The source identifies Max Verstappen as: Piloto de automobilismo.",
+      "source_url": "https://en.wikipedia.org/wiki/Max_Verstappen",
+      "source_title": "Max Verstappen",
+      "source_excerpt": "Max Emilian Verstappen is a Dutch and Belgian racing driver who competes under the Dutch flag in Formula One for Red Bull Racing. Verstappen has won four Formula One World Drivers' Championship titles, which he won consecutively from 2021 to 2024 with Red Bull, and has won 71 Grands Prix across 12 seasons.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "simone-biles-main-role",
+      "person_id": "simone-biles",
+      "person_name": "Simone Biles",
+      "answer": 1,
+      "claim": "The source identifies Simone Biles as: Ginasta.",
+      "source_url": "https://en.wikipedia.org/wiki/Simone_Biles",
+      "source_title": "Simone Biles",
+      "source_excerpt": "Simone Arianne Biles Owens is an American artistic gymnast. Her 11 Olympic medals and 30 World Championship medals make her the most decorated gymnast in history. She is widely regarded as one of the greatest gymnasts of all time, and one of the greatest female athletes in history. With 11 Olympic medals, she is tied with Věra Čáslavská as the second-most decorated female Olympic gymnast behind Larisa Latynina, and has the most Olympic medals earned by a U.S. gymnast.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "tom-brady-main-role",
+      "person_id": "tom-brady",
+      "person_name": "Tom Brady",
+      "answer": 1,
+      "claim": "The source identifies Tom Brady as: Jogador de futebol americano.",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Brady",
+      "source_title": "Tom Brady",
+      "source_excerpt": "Thomas Edward Patrick Brady Jr. is an American former professional football quarterback who played in the National Football League (NFL) for 23 seasons. He spent his first 20 seasons with the New England Patriots and was a central contributor to the franchise's dynasty from 2001 to 2019. In his final three seasons, he played for the Tampa Bay Buccaneers. Brady is widely regarded as the greatest quarterback of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "taylor-swift-main-role",
+      "person_id": "taylor-swift",
+      "person_name": "Taylor Swift",
+      "answer": 1,
+      "claim": "The source identifies Taylor Swift as: Cantora e compositora.",
+      "source_url": "https://en.wikipedia.org/wiki/Taylor_Swift",
+      "source_title": "Taylor Swift",
+      "source_excerpt": "Taylor Alison Swift is an American singer-songwriter. An influential figure in popular culture, Swift is known for her autobiographical songwriting and artistic reinventions. She is the highest-grossing live music artist, the wealthiest female musician, and one of the best-selling music artists of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "beyonce-main-role",
+      "person_id": "beyonce",
+      "person_name": "Beyoncé",
+      "answer": 1,
+      "claim": "The source identifies Beyoncé as: Cantora e compositora.",
+      "source_url": "https://en.wikipedia.org/wiki/Beyonc%C3%A9",
+      "source_title": "Beyoncé",
+      "source_excerpt": "Beyoncé Giselle Knowles-Carter is an American singer, songwriter, actress, and businesswoman. Known for her vocal ability, artistic reinventions, and live performances, she is widely regarded as one of the most culturally significant figures of the 21st century. Credited with shaping popular music, Beyoncé is often deemed one of the greatest entertainers of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "rihanna-main-role",
+      "person_id": "rihanna",
+      "person_name": "Rihanna",
+      "answer": 1,
+      "claim": "The source identifies Rihanna as: Cantora, compositora e empresária.",
+      "source_url": "https://en.wikipedia.org/wiki/Rihanna",
+      "source_title": "Rihanna",
+      "source_excerpt": "Robyn Rihanna Fenty is a Barbadian singer, songwriter, businesswoman, and actress. An influential figure in popular culture, she is known for her multifaceted career, artistic reinventions, and eclectic fashion style. With estimated sales exceeding 250 million records, Rihanna is one of the best-selling music artists of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "lady-gaga-main-role",
+      "person_id": "lady-gaga",
+      "person_name": "Lady Gaga",
+      "answer": 1,
+      "claim": "The source identifies Lady Gaga as: Cantora, compositora e atriz.",
+      "source_url": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "source_title": "Lady Gaga",
+      "source_excerpt": "Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is an American singer, songwriter, and actress. An influential figure in popular music, she is known for her image reinventions, flamboyant fashion, and versatility across the entertainment industry. With estimated sales of 124 million records, she is one of the best-selling music artists of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "adele-main-role",
+      "person_id": "adele",
+      "person_name": "Adele",
+      "answer": 1,
+      "claim": "The source identifies Adele as: Cantora e compositora.",
+      "source_url": "https://en.wikipedia.org/wiki/Adele",
+      "source_title": "Adele",
+      "source_excerpt": "Adele Laurie Blue Adkins is an English singer and songwriter. Regarded as a British cultural icon, she is known for her mezzo-soprano vocals and sentimental songwriting. Her accolades include 16 Grammy Awards, 12 Brit Awards, an Academy Award, a Primetime Emmy Award, and a Golden Globe Award.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "justin-bieber-main-role",
+      "person_id": "justin-bieber",
+      "person_name": "Justin Bieber",
+      "answer": 1,
+      "claim": "The source identifies Justin Bieber as: Cantor.",
+      "source_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+      "source_title": "Justin Bieber",
+      "source_excerpt": "Justin Drew Bieber is a Canadian singer. An influential figure in popular music, he is known for his image reinventions and multi-genre performances. With estimated sales of 150 million records, he is one of the best-selling music artists of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "ariana-grande-main-role",
+      "person_id": "ariana-grande",
+      "person_name": "Ariana Grande",
+      "answer": 1,
+      "claim": "Ariana Grande is an American singer, songwriter, and actress.",
+      "source_url": "https://en.wikipedia.org/wiki/Ariana_Grande",
+      "source_title": "Ariana Grande",
+      "source_excerpt": "Ariana Grande-Butera is an American singer, songwriter, and actress. Known for her four-octave vocal range, which extends into the whistle register, she is an influential figure in popular music. Publications such as Rolling Stone and Billboard have deemed Grande one of the greatest artists in history, while Time included her on its list of the world's 100 most influential people in 2016 and 2019.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "drake-main-role",
+      "person_id": "drake",
+      "person_name": "Drake",
+      "answer": 1,
+      "claim": "The source identifies Drake as: Rapper, cantor e ator.",
+      "source_url": "https://en.wikipedia.org/wiki/Drake_(musician)",
+      "source_title": "Drake (musician)",
+      "source_excerpt": "Aubrey Drake Graham is a Canadian rapper and singer. He is credited with popularizing R&B sensibilities in hip-hop music through rap-singing. Drake first gained recognition as Jimmy Brooks in the CTV teen drama series Degrassi: The Next Generation (2001–2008) and began his music career by independently releasing the mixtapes Room for Improvement (2006), Comeback Season (2007), and So Far Gone (2009), before signing with Young Money Entertainment.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "eminem-main-role",
+      "person_id": "eminem",
+      "person_name": "Eminem",
+      "answer": 1,
+      "claim": "The source identifies Eminem as: Rapper.",
+      "source_url": "https://en.wikipedia.org/wiki/Eminem",
+      "source_title": "Eminem",
+      "source_excerpt": "Marshall Bruce Mathers III, known professionally as Eminem, is an American rapper, songwriter, record producer, and record executive. Known for his rap flow and conscious rap, which includes political criticism and social commentary, he is widely regarded as one of the greatest and most influential rappers of all time, often credited with popularizing hip-hop in Middle America and the acceptance of white rappers. While much of his transgressive art during the late 1990s and early 2000s made him a controversial figure, Eminem has become a representation of popular angst in lower-income America.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "bad-bunny-main-role",
+      "person_id": "bad-bunny",
+      "person_name": "Bad Bunny",
+      "answer": 1,
+      "claim": "The source identifies Bad Bunny as: Cantor e rapper.",
+      "source_url": "https://en.wikipedia.org/wiki/Bad_Bunny",
+      "source_title": "Bad Bunny",
+      "source_excerpt": "Benito Antonio Martínez Ocasio, known professionally as Bad Bunny, is a Puerto Rican rapper, singer, and record producer. Dubbed the \"King of Latin Trap\", he is widely credited with helping Spanish-language rap reach mainstream global popularity and is considered one of the greatest Latino rappers of all time. Music critics have also noted Bad Bunny's role in broadening the international appeal of Latin urban music by incorporating elements of salsa, rock, and other Latin genres into his recordings.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "shakira-main-role",
+      "person_id": "shakira",
+      "person_name": "Shakira",
+      "answer": 1,
+      "claim": "The source identifies Shakira as: Cantora e compositora.",
+      "source_url": "https://en.wikipedia.org/wiki/Shakira",
+      "source_title": "Shakira",
+      "source_excerpt": "Shakira Isabel Mebarak Ripoll is a Colombian singer-songwriter, dancer, and record producer. Referred to as the \"Queen of Latin Music\", she has had a significant impact on the musical landscape of Latin America and has been credited with popularizing Hispanophone music globally, contributing to increased learning and use of the Spanish language worldwide. She is also credited with opening the doors of the international market in popular music for other Latin artists. Her accolades include four Grammy Awards and fifteen Latin Grammy Awards.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "the-weeknd-main-role",
+      "person_id": "the-weeknd",
+      "person_name": "The Weeknd",
+      "answer": 1,
+      "claim": "The source identifies The Weeknd as: Cantor e compositor.",
+      "source_url": "https://en.wikipedia.org/wiki/The_Weeknd",
+      "source_title": "The Weeknd",
+      "source_excerpt": "Abel Tesfaye, known professionally as the Weeknd, is a Canadian singer, songwriter, record producer, and actor. Regarded as an influential figure in popular music, he is known for his light-lyric tenor vocal range and falsetto, alternative R&B sound, and dark aesthetics, as well as the cinematic visuals and storytelling of his music videos. His accolades include 4 Grammy Awards, 20 Billboard Music Awards, 22 Juno Awards, 6 American Music Awards, 3 MTV Video Music Awards, and a Latin Grammy Award.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jungkook-main-role",
+      "person_id": "jungkook",
+      "person_name": "Jungkook",
+      "answer": 1,
+      "claim": "The source identifies Jungkook as: Cantor e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/Jung_Kook",
+      "source_title": "Jung Kook",
+      "source_excerpt": "Jeon Jung-kook, known professionally as Jung Kook, is a South Korean singer and songwriter. He rose to prominence as a member of South Korean boy band BTS. He has performed three solo songs as part of BTS' discography—\"Begin\" in 2016, \"Euphoria\" in 2018, and \"My Time\" in 2020—all of which charted on South Korea's Gaon Digital Chart. He also recorded the soundtrack song \"Stay Alive\" for the BTS-based webtoon 7Fates: Chakho.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jimin-main-role",
+      "person_id": "jimin",
+      "person_name": "Jimin",
+      "answer": 1,
+      "claim": "The source identifies Jimin as: Cantor e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/Jimin",
+      "source_title": "Jimin",
+      "source_excerpt": "Park Ji-min, known mononymously as Jimin, is a South Korean singer and dancer. In 2013, he made his debut as a member of the South Korean boy band BTS, under the record label Big Hit Entertainment. Jimin has released three solo tracks under BTS' name—\"Lie\" in 2016, \"Serendipity\" in 2017, and \"Filter\" in 2020—all of which have charted on South Korea's Gaon Digital Chart.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "v-kim-taehyung-main-role",
+      "person_id": "v-kim-taehyung",
+      "person_name": "V (Kim Taehyung)",
+      "answer": 1,
+      "claim": "The source identifies V (Kim Taehyung) as: Cantor e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/V_(singer)",
+      "source_title": "V (singer)",
+      "source_excerpt": "Kim Tae-hyung, known professionally as V (뷔), is a South Korean singer. In 2013, he made his debut as a member of the South Korean boy band BTS, under Big Hit Entertainment. V has performed three solo songs under BTS's name—\"Stigma\" in 2016, \"Singularity\" in 2018, and \"Inner Child\" in 2020—all of which charted on South Korea's Gaon Digital Chart. Outside of his music projects with BTS, V had his acting debut in the 2016 television series Hwarang: The Poet Warrior Youth and, with Jin, contributed the single \"It's Definitely You\" to its soundtrack. He released his first independent song, the self-composed \"Scenery\", in 2019. In 2023, V made his official debut as a solo artist with the release of the singles \"Love Me Again\" and \"Rainy Days\". His debut solo EP Layover was released on September 8, 2023, accompanied by a third single, \"Slow Dancing\".",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "suga-main-role",
+      "person_id": "suga",
+      "person_name": "Suga",
+      "answer": 1,
+      "claim": "The source identifies Suga as: Rapper e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/Suga",
+      "source_title": "Suga",
+      "source_excerpt": "Min Yoon-gi, known professionally by his stage names Suga and Agust D, is a South Korean rapper, songwriter and record producer. He debuted as a member of the South Korean boy band BTS in June 2013 under Big Hit Entertainment. His first solo mixtape, Agust D, was released in 2016 and re-released in 2018 to digital download and streaming platforms, reaching number three on Billboard's World Albums Chart. In 2020, he released his second solo mixtape, D-2; it peaked at number 11 on the US Billboard 200, number seven on the UK Albums Chart, and number two on Australia's ARIA Album Chart.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jin-bts-main-role",
+      "person_id": "jin-bts",
+      "person_name": "Jin",
+      "answer": 1,
+      "claim": "The source identifies Jin as: Cantor e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/Jin_(singer)",
+      "source_title": "Jin (singer)",
+      "source_excerpt": "Kim Seok-jin, known professionally as Jin, is a South Korean singer. He rose to prominence as member of the South Korean boy band BTS. Jin has released three solo tracks with BTS: \"Awake\" in 2016, \"Epiphany\" in 2018, and \"Moon\" in 2020, all of which have charted on South Korea's Gaon Digital Chart. In 2019, Jin released his first independent song, the digital track \"Tonight\". He made his official debut as a solo artist in October 2022, with the release of the single \"The Astronaut\".",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "rm-bts-main-role",
+      "person_id": "rm-bts",
+      "person_name": "RM",
+      "answer": 1,
+      "claim": "The source identifies RM as: Rapper e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/RM_(musician)",
+      "source_title": "RM (musician)",
+      "source_excerpt": "Kim Nam-joon, known professionally as RM, is a South Korean rapper, songwriter, and record producer. He is the leader of South Korean boy band BTS, under Big Hit Music. Born in Seoul and raised in Ilsan, RM began his music career in the underground Korean hip-hop scene as a teenager, going by the name Runch Randa. He joined Big Hit in 2010, and debuted as part of BTS in June 2013.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "j-hope-main-role",
+      "person_id": "j-hope",
+      "person_name": "J-Hope",
+      "answer": 1,
+      "claim": "The source identifies J-Hope as: Rapper e integrante do BTS.",
+      "source_url": "https://en.wikipedia.org/wiki/J-Hope",
+      "source_title": "J-Hope",
+      "source_excerpt": "Jung Ho-seok, known professionally as J-Hope, is a South Korean rapper, singer, songwriter, dancer, and record producer. He made his debut as a member of South Korean boy band BTS in 2013, under Big Hit Entertainment. J-Hope released his first solo mixtape, Hope World, in 2018. It was received positively by critics and peaked at number 38 on the US Billboard 200, the highest-charting album by a Korean solo artist at the time. He became the first member of BTS to enter the Billboard Hot 100 as a soloist in 2019, when his single \"Chicken Noodle Soup\", featuring singer Becky G, debuted at number 81. In 2022, J-Hope released his debut studio album Jack in the Box. In 2023, he released his single \"On the Street\" with J. Cole.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "lisa-blackpink-main-role",
+      "person_id": "lisa-blackpink",
+      "person_name": "Lisa",
+      "answer": 1,
+      "claim": "The source identifies Lisa as: Rapper e cantora.",
+      "source_url": "https://en.wikipedia.org/wiki/Lisa_(rapper)",
+      "source_title": "Lisa (rapper)",
+      "source_excerpt": "Lalisa Manobal, known mononymously as Lisa, is a Thai rapper, singer, dancer, and actress. She rose to prominence as a member of the South Korean girl group Blackpink, which debuted under YG Entertainment in August 2016 and became one of the best-selling girl groups of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jennie-blackpink-main-role",
+      "person_id": "jennie-blackpink",
+      "person_name": "Jennie",
+      "answer": 1,
+      "claim": "The source identifies Jennie as: Cantora e integrante do BLACKPINK.",
+      "source_url": "https://en.wikipedia.org/wiki/Jennie_(singer)",
+      "source_title": "Jennie (singer)",
+      "source_excerpt": "Jennie Kim is a South Korean singer, rapper, songwriter, and actress. Born in South Korea, she moved to New Zealand in 2004 and returned to South Korea to successfully audition for YG Entertainment in 2010. She rose to prominence as a member of the South Korean girl group Blackpink, which debuted in August 2016 and became one of the best-selling girl groups of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "rose-blackpink-main-role",
+      "person_id": "rose-blackpink",
+      "person_name": "Rosé",
+      "answer": 1,
+      "claim": "The source identifies Rosé as: Cantora e integrante do BLACKPINK.",
+      "source_url": "https://en.wikipedia.org/wiki/Ros%C3%A9_(singer)",
+      "source_title": "Rosé (singer)",
+      "source_excerpt": "Roseanne Park, known mononymously as Rosé (Korean: 로제), is a New Zealand and South Korean singer. Born in New Zealand and raised in Australia, Rosé moved to South Korea and signed with label YG Entertainment following a successful audition in 2012. She rose to prominence as a member of the South Korean girl group Blackpink, which debuted in August 2016 and became one of the best-selling girl groups of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jisoo-blackpink-main-role",
+      "person_id": "jisoo-blackpink",
+      "person_name": "Jisoo",
+      "answer": 1,
+      "claim": "The source identifies Jisoo as: Cantora e integrante do BLACKPINK.",
+      "source_url": "https://en.wikipedia.org/wiki/Jisoo",
+      "source_title": "Jisoo",
+      "source_excerpt": "Kim Ji-soo, known mononymously as Jisoo, is a South Korean singer, songwriter, and actress. She rose to prominence as a member of the South Korean girl group Blackpink, which debuted under YG Entertainment in August 2016 and became one of the best-selling girl groups of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "iu-main-role",
+      "person_id": "iu",
+      "person_name": "IU",
+      "answer": 1,
+      "claim": "The source identifies IU as: Cantora e atriz.",
+      "source_url": "https://en.wikipedia.org/wiki/IU_(entertainer)",
+      "source_title": "IU (entertainer)",
+      "source_excerpt": "Lee Ji-eun, also known by her stage name IU (아이유), is a South Korean singer-songwriter and actress. She signed with LOEN Entertainment in 2007 as a trainee and debuted as a singer at the age of fifteen with the EP Lost and Found (2008). Although her follow-up albums brought mainstream success, it was only after the release of \"Good Day\", the lead single from her 2010 EP Real, that she achieved national stardom. \"Good Day\" went on to spend five consecutive weeks at the top of South Korea's Gaon Digital Chart, and in 2019, it was ranked number one on Billboard's \"100 Greatest K-Pop Songs of the 2010s\" list.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "tom-cruise-main-role",
+      "person_id": "tom-cruise",
+      "person_name": "Tom Cruise",
+      "answer": 1,
+      "claim": "The source identifies Tom Cruise as: Ator e produtor.",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Cruise",
+      "source_title": "Tom Cruise",
+      "source_excerpt": "Thomas Cruise Mapother IV is an American actor and film producer. Regarded as a Hollywood icon, he has received various accolades, including an Honorary Palme d'Or, an Academy Honorary Award, and three Golden Globes, in addition to nominations for four competitive Academy Awards. As of 2026, his films have grossed more than $13.3 billion worldwide, placing him among the highest-grossing actors of all time. One of Hollywood's most bankable stars, he is consistently one of the world's highest-paid actors.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "leonardo-dicaprio-main-role",
+      "person_id": "leonardo-dicaprio",
+      "person_name": "Leonardo DiCaprio",
+      "answer": 1,
+      "claim": "The source identifies Leonardo DiCaprio as: Ator e produtor.",
+      "source_url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+      "source_title": "Leonardo DiCaprio",
+      "source_excerpt": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, an Actor Award, a BAFTA Award, an Emmy Award, a Silver Bear and three Golden Globes. His films as a leading actor have grossed $7 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "brad-pitt-main-role",
+      "person_id": "brad-pitt",
+      "person_name": "Brad Pitt",
+      "answer": 1,
+      "claim": "The source identifies Brad Pitt as: Ator e produtor.",
+      "source_url": "https://en.wikipedia.org/wiki/Brad_Pitt",
+      "source_title": "Brad Pitt",
+      "source_excerpt": "William Bradley Pitt is an American actor and film producer. In a film career spanning more than thirty-five years, Pitt has received numerous accolades, including two Academy Awards, two British Academy Film Awards, two Golden Globe Awards, two Primetime Emmy Awards, and one Volpi Cup. His films as a leading actor have grossed over $7.5 billion worldwide.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "meryl-streep-main-role",
+      "person_id": "meryl-streep",
+      "person_name": "Meryl Streep",
+      "answer": 1,
+      "claim": "The source identifies Meryl Streep as: Atriz.",
+      "source_url": "https://en.wikipedia.org/wiki/Meryl_Streep",
+      "source_title": "Meryl Streep",
+      "source_excerpt": "Mary Louise \"Meryl\" Streep is an American actress. Widely regarded by peers and critics as the greatest actress of her generation, and by many as the greatest ever, she is recognized as one of the most versatile performers in cinema, noted for her technical precision, nuanced emotional depth, command of dialects, and professional longevity. Streep is an alumna of Vassar College and the Yale School of Drama, holding a Bachelor of Arts and a Master of Fine Arts. Her artistic process often includes refining her characters' dialogue so that their motivations possess a psychological depth and agency that transcend traditional archetypes. Beyond her creative work, she is a prominent advocate for gender parity, labor protections, and challenging the influence of the male gaze in film criticism and production.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "angelina-jolie-main-role",
+      "person_id": "angelina-jolie",
+      "person_name": "Angelina Jolie",
+      "answer": 1,
+      "claim": "The source identifies Angelina Jolie as: Atriz e diretora.",
+      "source_url": "https://en.wikipedia.org/wiki/Angelina_Jolie",
+      "source_title": "Angelina Jolie",
+      "source_excerpt": "Angelina Jolie is an American actress, filmmaker, and humanitarian. She is the recipient of numerous accolades, including an Academy Award, a Tony Award and three Golden Globe Awards. Films in which she has appeared have grossed over $6.9 billion worldwide. She has been named Hollywood's highest-paid actress multiple times.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "keanu-reeves-main-role",
+      "person_id": "keanu-reeves",
+      "person_name": "Keanu Reeves",
+      "answer": 1,
+      "claim": "The source identifies Keanu Reeves as: Ator e músico.",
+      "source_url": "https://en.wikipedia.org/wiki/Keanu_Reeves",
+      "source_title": "Keanu Reeves",
+      "source_excerpt": "Keanu Charles Reeves is a Canadian actor and musician. The recipient of numerous accolades in a career on screen spanning four decades, he is known for his leading roles in action films, his amiable public image, and his philanthropic efforts. In 2020, The New York Times ranked him as the fourth-greatest actor of the 21st century, and in 2022, Time magazine named him one of the 100 most influential people in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "denzel-washington-main-role",
+      "person_id": "denzel-washington",
+      "person_name": "Denzel Washington",
+      "answer": 1,
+      "claim": "The source identifies Denzel Washington as: Ator e produtor.",
+      "source_url": "https://en.wikipedia.org/wiki/Denzel_Washington",
+      "source_title": "Denzel Washington",
+      "source_excerpt": "Denzel Hayes Washington Jr. is an American actor and producer. Known for his dramatic roles on stage and screen, he has received numerous accolades including two Academy Awards, an Actor Award, two Golden Globes, two Silver Bears and a Tony Award as well as nominations for a Grammy Award and two Primetime Emmy Awards. In 2020, The New York Times named Washington the greatest actor of the 21st century. He has also been honored with the Cecil B. DeMille Award in 2016, AFI Life Achievement Award in 2019, the Honorary Palme d'Or in 2025, and the Presidential Medal of Freedom in 2025. Films in which he has appeared have grossed over $5.1 billion worldwide.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "zendaya-main-role",
+      "person_id": "zendaya",
+      "person_name": "Zendaya",
+      "answer": 1,
+      "claim": "The source identifies Zendaya as: Atriz e cantora.",
+      "source_url": "https://en.wikipedia.org/wiki/Zendaya",
+      "source_title": "Zendaya",
+      "source_excerpt": "Zendaya Maree Stoermer Coleman is an American actress and singer. Known for her work in television and blockbusters, her films as a leading actress have grossed over $9.8 billion worldwide. Her accolades include two Primetime Emmy Awards and a Golden Globe. In 2022, Time named her one of the 100 most influential people in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "timothee-chalamet-main-role",
+      "person_id": "timothee-chalamet",
+      "person_name": "Timothée Chalamet",
+      "answer": 1,
+      "claim": "The source identifies Timothée Chalamet as: Ator.",
+      "source_url": "https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet",
+      "source_title": "Timothée Chalamet",
+      "source_excerpt": "Timothée Hal Chalamet is an American and French actor. Known for his work in a diverse range of films, he is the recipient of numerous accolades including an Actor Award, a Golden Globe Award, and two Critics' Choice Awards, in addition to nominations for four Academy Awards, six BAFTAs, and a Grammy Award. His films as a leading actor have grossed over US$2.3 billion worldwide.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "tom-holland-main-role",
+      "person_id": "tom-holland",
+      "person_name": "Tom Holland",
+      "answer": 1,
+      "claim": "The source identifies Tom Holland as: Ator.",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Holland",
+      "source_title": "Tom Holland",
+      "source_excerpt": "Thomas Stanley Holland is a British actor. His accolades include a BAFTA Award as well as two Critics' Choice Awards nominations. He is the highest-grossing actor of all time.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jenna-ortega-main-role",
+      "person_id": "jenna-ortega",
+      "person_name": "Jenna Ortega",
+      "answer": 1,
+      "claim": "The source identifies Jenna Ortega as: Atriz.",
+      "source_url": "https://en.wikipedia.org/wiki/Jenna_Ortega",
+      "source_title": "Jenna Ortega",
+      "source_excerpt": "Jenna Marie Ortega is an American actress. Known for her work in horror, Ortega has been called \"Gen Z's scream queen\" by media publications. She was featured on The Hollywood Reporter's Power 100 list in 2023 and the Forbes 30 Under 30 list in 2024.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "pedro-pascal-main-role",
+      "person_id": "pedro-pascal",
+      "person_name": "Pedro Pascal",
+      "answer": 1,
+      "claim": "The source identifies Pedro Pascal as: Ator.",
+      "source_url": "https://en.wikipedia.org/wiki/Pedro_Pascal",
+      "source_title": "Pedro Pascal",
+      "source_excerpt": "José Pedro Balmaceda Pascal is a Chilean and American actor. Known for his portrayals of parental figures on screen and stage, he has received numerous accolades including an Actor Award, in addition to nominations for a Golden Globe Award and four Primetime Emmy Awards. Time magazine named him one of the 100 most influential people in the world in 2023.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "kim-kardashian-main-role",
+      "person_id": "kim-kardashian",
+      "person_name": "Kim Kardashian",
+      "answer": 1,
+      "claim": "The source identifies Kim Kardashian as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Kim_Kardashian",
+      "source_title": "Kim Kardashian",
+      "source_excerpt": "Kimberly Noel Kardashian is an American media personality, socialite, and businesswoman. She first gained media attention in 2007 following the unauthorized release of a sex tape with American singer Ray J. Afterwards, she and her family began to appear on the E! reality television series Keeping Up with the Kardashians. The show aired until 2021, and its success led to the formation of several spin-offs before its revival in the form of Hulu's The Kardashians (2022–present) as part of her and her family's multi-year deal with the streaming service.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "kylie-jenner-main-role",
+      "person_id": "kylie-jenner",
+      "person_name": "Kylie Jenner",
+      "answer": 1,
+      "claim": "The source identifies Kylie Jenner as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Kylie_Jenner",
+      "source_title": "Kylie Jenner",
+      "source_excerpt": "Kylie Kristen Jenner is an American media personality, socialite, and businesswoman. She starred in the E! reality television series Keeping Up with the Kardashians from 2007 to 2021 and the Hulu reality television series The Kardashians starting in 2022. She is the founder and owner of the cosmetics company Kylie Cosmetics. She is currently the fifth-most-followed person on Instagram.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "kendall-jenner-main-role",
+      "person_id": "kendall-jenner",
+      "person_name": "Kendall Jenner",
+      "answer": 1,
+      "claim": "The source identifies Kendall Jenner as: Modelo e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Kendall_Jenner",
+      "source_title": "Kendall Jenner",
+      "source_excerpt": "Kendall Nicole Jenner is an American model, socialite, and media personality. She rose to fame in the reality television show Keeping Up with the Kardashians, in which she starred for 20 seasons and nearly 15 years from 2007 to 2021. The success of the show led to the creation of multiple spin-off series including Kourtney and Khloe Take Miami (2009), Kourtney and Kim Take New York (2011), Khloé & Lamar (2011), Rob & Chyna (2016) and Life of Kylie (2017). Following the decision to end their reality show, in 2022 she and her family starred in the reality television series The Kardashians on Hulu.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "khloe-kardashian-main-role",
+      "person_id": "khloe-kardashian",
+      "person_name": "Khloé Kardashian",
+      "answer": 1,
+      "claim": "The source identifies Khloé Kardashian as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Khlo%C3%A9_Kardashian",
+      "source_title": "Khloé Kardashian",
+      "source_excerpt": "Khloé Alexandra Kardashian is an American media personality, socialite, and businesswoman. She rose to fame starring with her family in the reality television series Keeping Up with the Kardashians from 2007 to 2021. Its success led to the creation of spin-offs, including Kourtney and Khloé Take Miami (2009–2013) and Kourtney and Khloé Take The Hamptons (2014–2015). Following the ending of their previous show, she and her family began starring on Hulu's The Kardashians in 2022.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "kourtney-kardashian-main-role",
+      "person_id": "kourtney-kardashian",
+      "person_name": "Kourtney Kardashian",
+      "answer": 1,
+      "claim": "The source identifies Kourtney Kardashian as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Kourtney_Kardashian",
+      "source_title": "Kourtney Kardashian",
+      "source_excerpt": "Kourtney Kardashian Barker is an American media personality, socialite and businesswoman. In 2007, she and her family began starring in the reality television series Keeping Up with the Kardashians. Its success led to the creation of spin-offs including Kourtney and Kim Take Miami  and Kourtney and Kim Take New York. After she and her family made the decision to end their show after 20 seasons in 2021, they began appearing in an all new reality television series titled The Kardashians on Hulu in 2022.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "kris-jenner-main-role",
+      "person_id": "kris-jenner",
+      "person_name": "Kris Jenner",
+      "answer": 1,
+      "claim": "The source identifies Kris Jenner as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Kris_Jenner",
+      "source_title": "Kris Jenner",
+      "source_excerpt": "Kristen Mary Jenner is an American media personality, socialite, and businesswoman. She rose to fame starring in the reality television series Keeping Up with the Kardashians (2007–2021) with her family. The success of their show led her and her family to star in multiple spin-off series, including Kourtney and Khloe Take Miami (2009), Kourtney and Kim Take New York (2011), Khloe & Lamar (2011), Rob & Chyna (2016) and Life of Kylie (2017). She acted as executive producer for most of her family's reality programs. In 2013, she hosted a six week long pop culture-driven daytime talk show, called Kris. Following her family's decision to sign off from E! in 2021, they then went on to star in The Kardashians on Hulu from 2022.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "gigi-hadid-main-role",
+      "person_id": "gigi-hadid",
+      "person_name": "Gigi Hadid",
+      "answer": 1,
+      "claim": "The source identifies Gigi Hadid as: Modelo.",
+      "source_url": "https://en.wikipedia.org/wiki/Gigi_Hadid",
+      "source_title": "Gigi Hadid",
+      "source_excerpt": "Jelena Noura \"Gigi\" Hadid is an American fashion model and television personality. In 2016, she was named International Model of the Year by the British Fashion Council. Throughout her career, Hadid has made at least 50 appearances in international Vogue. Models.com ranks her as one of the \"New Supers\". Since 2017, Hadid has been one of the highest-paid models in the world, earning $20 million.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "bella-hadid-main-role",
+      "person_id": "bella-hadid",
+      "person_name": "Bella Hadid",
+      "answer": 1,
+      "claim": "The source identifies Bella Hadid as: Modelo.",
+      "source_url": "https://en.wikipedia.org/wiki/Bella_Hadid",
+      "source_title": "Bella Hadid",
+      "source_excerpt": "Isabella Khair Hadid is an American fashion model. In 2022, she was named Model of the Year by the British Fashion Council. Throughout her career, Hadid has made at least 35 appearances on international Vogue covers. Time magazine named her one of the 100 most influential people in the world on its annual list in 2023.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "gisele-bundchen-main-role",
+      "person_id": "gisele-bundchen",
+      "person_name": "Gisele Bündchen",
+      "answer": 1,
+      "claim": "The source identifies Gisele Bündchen as: Modelo e ativista.",
+      "source_url": "https://en.wikipedia.org/wiki/Gisele_B%C3%BCndchen",
+      "source_title": "Gisele Bündchen",
+      "source_excerpt": "Gisele Caroline Bündchen is a Brazilian model and activist. Since 2001, she has been one of the highest-paid models in the world. In 2007, Bündchen was the 16th-richest woman in the entertainment industry and earned the top spot on Forbes highest-paid models list from 2005 to 2016. In 2014, she was listed as the 89th most powerful woman in Media and Entertainment by Forbes.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "naomi-campbell-main-role",
+      "person_id": "naomi-campbell",
+      "person_name": "Naomi Campbell",
+      "answer": 1,
+      "claim": "The source identifies Naomi Campbell as: Modelo e atriz.",
+      "source_url": "https://en.wikipedia.org/wiki/Naomi_Campbell",
+      "source_title": "Naomi Campbell",
+      "source_excerpt": "Naomi Elaine Campbell is a British model and actress. Beginning her career at the age of eight, Campbell was one of six models of her generation declared supermodels by the fashion industry and the international press. She was the first black woman to appear as a model on the covers of Time and Vogue France.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "paris-hilton-main-role",
+      "person_id": "paris-hilton",
+      "person_name": "Paris Hilton",
+      "answer": 1,
+      "claim": "The source identifies Paris Hilton as: Empresária e personalidade de reality.",
+      "source_url": "https://en.wikipedia.org/wiki/Paris_Hilton",
+      "source_title": "Paris Hilton",
+      "source_excerpt": "Paris Whitney Hilton is an American socialite, media personality, entertainer, and businesswoman. Born in New York City, she is a great-granddaughter of Hilton Hotels founder Conrad Hilton. She first attracted tabloid attention in the late 1990s for her presence in New York City's social scene, ventured into fashion modeling in 2000, and was proclaimed \"New York's leading It Girl\" in 2001. The reality television series The Simple Life (2003–2007), in which she co-starred with her friend Nicole Richie, and a leaked 2003 sex tape with her then-boyfriend Rick Salomon, later released as 1 Night in Paris (2004), catapulted her to global fame.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "tyra-banks-main-role",
+      "person_id": "tyra-banks",
+      "person_name": "Tyra Banks",
+      "answer": 1,
+      "claim": "The source identifies Tyra Banks as: Modelo e personalidade de televisão.",
+      "source_url": "https://en.wikipedia.org/wiki/Tyra_Banks",
+      "source_title": "Tyra Banks",
+      "source_excerpt": "Tyra Lynne Banks is an American model, television personality, producer, writer, actress, and businesswoman. She began her career as a model at the age of 15 and was the first African American woman to be featured on the covers of GQ and the Sports Illustrated Swimsuit Issue, on which she appeared three times. Banks was one of only a few Black models to achieve supermodel status. She was a Victoria's Secret Angel from 1997 to 2005. By the early 2000s, Banks was one of the world's top-earning models.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "elon-musk-main-role",
+      "person_id": "elon-musk",
+      "person_name": "Elon Musk",
+      "answer": 1,
+      "claim": "Elon Musk is a businessman and the CEO of Tesla and SpaceX.",
+      "source_url": "https://en.wikipedia.org/wiki/Elon_Musk",
+      "source_title": "Elon Musk",
+      "source_excerpt": "Elon Reeve Musk is a businessman and former public official who is the chief executive officer (CEO) and largest shareholder of Tesla and SpaceX. Musk has been the wealthiest person in the world since 2025, and briefly became the only trillionaire in June 2026; as of September 2026, Forbes estimates his net worth to be US$964 billion.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "mark-zuckerberg-main-role",
+      "person_id": "mark-zuckerberg",
+      "person_name": "Mark Zuckerberg",
+      "answer": 1,
+      "claim": "The source identifies Mark Zuckerberg as: Empresário e programador.",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+      "source_title": "Mark Zuckerberg",
+      "source_excerpt": "Mark Elliot Zuckerberg is an American businessman and programmer who co-founded the social media service Facebook and its parent company Meta Platforms. He is its chairman, chief executive officer (CEO), and controlling shareholder.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jeff-bezos-main-role",
+      "person_id": "jeff-bezos",
+      "person_name": "Jeff Bezos",
+      "answer": 1,
+      "claim": "The source identifies Jeff Bezos as: Empresário e fundador da Amazon.",
+      "source_url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
+      "source_title": "Jeff Bezos",
+      "source_excerpt": "Jeffrey Preston Bezos is an American businessman, and the founder, executive chairman, and former president and CEO of Amazon, the world's largest e-commerce and cloud computing company. According to the Bloomberg Billionaires Index and Forbes, he was the world's wealthiest person from 2017 to 2021, and in 2026, his net worth was approximately US$284 billion.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "bill-gates-main-role",
+      "person_id": "bill-gates",
+      "person_name": "Bill Gates",
+      "answer": 1,
+      "claim": "The source identifies Bill Gates as: Empresário e filantropo.",
+      "source_url": "https://en.wikipedia.org/wiki/Bill_Gates",
+      "source_title": "Bill Gates",
+      "source_excerpt": "William Henry Gates III is an American businessman and philanthropist. A pioneer of the microcomputer revolution of the 1970s and 1980s, he co-founded the software company Microsoft in 1975 with his childhood friend Paul Allen. Following Microsoft's initial public offering in 1986 and the subsequent increase in its stock price, Gates became the world's then-youngest billionaire in 1987, at age 31. Forbes magazine ranked him as the world's wealthiest person in their The World's Billionaires list for 18 out of 24 years between 1995 and 2017, including 13 years consecutively from 1995 to 2007. Gates became the first centibillionaire in 1999, when his net worth briefly surpassed US$100 billion. According to Forbes, as of July 2026, his net worth stood at US$106.5 billion, making him the 19th-wealthiest individual in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "warren-buffett-main-role",
+      "person_id": "warren-buffett",
+      "person_name": "Warren Buffett",
+      "answer": 1,
+      "claim": "The source identifies Warren Buffett as: Investidor e filantropo.",
+      "source_url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+      "source_title": "Warren Buffett",
+      "source_excerpt": "Warren Edward Buffett is an American investor and philanthropist who is the chairman emeritus and former CEO of the conglomerate Berkshire Hathaway. As a result of his success, Buffett is one of the best-known investors in the world. According to Forbes, as of January 2026, Buffett's estimated net worth stood at US$148.9 billion, making him the ninth-richest person in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "larry-page-main-role",
+      "person_id": "larry-page",
+      "person_name": "Larry Page",
+      "answer": 1,
+      "claim": "The source identifies Larry Page as: Cofundador de empresa de tecnologia.",
+      "source_url": "https://en.wikipedia.org/wiki/Larry_Page",
+      "source_title": "Larry Page",
+      "source_excerpt": "Lawrence Edward Page is an American businessman and computer scientist who co-founded Google with Sergey Brin. Page is a centibillionaire and among the richest people in the world. As of 2026, the Bloomberg Billionaires Index and Forbes estimated his net worth at US$334.1 billion, positioning him as the second-wealthiest individual in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "sergey-brin-main-role",
+      "person_id": "sergey-brin",
+      "person_name": "Sergey Brin",
+      "answer": 1,
+      "claim": "The source identifies Sergey Brin as: Cofundador de empresa de tecnologia.",
+      "source_url": "https://en.wikipedia.org/wiki/Sergey_Brin",
+      "source_title": "Sergey Brin",
+      "source_excerpt": "Sergey Mikhailovich Brin is an American computer scientist and businessman who co-founded Google with Larry Page. He was the president of Google's parent company, Alphabet Inc., until stepping down from the role in 2019. He and Page remain at Alphabet as co-founders, controlling shareholders, and board members. Brin is a centibillionaire and among the richest people in the world; as of August 2026, his estimated net worth is US$264.9 billion.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jensen-huang-main-role",
+      "person_id": "jensen-huang",
+      "person_name": "Jensen Huang",
+      "answer": 1,
+      "claim": "The source identifies Jensen Huang as: Executivo de tecnologia e engenheiro elétrico.",
+      "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
+      "source_title": "Jensen Huang",
+      "source_excerpt": "Jen-Hsun \"Jensen\" Huang is a Taiwanese and American business executive and electrical engineer who is the co-founder, president, and CEO of Nvidia, the world's most valuable company. As of September 2026, Forbes estimates his net worth at over US$190 billion, making him the eighth-wealthiest individual in the world.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "sam-altman-main-role",
+      "person_id": "sam-altman",
+      "person_name": "Sam Altman",
+      "answer": 1,
+      "claim": "The source identifies Sam Altman as: Empresário e investidor.",
+      "source_url": "https://en.wikipedia.org/wiki/Sam_Altman",
+      "source_title": "Sam Altman",
+      "source_excerpt": "Samuel Harris Altman is an American entrepreneur and investor who has been the chief executive officer (CEO) of the artificial intelligence company OpenAI since 2019.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "tim-cook-main-role",
+      "person_id": "tim-cook",
+      "person_name": "Tim Cook",
+      "answer": 1,
+      "claim": "Tim Cook is an American business executive and the executive chairman of Apple Inc.",
+      "source_url": "https://en.wikipedia.org/wiki/Tim_Cook",
+      "source_title": "Tim Cook",
+      "source_excerpt": "Timothy Donald Cook is an American business executive who served as the chief executive officer (CEO) of Apple Inc. from 2011 to 2026, and has been the company's executive chairman since September 2026. Cook joined the technology company in 1998 as senior vice president for worldwide operations, and later served as vice president for worldwide sales and operations and then as chief operating officer under co-founder Steve Jobs. He was appointed chief executive in 2011, when Jobs resigned due to failing health. Under Cook, Apple grew into one of the world's most valuable companies; in 2025 it was the second largest technology company by revenue in the world, at US$416 billion. Cook led a succession plan that saw John Ternus succeed him as CEO.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "jack-ma-main-role",
+      "person_id": "jack-ma",
+      "person_name": "Jack Ma",
+      "answer": 1,
+      "claim": "Jack Ma is a Chinese businessman and co-founder of Alibaba Group.",
+      "source_url": "https://en.wikipedia.org/wiki/Jack_Ma",
+      "source_title": "Jack Ma",
+      "source_excerpt": "Ma Yun, also known as Jack Ma, is a Chinese businessman and philanthropist. He is the founder of the Jack Ma Foundation, and co-founder of Alibaba Group and Yunfeng Capital. He is one of the richest men in China with a net worth of approx US$27.5 billion.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "bernard-arnault-main-role",
+      "person_id": "bernard-arnault",
+      "person_name": "Bernard Arnault",
+      "answer": 1,
+      "claim": "Bernard Arnault is a French businessman and the chairman and CEO of LVMH, a luxury goods company.",
+      "source_url": "https://en.wikipedia.org/wiki/Bernard_Arnault",
+      "source_title": "Bernard Arnault",
+      "source_excerpt": "Bernard Jean Étienne Arnault is a French businessman. He is the chairman and chief executive officer (CEO) of LVMH, the world's largest luxury goods company. Arnault is one of the richest individuals in the world; as of December 2025, he has an estimated net worth of US$190.4 billion according to Forbes and US$203 billion according to the Bloomberg Billionaires Index.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    },
+    {
+      "id": "djavan-main-role",
+      "person_id": "djavan",
+      "person_name": "Djavan",
+      "answer": 1,
+      "claim": "Djavan is a Brazilian singer-songwriter and guitarist.",
+      "source_url": "https://en.wikipedia.org/wiki/Djavan",
+      "source_title": "Djavan",
+      "source_excerpt": "Djavan Caetano Viana is a Brazilian singer-songwriter and guitarist.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24"
+    }
+  ]
+}

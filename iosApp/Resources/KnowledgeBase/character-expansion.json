@@ -1,0 +1,2539 @@
+{
+  "people": [
+    {
+      "id": "lebron-james",
+      "name": "LeBron James",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Jogador de basquete",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 1,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 1,
+        "nba_champion": 1,
+        "american_football": 0,
+        "sports_born_before_1985": 1
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "stephen-curry",
+      "name": "Stephen Curry",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Jogador de basquete",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 1,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 1,
+        "nba_champion": 1,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "giannis-antetokounmpo",
+      "name": "Giannis Antetokounmpo",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Grécia",
+      "profession": "Jogador de basquete",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 1,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 0,
+        "nba_champion": 1,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "luka-doncic",
+      "name": "Luka Dončić",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Eslovênia",
+      "profession": "Jogador de basquete",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 1,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 0,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "nikola-jokic",
+      "name": "Nikola Jokić",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Sérvia",
+      "profession": "Jogador de basquete",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 1,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 1,
+        "nba_champion": 1,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "serena-williams",
+      "name": "Serena Williams",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Tenista",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 1,
+        "motorsport": 0,
+        "team_sport": 0,
+        "olympic_medalist": 1,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 1
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "roger-federer",
+      "name": "Roger Federer",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Suíça",
+      "profession": "Tenista",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 1,
+        "motorsport": 0,
+        "team_sport": 0,
+        "olympic_medalist": 1,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 1
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "novak-djokovic",
+      "name": "Novak Djokovic",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Sérvia",
+      "profession": "Tenista",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 1,
+        "motorsport": 0,
+        "team_sport": 0,
+        "olympic_medalist": 1,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "lewis-hamilton",
+      "name": "Lewis Hamilton",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Reino Unido",
+      "profession": "Piloto de automobilismo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 0,
+        "motorsport": 1,
+        "team_sport": 0,
+        "olympic_medalist": 0,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "max-verstappen",
+      "name": "Max Verstappen",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Países Baixos",
+      "profession": "Piloto de automobilismo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 0,
+        "motorsport": 1,
+        "team_sport": 0,
+        "olympic_medalist": 0,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "simone-biles",
+      "name": "Simone Biles",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ginasta",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 0,
+        "olympic_medalist": 1,
+        "nba_champion": 0,
+        "american_football": 0,
+        "sports_born_before_1985": 0
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "tom-brady",
+      "name": "Tom Brady",
+      "categories": [
+        "Outros esportes"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Jogador de futebol americano",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "basketball": 0,
+        "tennis": 0,
+        "motorsport": 0,
+        "team_sport": 1,
+        "olympic_medalist": 0,
+        "nba_champion": 0,
+        "american_football": 1,
+        "sports_born_before_1985": 1
+      },
+      "avatarSymbol": "sportscourt.fill"
+    },
+    {
+      "id": "taylor-swift",
+      "name": "Taylor Swift",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cantora e compositora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 1,
+        "acted_in_film": 0,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "beyonce",
+      "name": "Beyoncé",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cantora e compositora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 1,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "rihanna",
+      "name": "Rihanna",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Barbados",
+      "profession": "Cantora, compositora e empresária",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 1,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 1
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "lady-gaga",
+      "name": "Lady Gaga",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cantora, compositora e atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "adele",
+      "name": "Adele",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Reino Unido",
+      "profession": "Cantora e compositora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 0,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "justin-bieber",
+      "name": "Justin Bieber",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Canadá",
+      "profession": "Cantor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 0,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "ariana-grande",
+      "name": "Ariana Grande",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cantora e atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "drake",
+      "name": "Drake",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Canadá",
+      "profession": "Rapper, cantor e ator",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 0,
+        "hip_hop": 1,
+        "latin_music": 0,
+        "r_and_b": 1,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "eminem",
+      "name": "Eminem",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Rapper",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 0,
+        "hip_hop": 1,
+        "latin_music": 0,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 0,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "bad-bunny",
+      "name": "Bad Bunny",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Porto Rico",
+      "profession": "Cantor e rapper",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 0,
+        "hip_hop": 1,
+        "latin_music": 1,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "shakira",
+      "name": "Shakira",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Colômbia",
+      "profession": "Cantora e compositora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 1,
+        "r_and_b": 0,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "the-weeknd",
+      "name": "The Weeknd",
+      "categories": [
+        "Música internacional"
+      ],
+      "country": "Canadá",
+      "profession": "Cantor e compositor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "pop_music": 1,
+        "hip_hop": 0,
+        "latin_music": 0,
+        "r_and_b": 1,
+        "country_music": 0,
+        "acted_in_film": 1,
+        "born_in_barbados": 0
+      },
+      "avatarSymbol": "music.note"
+    },
+    {
+      "id": "jungkook",
+      "name": "Jungkook",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantor e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 1,
+        "kpop_born_before_1996": 0
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "jimin",
+      "name": "Jimin",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantor e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 1,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "v-kim-taehyung",
+      "name": "V (Kim Taehyung)",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantor e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "suga",
+      "name": "Suga",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Rapper e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 1,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "jin-bts",
+      "name": "Jin",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantor e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 1,
+        "born_before_1993": 1,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "rm-bts",
+      "name": "RM",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Rapper e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "j-hope",
+      "name": "J-Hope",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Rapper e integrante do BTS",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 1,
+        "blackpink_member": 0,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 1,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "lisa-blackpink",
+      "name": "Lisa",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Tailândia",
+      "profession": "Rapper e cantora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 0,
+        "blackpink_member": 1,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 0,
+        "known_for_dance": 1,
+        "kpop_born_before_1996": 0
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "jennie-blackpink",
+      "name": "Jennie",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantora e integrante do BLACKPINK",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 0,
+        "blackpink_member": 1,
+        "solo_artist": 0,
+        "rapper": 1,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 0
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "rose-blackpink",
+      "name": "Rosé",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Nova Zelândia",
+      "profession": "Cantora e integrante do BLACKPINK",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 0,
+        "blackpink_member": 1,
+        "solo_artist": 0,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 0,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 0
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "jisoo-blackpink",
+      "name": "Jisoo",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantora e integrante do BLACKPINK",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 0,
+        "blackpink_member": 1,
+        "solo_artist": 0,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 0,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "iu",
+      "name": "IU",
+      "categories": [
+        "K-pop"
+      ],
+      "country": "Coreia do Sul",
+      "profession": "Cantora e atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "bts_member": 0,
+        "blackpink_member": 0,
+        "solo_artist": 1,
+        "rapper": 0,
+        "born_before_1994": 0,
+        "born_before_1993": 0,
+        "born_in_south_korea": 1,
+        "known_for_dance": 1,
+        "kpop_born_before_1996": 1
+      },
+      "avatarSymbol": "music.mic"
+    },
+    {
+      "id": "tom-cruise",
+      "name": "Tom Cruise",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ator e produtor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 0,
+        "tv_series_lead": 0,
+        "cinema_director": 0,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "leonardo-dicaprio",
+      "name": "Leonardo DiCaprio",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ator e produtor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 1,
+        "superhero_film": 0,
+        "tv_series_lead": 0,
+        "cinema_director": 0,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "brad-pitt",
+      "name": "Brad Pitt",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ator e produtor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 1,
+        "superhero_film": 0,
+        "tv_series_lead": 0,
+        "cinema_director": 0,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "meryl-streep",
+      "name": "Meryl Streep",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 1,
+        "superhero_film": 0,
+        "tv_series_lead": 1,
+        "cinema_director": 0,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "angelina-jolie",
+      "name": "Angelina Jolie",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Atriz e diretora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 1,
+        "superhero_film": 1,
+        "tv_series_lead": 0,
+        "cinema_director": 1,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "keanu-reeves",
+      "name": "Keanu Reeves",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Canadá",
+      "profession": "Ator e músico",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 1,
+        "tv_series_lead": 0,
+        "cinema_director": 1,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "denzel-washington",
+      "name": "Denzel Washington",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ator e produtor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 1,
+        "superhero_film": 0,
+        "tv_series_lead": 0,
+        "cinema_director": 1,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 0,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "zendaya",
+      "name": "Zendaya",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Atriz e cantora",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 1,
+        "tv_series_lead": 1,
+        "cinema_director": 0,
+        "born_before_1980": 0,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "timothee-chalamet",
+      "name": "Timothée Chalamet",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Ator",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 0,
+        "tv_series_lead": 0,
+        "cinema_director": 0,
+        "born_before_1980": 0,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "tom-holland",
+      "name": "Tom Holland",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Reino Unido",
+      "profession": "Ator",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 1,
+        "tv_series_lead": 1,
+        "cinema_director": 0,
+        "born_before_1980": 0,
+        "science_fiction_franchise": 0,
+        "action_franchise": 1
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "jenna-ortega",
+      "name": "Jenna Ortega",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 0,
+        "tv_series_lead": 1,
+        "cinema_director": 0,
+        "born_before_1980": 0,
+        "science_fiction_franchise": 0,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "pedro-pascal",
+      "name": "Pedro Pascal",
+      "categories": [
+        "Cinema e TV"
+      ],
+      "country": "Chile",
+      "profession": "Ator",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "oscar_winner": 0,
+        "superhero_film": 1,
+        "tv_series_lead": 1,
+        "cinema_director": 0,
+        "born_before_1980": 1,
+        "science_fiction_franchise": 1,
+        "action_franchise": 0
+      },
+      "avatarSymbol": "theatermasks.fill"
+    },
+    {
+      "id": "kim-kardashian",
+      "name": "Kim Kardashian",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 1,
+        "fashion_brand_owner": 1,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "kylie-jenner",
+      "name": "Kylie Jenner",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 1,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 0
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "kendall-jenner",
+      "name": "Kendall Jenner",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Modelo e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 1,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "khloe-kardashian",
+      "name": "Khloé Kardashian",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 1,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "kourtney-kardashian",
+      "name": "Kourtney Kardashian",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "kris-jenner",
+      "name": "Kris Jenner",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 1,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 0
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "gigi-hadid",
+      "name": "Gigi Hadid",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Modelo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 1,
+        "reality_tv": 0,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "bella-hadid",
+      "name": "Bella Hadid",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Modelo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 0,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 1,
+        "reality_tv": 0,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 0
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "gisele-bundchen",
+      "name": "Gisele Bündchen",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Brasil",
+      "profession": "Modelo e ativista",
+      "attributes": {
+        "brazilian": 1,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 1,
+        "reality_tv": 0,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "naomi-campbell",
+      "name": "Naomi Campbell",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Reino Unido",
+      "profession": "Modelo e atriz",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 1,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 0,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "paris-hilton",
+      "name": "Paris Hilton",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresária e personalidade de reality",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 0,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 1,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "tyra-banks",
+      "name": "Tyra Banks",
+      "categories": [
+        "Moda e reality"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Modelo e personalidade de televisão",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 0,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "kardashian_family": 0,
+        "fashion_model": 1,
+        "reality_tv": 1,
+        "beauty_brand_founder": 0,
+        "fashion_brand_owner": 0,
+        "lifestyle_brand": 1,
+        "fashion_born_before_1996": 1
+      },
+      "avatarSymbol": "sparkles"
+    },
+    {
+      "id": "elon-musk",
+      "name": "Elon Musk",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresário e executivo de tecnologia",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 1,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "mark-zuckerberg",
+      "name": "Mark Zuckerberg",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresário e programador",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 1,
+        "social_network_founder": 1,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "jeff-bezos",
+      "name": "Jeff Bezos",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresário e fundador da Amazon",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 1,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "bill-gates",
+      "name": "Bill Gates",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresário e filantropo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 1,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "warren-buffett",
+      "name": "Warren Buffett",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Investidor e filantropo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 0,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "larry-page",
+      "name": "Larry Page",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cofundador de empresa de tecnologia",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 1,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "sergey-brin",
+      "name": "Sergey Brin",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Cofundador de empresa de tecnologia",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 1,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 1,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "jensen-huang",
+      "name": "Jensen Huang",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Taiwan",
+      "profession": "Executivo de tecnologia e engenheiro elétrico",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 1,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "sam-altman",
+      "name": "Sam Altman",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Empresário e investidor",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 0,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "tim-cook",
+      "name": "Tim Cook",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "Estados Unidos",
+      "profession": "Executivo de tecnologia",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 0,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 1,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "jack-ma",
+      "name": "Jack Ma",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "China",
+      "profession": "Empresário e cofundador do Alibaba Group",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 1,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 1,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 1,
+        "luxury_goods_leader": 0
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "bernard-arnault",
+      "name": "Bernard Arnault",
+      "categories": [
+        "Tecnologia e negócios"
+      ],
+      "country": "França",
+      "profession": "Empresário de produtos de luxo",
+      "attributes": {
+        "brazilian": 0,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 0,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "technology_company_founder": 0,
+        "software_company_founder": 0,
+        "social_network_founder": 0,
+        "ecommerce_founder": 0,
+        "hardware_company": 0,
+        "born_in_russia": 0,
+        "founded_outside_us": 0,
+        "luxury_goods_leader": 1
+      },
+      "avatarSymbol": "lightbulb.fill"
+    },
+    {
+      "id": "djavan",
+      "name": "Djavan",
+      "categories": [
+        "Artistas brasileiros"
+      ],
+      "country": "Brasil",
+      "profession": "Cantor, compositor e guitarrista",
+      "attributes": {
+        "brazilian": 1,
+        "alive": 1,
+        "male": 1,
+        "born_before_1970": 1,
+        "born_before_1990": 1,
+        "football": 0,
+        "artist": 1,
+        "creator": 0,
+        "politician": 0,
+        "historical": 0,
+        "singer": 1,
+        "actor": 0,
+        "presenter": 0,
+        "writer": 1,
+        "instrumentalist": 1,
+        "director": 0
+      },
+      "avatarSymbol": "music.note",
+      "imageName": "djavan.jpg"
+    }
+  ],
+  "questions": [
+    {
+      "id": "basketball",
+      "text": "É conhecido por jogar basquete?",
+      "attribute": "basketball",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "tennis",
+      "text": "É conhecido por jogar tênis?",
+      "attribute": "tennis",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "motorsport",
+      "text": "Compete ou competiu no automobilismo?",
+      "attribute": "motorsport",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "team-sport",
+      "text": "Seu esporte é praticado principalmente em equipe?",
+      "attribute": "team_sport",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "olympic-medalist",
+      "text": "Conquistou medalha olímpica?",
+      "attribute": "olympic_medalist",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "nba-champion",
+      "text": "Conquistou um título da NBA?",
+      "attribute": "nba_champion",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "american-football",
+      "text": "É conhecido por jogar futebol americano?",
+      "attribute": "american_football",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "sports-born-before-1985",
+      "text": "Nasceu em 1984 ou antes?",
+      "attribute": "sports_born_before_1985",
+      "categories": [
+        "Outros esportes"
+      ]
+    },
+    {
+      "id": "pop-music",
+      "text": "É conhecido principalmente pela música pop?",
+      "attribute": "pop_music",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "hip-hop",
+      "text": "É conhecido por hip-hop ou rap?",
+      "attribute": "hip_hop",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "latin-music",
+      "text": "É conhecido por cantar música latina em espanhol?",
+      "attribute": "latin_music",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "r-and-b",
+      "text": "É conhecido por R&B?",
+      "attribute": "r_and_b",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "country-music",
+      "text": "Gravou álbuns do gênero country?",
+      "attribute": "country_music",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "acted-in-film",
+      "text": "Também atuou em filmes ou séries?",
+      "attribute": "acted_in_film",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "born-in-barbados",
+      "text": "Nasceu em Barbados?",
+      "attribute": "born_in_barbados",
+      "categories": [
+        "Música internacional"
+      ]
+    },
+    {
+      "id": "bts-member",
+      "text": "É integrante do BTS?",
+      "attribute": "bts_member",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "blackpink-member",
+      "text": "É integrante do BLACKPINK?",
+      "attribute": "blackpink_member",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "solo-artist",
+      "text": "Começou a carreira musical como artista solo, não como integrante de um grupo?",
+      "attribute": "solo_artist",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "rapper",
+      "text": "Também atua como rapper?",
+      "attribute": "rapper",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "born-before-1994",
+      "text": "Nasceu antes de 1994?",
+      "attribute": "born_before_1994",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "born-before-1993",
+      "text": "Nasceu antes de 1993?",
+      "attribute": "born_before_1993",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "born-in-south-korea",
+      "text": "Nasceu na Coreia do Sul?",
+      "attribute": "born_in_south_korea",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "known-for-dance",
+      "text": "É conhecido também por dançar?",
+      "attribute": "known_for_dance",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "kpop-born-before-1996",
+      "text": "O artista de K-pop nasceu até 1995?",
+      "attribute": "kpop_born_before_1996",
+      "categories": [
+        "K-pop"
+      ]
+    },
+    {
+      "id": "oscar-winner",
+      "text": "Recebeu um Oscar por atuação ou produção?",
+      "attribute": "oscar_winner",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "superhero-film",
+      "text": "Atuou em um filme de super-herói?",
+      "attribute": "superhero_film",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "tv-series-lead",
+      "text": "Protagonizou uma série de televisão?",
+      "attribute": "tv_series_lead",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "cinema-director",
+      "text": "Dirigiu um longa-metragem?",
+      "attribute": "cinema_director",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "born-before-1980",
+      "text": "Nasceu antes de 1980?",
+      "attribute": "born_before_1980",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "science-fiction-franchise",
+      "text": "Atuou em uma franquia de ficção científica?",
+      "attribute": "science_fiction_franchise",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "action-franchise",
+      "text": "Atuou em mais de um filme da mesma franquia de ação?",
+      "attribute": "action_franchise",
+      "categories": [
+        "Cinema e TV"
+      ]
+    },
+    {
+      "id": "kardashian-family",
+      "text": "Faz parte da família Kardashian-Jenner?",
+      "attribute": "kardashian_family",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "fashion-model",
+      "text": "Trabalhou como modelo de moda?",
+      "attribute": "fashion_model",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "reality-tv",
+      "text": "Participou de reality shows como figura central?",
+      "attribute": "reality_tv",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "beauty-brand-founder",
+      "text": "Fundou uma marca de beleza?",
+      "attribute": "beauty_brand_founder",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "fashion-brand-owner",
+      "text": "Fundou ou lidera uma marca de moda?",
+      "attribute": "fashion_brand_owner",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "lifestyle-brand",
+      "text": "Fundou uma marca própria de produtos, moda, beleza ou estilo de vida?",
+      "attribute": "lifestyle_brand",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "fashion-born-before-1996",
+      "text": "Nasceu em 1995 ou antes?",
+      "attribute": "fashion_born_before_1996",
+      "categories": [
+        "Moda e reality"
+      ]
+    },
+    {
+      "id": "technology-company-founder",
+      "text": "Fundou ou cofundou uma empresa de tecnologia?",
+      "attribute": "technology_company_founder",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "software-company-founder",
+      "text": "Fundou ou cofundou uma empresa de software?",
+      "attribute": "software_company_founder",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "social-network-founder",
+      "text": "Fundou uma rede social?",
+      "attribute": "social_network_founder",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "ecommerce-founder",
+      "text": "Fundou uma empresa de comércio eletrônico?",
+      "attribute": "ecommerce_founder",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "hardware-company",
+      "text": "É conhecido por uma empresa que fabrica chips ou aparelhos eletrônicos?",
+      "attribute": "hardware_company",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "born-in-russia",
+      "text": "Nasceu na Rússia?",
+      "attribute": "born_in_russia",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "founded-outside-us",
+      "text": "A empresa de tecnologia que fundou tem sede fora dos EUA?",
+      "attribute": "founded_outside_us",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    },
+    {
+      "id": "luxury-goods-leader",
+      "text": "Lidera ou liderou uma empresa de marcas de luxo?",
+      "attribute": "luxury_goods_leader",
+      "categories": [
+        "Tecnologia e negócios"
+      ]
+    }
+  ]
+}

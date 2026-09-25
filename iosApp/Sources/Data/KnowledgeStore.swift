@@ -29,7 +29,19 @@ final class KnowledgeStore {
             guard let data = try? Data(contentsOf: url) else {
                 throw KnowledgeLoadError.unreadableData
             }
-            base = try JSONDecoder().decode(KnowledgeBase.self, from: data)
+            let primary = try JSONDecoder().decode(KnowledgeBase.self, from: data)
+            if let expansionURL = Bundle.main.url(forResource: "character-expansion", withExtension: "json", subdirectory: "KnowledgeBase") {
+                guard let expansionData = try? Data(contentsOf: expansionURL) else {
+                    throw KnowledgeLoadError.unreadableData
+                }
+                let expansion = try JSONDecoder().decode(KnowledgeBase.self, from: expansionData)
+                base = KnowledgeBase(
+                    people: primary.people + expansion.people,
+                    questions: primary.questions + expansion.questions
+                )
+            } else {
+                base = primary
+            }
             loadError = nil
         } catch let error as KnowledgeLoadError {
             base = KnowledgeBase(people: [], questions: [])

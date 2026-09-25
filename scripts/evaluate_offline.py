@@ -22,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 CONTENT_PATH = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
+EXPANSION_PATH = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
 
 ANSWERS = {
     "yes": 1.0,
@@ -197,6 +198,10 @@ def main():
     args = parser.parse_args()
 
     base = json.loads(CONTENT_PATH.read_text(encoding="utf-8"))
+    if EXPANSION_PATH.is_file():
+        expansion = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))
+        base["people"].extend(expansion["people"])
+        base["questions"].extend(expansion["questions"])
     people_by_id = {p["id"]: p for p in base["people"]}
     categories = sorted({c for p in base["people"] for c in p["categories"]})
     scenarios = ["ideal", "one_unknown", "one_contradiction"]

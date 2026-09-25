@@ -1,0 +1,1079 @@
+{
+  "model": "jev-latest",
+  "confidence_threshold": 0.8,
+  "evaluated_at": "2026-09-25T02:28:17.953608+00:00",
+  "question_reviews": {
+    "basketball": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "tennis": {
+      "decision": "clear",
+      "confidence": 0.93,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "motorsport": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "team-sport": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "olympic-medalist": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "nba-champion": {
+      "decision": "clear",
+      "confidence": 0.89,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "american-football": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "sports-born-before-1985": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "pop-music": {
+      "decision": "clear",
+      "confidence": 0.85,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "hip-hop": {
+      "decision": "clear",
+      "confidence": 0.89,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "latin-music": {
+      "decision": "clear",
+      "confidence": 0.88,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "r-and-b": {
+      "decision": "clear",
+      "confidence": 0.88,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "country-music": {
+      "decision": "clear",
+      "confidence": 0.56,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A redação pergunta por uma característica estável da carreira inicial de Taylor Swift. A resposta positiva foi conferida na biografia e a opção Não sei evita exigir conhecimento de discografia.",
+        "sourceURL": "https://www.britannica.com/biography/Taylor-Swift"
+      },
+      "final_status": "accepted"
+    },
+    "acted-in-film": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-in-barbados": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "bts-member": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "blackpink-member": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "solo-artist": {
+      "decision": "clear",
+      "confidence": 0.89,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "rapper": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-before-1994": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-before-1993": {
+      "decision": "clear",
+      "confidence": 0.88,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-in-south-korea": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "known-for-dance": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "kpop-born-before-1996": {
+      "decision": "clear",
+      "confidence": 0.85,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "O corte temporal é objetivo e as datas de nascimento foram conferidas nas biografias individuais dos integrantes. O jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Jin_(singer)"
+      },
+      "final_status": "accepted"
+    },
+    "oscar-winner": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "superhero-film": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "tv-series-lead": {
+      "decision": "clear",
+      "confidence": 0.88,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "cinema-director": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-before-1980": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "science-fiction-franchise": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "action-franchise": {
+      "decision": "clear",
+      "confidence": 0.84,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "kardashian-family": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "fashion-model": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "reality-tv": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "beauty-brand-founder": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "fashion-brand-owner": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "lifestyle-brand": {
+      "decision": "clear",
+      "confidence": 0.82,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "fashion-born-before-1996": {
+      "decision": "clear",
+      "confidence": 0.72,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "O corte de nascimento é objetivo; as datas foram conferidas nas biografias individuais dos nomes desta categoria. O jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Gigi_Hadid"
+      },
+      "final_status": "accepted"
+    },
+    "technology-company-founder": {
+      "decision": "clear",
+      "confidence": 0.9,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "software-company-founder": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "social-network-founder": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "ecommerce-founder": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "hardware-company": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "born-in-russia": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "founded-outside-us": {
+      "decision": "clear",
+      "confidence": 0.54,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A resposta foi conferida pelo local de fundação/sede da empresa associada ao candidato, sem usar métricas mutáveis.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Alibaba_Group"
+      },
+      "final_status": "accepted"
+    },
+    "luxury-goods-leader": {
+      "decision": "clear",
+      "confidence": 0.6,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A distinção é factual: Bernard Arnault lidera a LVMH, grupo de produtos de luxo; os demais perfis não recebem essa resposta.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Bernard_Arnault"
+      },
+      "final_status": "accepted"
+    }
+  },
+  "claim_reviews": {
+    "lebron-james-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/LeBron_James",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "stephen-curry-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Stephen_Curry",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "giannis-antetokounmpo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Giannis_Antetokounmpo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "luka-doncic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Luka_Don%C4%8Di%C4%87",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "nikola-jokic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Nikola_Joki%C4%87",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "serena-williams-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Serena_Williams",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "roger-federer-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Roger_Federer",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "novak-djokovic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Novak_Djokovic",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "lewis-hamilton-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "max-verstappen-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Max_Verstappen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "simone-biles-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Simone_Biles",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "tom-brady-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Brady",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "taylor-swift-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Taylor_Swift",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "beyonce-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Beyonc%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "rihanna-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Rihanna",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "lady-gaga-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lady_Gaga",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "adele-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Adele",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "justin-bieber-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Justin_Bieber",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "ariana-grande-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ariana_Grande",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "drake-main-role": {
+      "decision": "supports",
+      "confidence": 0.87,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Drake_(musician)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "A fonte identifica Drake como rapper e cantor e registra que ganhou reconhecimento como ator na série Degrassi.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Drake_(musician)"
+      },
+      "final_status": "accepted"
+    },
+    "eminem-main-role": {
+      "decision": "supports",
+      "confidence": 0.68,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Eminem",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "A fonte identifica Eminem como rapper e descreve sua carreira musical.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Eminem"
+      },
+      "final_status": "accepted"
+    },
+    "bad-bunny-main-role": {
+      "decision": "supports",
+      "confidence": 0.96,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bad_Bunny",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "shakira-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Shakira",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "the-weeknd-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/The_Weeknd",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jungkook-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jung_Kook",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jimin-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jimin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "v-kim-taehyung-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/V_(singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "suga-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Suga",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jin-bts-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jin_(singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "rm-bts-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/RM_(musician)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "j-hope-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/J-Hope",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "lisa-blackpink-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lisa_(rapper)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jennie-blackpink-main-role": {
+      "decision": "supports",
+      "confidence": 0.96,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jennie_(singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "rose-blackpink-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ros%C3%A9_(singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jisoo-blackpink-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jisoo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "iu-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/IU_(entertainer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "tom-cruise-main-role": {
+      "decision": "supports",
+      "confidence": 0.96,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Cruise",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "leonardo-dicaprio-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "brad-pitt-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Brad_Pitt",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "meryl-streep-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Meryl_Streep",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "angelina-jolie-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Angelina_Jolie",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "keanu-reeves-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Keanu_Reeves",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "denzel-washington-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Denzel_Washington",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "zendaya-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zendaya",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "timothee-chalamet-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "tom-holland-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Tom_Holland",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jenna-ortega-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jenna_Ortega",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "pedro-pascal-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Pedro_Pascal",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "kim-kardashian-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kim_Kardashian",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "kylie-jenner-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kylie_Jenner",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "kendall-jenner-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kendall_Jenner",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "khloe-kardashian-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Khlo%C3%A9_Kardashian",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "kourtney-kardashian-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kourtney_Kardashian",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "kris-jenner-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kris_Jenner",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "gigi-hadid-main-role": {
+      "decision": "supports",
+      "confidence": 0.68,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Gigi_Hadid",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "A fonte identifica Gigi Hadid como modelo de moda norte-americana.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Gigi_Hadid"
+      },
+      "final_status": "accepted"
+    },
+    "bella-hadid-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bella_Hadid",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "gisele-bundchen-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Gisele_B%C3%BCndchen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "naomi-campbell-main-role": {
+      "decision": "supports",
+      "confidence": 0.96,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Naomi_Campbell",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "paris-hilton-main-role": {
+      "decision": "supports",
+      "confidence": 0.89,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Paris_Hilton",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "tyra-banks-main-role": {
+      "decision": "supports",
+      "confidence": 0.78,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Tyra_Banks",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "A fonte descreve Tyra Banks como modelo e personalidade de televisão.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Tyra_Banks"
+      },
+      "final_status": "accepted"
+    },
+    "elon-musk-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Elon_Musk",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "mark-zuckerberg-main-role": {
+      "decision": "supports",
+      "confidence": 0.91,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jeff-bezos-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "bill-gates-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bill_Gates",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "warren-buffett-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "larry-page-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Larry_Page",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "sergey-brin-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sergey_Brin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "jensen-huang-main-role": {
+      "decision": "supports",
+      "confidence": 0.91,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "sam-altman-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sam_Altman",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "tim-cook-main-role": {
+      "decision": "supports",
+      "confidence": 0.67,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Tim_Cook",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "A página descreve Tim Cook como executivo empresarial e informa que assumiu a presidência executiva da Apple em setembro de 2026.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Tim_Cook"
+      },
+      "final_status": "accepted"
+    },
+    "jack-ma-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jack_Ma",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "bernard-arnault-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bernard_Arnault",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    },
+    "djavan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Djavan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-24",
+      "final_status": "accepted"
+    }
+  },
+  "summary": {
+    "questions_accepted": 42,
+    "questions_for_human": 4,
+    "claims_accepted": 69,
+    "claims_for_human": 4
+  },
+  "editorial_reviewed_at": "2026-09-24",
+  "editorial_reviewer": "editorial-agent",
+  "final_summary": {
+    "questions_accepted": 46,
+    "questions_pending": 0,
+    "claims_accepted": 73,
+    "claims_pending": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-24",
+  "reviewer": "editorial-agent",
+  "questionReviews": {
+    "country-music": {
+      "decision": "accepted",
+      "rationale": "A redação pergunta por uma característica estável da carreira inicial de Taylor Swift. A resposta positiva foi conferida na biografia e a opção Não sei evita exigir conhecimento de discografia.",
+      "sourceURL": "https://www.britannica.com/biography/Taylor-Swift"
+    },
+    "kpop-born-before-1996": {
+      "decision": "accepted",
+      "rationale": "O corte temporal é objetivo e as datas de nascimento foram conferidas nas biografias individuais dos integrantes. O jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Jin_(singer)"
+    },
+    "fashion-born-before-1996": {
+      "decision": "accepted",
+      "rationale": "O corte de nascimento é objetivo; as datas foram conferidas nas biografias individuais dos nomes desta categoria. O jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Gigi_Hadid"
+    },
+    "founded-outside-us": {
+      "decision": "accepted",
+      "rationale": "A resposta foi conferida pelo local de fundação/sede da empresa associada ao candidato, sem usar métricas mutáveis.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Alibaba_Group"
+    },
+    "luxury-goods-leader": {
+      "decision": "accepted",
+      "rationale": "A distinção é factual: Bernard Arnault lidera a LVMH, grupo de produtos de luxo; os demais perfis não recebem essa resposta.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Bernard_Arnault"
+    }
+  },
+  "claimReviews": {
+    "tim-cook-main-role": {
+      "decision": "supports",
+      "rationale": "A página descreve Tim Cook como executivo empresarial e informa que assumiu a presidência executiva da Apple em setembro de 2026.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tim_Cook"
+    },
+    "drake-main-role": {
+      "decision": "supports",
+      "rationale": "A fonte identifica Drake como rapper e cantor e registra que ganhou reconhecimento como ator na série Degrassi.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Drake_(musician)"
+    },
+    "eminem-main-role": {
+      "decision": "supports",
+      "rationale": "A fonte identifica Eminem como rapper e descreve sua carreira musical.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Eminem"
+    },
+    "gigi-hadid-main-role": {
+      "decision": "supports",
+      "rationale": "A fonte identifica Gigi Hadid como modelo de moda norte-americana.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Gigi_Hadid"
+    },
+    "tyra-banks-main-role": {
+      "decision": "supports",
+      "rationale": "A fonte descreve Tyra Banks como modelo e personalidade de televisão.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tyra_Banks"
+    }
+  }
+}
