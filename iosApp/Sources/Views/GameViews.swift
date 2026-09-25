@@ -386,6 +386,7 @@ private struct QuestionCard: View {
                 .foregroundStyle(DesignSystem.Palette.ink)
                 .padding(.horizontal, 6)
                 .accessibilityAddTraits(.isHeader)
+                .accessibilityIdentifier("question.\(question.attribute)")
 
             LazyVGrid(columns: columns, spacing: 10) {
                 AnswerButton(title: "Sim", symbol: "checkmark", color: DesignSystem.Palette.lime) { answer(.yes) }
