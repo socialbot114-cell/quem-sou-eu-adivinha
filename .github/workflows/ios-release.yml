@@ -2,6 +2,12 @@ name: iOS TestFlight
 
 on:
   workflow_dispatch:
+    inputs:
+      upload_to_testflight:
+        description: Upload the generated IPA to TestFlight after building
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -329,6 +335,7 @@ jobs:
           retention-days: 14
 
       - name: Upload to TestFlight
+        if: ${{ inputs.upload_to_testflight }}
         env:
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
           APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
