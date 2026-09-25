@@ -14,8 +14,6 @@ jobs:
         device:
           - name: iPhone 17
             slug: iphone
-          - name: iPad Air 13-inch (M4)
-            slug: ipad
     steps:
       - uses: actions/checkout@v5
       - name: Install XcodeGen
