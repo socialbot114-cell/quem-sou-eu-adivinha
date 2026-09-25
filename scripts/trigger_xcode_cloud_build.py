@@ -14,7 +14,9 @@ import jwt
 
 
 API_ROOT = "https://api.appstoreconnect.apple.com/v1"
+APP_STORE_CONNECT_APP_ID = "6810873964"
 BUNDLE_ID = "br.com.quemsoueu.adivinha"
+APP_SKU = "quem-sou-eu-adivinha-001"
 REPOSITORY_OWNER = "socialbot114-cell"
 REPOSITORY_NAME = "quem-sou-eu-adivinha"
 MARKETING_VERSION = "1.2.2"
@@ -197,17 +199,38 @@ def find_distribution_build(run_id: str) -> dict:
 
 
 def main() -> None:
-    apps = list_pages(f"/apps?filter[bundleId]={BUNDLE_ID}&limit=200")
-    if len(apps) != 1:
-        raise RuntimeError(f"Expected one App Store Connect app with bundle ID {BUNDLE_ID}; found {len(apps)}")
-    app = apps[0]
+    app = api_request(f"/apps/{APP_STORE_CONNECT_APP_ID}").get("data")
+    if not app:
+        raise RuntimeError(f"App Store Connect app {APP_STORE_CONNECT_APP_ID} was not found")
+    app_attributes = app.get("attributes", {})
+    if app_attributes.get("bundleId") != BUNDLE_ID or app_attributes.get("sku") != APP_SKU:
+        raise RuntimeError(
+            f"App Store Connect ID {APP_STORE_CONNECT_APP_ID} does not match the requested bundle ID and SKU"
+        )
 
     products = list_pages("/ciProducts?limit=200")
-    products_for_app = [product for product in products if related_app_id(product["id"]) == app["id"]]
+    product_app_ids = {product["id"]: related_app_id(product["id"]) for product in products}
+    products_for_app = [product for product in products if product_app_ids[product["id"]] == APP_STORE_CONNECT_APP_ID]
+    direct_product = None
+    direct_lookup = "not available"
+    if not products_for_app:
+        try:
+            direct_product = api_request(f"/apps/{APP_STORE_CONNECT_APP_ID}/ciProduct").get("data")
+            direct_lookup = "found" if direct_product else "empty"
+        except RuntimeError as error:
+            if "HTTP 404" not in str(error):
+                raise
+            direct_lookup = "endpoint unavailable"
+        if direct_product and direct_product.get("type") == "ciProducts":
+            products_for_app = [api_request(f"/ciProducts/{direct_product['id']}")["data"]]
     if len(products_for_app) != 1:
+        visible_links = ", ".join(
+            f"{product['id']}→{product_app_ids.get(product['id'], 'unknown')}" for product in products
+        ) or "none"
         raise RuntimeError(
-            f"Expected one Xcode Cloud product for {BUNDLE_ID}; found {len(products_for_app)}. "
-            "Connect this app and its repository to Xcode Cloud in App Store Connect first."
+            f"Verified App Store Connect app {APP_STORE_CONNECT_APP_ID} ({BUNDLE_ID}, SKU {APP_SKU}), "
+            f"but found {len(products_for_app)} linked Xcode Cloud products. Visible product/app links: {visible_links}. "
+            f"Direct app-product lookup: {direct_lookup}. No ciBuildRuns request was sent."
         )
     product = products_for_app[0]
     workflow = select_workflow(product["id"])
