@@ -91,7 +91,9 @@ Obrigado.
 
 Use screenshots capturadas do build final em um iPhone real ou no Simulator. Não use as imagens de referência da pasta `prints/`.
 
-Recommended order for the 6.7-inch iPhone slot:
+The checked-in release package is in `store-kit/screenshots/iphone/` and contains three real app screenshots at `1284x2778` for the 6.5-inch iPhone slot (`APP_IPHONE_65`). Apple currently requires the 6.5-inch set when a 6.9-inch set is not provided, and scales it for supported displays. See [Apple's screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/).
+
+Recommended order when expanding the set:
 
 1. Home screen showing the mascot and `Jogar agora`.
 2. Category screen showing the category grid.
@@ -99,18 +101,22 @@ Recommended order for the 6.7-inch iPhone slot:
 4. Result screen showing a successful guess.
 5. Profile screen showing offline operation and privacy information.
 
-Recommended screenshot size: `1290x2796` pixels in portrait for the 6.7-inch slot. Capture the final build after the build is marked `VALID` in App Store Connect.
+For a dedicated 6.9-inch set, use an accepted portrait size such as `1290x2796` pixels and the `APP_IPHONE_67` display type. Capture the final release candidate after its build is marked `VALID` in App Store Connect.
 
 ## Final Submission Checklist
 
-- [ ] Build 41 is uploaded and marked `VALID`.
-- [ ] Select build 41 for version 1.2.3.
-- [ ] Upload five real iPhone screenshots.
+- [ ] Confirm build 41 is marked `VALID` through the App Store Connect API.
+- [ ] Associate build 41 with version 1.2.3.
+- [ ] Upload the three validated 6.5-inch screenshots; expand to five when result/profile captures for that display are available.
 - [ ] Confirm subtitle, description, keywords and URLs.
 - [ ] Set `Games` / `Trivia` and free pricing.
-- [ ] Complete the age-rating questionnaire for the intended 9+ family audience.
+- [ ] Confirm the age-rating questionnaire matches the app content (currently recorded as 4+ in `PROJECT_STATUS.md`).
 - [ ] Set App Privacy to `Data Not Collected`.
 - [ ] Answer export compliance.
 - [ ] Confirm content rights.
 - [ ] Paste the review notes above.
-- [ ] Submit for Review.
+- [ ] Submit for Review through `.github/workflows/app-store-review.yml` after inspecting the live App Store Connect state.
+
+## API Workflow
+
+Run `App Store Connect Release` manually from the release branch with `operation=inspect` to read the build, version, screenshot, review-contact, and submission states. After confirming the report, run with `operation=submit` and the exact confirmation `SUBMIT 1.2.3 (41)`. The submit operation waits for build 41 to become `VALID`, uploads the version metadata and screenshots, associates the build, and submits the version for review with automatic release after approval.
