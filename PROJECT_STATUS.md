@@ -11,7 +11,8 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 - Bundle identifier resource ID: `XS57YRQC46`
 - Provisioning profile: `Quem Sou Eu Adivinha App Store 2026 v2` (`YX8AJ63395`)
 - Profile UUID: `2bf9e748-a220-4274-a157-c5878696d5dc`
-- Candidato de release: versão `1.2.3`, build `41` (IPA enviado ao TestFlight pelo GitHub Actions, run `36331786815`).
+- Versão `1.2.3`, build `41`: IPA enviado ao TestFlight (run `36331786815`) e submetido à App Review; App Store Connect está em `WAITING_FOR_REVIEW`, com publicação automática após aprovação (`AFTER_APPROVAL`).
+- App Store version ID: `056c95ba-e1f4-484b-8377-3622a368f980`; review submission ID: `e452da04-8ccf-4245-ac9d-04d41184cf83`.
 - Site: https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/
 - Repositório do app: https://github.com/socialbot114-cell/quem-sou-eu-adivinha
 - Repositório do site: https://github.com/socialbot114-cell/quem-sou-eu-adivinha-site
@@ -26,18 +27,17 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 
 ## Próximos marcos
 
-- Confirmar o processamento do build 41 pelo workflow `.github/workflows/app-store-review.yml`; os testes de UI das telas principais passaram no workflow de screenshots do mesmo commit.
-- Criar/submeter a versão 1.2.3 para App Review pela API após confirmar o build e os screenshots no relatório do workflow.
-- Screenshots selecionados para a submissão: `store-kit/screenshots/iphone/` (três PNGs 1284×2778, slot iPhone 6,5", validados contra as capturas do app).
-- Para a 1.2.3, usar o workflow `ios-release.yml`, que assina e envia o IPA ao TestFlight pela API do App Store Connect. A integração Xcode Cloud é separada e permanece como tarefa posterior.
+- Acompanhar a App Review da versão 1.2.3. O workflow de verificação `36336639557` confirmou o build 41 `VALID`, associado à versão; os screenshots do slot iPhone 6,5" estão todos `COMPLETE`.
+- A versão será publicada automaticamente depois da aprovação da Apple (`releaseType: AFTER_APPROVAL`).
+- A submissão foi realizada pelo workflow `.github/workflows/app-store-review.yml` (run `36336324022`); inspeção inicial: `36336221653`.
+- Screenshots fornecidos: `store-kit/screenshots/iphone/` (três PNGs 1284×2778, slot iPhone 6,5"). O App Store Connect mostra oito imagens `COMPLETE` nesse conjunto.
+- O workflow `ios-release.yml` assinou e enviou o IPA ao TestFlight pela API do App Store Connect. A integração Xcode Cloud é separada e permanece como tarefa posterior.
 - Revisão editorial dos perfis e perguntas da base expandida com o worker JERV concluída.
 - Revisar manualmente as 2.749 células da matriz de respostas dos 150 novos personagens que ainda não atingiram o limiar de evidência JERV.
 - Avaliar a diferença restante em acerto no cenário simulado com uma resposta contraditória antes do próximo release.
-- Adicionar screenshots e vídeo de demonstração gerados no simulador macOS via GitHub Actions.
-- Criar site de suporte e privacidade.
-- Criar App ID e registro exclusivo no App Store Connect.
-- Configurar workflow TestFlight.
-- Testar em aparelho real e enviar a versão 1.2 para revisão.
+- Screenshots e vídeo de demonstração foram gerados no simulador macOS via GitHub Actions.
+- Site de suporte e privacidade publicado; App ID e registro App Store Connect configurados.
+- Workflow TestFlight configurado; teste em aparelho físico continua como validação futura.
 
 ## Catálogo expandido
 
