@@ -1,7 +1,7 @@
 {
   "model": "jev-latest",
   "confidence_threshold": 0.8,
-  "evaluated_at": "2026-09-25T02:28:17.953608+00:00",
+  "evaluated_at": "2026-09-27T14:08:47.090666+00:00",
   "question_reviews": {
     "basketball": {
       "decision": "clear",
@@ -11,61 +11,61 @@
     },
     "tennis": {
       "decision": "clear",
-      "confidence": 0.93,
+      "confidence": 0.94,
       "status": "accepted",
       "final_status": "accepted"
     },
     "motorsport": {
       "decision": "clear",
-      "confidence": 0.92,
+      "confidence": 0.9,
       "status": "accepted",
       "final_status": "accepted"
     },
     "team-sport": {
       "decision": "clear",
-      "confidence": 0.91,
+      "confidence": 0.92,
       "status": "accepted",
       "final_status": "accepted"
     },
     "olympic-medalist": {
       "decision": "clear",
-      "confidence": 0.97,
+      "confidence": 0.98,
       "status": "accepted",
       "final_status": "accepted"
     },
     "nba-champion": {
       "decision": "clear",
-      "confidence": 0.89,
+      "confidence": 0.93,
       "status": "accepted",
       "final_status": "accepted"
     },
     "american-football": {
       "decision": "clear",
-      "confidence": 0.92,
+      "confidence": 0.91,
       "status": "accepted",
       "final_status": "accepted"
     },
     "sports-born-before-1985": {
       "decision": "clear",
-      "confidence": 0.95,
+      "confidence": 0.96,
       "status": "accepted",
       "final_status": "accepted"
     },
     "pop-music": {
       "decision": "clear",
-      "confidence": 0.85,
+      "confidence": 0.83,
       "status": "accepted",
       "final_status": "accepted"
     },
     "hip-hop": {
       "decision": "clear",
-      "confidence": 0.89,
+      "confidence": 0.88,
       "status": "accepted",
       "final_status": "accepted"
     },
     "latin-music": {
       "decision": "clear",
-      "confidence": 0.88,
+      "confidence": 0.89,
       "status": "accepted",
       "final_status": "accepted"
     },
@@ -77,7 +77,7 @@
     },
     "country-music": {
       "decision": "clear",
-      "confidence": 0.56,
+      "confidence": 0.59,
       "status": "human-review",
       "editorial_review": {
         "decision": "accepted",
@@ -94,61 +94,66 @@
     },
     "born-in-barbados": {
       "decision": "clear",
-      "confidence": 0.97,
+      "confidence": 0.95,
       "status": "accepted",
       "final_status": "accepted"
     },
     "bts-member": {
       "decision": "clear",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "status": "accepted",
       "final_status": "accepted"
     },
     "blackpink-member": {
       "decision": "clear",
-      "confidence": 0.98,
+      "confidence": 0.96,
       "status": "accepted",
       "final_status": "accepted"
     },
     "solo-artist": {
       "decision": "clear",
-      "confidence": 0.89,
+      "confidence": 0.91,
       "status": "accepted",
       "final_status": "accepted"
     },
     "rapper": {
       "decision": "clear",
-      "confidence": 0.94,
+      "confidence": 0.92,
       "status": "accepted",
       "final_status": "accepted"
     },
     "born-before-1994": {
       "decision": "clear",
-      "confidence": 0.91,
+      "confidence": 0.89,
       "status": "accepted",
       "final_status": "accepted"
     },
     "born-before-1993": {
       "decision": "clear",
-      "confidence": 0.88,
-      "status": "accepted",
+      "confidence": 0.78,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "É um corte de ano de nascimento objetivo; datas incertas podem receber Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Jin_(singer)"
+      },
       "final_status": "accepted"
     },
     "born-in-south-korea": {
       "decision": "clear",
-      "confidence": 0.96,
+      "confidence": 0.95,
       "status": "accepted",
       "final_status": "accepted"
     },
     "known-for-dance": {
       "decision": "clear",
-      "confidence": 0.92,
+      "confidence": 0.91,
       "status": "accepted",
       "final_status": "accepted"
     },
     "kpop-born-before-1996": {
       "decision": "clear",
-      "confidence": 0.85,
+      "confidence": 0.82,
       "status": "accepted",
       "editorial_review": {
         "decision": "accepted",
@@ -159,13 +164,13 @@
     },
     "oscar-winner": {
       "decision": "clear",
-      "confidence": 0.87,
+      "confidence": 0.88,
       "status": "accepted",
       "final_status": "accepted"
     },
     "superhero-film": {
       "decision": "clear",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "status": "accepted",
       "final_status": "accepted"
     },
@@ -177,25 +182,25 @@
     },
     "cinema-director": {
       "decision": "clear",
-      "confidence": 0.97,
+      "confidence": 0.95,
       "status": "accepted",
       "final_status": "accepted"
     },
     "born-before-1980": {
       "decision": "clear",
-      "confidence": 0.92,
+      "confidence": 0.95,
       "status": "accepted",
       "final_status": "accepted"
     },
     "science-fiction-franchise": {
       "decision": "clear",
-      "confidence": 0.91,
+      "confidence": 0.89,
       "status": "accepted",
       "final_status": "accepted"
     },
     "action-franchise": {
       "decision": "clear",
-      "confidence": 0.84,
+      "confidence": 0.88,
       "status": "accepted",
       "final_status": "accepted"
     },
@@ -207,37 +212,42 @@
     },
     "fashion-model": {
       "decision": "clear",
-      "confidence": 0.95,
+      "confidence": 0.97,
       "status": "accepted",
       "final_status": "accepted"
     },
     "reality-tv": {
       "decision": "clear",
-      "confidence": 0.87,
+      "confidence": 0.86,
       "status": "accepted",
       "final_status": "accepted"
     },
     "beauty-brand-founder": {
       "decision": "clear",
-      "confidence": 0.96,
+      "confidence": 0.97,
       "status": "accepted",
       "final_status": "accepted"
     },
     "fashion-brand-owner": {
       "decision": "clear",
-      "confidence": 0.87,
+      "confidence": 0.86,
       "status": "accepted",
       "final_status": "accepted"
     },
     "lifestyle-brand": {
       "decision": "clear",
-      "confidence": 0.82,
-      "status": "accepted",
+      "confidence": 0.79,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta cobre uma marca própria fundada ou liderada pela personalidade em produtos, moda, beleza ou estilo de vida, e permite Não sei quando o jogador não conhece a atividade empresarial.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Kimora_Lee_Simmons"
+      },
       "final_status": "accepted"
     },
     "fashion-born-before-1996": {
       "decision": "clear",
-      "confidence": 0.72,
+      "confidence": 0.73,
       "status": "human-review",
       "editorial_review": {
         "decision": "accepted",
@@ -248,19 +258,19 @@
     },
     "technology-company-founder": {
       "decision": "clear",
-      "confidence": 0.9,
+      "confidence": 0.91,
       "status": "accepted",
       "final_status": "accepted"
     },
     "software-company-founder": {
       "decision": "clear",
-      "confidence": 0.87,
+      "confidence": 0.86,
       "status": "accepted",
       "final_status": "accepted"
     },
     "social-network-founder": {
       "decision": "clear",
-      "confidence": 0.95,
+      "confidence": 0.93,
       "status": "accepted",
       "final_status": "accepted"
     },
@@ -272,19 +282,24 @@
     },
     "hardware-company": {
       "decision": "clear",
-      "confidence": 0.87,
+      "confidence": 0.85,
       "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta descreve uma associação pública com fabricantes de chips ou aparelhos eletrônicos; o jogador pode usar conhecimento geral ou responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Computer_hardware"
+      },
       "final_status": "accepted"
     },
     "born-in-russia": {
       "decision": "clear",
-      "confidence": 0.97,
+      "confidence": 0.94,
       "status": "accepted",
       "final_status": "accepted"
     },
     "founded-outside-us": {
       "decision": "clear",
-      "confidence": 0.54,
+      "confidence": 0.39,
       "status": "human-review",
       "editorial_review": {
         "decision": "accepted",
@@ -295,12 +310,298 @@
     },
     "luxury-goods-leader": {
       "decision": "clear",
-      "confidence": 0.6,
+      "confidence": 0.62,
       "status": "human-review",
       "editorial_review": {
         "decision": "accepted",
         "rationale": "A distinção é factual: Bernard Arnault lidera a LVMH, grupo de produtos de luxo; os demais perfis não recebem essa resposta.",
         "sourceURL": "https://en.wikipedia.org/wiki/Bernard_Arnault"
+      },
+      "final_status": "accepted"
+    },
+    "born-before-1995": {
+      "decision": "clear",
+      "confidence": 0.85,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "É um corte de ano de nascimento objetivo, usado igualmente nas três categorias e respondível com Não sei quando a pessoa não souber a data.",
+        "sourceURL": "https://en.wikipedia.org/wiki/BoA"
+      },
+      "final_status": "accepted"
+    },
+    "born-before-1998": {
+      "decision": "clear",
+      "confidence": 0.85,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "É um corte de ano de nascimento objetivo, aplicável a K-pop e criadores digitais, e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Chung_Ha"
+      },
+      "final_status": "accepted"
+    },
+    "born-before-2000": {
+      "decision": "clear",
+      "confidence": 0.9,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "É um corte de ano de nascimento objetivo para a categoria K-pop; a resposta pode ser conferida em biografias e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)"
+      },
+      "final_status": "accepted"
+    },
+    "born-before-1975": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "É um corte de ano de nascimento objetivo e a pergunta não depende de interpretação da carreira artística.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Maria_Beth%C3%A2nia"
+      },
+      "final_status": "accepted"
+    },
+    "stray-kids-member": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Stray_Kids"
+      },
+      "final_status": "accepted"
+    },
+    "twice-member": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Twice"
+      },
+      "final_status": "accepted"
+    },
+    "exo-member": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Exo"
+      },
+      "final_status": "accepted"
+    },
+    "shinee-member": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Shinee"
+      },
+      "final_status": "accepted"
+    },
+    "gidle-member": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/I-dle"
+      },
+      "final_status": "accepted"
+    },
+    "aespa-member": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Aespa"
+      },
+      "final_status": "accepted"
+    },
+    "ive-member": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Ive_(group)"
+      },
+      "final_status": "accepted"
+    },
+    "bigbang-member": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+        "sourceURL": "https://en.wikipedia.org/wiki/BigBang_(South_Korean_band)"
+      },
+      "final_status": "accepted"
+    },
+    "ioi-member": {
+      "decision": "clear",
+      "confidence": 0.79,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta usa o tempo passado porque o I.O.I encerrou as atividades após seus anos de promoção conjunta.",
+        "sourceURL": "https://en.wikipedia.org/wiki/I.O.I"
+      },
+      "final_status": "accepted"
+    },
+    "born-in-us": {
+      "decision": "clear",
+      "confidence": 0.72,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta trata de origem nacional conhecida, como os demais atributos de país do jogo, e admite Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Billie_Eilish"
+      },
+      "final_status": "accepted"
+    },
+    "girl-group-member": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta distingue integrantes de grupos vocais femininos de artistas solo e de grupos masculinos.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
+      },
+      "final_status": "accepted"
+    },
+    "boy-band-member": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta distingue integrantes de grupos vocais masculinos de artistas solo e de grupos femininos.",
+        "sourceURL": "https://en.wikipedia.org/wiki/NSYNC"
+      },
+      "final_status": "accepted"
+    },
+    "golf": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "Golfista é uma ocupação esportiva objetiva e diferente das modalidades indicadas pelas outras pistas da categoria.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Tiger_Woods"
+      },
+      "final_status": "accepted"
+    },
+    "combat-sports": {
+      "decision": "clear",
+      "confidence": 0.87,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta usa uma categoria esportiva reconhecível e verificável, sem pedir que o jogador conheça uma organização específica.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Conor_McGregor"
+      },
+      "final_status": "accepted"
+    },
+    "born-in-serbia": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A nacionalidade é uma informação objetiva de biografia e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Novak_Djokovic"
+      },
+      "final_status": "accepted"
+    },
+    "born-in-spain": {
+      "decision": "clear",
+      "confidence": 0.96,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A nacionalidade é uma informação objetiva de biografia e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Fernando_Alonso"
+      },
+      "final_status": "accepted"
+    },
+    "taller-than-two-meters": {
+      "decision": "clear",
+      "confidence": 0.93,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A altura é um dado mensurável; o corte de dois metros é simples e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/LeBron_James"
+      },
+      "final_status": "accepted"
+    },
+    "samba-artist": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "Samba é um gênero musical reconhecível; a pergunta permite resposta Não sei para artistas cuja relação com o gênero não seja conhecida pelo jogador.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Alcione_Nazareth"
+      },
+      "final_status": "accepted"
+    },
+    "sertanejo-artist": {
+      "decision": "clear",
+      "confidence": 0.89,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "Sertanejo é um gênero musical definido e popular no Brasil; a pergunta permite resposta Não sei quando o repertório não for conhecido.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Mar%C3%ADlia_Mendon%C3%A7a"
+      },
+      "final_status": "accepted"
+    },
+    "creator-podcaster": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta se refere a apresentar regularmente um podcast, atividade pública verificável; o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Emma_Chamberlain"
+      },
+      "final_status": "accepted"
+    },
+    "creator-tiktok-origin": {
+      "decision": "clear",
+      "confidence": 0.91,
+      "status": "accepted",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A redação pergunta pela plataforma em que a pessoa ganhou projeção inicialmente, não por uma plataforma que passou a usar depois.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Charli_D%27Amelio"
+      },
+      "final_status": "accepted"
+    },
+    "creator-engineer": {
+      "decision": "clear",
+      "confidence": 0.77,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "rationale": "A pergunta se refere a formação em engenharia, uma qualificação objetiva, e o jogador pode responder Não sei.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Mark_Rober"
       },
       "final_status": "accepted"
     }
@@ -408,7 +709,7 @@
     },
     "simone-biles-main-role": {
       "decision": "supports",
-      "confidence": 0.98,
+      "confidence": 0.97,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Simone_Biles",
       "source_license": "CC BY-SA 4.0",
@@ -448,7 +749,7 @@
     },
     "rihanna-main-role": {
       "decision": "supports",
-      "confidence": 0.95,
+      "confidence": 0.96,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Rihanna",
       "source_license": "CC BY-SA 4.0",
@@ -458,7 +759,7 @@
     },
     "lady-gaga-main-role": {
       "decision": "supports",
-      "confidence": 0.98,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Lady_Gaga",
       "source_license": "CC BY-SA 4.0",
@@ -498,7 +799,7 @@
     },
     "drake-main-role": {
       "decision": "supports",
-      "confidence": 0.87,
+      "confidence": 0.92,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Drake_(musician)",
       "source_license": "CC BY-SA 4.0",
@@ -513,8 +814,8 @@
     },
     "eminem-main-role": {
       "decision": "supports",
-      "confidence": 0.68,
-      "status": "human-review",
+      "confidence": 0.85,
+      "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Eminem",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -538,7 +839,7 @@
     },
     "shakira-main-role": {
       "decision": "supports",
-      "confidence": 0.92,
+      "confidence": 0.94,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Shakira",
       "source_license": "CC BY-SA 4.0",
@@ -548,7 +849,7 @@
     },
     "the-weeknd-main-role": {
       "decision": "supports",
-      "confidence": 0.93,
+      "confidence": 0.92,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/The_Weeknd",
       "source_license": "CC BY-SA 4.0",
@@ -558,7 +859,7 @@
     },
     "jungkook-main-role": {
       "decision": "supports",
-      "confidence": 0.95,
+      "confidence": 0.93,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jung_Kook",
       "source_license": "CC BY-SA 4.0",
@@ -568,7 +869,7 @@
     },
     "jimin-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jimin",
       "source_license": "CC BY-SA 4.0",
@@ -613,7 +914,7 @@
       "source_url": "https://en.wikipedia.org/wiki/RM_(musician)",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "last_verified": "2026-09-24",
+      "last_verified": "2026-09-27",
       "final_status": "accepted"
     },
     "j-hope-main-role": {
@@ -638,7 +939,7 @@
     },
     "jennie-blackpink-main-role": {
       "decision": "supports",
-      "confidence": 0.96,
+      "confidence": 0.95,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jennie_(singer)",
       "source_license": "CC BY-SA 4.0",
@@ -673,12 +974,57 @@
       "source_url": "https://en.wikipedia.org/wiki/IU_(entertainer)",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "last_verified": "2026-09-24",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "psy-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Psy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica PSY como rapper, cantor e compositor sul-coreano, sustentando a profissão usada no jogo.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Psy"
+      },
+      "final_status": "accepted"
+    },
+    "g-dragon-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/G-Dragon",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica G-Dragon como rapper, cantor e compositor sul-coreano e registra sua liderança no BigBang.",
+        "sourceURL": "https://en.wikipedia.org/wiki/G-Dragon"
+      },
+      "final_status": "accepted"
+    },
+    "boa-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/BoA",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica BoA como cantora e compositora sul-coreana.",
+        "sourceURL": "https://en.wikipedia.org/wiki/BoA"
+      },
       "final_status": "accepted"
     },
     "tom-cruise-main-role": {
       "decision": "supports",
-      "confidence": 0.96,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Tom_Cruise",
       "source_license": "CC BY-SA 4.0",
@@ -718,7 +1064,7 @@
     },
     "angelina-jolie-main-role": {
       "decision": "supports",
-      "confidence": 0.93,
+      "confidence": 0.86,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Angelina_Jolie",
       "source_license": "CC BY-SA 4.0",
@@ -728,7 +1074,7 @@
     },
     "keanu-reeves-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Keanu_Reeves",
       "source_license": "CC BY-SA 4.0",
@@ -738,7 +1084,7 @@
     },
     "denzel-washington-main-role": {
       "decision": "supports",
-      "confidence": 1.0,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Denzel_Washington",
       "source_license": "CC BY-SA 4.0",
@@ -748,7 +1094,7 @@
     },
     "zendaya-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Zendaya",
       "source_license": "CC BY-SA 4.0",
@@ -758,7 +1104,7 @@
     },
     "timothee-chalamet-main-role": {
       "decision": "supports",
-      "confidence": 0.98,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet",
       "source_license": "CC BY-SA 4.0",
@@ -768,7 +1114,7 @@
     },
     "tom-holland-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Tom_Holland",
       "source_license": "CC BY-SA 4.0",
@@ -778,7 +1124,7 @@
     },
     "jenna-ortega-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jenna_Ortega",
       "source_license": "CC BY-SA 4.0",
@@ -788,7 +1134,7 @@
     },
     "pedro-pascal-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Pedro_Pascal",
       "source_license": "CC BY-SA 4.0",
@@ -798,7 +1144,7 @@
     },
     "kim-kardashian-main-role": {
       "decision": "supports",
-      "confidence": 0.92,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Kim_Kardashian",
       "source_license": "CC BY-SA 4.0",
@@ -808,7 +1154,7 @@
     },
     "kylie-jenner-main-role": {
       "decision": "supports",
-      "confidence": 0.98,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Kylie_Jenner",
       "source_license": "CC BY-SA 4.0",
@@ -858,8 +1204,8 @@
     },
     "gigi-hadid-main-role": {
       "decision": "supports",
-      "confidence": 0.68,
-      "status": "human-review",
+      "confidence": 0.92,
+      "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Gigi_Hadid",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -873,7 +1219,7 @@
     },
     "bella-hadid-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Bella_Hadid",
       "source_license": "CC BY-SA 4.0",
@@ -883,7 +1229,7 @@
     },
     "gisele-bundchen-main-role": {
       "decision": "supports",
-      "confidence": 1.0,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Gisele_B%C3%BCndchen",
       "source_license": "CC BY-SA 4.0",
@@ -893,7 +1239,7 @@
     },
     "naomi-campbell-main-role": {
       "decision": "supports",
-      "confidence": 0.96,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Naomi_Campbell",
       "source_license": "CC BY-SA 4.0",
@@ -903,7 +1249,7 @@
     },
     "paris-hilton-main-role": {
       "decision": "supports",
-      "confidence": 0.89,
+      "confidence": 0.97,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Paris_Hilton",
       "source_license": "CC BY-SA 4.0",
@@ -913,8 +1259,8 @@
     },
     "tyra-banks-main-role": {
       "decision": "supports",
-      "confidence": 0.78,
-      "status": "human-review",
+      "confidence": 0.99,
+      "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Tyra_Banks",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -928,7 +1274,7 @@
     },
     "elon-musk-main-role": {
       "decision": "supports",
-      "confidence": 1.0,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Elon_Musk",
       "source_license": "CC BY-SA 4.0",
@@ -938,7 +1284,7 @@
     },
     "mark-zuckerberg-main-role": {
       "decision": "supports",
-      "confidence": 0.91,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "source_license": "CC BY-SA 4.0",
@@ -948,7 +1294,7 @@
     },
     "jeff-bezos-main-role": {
       "decision": "supports",
-      "confidence": 0.97,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
       "source_license": "CC BY-SA 4.0",
@@ -958,7 +1304,7 @@
     },
     "bill-gates-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Bill_Gates",
       "source_license": "CC BY-SA 4.0",
@@ -968,7 +1314,7 @@
     },
     "warren-buffett-main-role": {
       "decision": "supports",
-      "confidence": 0.99,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Warren_Buffett",
       "source_license": "CC BY-SA 4.0",
@@ -978,17 +1324,22 @@
     },
     "larry-page-main-role": {
       "decision": "supports",
-      "confidence": 0.97,
+      "confidence": 0.94,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Larry_Page",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "last_verified": "2026-09-24",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Larry Page como empresário e cientista da computação e informa que cofundou o Google com Sergey Brin.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Larry_Page"
+      },
       "final_status": "accepted"
     },
     "sergey-brin-main-role": {
       "decision": "supports",
-      "confidence": 0.97,
+      "confidence": 1.0,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Sergey_Brin",
       "source_license": "CC BY-SA 4.0",
@@ -998,7 +1349,7 @@
     },
     "jensen-huang-main-role": {
       "decision": "supports",
-      "confidence": 0.91,
+      "confidence": 0.98,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
       "source_license": "CC BY-SA 4.0",
@@ -1008,7 +1359,7 @@
     },
     "sam-altman-main-role": {
       "decision": "supports",
-      "confidence": 0.95,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Sam_Altman",
       "source_license": "CC BY-SA 4.0",
@@ -1018,8 +1369,8 @@
     },
     "tim-cook-main-role": {
       "decision": "supports",
-      "confidence": 0.67,
-      "status": "human-review",
+      "confidence": 0.84,
+      "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Tim_Cook",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -1033,7 +1384,7 @@
     },
     "jack-ma-main-role": {
       "decision": "supports",
-      "confidence": 0.94,
+      "confidence": 0.99,
       "status": "accepted",
       "source_url": "https://en.wikipedia.org/wiki/Jack_Ma",
       "source_license": "CC BY-SA 4.0",
@@ -1051,6 +1402,51 @@
       "last_verified": "2026-09-24",
       "final_status": "accepted"
     },
+    "steve-jobs-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Jobs",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Steve Jobs como empresário norte-americano e informa que ele cofundou a Apple.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Steve_Jobs"
+      },
+      "final_status": "accepted"
+    },
+    "sheryl-sandberg-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sheryl_Sandberg",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Sheryl Sandberg como executiva de tecnologia e escritora, além de registrar seu cargo de COO na Meta.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Sheryl_Sandberg"
+      },
+      "final_status": "accepted"
+    },
+    "zhang-yiming-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zhang_Yiming",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Zhang Yiming como empresário chinês da internet e informa que fundou a ByteDance.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Zhang_Yiming"
+      },
+      "final_status": "accepted"
+    },
     "djavan-main-role": {
       "decision": "supports",
       "confidence": 1.0,
@@ -1060,20 +1456,1550 @@
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "last_verified": "2026-09-24",
       "final_status": "accepted"
+    },
+    "rita-lee-main-role": {
+      "decision": "supports",
+      "confidence": 0.77,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Rita_Lee",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Rita Lee como cantora, compositora e autora brasileira.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Rita_Lee"
+      },
+      "final_status": "accepted"
+    },
+    "maria-bethania-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Maria_Beth%C3%A2nia",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "milton-nascimento-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Milton_Nascimento",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "roberto-carlos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Roberto_Carlos_(singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jorge-ben-jor-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jorge_Ben",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "zeca-pagodinho-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zeca_Pagodinho",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "eliana-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Eliana_(television_host)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "alcione-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Alcione_Nazareth",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "maria-rita-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Maria_Rita",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Maria Rita como cantora brasileira.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Maria_Rita"
+      },
+      "final_status": "accepted"
+    },
+    "marilia-mendonca-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Mar%C3%ADlia_Mendon%C3%A7a",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "luan-santana-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Luan_Santana",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "simone-mendes-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Simone_Mendes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "cate-blanchett-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Cate_Blanchett",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "joaquin-phoenix-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Joaquin_Phoenix",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "emma-stone-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Emma_Stone",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ryan-gosling-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ryan_Gosling",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "sandra-bullock-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sandra_Bullock",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jennifer-lawrence-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jennifer_Lawrence",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "robert-downey-jr-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Robert_Downey_Jr.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "scarlett-johansson-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Scarlett_Johansson",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "cillian-murphy-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Cillian_Murphy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "viola-davis-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Viola_Davis",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "daniel-day-lewis-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Daniel_Day-Lewis",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "quentin-tarantino-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Quentin_Tarantino",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "sofia-coppola-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sofia_Coppola",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "pewdiepie-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/PewDiePie",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "mark-rober-main-role": {
+      "decision": "supports",
+      "confidence": 0.91,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Rober",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ninja-main-role": {
+      "decision": "supports",
+      "confidence": 0.84,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ninja_(gamer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Ninja como streamer, YouTuber e jogador profissional, incluindo seu conteúdo de jogos.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Ninja_(gamer)"
+      },
+      "final_status": "accepted"
+    },
+    "pokimane-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Pokimane",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ishowspeed-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/IShowSpeed",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "marques-brownlee-main-role": {
+      "decision": "supports",
+      "confidence": 0.81,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Marques_Brownlee",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Marques Brownlee como influenciador e avaliador de tecnologia, conhecido por vídeos de análise de produtos no YouTube.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Marques_Brownlee"
+      },
+      "final_status": "accepted"
+    },
+    "logan-paul-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Logan_Paul",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "charli-damelio-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Charli_D'Amelio",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "emma-chamberlain-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Emma_Chamberlain",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "hasan-piker-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Hasan_Piker",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "dhar-mann-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Dhar_Mann",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "liza-koshy-main-role": {
+      "decision": "supports",
+      "confidence": 0.9,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Liza_Koshy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "robert-lewandowski-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Robert_Lewandowski",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "karim-benzema-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Karim_Benzema",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "aitana-bonmati-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Aitana_Bonmat%C3%AD",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "alex-morgan-main-role": {
+      "decision": "supports",
+      "confidence": 0.91,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Alex_Morgan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "sam-kerr-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Sam_Kerr",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "megan-rapinoe-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Megan_Rapinoe",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "rodri-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Rodri",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "kaka-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kak%C3%A1",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "zico-futebol-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zico_(footballer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "didier-drogba-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Didier_Drogba",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "andrea-pirlo-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Andrea_Pirlo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "luis-suarez-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Luis_Su%C3%A1rez_(Uruguayan_footballer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "isaac-newton-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "nikola-tesla-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Nikola_Tesla",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "charles-darwin-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Charles_Darwin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ada-lovelace-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ada_Lovelace",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "winston-churchill-main-role": {
+      "decision": "supports",
+      "confidence": 0.79,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Winston_Churchill",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Winston Churchill como estadista e escritor e confirma que foi primeiro-ministro britânico.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Winston_Churchill"
+      },
+      "final_status": "accepted"
+    },
+    "abraham-lincoln-main-role": {
+      "decision": "supports",
+      "confidence": 0.8,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "susan-b-anthony-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Susan_B._Anthony",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "anne-frank-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Anne_Frank",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "julius-caesar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Julius_Caesar",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "florence-nightingale-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Florence_Nightingale",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "joan-of-arc-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "mary-wollstonecraft-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Mary_Wollstonecraft",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "taemin-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Taemin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "chungha-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Chung_Ha",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "baekhyun-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Baekhyun",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lee-know-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lee_Know",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "hyunjin-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "bang-chan-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bang_Chan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "nayeon-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Nayeon",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "momo-hirai-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Momo_Hirai",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "cl-singer-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/CL_(rapper)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "rain-singer-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Rain_(entertainer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "karina-aespa-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Karina_(South_Korean_singer)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jang-wonyoung-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jang_Won-young",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jeon-soyeon-main-role": {
+      "decision": "supports",
+      "confidence": 0.85,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Soyeon",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "hailey-bieber-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Hailey_Bieber",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "chrissy-teigen-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Chrissy_Teigen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "cindy-crawford-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Cindy_Crawford",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "martha-stewart-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Martha_Stewart",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "bethenny-frankel-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bethenny_Frankel",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "victoria-beckham-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Victoria_Beckham",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "kimora-lee-simmons-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kimora_Lee_Simmons",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ashley-graham-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ashley_Graham_(model)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "donatella-versace-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Donatella_Versace",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "cara-delevingne-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Cara_Delevingne",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "coco-chanel-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Coco_Chanel",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "alexa-chung-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Alexa_Chung",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "linda-evangelista-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Linda_Evangelista",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "billie-eilish-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Billie_Eilish",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ed-sheeran-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ed_Sheeran",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "bruno-mars-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bruno_Mars",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "justin-timberlake-main-role": {
+      "decision": "supports",
+      "confidence": 0.83,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Justin_Timberlake",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "usher-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Usher_(musician)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "j-cole-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/J._Cole",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jay-z-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jay-Z",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jennifer-lopez-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jennifer_Lopez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "celine-dion-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Celine_Dion",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "rosalia-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Rosal%C3%ADa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "j-balvin-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/J_Balvin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "daddy-yankee-main-role": {
+      "decision": "supports",
+      "confidence": 0.9,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Daddy_Yankee",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "shania-twain-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Shania_Twain",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "michael-jordan-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Michael_Jordan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "kobe-bryant-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kobe_Bryant",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "conor-mcgregor-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Conor_McGregor",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "yao-ming-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Yao_Ming",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "tiger-woods-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Tiger_Woods",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "michael-phelps-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Michael_Phelps",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "nadia-comaneci-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Nadia_Com%C4%83neci",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lindsey-vonn-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lindsey_Vonn",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "patrick-mahomes-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Patrick_Mahomes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "naomi-osaka-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Naomi_Osaka",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "steffi-graf-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Steffi_Graf",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "danica-patrick-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Danica_Patrick",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "fernando-alonso-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "oprah-winfrey-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Oprah_Winfrey",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "desmond-tutu-main-role": {
+      "decision": "supports",
+      "confidence": 0.89,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Desmond_Tutu",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "mother-teresa-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Mother_Teresa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "pope-john-paul-ii-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Pope_John_Paul_II",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "pope-benedict-xvi-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Pope_Benedict_XVI",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "greta-thunberg-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Greta_Thunberg",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "stephen-hawking-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Stephen_Hawking",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "elton-john-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Elton_John",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "ringo-starr-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Ringo_Starr",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "freddie-mercury-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Freddie_Mercury",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "yoko-ono-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Yoko_Ono",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "bill-clinton-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Bill_Clinton",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "justin-trudeau-main-role": {
+      "decision": "supports",
+      "confidence": 0.96,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Justin_Trudeau",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "boris-johnson-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Boris_Johnson",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "jacinda-ardern-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Jacinda_Ardern",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "volodymyr-zelenskyy-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Volodymyr_Zelenskyy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lech-walesa-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lech_Wa%C5%82%C4%99sa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "john-f-kennedy-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/John_F._Kennedy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "hillary-clinton-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Hillary_Clinton",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "kamala-harris-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Kamala_Harris",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "george-w-bush-main-role": {
+      "decision": "supports",
+      "confidence": 0.92,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/George_W._Bush",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "shinzo-abe-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Shinzo_Abe",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "theresa-may-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Theresa_May",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lee-kuan-yew-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lee_Kuan_Yew",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "steve-wozniak-main-role": {
+      "decision": "supports",
+      "confidence": 0.94,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Wozniak",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "tobias-lutke-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "editorial_review": {
+        "decision": "supports",
+        "rationale": "O excerto identifica Tobias Lütke como empreendedor e cofundador e CEO do Shopify.",
+        "sourceURL": "https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke"
+      },
+      "final_status": "accepted"
+    },
+    "melanie-perkins-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Melanie_Perkins",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "whitney-wolfe-herd-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Whitney_Wolfe_Herd",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "susan-wojcicki-main-role": {
+      "decision": "supports",
+      "confidence": 0.93,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Susan_Wojcicki",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lisa-su-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lisa_Su",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "masayoshi-son-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Masayoshi_Son",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "nandan-nilekani-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Nandan_Nilekani",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "lei-jun-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Lei_Jun",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "evan-spiegel-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Evan_Spiegel",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "palmer-luckey-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Palmer_Luckey",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "paul-allen-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Paul_Allen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
+    },
+    "daniel-ek-main-role": {
+      "decision": "supports",
+      "confidence": 0.99,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Daniel_Ek",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-27",
+      "final_status": "accepted"
     }
   },
   "summary": {
-    "questions_accepted": 42,
-    "questions_for_human": 4,
-    "claims_accepted": 69,
-    "claims_for_human": 4
+    "questions_accepted": 63,
+    "questions_for_human": 9,
+    "claims_accepted": 227,
+    "claims_for_human": 2
   },
-  "editorial_reviewed_at": "2026-09-24",
+  "editorial_reviewed_at": "2026-09-27",
   "editorial_reviewer": "editorial-agent",
   "final_summary": {
-    "questions_accepted": 46,
+    "questions_accepted": 72,
     "questions_pending": 0,
-    "claims_accepted": 73,
+    "claims_accepted": 229,
     "claims_pending": 0
   }
 }

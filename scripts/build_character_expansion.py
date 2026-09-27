@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the offline expansion from the deduplicated first editorial batch."""
+"""Build the offline expansion from the deduplicated editorial batches."""
 from __future__ import annotations
 
 import argparse
@@ -8,6 +8,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 OUTPUT = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
+PRIMARY = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
+BATCH_150 = ROOT / "scripts/character-batch-150.json"
+EXPECTED_BATCH_SIZE = 150
 
 QUESTION_SPECS = {
     "Outros esportes": [
@@ -70,6 +73,116 @@ QUESTION_SPECS = {
     ],
 }
 
+SHARED_QUESTIONS = [
+    {
+        "id": "born-before-1995",
+        "text": "Nasceu antes de 1995?",
+        "attribute": "born_before_1995",
+        "categories": ["K-pop", "Música internacional", "Outros esportes"],
+    },
+    {
+        "id": "born-before-1998",
+        "text": "Nasceu antes de 1998?",
+        "attribute": "born_before_1998",
+        "categories": ["K-pop", "Criadores digitais"],
+    },
+    {
+        "id": "born-before-2000",
+        "text": "Nasceu antes de 2000?",
+        "attribute": "born_before_2000",
+        "categories": ["K-pop"],
+    },
+    {
+        "id": "born-before-1975",
+        "text": "Nasceu antes de 1975?",
+        "attribute": "born_before_1975",
+        "categories": ["Artistas brasileiros"],
+    },
+    {"id": "stray-kids-member", "text": "É integrante do Stray Kids?", "attribute": "stray_kids_member", "categories": ["K-pop"]},
+    {"id": "twice-member", "text": "É integrante do TWICE?", "attribute": "twice_member", "categories": ["K-pop"]},
+    {"id": "exo-member", "text": "É integrante do EXO?", "attribute": "exo_member", "categories": ["K-pop"]},
+    {"id": "shinee-member", "text": "É integrante do SHINee?", "attribute": "shinee_member", "categories": ["K-pop"]},
+    {"id": "gidle-member", "text": "É integrante do (G)I-dle?", "attribute": "gidle_member", "categories": ["K-pop"]},
+    {"id": "aespa-member", "text": "É integrante do aespa?", "attribute": "aespa_member", "categories": ["K-pop"]},
+    {"id": "ive-member", "text": "É integrante do IVE?", "attribute": "ive_member", "categories": ["K-pop"]},
+    {"id": "bigbang-member", "text": "É integrante do BigBang?", "attribute": "bigbang_member", "categories": ["K-pop"]},
+    {"id": "ioi-member", "text": "Foi integrante do I.O.I?", "attribute": "ioi_member", "categories": ["K-pop"]},
+    {"id": "born-in-us", "text": "É dos Estados Unidos?", "attribute": "born_in_us", "categories": ["Música internacional"]},
+    {"id": "girl-group-member", "text": "Foi integrante de um grupo feminino?", "attribute": "girl_group_member", "categories": ["Música internacional"]},
+    {"id": "boy-band-member", "text": "Foi integrante de um grupo masculino?", "attribute": "boy_band_member", "categories": ["Música internacional"]},
+    {"id": "golf", "text": "É golfista?", "attribute": "golf", "categories": ["Outros esportes"]},
+    {"id": "combat-sports", "text": "Compete ou competiu em esportes de combate?", "attribute": "combat_sports", "categories": ["Outros esportes"]},
+    {"id": "born-in-serbia", "text": "É sérvio?", "attribute": "born_in_serbia", "categories": ["Outros esportes"]},
+    {"id": "born-in-spain", "text": "É espanhol?", "attribute": "born_in_spain", "categories": ["Outros esportes"]},
+    {"id": "taller-than-two-meters", "text": "Tem mais de dois metros de altura?", "attribute": "taller_than_two_meters", "categories": ["Outros esportes"]},
+    {"id": "samba-artist", "text": "É conhecido por samba?", "attribute": "samba_artist", "categories": ["Artistas brasileiros"]},
+    {"id": "sertanejo-artist", "text": "É conhecido pela música sertaneja?", "attribute": "sertanejo_artist", "categories": ["Artistas brasileiros"]},
+    {"id": "creator-podcaster", "text": "Apresenta ou apresentou um podcast?", "attribute": "creator_podcaster", "categories": ["Criadores digitais"]},
+    {"id": "creator-tiktok-origin", "text": "Ganhou projeção inicialmente no TikTok?", "attribute": "creator_tiktok_origin", "categories": ["Criadores digitais"]},
+    {"id": "creator-engineer", "text": "Tem formação em engenharia?", "attribute": "creator_engineer", "categories": ["Criadores digitais"]},
+]
+MEMBERSHIP_IDS = {
+    "stray_kids_member": {"lee-know", "hyunjin", "bang-chan"},
+    "twice_member": {"nayeon", "momo-hirai"},
+    "exo_member": {"baekhyun"},
+    "shinee_member": {"taemin"},
+    "gidle_member": {"jeon-soyeon"},
+    "aespa_member": {"karina-aespa"},
+    "ive_member": {"jang-wonyoung"},
+    "bigbang_member": {"g-dragon"},
+    "ioi_member": {"chungha"},
+    "girl_group_member": {"beyonce"},
+    "boy_band_member": {"justin-timberlake"},
+    "golf": {"tiger-woods"},
+    "combat_sports": {"conor-mcgregor"},
+    "born_in_serbia": {"novak-djokovic", "nikola-jokic"},
+    "born_in_spain": {"rodri", "fernando-alonso"},
+    "taller_than_two_meters": {
+        "lebron-james", "giannis-antetokounmpo", "luka-doncic", "nikola-jokic", "yao-ming"
+    },
+    "samba_artist": {"alcione", "zeca-pagodinho", "jorge-ben-jor", "seu-jorge", "gilberto-gil"},
+    "sertanejo_artist": {"marilia-mendonca", "luan-santana", "simone-mendes"},
+    "creator_podcaster": {
+        "emma-chamberlain", "marques-brownlee", "hasan-piker", "casimiro-miguel",
+        "camila-loures", "virginia-fonseca", "nathalia-arcuri", "logan-paul"
+    },
+    "creator_tiktok_origin": {"charli-damelio", "khaby-lame", "luva-de-pedreiro"},
+    "creator_engineer": {"mark-rober"},
+}
+
+
+def dynamic_attributes(category: str, identifier: str, country: str, birth_year: int) -> dict[str, int]:
+    values = {}
+    if category in {"K-pop", "Música internacional", "Outros esportes"}:
+        values["born_before_1995"] = int(birth_year < 1995)
+    if category in {"K-pop", "Criadores digitais"}:
+        values["born_before_1998"] = int(birth_year < 1998)
+    if category == "K-pop":
+        values["born_before_1980"] = int(birth_year < 1980)
+        values["born_before_2000"] = int(birth_year < 2000)
+    if category == "Artistas brasileiros":
+        values["born_before_1975"] = int(birth_year < 1975)
+    if category == "Música internacional":
+        values["born_in_us"] = int(country == "Estados Unidos")
+    for attribute, identifiers in MEMBERSHIP_IDS.items():
+        question_categories = next(q["categories"] for q in SHARED_QUESTIONS if q["attribute"] == attribute)
+        if category in question_categories:
+            values[attribute] = int(identifier in identifiers)
+    expected = dynamic_attribute_names(category)
+    if values.keys() != expected:
+        raise ValueError(f"incomplete dynamic traits for {identifier}: missing {sorted(expected - values.keys())}")
+    return values
+
+
+def dynamic_attribute_names(category: str) -> set[str]:
+    attributes = {
+        question["attribute"] for question in SHARED_QUESTIONS
+        if category in question["categories"]
+    }
+    if category == "K-pop":
+        attributes.add("born_before_1980")
+    return attributes
+
 # id, display name, country, profession, gender, birth year, bits matching
 # QUESTION_SPECS for that category, optional distinctive SF Symbol.
 CANDIDATES = {
@@ -96,7 +209,7 @@ CANDIDATES = {
         ("justin-bieber", "Justin Bieber", "Canadá", "Cantor", "M", 1994, "1000000"),
         ("ariana-grande", "Ariana Grande", "Estados Unidos", "Cantora e atriz", "F", 1993, "1000010"),
         ("drake", "Drake", "Canadá", "Rapper, cantor e ator", "M", 1986, "0101010"),
-        ("eminem", "Eminem", "Estados Unidos", "Rapper", "M", 1972, "0100000"),
+        ("eminem", "Eminem", "Estados Unidos", "Rapper", "M", 1972, "0100010"),
         ("bad-bunny", "Bad Bunny", "Porto Rico", "Cantor e rapper", "M", 1994, "0110010"),
         ("shakira", "Shakira", "Colômbia", "Cantora e compositora", "F", 1977, "1010010"),
         ("the-weeknd", "The Weeknd", "Canadá", "Cantor e compositor", "M", 1990, "1001010"),
@@ -114,6 +227,9 @@ CANDIDATES = {
         ("rose-blackpink", "Rosé", "Nova Zelândia", "Cantora e integrante do BLACKPINK", "F", 1997, "010000000"),
         ("jisoo-blackpink", "Jisoo", "Coreia do Sul", "Cantora e integrante do BLACKPINK", "F", 1995, "010000101"),
         ("iu", "IU", "Coreia do Sul", "Cantora e atriz", "F", 1993, "001000111"),
+        ("psy", "PSY", "Coreia do Sul", "Cantor e rapper", "M", 1977, "001111111"),
+        ("g-dragon", "G-Dragon", "Coreia do Sul", "Rapper, cantor e compositor", "M", 1988, "000111101"),
+        ("boa", "BoA", "Coreia do Sul", "Cantora e compositora", "F", 1986, "001011111"),
     ],
     "Cinema e TV": [
         ("tom-cruise", "Tom Cruise", "Estados Unidos", "Ator e produtor", "M", 1962, "0000101"),
@@ -140,7 +256,7 @@ CANDIDATES = {
         ("bella-hadid", "Bella Hadid", "Estados Unidos", "Modelo", "F", 1996, "0100000"),
         ("gisele-bundchen", "Gisele Bündchen", "Brasil", "Modelo e ativista", "F", 1980, "0100001"),
         ("naomi-campbell", "Naomi Campbell", "Reino Unido", "Modelo e atriz", "F", 1970, "0110001"),
-        ("paris-hilton", "Paris Hilton", "Estados Unidos", "Empresária e personalidade de reality", "F", 1981, "0110111"),
+        ("paris-hilton", "Paris Hilton", "Estados Unidos", "Empresária e personalidade da mídia", "F", 1981, "0110111"),
         ("tyra-banks", "Tyra Banks", "Estados Unidos", "Modelo e personalidade de televisão", "F", 1973, "0110011"),
     ],
     "Tecnologia e negócios": [
@@ -156,19 +272,108 @@ CANDIDATES = {
         ("tim-cook", "Tim Cook", "Estados Unidos", "Executivo de tecnologia", "M", 1960, "00001000"),
         ("jack-ma", "Jack Ma", "China", "Empresário e cofundador do Alibaba Group", "M", 1964, "10010010"),
         ("bernard-arnault", "Bernard Arnault", "França", "Empresário de produtos de luxo", "M", 1949, "00000001"),
+        ("steve-jobs", "Steve Jobs", "Estados Unidos", "Empresário e cofundador da Apple", "M", 1955, "11001000"),
+        ("sheryl-sandberg", "Sheryl Sandberg", "Estados Unidos", "Executiva de tecnologia e autora", "F", 1969, "00000000"),
+        ("zhang-yiming", "Zhang Yiming", "China", "Empresário de tecnologia e fundador da ByteDance", "M", 1983, "11100010"),
     ],
 }
 
 SYMBOLS = {
+    "Artistas brasileiros": "music.note",
+    "Cinema e TV": "theatermasks.fill",
+    "Criadores digitais": "play.rectangle.fill",
+    "Futebol": "figure.soccer",
+    "História": "clock.fill",
+    "Moda e reality": "sparkles",
+    "Personalidades mundiais": "globe.americas.fill",
+    "Políticos": "building.columns.fill",
     "Outros esportes": "sportscourt.fill",
     "Música internacional": "music.note",
     "K-pop": "music.mic",
-    "Cinema e TV": "theatermasks.fill",
-    "Moda e reality": "sparkles",
     "Tecnologia e negócios": "lightbulb.fill",
 }
 ARTIST_CATEGORIES = {"Música internacional", "K-pop", "Cinema e TV"}
 ARTIST_EXCEPTIONS = {"naomi-campbell", "tyra-banks"}
+DECEASED_IDS = {"steve-jobs"}
+HISTORICAL_IDS = {"steve-jobs"}
+BATCH_DEFAULT_FLAGS = {
+    "Artistas brasileiros": {"artist": 1},
+    "Cinema e TV": {"artist": 1},
+    "Criadores digitais": {"creator": 1},
+    "Futebol": {"football": 1},
+    "História": {"historical": 1},
+    "K-pop": {"artist": 1},
+    "Música internacional": {"artist": 1},
+    "Políticos": {"politician": 1},
+}
+ALLOWED_BATCH_FLAGS = {"football", "artist", "creator", "politician", "historical"}
+
+
+def build_batch_people(existing_people: list[dict], expansion_questions: list[dict]) -> list[dict]:
+    primary = json.loads(PRIMARY.read_text(encoding="utf-8"))
+    batch = json.loads(BATCH_150.read_text(encoding="utf-8"))
+    if not isinstance(batch, dict) or set(batch) != {"people"} or not isinstance(batch["people"], dict):
+        raise ValueError("character-batch-150.json must contain a people object keyed by existing category")
+
+    all_questions = primary["questions"] + expansion_questions
+    category_attributes = {
+        category: [question["attribute"] for question in all_questions
+                   if category in question["categories"] and question["categories"] != ["Todos"]]
+        for category in SYMBOLS
+    }
+    known_ids = {person["id"] for person in existing_people}
+    additions = []
+    for category, candidates in batch["people"].items():
+        if category not in category_attributes:
+            raise ValueError(f"unknown batch category: {category}")
+        category_traits = category_attributes[category]
+        dynamic_names = dynamic_attribute_names(category)
+        traits = [attribute for attribute in category_traits if attribute not in dynamic_names]
+        for candidate in candidates:
+            identifier = candidate["id"]
+            values = candidate["traits"]
+            if identifier in known_ids:
+                raise ValueError(f"duplicate character id in batch: {identifier}")
+            if len(values) != len(traits) or any(bit not in "01" for bit in values):
+                raise ValueError(f"invalid trait vector for {identifier}: expected {len(traits)} binary values")
+
+            flags = dict(BATCH_DEFAULT_FLAGS.get(category, {}))
+            custom_flags = candidate.get("flags", {})
+            if not isinstance(custom_flags, dict) or custom_flags.keys() - ALLOWED_BATCH_FLAGS:
+                raise ValueError(f"invalid global flag override for {identifier}")
+            if any(value not in (0, 1) for value in custom_flags.values()):
+                raise ValueError(f"global flag override must be binary for {identifier}")
+            flags.update(custom_flags)
+
+            attributes = {
+                "brazilian": 1 if candidate["country"] == "Brasil" else 0,
+                "alive": candidate.get("alive", 1),
+                "male": 1 if candidate["gender"] == "M" else 0,
+                "born_before_1970": 1 if candidate["birthYear"] < 1970 else 0,
+                "born_before_1990": 1 if candidate["birthYear"] < 1990 else 0,
+                "football": 0,
+                "artist": 0,
+                "creator": 0,
+                "politician": 0,
+                "historical": 0,
+            }
+            attributes.update(flags)
+            attributes.update({attribute: int(value) for attribute, value in zip(traits, values)})
+            attributes.update(dynamic_attributes(category, identifier, candidate["country"], candidate["birthYear"]))
+            additions.append({
+                "id": identifier,
+                "name": candidate["name"],
+                "categories": [category],
+                "country": candidate["country"],
+                "profession": candidate["profession"],
+                "attributes": attributes,
+                "avatarSymbol": SYMBOLS[category],
+            })
+            known_ids.add(identifier)
+
+    if len(additions) != EXPECTED_BATCH_SIZE:
+        raise ValueError(f"expected exactly {EXPECTED_BATCH_SIZE} new characters, got {len(additions)}")
+    return additions
 
 
 def build() -> dict:
@@ -181,7 +386,7 @@ def build() -> dict:
                 "id": f"{attribute.replace('_', '-')}",
                 "text": text,
                 "attribute": attribute,
-                "categories": [category],
+                "categories": [category, "K-pop"] if attribute == "born_before_1980" else [category],
             })
         traits = [attribute for attribute, _ in specifications]
         candidates = CANDIDATES.get(category, [])
@@ -195,7 +400,7 @@ def build() -> dict:
             seen_ids.add(identifier)
             attributes = {
                 "brazilian": 1 if country == "Brasil" else 0,
-                "alive": 1,
+                "alive": 0 if identifier in DECEASED_IDS else 1,
                 "male": 1 if gender == "M" else 0,
                 "born_before_1970": 1 if birth_year < 1970 else 0,
                 "born_before_1990": 1 if birth_year < 1990 else 0,
@@ -203,9 +408,10 @@ def build() -> dict:
                 "artist": 1 if category in ARTIST_CATEGORIES or identifier in ARTIST_EXCEPTIONS else 0,
                 "creator": 0,
                 "politician": 0,
-                "historical": 0,
+                "historical": 1 if identifier in HISTORICAL_IDS else 0,
             }
             attributes.update({attribute: int(value) for attribute, value in zip(traits, values)})
+            attributes.update(dynamic_attributes(category, identifier, country, birth_year))
             people.append({
                 "id": identifier,
                 "name": name,
@@ -215,6 +421,8 @@ def build() -> dict:
                 "attributes": attributes,
                 "avatarSymbol": SYMBOLS[category],
             })
+
+    questions.extend(SHARED_QUESTIONS)
 
     # A directly sourced Brazilian artist joins the existing Artistas brasileiros category.
     people.append({
@@ -240,10 +448,12 @@ def build() -> dict:
             "writer": 1,
             "instrumentalist": 1,
             "director": 0,
+            "grammy_winner": 0,
         },
         "avatarSymbol": "music.note",
         "imageName": "djavan.jpg",
     })
+    people.extend(build_batch_people(people, questions))
     return {"people": people, "questions": questions}
 
 
@@ -251,11 +461,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
     args = parser.parse_args()
+    from apply_primary_category_features import apply as apply_primary_features
+
+    updated = apply_primary_features()
+    if updated:
+        print(f"Updated feature values for {updated} existing artist and creator profiles")
     result = build()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    counts = {category: sum(category in person["categories"] for person in result["people"]) for category in QUESTION_SPECS}
     print(f"Wrote {len(result['people'])} people and {len(result['questions'])} questions to {args.output}")
+    counts = {category: sum(category in person["categories"] for person in result["people"]) for category in sorted(SYMBOLS)}
     for category, count in counts.items():
         print(f"- {category}: {count}")
 

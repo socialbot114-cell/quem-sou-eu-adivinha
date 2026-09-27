@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-09-24",
+  "reviewedAt": "2026-09-27",
   "reviewer": "editorial-agent",
   "questionReviews": {
     "country-music": {
@@ -13,10 +13,155 @@
       "rationale": "O corte temporal é objetivo e as datas de nascimento foram conferidas nas biografias individuais dos integrantes. O jogador pode responder Não sei.",
       "sourceURL": "https://en.wikipedia.org/wiki/Jin_(singer)"
     },
+    "born-before-1993": {
+      "decision": "accepted",
+      "rationale": "É um corte de ano de nascimento objetivo; datas incertas podem receber Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Jin_(singer)"
+    },
     "fashion-born-before-1996": {
       "decision": "accepted",
       "rationale": "O corte de nascimento é objetivo; as datas foram conferidas nas biografias individuais dos nomes desta categoria. O jogador pode responder Não sei.",
       "sourceURL": "https://en.wikipedia.org/wiki/Gigi_Hadid"
+    },
+    "born-before-1995": {
+      "decision": "accepted",
+      "rationale": "É um corte de ano de nascimento objetivo, usado igualmente nas três categorias e respondível com Não sei quando a pessoa não souber a data.",
+      "sourceURL": "https://en.wikipedia.org/wiki/BoA"
+    },
+    "born-before-1998": {
+      "decision": "accepted",
+      "rationale": "É um corte de ano de nascimento objetivo, aplicável a K-pop e criadores digitais, e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Chung_Ha"
+    },
+    "born-before-2000": {
+      "decision": "accepted",
+      "rationale": "É um corte de ano de nascimento objetivo para a categoria K-pop; a resposta pode ser conferida em biografias e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)"
+    },
+    "born-before-1975": {
+      "decision": "accepted",
+      "rationale": "É um corte de ano de nascimento objetivo e a pergunta não depende de interpretação da carreira artística.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Maria_Beth%C3%A2nia"
+    },
+    "hardware-company": {
+      "decision": "accepted",
+      "rationale": "A pergunta descreve uma associação pública com fabricantes de chips ou aparelhos eletrônicos; o jogador pode usar conhecimento geral ou responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Computer_hardware"
+    },
+    "lifestyle-brand": {
+      "decision": "accepted",
+      "rationale": "A pergunta cobre uma marca própria fundada ou liderada pela personalidade em produtos, moda, beleza ou estilo de vida, e permite Não sei quando o jogador não conhece a atividade empresarial.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Kimora_Lee_Simmons"
+    },
+    "samba-artist": {
+      "decision": "accepted",
+      "rationale": "Samba é um gênero musical reconhecível; a pergunta permite resposta Não sei para artistas cuja relação com o gênero não seja conhecida pelo jogador.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Alcione_Nazareth"
+    },
+    "sertanejo-artist": {
+      "decision": "accepted",
+      "rationale": "Sertanejo é um gênero musical definido e popular no Brasil; a pergunta permite resposta Não sei quando o repertório não for conhecido.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Mar%C3%ADlia_Mendon%C3%A7a"
+    },
+    "creator-podcaster": {
+      "decision": "accepted",
+      "rationale": "A pergunta se refere a apresentar regularmente um podcast, atividade pública verificável; o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Emma_Chamberlain"
+    },
+    "creator-tiktok-origin": {
+      "decision": "accepted",
+      "rationale": "A redação pergunta pela plataforma em que a pessoa ganhou projeção inicialmente, não por uma plataforma que passou a usar depois.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Charli_D%27Amelio"
+    },
+    "creator-engineer": {
+      "decision": "accepted",
+      "rationale": "A pergunta se refere a formação em engenharia, uma qualificação objetiva, e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Mark_Rober"
+    },
+    "stray-kids-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Stray_Kids"
+    },
+    "twice-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Twice"
+    },
+    "exo-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Exo"
+    },
+    "shinee-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Shinee"
+    },
+    "gidle-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/I-dle"
+    },
+    "aespa-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Aespa"
+    },
+    "ive-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Ive_(group)"
+    },
+    "bigbang-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta identifica um grupo musical conhecido e permite resposta factual sobre os integrantes.",
+      "sourceURL": "https://en.wikipedia.org/wiki/BigBang_(South_Korean_band)"
+    },
+    "ioi-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta usa o tempo passado porque o I.O.I encerrou as atividades após seus anos de promoção conjunta.",
+      "sourceURL": "https://en.wikipedia.org/wiki/I.O.I"
+    },
+    "born-in-us": {
+      "decision": "accepted",
+      "rationale": "A pergunta trata de origem nacional conhecida, como os demais atributos de país do jogo, e admite Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Billie_Eilish"
+    },
+    "girl-group-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta distingue integrantes de grupos vocais femininos de artistas solo e de grupos masculinos.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Beyonc%C3%A9"
+    },
+    "boy-band-member": {
+      "decision": "accepted",
+      "rationale": "A pergunta distingue integrantes de grupos vocais masculinos de artistas solo e de grupos femininos.",
+      "sourceURL": "https://en.wikipedia.org/wiki/NSYNC"
+    },
+    "golf": {
+      "decision": "accepted",
+      "rationale": "Golfista é uma ocupação esportiva objetiva e diferente das modalidades indicadas pelas outras pistas da categoria.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tiger_Woods"
+    },
+    "combat-sports": {
+      "decision": "accepted",
+      "rationale": "A pergunta usa uma categoria esportiva reconhecível e verificável, sem pedir que o jogador conheça uma organização específica.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Conor_McGregor"
+    },
+    "born-in-serbia": {
+      "decision": "accepted",
+      "rationale": "A nacionalidade é uma informação objetiva de biografia e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Novak_Djokovic"
+    },
+    "born-in-spain": {
+      "decision": "accepted",
+      "rationale": "A nacionalidade é uma informação objetiva de biografia e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Fernando_Alonso"
+    },
+    "taller-than-two-meters": {
+      "decision": "accepted",
+      "rationale": "A altura é um dado mensurável; o corte de dois metros é simples e o jogador pode responder Não sei.",
+      "sourceURL": "https://en.wikipedia.org/wiki/LeBron_James"
     },
     "founded-outside-us": {
       "decision": "accepted",
@@ -54,6 +199,71 @@
       "decision": "supports",
       "rationale": "A fonte descreve Tyra Banks como modelo e personalidade de televisão.",
       "sourceURL": "https://en.wikipedia.org/wiki/Tyra_Banks"
+    },
+    "larry-page-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Larry Page como empresário e cientista da computação e informa que cofundou o Google com Sergey Brin.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Larry_Page"
+    },
+    "psy-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica PSY como rapper, cantor e compositor sul-coreano, sustentando a profissão usada no jogo.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Psy"
+    },
+    "g-dragon-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica G-Dragon como rapper, cantor e compositor sul-coreano e registra sua liderança no BigBang.",
+      "sourceURL": "https://en.wikipedia.org/wiki/G-Dragon"
+    },
+    "boa-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica BoA como cantora e compositora sul-coreana.",
+      "sourceURL": "https://en.wikipedia.org/wiki/BoA"
+    },
+    "steve-jobs-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Steve Jobs como empresário norte-americano e informa que ele cofundou a Apple.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Steve_Jobs"
+    },
+    "sheryl-sandberg-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Sheryl Sandberg como executiva de tecnologia e escritora, além de registrar seu cargo de COO na Meta.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Sheryl_Sandberg"
+    },
+    "zhang-yiming-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Zhang Yiming como empresário chinês da internet e informa que fundou a ByteDance.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Zhang_Yiming"
+    },
+    "rita-lee-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Rita Lee como cantora, compositora e autora brasileira.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Rita_Lee"
+    },
+    "marques-brownlee-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Marques Brownlee como influenciador e avaliador de tecnologia, conhecido por vídeos de análise de produtos no YouTube.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Marques_Brownlee"
+    },
+    "winston-churchill-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Winston Churchill como estadista e escritor e confirma que foi primeiro-ministro britânico.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Winston_Churchill"
+    },
+    "maria-rita-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Maria Rita como cantora brasileira.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Maria_Rita"
+    },
+    "ninja-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Ninja como streamer, YouTuber e jogador profissional, incluindo seu conteúdo de jogos.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Ninja_(gamer)"
+    },
+    "tobias-lutke-main-role": {
+      "decision": "supports",
+      "rationale": "O excerto identifica Tobias Lütke como empreendedor e cofundador e CEO do Shopify.",
+      "sourceURL": "https://en.wikipedia.org/wiki/Tobias_L%C3%BCtke"
     }
   }
 }

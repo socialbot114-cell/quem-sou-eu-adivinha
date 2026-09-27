@@ -10,15 +10,25 @@ ROOT = Path(__file__).parents[1]
 PRIMARY_PATH = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
 EXPANSION_PATH = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
 SOURCES_PATH = ROOT / "docs/content/character-sources.json"
+BATCH_150_PATH = ROOT / "scripts/character-batch-150.json"
 OUTPUT_PATH = ROOT / "docs/content/jerv-answer-matrix-input.json"
 
 
-def build(primary: dict, expansion: dict, source_manifest: dict) -> dict:
+def build(
+    primary: dict,
+    expansion: dict,
+    source_manifest: dict,
+    person_ids: set[str] | None = None,
+) -> dict:
     questions = primary["questions"] + expansion["questions"]
     sources = {item["id"]: item for item in source_manifest["items"]}
     review_questions: dict[str, dict] = {}
     claims: list[dict] = []
-    for person in expansion["people"]:
+    people = [person for person in expansion["people"] if person_ids is None or person["id"] in person_ids]
+    if person_ids is not None and {person["id"] for person in people} != person_ids:
+        missing = sorted(person_ids - {person["id"] for person in people})
+        raise ValueError(f"batch IDs are missing from character-expansion.json: {missing}")
+    for person in people:
         source = sources.get(person["id"])
         if not source or not source.get("sourceExcerpt"):
             raise ValueError(f"missing sourced excerpt for {person['id']}")
@@ -54,8 +64,9 @@ def build(primary: dict, expansion: dict, source_manifest: dict) -> dict:
         "questions": list(review_questions.values()),
         "claims": claims,
         "scope": {
-            "people": len(expansion["people"]),
+            "people": len(people),
             "answer_cells": len(claims),
+            "categories": sorted({category for person in people for category in person["categories"]}),
             "evidence_policy": "Use only the cited excerpt; an absent fact is insufficient evidence for a No answer.",
         },
     }
@@ -64,11 +75,31 @@ def build(primary: dict, expansion: dict, source_manifest: dict) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT_PATH)
+    parser.add_argument("--batch-150-only", action="store_true", help="Review only the 150 newly curated character profiles")
+    parser.add_argument("--category", action="append", help="With --batch-150-only, limit review to this existing category (repeatable)")
     args = parser.parse_args()
     primary = json.loads(PRIMARY_PATH.read_text(encoding="utf-8"))
     expansion = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))
     sources = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
-    result = build(primary, expansion, sources)
+    person_ids = None
+    if args.batch_150_only:
+        batch = json.loads(BATCH_150_PATH.read_text(encoding="utf-8"))
+        categories = args.category or list(batch["people"])
+        unknown = set(categories) - batch["people"].keys()
+        if unknown:
+            raise ValueError(f"categories are not present in the new batch: {sorted(unknown)}")
+        person_ids = {
+            person["id"]
+            for category in categories
+            for person in batch["people"][category]
+        }
+        if len(person_ids) != 150:
+            expected = sum(len(batch["people"][category]) for category in categories)
+            if len(person_ids) != expected:
+                raise ValueError(f"batch categories contain duplicate IDs: expected {expected}, got {len(person_ids)}")
+    elif args.category:
+        raise ValueError("--category requires --batch-150-only")
+    result = build(primary, expansion, sources, person_ids=person_ids)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Prepared {result['scope']['answer_cells']} sourced answer cells for {result['scope']['people']} characters across {len(result['questions'])} unique game questions")
 

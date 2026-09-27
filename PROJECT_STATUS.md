@@ -26,8 +26,10 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 
 ## Próximos marcos
 
-- Validar a base expandida de 149 personalidades em TestFlight.
-- Concluir revisão editorial dos fatos e respostas com o worker JERV de personagens.
+- Validar a base expandida de 305 personalidades em TestFlight.
+- Revisão editorial dos perfis e perguntas da base expandida com o worker JERV concluída.
+- Revisar manualmente as 2.749 células da matriz de respostas dos 150 novos personagens que ainda não atingiram o limiar de evidência JERV.
+- Avaliar a diferença restante em acerto no cenário simulado com uma resposta contraditória antes do próximo release.
 - Adicionar screenshots e vídeo de demonstração gerados no simulador macOS via GitHub Actions.
 - Criar site de suporte e privacidade.
 - Criar App ID e registro exclusivo no App Store Connect.
@@ -36,10 +38,12 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 
 ## Catálogo expandido
 
-- Base total: 149 personalidades, 102 perguntas e 12 categorias temáticas, além do modo Todos.
-- Lote complementar: `iosApp/Resources/KnowledgeBase/character-expansion.json` (72 nomes de seis novas categorias e Djavan na categoria de artistas brasileiros).
+- Base total: 305 personalidades, 128 perguntas e 12 categorias temáticas, além do modo Todos.
+- Lote complementar: `iosApp/Resources/KnowledgeBase/character-expansion.json` (229 perfis, incluindo o lote de 150 personagens em `scripts/character-batch-150.json`, distribuído pelas 12 categorias existentes).
 - Proveniência das respostas: `docs/content/character-sources.json`.
 - Revisão Jev/JERV: `docs/content/jerv-character-review-report.json`, com decisões editoriais adicionais em `docs/content/jerv-character-human-review.json`.
+- Matriz JERV dos 150 novos perfis: `docs/content/jerv-answer-matrix-150-input.json`, `docs/content/jerv-answer-matrix-150-report.json` e adjudicações em `docs/content/jerv-answer-matrix-150-adjudications.json`.
+- Simulação offline da base completa: 100% ideal, 97,5% com uma resposta desconhecida e 94,7% com uma resposta contraditória (323 ocorrências categoria–personagem).
 - Retratos licenciados: 16, com autores, licenças, origens e modificações em `docs/content/image-credits.json`.
 
 ## Identidade planejada

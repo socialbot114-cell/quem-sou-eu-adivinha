@@ -26,7 +26,7 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 Recursos:
 
 - Partidas rápidas com até 14 perguntas.
-- Seis categorias completas e modo livre.
+- Doze categorias temáticas e modo livre.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
 - Princesa Detetive, coleção de descobertas e interface premium.
@@ -42,7 +42,7 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 Uma nova experiência para o Quem Sou Eu? Adivinha.
 
 - Jogo de pistas e perguntas offline.
-- 149 personalidades em doze categorias temáticas.
+- 305 personalidades em doze categorias temáticas.
 - Onboarding, retomada de partida e coleção de descobertas.
 - Novo visual com a Princesa Detetive.
 - Retratos, compartilhamento, pontos, moedas e sequência.

@@ -40,6 +40,7 @@ final class QuemSouEuScreenshots: XCTestCase {
             "male": "Não",
             "born_before_1970": "Não",
             "born_before_1990": "Não",
+            "born_before_1975": "Não",
             "football": "Não",
             "artist": "Sim",
             "creator": "Não",
@@ -52,6 +53,8 @@ final class QuemSouEuScreenshots: XCTestCase {
             "instrumentalist": "Não",
             "director": "Não",
             "grammy_winner": "Não",
+            "samba_artist": "Não",
+            "sertanejo_artist": "Não",
         ]
 
         for _ in 0..<14 {
@@ -77,6 +80,76 @@ final class QuemSouEuScreenshots: XCTestCase {
         let changeCategory = app.buttons["Escolher outra categoria"]
         XCTAssertTrue(changeCategory.waitForExistence(timeout: 5))
         changeCategory.tap()
+
+        let kpopScroll = app.scrollViews.firstMatch
+        XCTAssertTrue(kpopScroll.waitForExistence(timeout: 4))
+        let kpop = app.buttons["category.K-pop"]
+        for _ in 0..<5 where !kpop.isHittable {
+            kpopScroll.swipeUp()
+        }
+        XCTAssertTrue(kpop.isHittable)
+        kpop.tap()
+        XCTAssertTrue(app.buttons["Sim"].waitForExistence(timeout: 8))
+        capture(app, name: "quem-sou-eu-jogo-kpop")
+
+        let kpopTargetAnswers = [
+            "brazilian": "Não",
+            "alive": "Sim",
+            "male": "Sim",
+            "born_before_1970": "Não",
+            "born_before_1990": "Sim",
+            "football": "Não",
+            "artist": "Sim",
+            "creator": "Não",
+            "politician": "Não",
+            "historical": "Não",
+            "bts_member": "Não",
+            "blackpink_member": "Não",
+            "solo_artist": "Sim",
+            "rapper": "Sim",
+            "born_before_1994": "Sim",
+            "born_before_1993": "Sim",
+            "born_in_south_korea": "Sim",
+            "known_for_dance": "Sim",
+            "kpop_born_before_1996": "Sim",
+            "born_before_1995": "Sim",
+            "born_before_1998": "Sim",
+            "born_before_1980": "Sim",
+            "born_before_2000": "Sim",
+            "stray_kids_member": "Não",
+            "twice_member": "Não",
+            "exo_member": "Não",
+            "shinee_member": "Não",
+            "gidle_member": "Não",
+            "aespa_member": "Não",
+            "ive_member": "Não",
+            "bigbang_member": "Não",
+            "ioi_member": "Não",
+        ]
+
+        for _ in 0..<14 {
+            if app.staticTexts["Já tenho um palpite!"].exists { break }
+            let activeAttribute = kpopTargetAnswers.keys.first { app.staticTexts["question.\($0)"].exists }
+            guard let activeAttribute, let answer = kpopTargetAnswers[activeAttribute] else {
+                XCTFail("Nenhuma pergunta mapeada para PSY apareceu")
+                break
+            }
+            let answerButton = app.buttons[answer].firstMatch
+            XCTAssertTrue(answerButton.waitForExistence(timeout: 4))
+            answerButton.tap()
+        }
+        XCTAssertTrue(app.staticTexts["Já tenho um palpite!"].waitForExistence(timeout: 12))
+        XCTAssertTrue(app.staticTexts["PSY"].waitForExistence(timeout: 4))
+        capture(app, name: "quem-sou-eu-palpite-psy")
+        let kpopConfirm = app.buttons["Acertou!"]
+        XCTAssertTrue(kpopConfirm.waitForExistence(timeout: 4))
+        kpopConfirm.tap()
+        XCTAssertTrue(app.staticTexts["ACERTEI!"].waitForExistence(timeout: 8))
+        capture(app, name: "quem-sou-eu-resultado-vitoria-psy")
+
+        let returnToCategories = app.buttons["Escolher outra categoria"]
+        XCTAssertTrue(returnToCategories.waitForExistence(timeout: 5))
+        returnToCategories.tap()
         let profileTab = app.buttons["tab.profile"]
         XCTAssertTrue(profileTab.waitForExistence(timeout: 5))
         profileTab.tap()

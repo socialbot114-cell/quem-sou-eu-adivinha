@@ -24,6 +24,32 @@ TITLE_OVERRIDES = {
     "iu": "IU (singer)",
     "drake": "Drake (musician)",
     "djavan": "Djavan",
+    "psy": "Psy",
+    "g-dragon": "G-Dragon",
+    "boa": "BoA",
+    "steve-jobs": "Steve Jobs",
+    "sheryl-sandberg": "Sheryl Sandberg",
+    "zhang-yiming": "Zhang Yiming",
+    "ninja": "Ninja (gamer)",
+    "momo-hirai": "Momo Hirai",
+    "cl-singer": "CL (rapper)",
+    "rain-singer": "Rain (entertainer)",
+    "zico-futebol": "Zico (footballer)",
+    "pope-john-paul-ii": "Pope John Paul II",
+    "pope-benedict-xvi": "Pope Benedict XVI",
+    "julius-caesar": "Julius Caesar",
+    "joan-of-arc": "Joan of Arc",
+    "lee-kuan-yew": "Lee Kuan Yew",
+    "alcione": "Alcione Nazareth",
+    "luis-suarez": "Luis Suárez (Uruguayan footballer)",
+    "chungha": "Chung Ha",
+    "karina-aespa": "Karina (South Korean singer)",
+    "ashley-graham": "Ashley Graham (model)",
+    "usher": "Usher (musician)",
+    "mother-teresa": "Mother Teresa",
+    "roberto-carlos": "Roberto Carlos (singer)",
+    "hyunjin": "Hyunjin (Stray Kids singer)",
+    "eliana": "Eliana (television host)",
     "the-weeknd": "The Weeknd",
     "lebron-james": "LeBron James",
     "stephen-curry": "Stephen Curry",
@@ -45,7 +71,7 @@ def fetch_summary(title: str) -> dict:
     return {
         "sourceTitle": data.get("title", title),
         "sourceURL": data.get("content_urls", {}).get("desktop", {}).get("page", f"https://en.wikipedia.org/wiki/{quote(title.replace(' ', '_'))}"),
-        "sourceExcerpt": data["extract"],
+        "sourceExcerpt": data["extract"].strip(),
         "sourceRevision": data.get("revision"),
         "sourceLicense": WIKIPEDIA_TEXT_LICENSE,
         "sourceLicenseURL": WIKIPEDIA_TEXT_LICENSE_URL,
@@ -65,15 +91,18 @@ def main() -> None:
     failures = []
     for person in people:
         cached = cached_items.get(person["id"])
-        if cached and cached.get("name") == person["name"]:
+        override = TITLE_OVERRIDES.get(person["id"])
+        if (cached and cached.get("name") == person["name"]
+                and (not override or cached.get("sourceTitle") == override)):
             items.append({
                 **cached,
                 "profession": person["profession"],
+                "sourceExcerpt": cached["sourceExcerpt"].strip(),
                 "sourceLicense": cached.get("sourceLicense", WIKIPEDIA_TEXT_LICENSE),
                 "sourceLicenseURL": cached.get("sourceLicenseURL", WIKIPEDIA_TEXT_LICENSE_URL),
             })
             continue
-        title = TITLE_OVERRIDES.get(person["id"], person["name"])
+        title = override or person["name"]
         try:
             source = fetch_summary(title)
             items.append({

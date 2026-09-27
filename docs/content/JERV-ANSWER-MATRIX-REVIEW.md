@@ -37,3 +37,20 @@ Os sete resultados tiveram decisão “clear”, mas confiança abaixo do limiar
 ## Próxima etapa editorial
 
 O restante das 1.214 células automáticas ainda pendentes precisa de fonte mais específica ou adjudicação humana. Priorizar os atributos com mais respostas sem evidência e revisar a base principal separadamente antes de usar esta auditoria como gate de publicação.
+
+## Lote de 150 novos personagens
+
+Atualizado em 2026-09-27. A matriz do lote novo está em [`jerv-answer-matrix-150-input.json`](jerv-answer-matrix-150-input.json), com o relatório combinado por categoria em [`jerv-answer-matrix-150-report.json`](jerv-answer-matrix-150-report.json). Esta revisão cobre somente os 150 novos personagens e suas 3.141 células aplicáveis; os perfis foram distribuídos pelas 12 categorias atuais e avaliados contra 128 perguntas.
+
+- JERV confirmou automaticamente 382 células com suporte e confiança de pelo menos 0,8. Outras 446 receberam “supports” abaixo do limiar; 2.303 ficaram como evidência insuficiente.
+- JERV sinalizou 10 negativas com baixa confiança como possíveis contradições. A revisão manual conferiu fontes individuais e os rosters oficiais dos grupos; as 10 respostas foram adjudicadas e registradas em [`jerv-answer-matrix-150-adjudications.json`](jerv-answer-matrix-150-adjudications.json).
+- Das 128 perguntas únicas presentes nas categorias do lote, 106 redações foram aceitas automaticamente e 22 ficaram para revisão humana.
+- A revisão JERV das funções principais cobre os 229 perfis embarcados e terminou com 229/229 aceitos após as adjudicações editoriais; as 72 perguntas da expansão também ficaram aceitas na revisão editorial final.
+- Após as 10 adjudicações, 2.749 células permanecem abaixo do limiar ou sem evidência suficiente para publicação sem revisão adicional.
+- “Evidência insuficiente” não confirma que a resposta proposta esteja errada — especialmente para respostas “Não”; essas células continuam pendentes de fonte mais específica ou adjudicação editorial.
+
+## Teste offline do catálogo completo
+
+Com 305 personagens e 323 ocorrências personagem–categoria, `scripts/evaluate_offline.py` registrou 323/323 acertos no cenário ideal (100%), 315/323 com uma resposta desconhecida (97,5%) e 306/323 com uma resposta contraditória (94,7%). A média foi de 9,2 perguntas e o P95 foi 14. As novas perguntas recuperaram a robustez; a taxa contraditória ainda fica abaixo dos 96,5% do catálogo anterior e deve ser acompanhada antes do próximo release.
+
+Nas cinco categorias priorizadas, o cenário contraditório agora acertou 100%: Artistas brasileiros, Criadores digitais, K-pop, Música internacional e Outros esportes. As próximas categorias a revisar são Tecnologia e negócios (82,1%) e História (85,2%), seguidas por Cinema e TV (92,0%), Políticos (92,6%), Futebol (93,1%) e Moda e reality (92,0%).

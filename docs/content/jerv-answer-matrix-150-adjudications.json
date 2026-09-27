@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-27",
+  "reviewer": "editorial-agent",
+  "report": "jerv-answer-matrix-150-report.json",
+  "items": [
+    {
+      "id": "hyunjin--twice_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The TWICE roster does not list Hyunjin; his biography and the Stray Kids roster identify him as a Stray Kids member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Twice", "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)", "https://en.wikipedia.org/wiki/Stray_Kids"]
+    },
+    {
+      "id": "hyunjin--exo_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The EXO roster lists its members and does not include Hyunjin; his biography identifies him as a Stray Kids member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Exo", "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)"]
+    },
+    {
+      "id": "hyunjin--shinee_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The SHINee roster does not list Hyunjin; his biography and the Stray Kids roster identify him as a Stray Kids member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Shinee", "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)", "https://en.wikipedia.org/wiki/Stray_Kids"]
+    },
+    {
+      "id": "hyunjin--gidle_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The I-dle roster does not list Hyunjin; his biography and the Stray Kids roster identify him as a Stray Kids member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/I-dle", "https://en.wikipedia.org/wiki/Hyunjin_(Stray_Kids_singer)", "https://en.wikipedia.org/wiki/Stray_Kids"]
+    },
+    {
+      "id": "nayeon--stray_kids_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The Stray Kids roster does not list Nayeon; her biography and the TWICE roster identify her as a TWICE member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Stray_Kids", "https://en.wikipedia.org/wiki/Nayeon", "https://en.wikipedia.org/wiki/Twice"]
+    },
+    {
+      "id": "karina-aespa--twice_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The TWICE roster does not list Karina; her biography and the aespa roster identify her as an aespa member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Twice", "https://en.wikipedia.org/wiki/Karina_(South_Korean_singer)", "https://en.wikipedia.org/wiki/Aespa"]
+    },
+    {
+      "id": "karina-aespa--stray_kids_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The Stray Kids roster does not list Karina; her biography and the aespa roster identify her as an aespa member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Stray_Kids", "https://en.wikipedia.org/wiki/Karina_(South_Korean_singer)", "https://en.wikipedia.org/wiki/Aespa"]
+    },
+    {
+      "id": "karina-aespa--gidle_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The I-dle roster does not list Karina; her biography and the aespa roster identify her as an aespa member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/I-dle", "https://en.wikipedia.org/wiki/Karina_(South_Korean_singer)", "https://en.wikipedia.org/wiki/Aespa"]
+    },
+    {
+      "id": "jeon-soyeon--stray_kids_member",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "The Stray Kids roster does not list Jeon So-yeon; her biography and the I-dle roster identify her as an I-dle member.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Stray_Kids", "https://en.wikipedia.org/wiki/Soyeon", "https://en.wikipedia.org/wiki/I-dle"]
+    },
+    {
+      "id": "fernando-alonso--born_in_serbia",
+      "answer": 0,
+      "status": "confirmed-no",
+      "rationale": "Alonso is identified as a Spanish racing driver; his biography records his birthplace in Oviedo, Spain.",
+      "sourceURLs": ["https://en.wikipedia.org/wiki/Fernando_Alonso"]
+    }
+  ]
+}
