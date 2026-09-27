@@ -1,0 +1,83 @@
+name: App Store Connect Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Inspect App Store Connect or submit version 1.2.3 (build 41) for review
+        required: true
+        type: choice
+        options:
+          - inspect
+          - submit
+        default: inspect
+      confirm_submission:
+        description: Enter SUBMIT 1.2.3 (41) to submit the release for App Review
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: app-store-release-1.2.3
+  cancel-in-progress: false
+
+jobs:
+  app-store:
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - name: Check out release branch
+        uses: actions/checkout@v5
+
+      - name: Validate requested operation
+        env:
+          OPERATION: ${{ inputs.operation }}
+          CONFIRM_SUBMISSION: ${{ inputs.confirm_submission }}
+        run: |
+          set -euo pipefail
+          if [[ "$OPERATION" != "inspect" && "$OPERATION" != "submit" ]]; then
+            printf 'Unsupported operation: %s\n' "$OPERATION" >&2
+            exit 1
+          fi
+          if [[ "$OPERATION" == "submit" && "$CONFIRM_SUBMISSION" != "SUBMIT 1.2.3 (41)" ]]; then
+            printf 'Submission requires the exact confirmation: SUBMIT 1.2.3 (41)\n' >&2
+            exit 1
+          fi
+
+      - name: Validate App Store Connect secrets
+        env:
+          APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
+        run: |
+          set -euo pipefail
+          for secret_name in APPLE_API_KEY_P8 APPLE_API_KEY_ID APPLE_API_ISSUER_ID; do
+            if [[ -z "${!secret_name:-}" ]]; then
+              printf 'Required secret %s is not configured.\n' "$secret_name" >&2
+              exit 1
+            fi
+          done
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install API dependency
+        run: python -m pip install --disable-pip-version-check 'PyJWT[crypto]'
+
+      - name: Validate screenshot package
+        run: python scripts/app_store_connect_release.py validate-assets store-kit/screenshots/iphone
+
+      - name: Inspect or submit App Store version
+        env:
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
+          APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
+          APP_STORE_PROCESSING_TIMEOUT_MINUTES: "30"
+          APP_STORE_ASSET_TIMEOUT_MINUTES: "20"
+          APP_STORE_OPERATION: ${{ inputs.operation }}
+          CONFIRM_SUBMISSION: ${{ inputs.confirm_submission }}
+        run: python scripts/app_store_connect_release.py "$APP_STORE_OPERATION" store-kit/screenshots/iphone
