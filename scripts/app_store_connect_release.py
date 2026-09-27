@@ -256,11 +256,16 @@ def get_submission_report() -> list[dict[str, Any]]:
     report = []
     for submission in submissions:
         attributes = submission.get("attributes", {})
+        details = request_json(f"/reviewSubmissions/{submission['id']}?include=appStoreVersionForReview")
+        version_for_review = (
+            details.get("data", {}).get("relationships", {}).get("appStoreVersionForReview", {}).get("data") or {}
+        )
         items = list_pages(f"/reviewSubmissions/{submission['id']}/items?limit=200")
         report.append(
             {
                 "id": submission["id"],
                 "state": attributes.get("state", "UNKNOWN"),
+                "appStoreVersionForReviewId": version_for_review.get("id"),
                 "items": [
                     {
                         "id": item["id"],
@@ -303,12 +308,15 @@ def inspect() -> dict[str, Any]:
                     }
                 )
         detail = get_review_detail(version["id"])
+        linked_build = optional_request(f"/appStoreVersions/{version['id']}/build")
+        linked_build_data = (linked_build or {}).get("data") or {}
         version_report = {
             "id": version["id"],
             "version": version.get("attributes", {}).get("versionString"),
             "state": version_state(version),
             "releaseType": version.get("attributes", {}).get("releaseType"),
-            "buildId": (version.get("relationships", {}).get("build", {}).get("data") or {}).get("id"),
+            "buildId": linked_build_data.get("id")
+            or (version.get("relationships", {}).get("build", {}).get("data") or {}).get("id"),
             "locales": [item.get("attributes", {}).get("locale") for item in localizations],
             "ptBRLocalizationId": locale.get("id") if locale else None,
             "screenshots": screenshot_report,
