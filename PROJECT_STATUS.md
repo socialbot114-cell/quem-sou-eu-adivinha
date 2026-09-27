@@ -11,7 +11,7 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 - Bundle identifier resource ID: `XS57YRQC46`
 - Provisioning profile: `Quem Sou Eu Adivinha App Store 2026 v2` (`YX8AJ63395`)
 - Profile UUID: `2bf9e748-a220-4274-a157-c5878696d5dc`
-- Próximo release: versão `1.2`, build `6`
+- Próximo release: versão `1.2.3`, build `41`
 - Site: https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/
 - Repositório do app: https://github.com/socialbot114-cell/quem-sou-eu-adivinha
 - Repositório do site: https://github.com/socialbot114-cell/quem-sou-eu-adivinha-site
@@ -27,6 +27,7 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 ## Próximos marcos
 
 - Validar a base expandida de 305 personalidades em TestFlight.
+- Para a 1.2.3, usar o workflow `ios-release.yml`, que assina e envia o IPA ao TestFlight pela API do App Store Connect. A integração Xcode Cloud é separada e permanece como tarefa posterior.
 - Revisão editorial dos perfis e perguntas da base expandida com o worker JERV concluída.
 - Revisar manualmente as 2.749 células da matriz de respostas dos 150 novos personagens que ainda não atingiram o limiar de evidência JERV.
 - Avaliar a diferença restante em acerto no cenário simulado com uma resposta contraditória antes do próximo release.

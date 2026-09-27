@@ -11,7 +11,7 @@
 - Copyright: `2026 Gustavo De Melo Ferreira`
 - Intended audience: `9+ family experience`
 - Bundle ID: `br.com.quemsoueu.adivinha`
-- Version: `1.2` (build 6)
+- Version: `1.2.3` (build 41)
 
 ## Promotional Text
 
@@ -43,6 +43,7 @@ Uma nova experiência para o Quem Sou Eu? Adivinha.
 
 - Jogo de pistas e perguntas offline.
 - 305 personalidades em doze categorias temáticas.
+- 150 novas personalidades adicionadas às categorias existentes, com pistas ampliadas para K-pop, música, esportes, artistas brasileiros e criadores digitais.
 - Onboarding, retomada de partida e coleção de descobertas.
 - Novo visual com a Princesa Detetive.
 - Retratos, compartilhamento, pontos, moedas e sequência.
@@ -102,8 +103,8 @@ Recommended screenshot size: `1290x2796` pixels in portrait for the 6.7-inch slo
 
 ## Final Submission Checklist
 
-- [ ] Build 6 is uploaded and marked `VALID`.
-- [ ] Select build 6 for version 1.2.
+- [ ] Build 41 is uploaded and marked `VALID`.
+- [ ] Select build 41 for version 1.2.3.
 - [ ] Upload five real iPhone screenshots.
 - [ ] Confirm subtitle, description, keywords and URLs.
 - [ ] Set `Games` / `Trivia` and free pricing.
