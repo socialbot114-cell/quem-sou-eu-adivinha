@@ -1,6 +1,85 @@
 import XCTest
 
 final class QuemSouEuScreenshots: XCTestCase {
+    func testRoundCanWinAfterOneContradictoryAnswerInUI() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-onboarding.completed", "YES"]
+        app.launch()
+
+        let categoriesTab = app.buttons["tab.categories"]
+        XCTAssertTrue(categoriesTab.waitForExistence(timeout: 8))
+        categoriesTab.tap()
+
+        let categoryScroll = app.scrollViews.firstMatch
+        let artists = app.buttons["category.Artistas brasileiros"]
+        XCTAssertTrue(categoryScroll.waitForExistence(timeout: 4))
+        for _ in 0..<4 where !artists.isHittable {
+            categoryScroll.swipeDown()
+        }
+        XCTAssertTrue(artists.isHittable)
+        artists.tap()
+
+        let targetAnswers = [
+            "brazilian": "Sim",
+            "alive": "Não",
+            "male": "Não",
+            "born_before_1970": "Não",
+            "born_before_1990": "Não",
+            "born_before_1975": "Não",
+            "football": "Não",
+            "artist": "Sim",
+            "creator": "Não",
+            "politician": "Não",
+            "historical": "Sim",
+            "singer": "Sim",
+            "actor": "Não",
+            "presenter": "Não",
+            "writer": "Não",
+            "instrumentalist": "Sim",
+            "director": "Não",
+            "grammy_winner": "Não",
+            "samba_artist": "Não",
+            "sertanejo_artist": "Sim",
+        ]
+
+        var contradictedFirstAnswer = false
+        var foundTarget = false
+        for _ in 0..<20 {
+            let confirm = app.buttons["Acertou!"]
+            if confirm.waitForExistence(timeout: 1.5) {
+                if app.staticTexts["Marília Mendonça"].exists {
+                    confirm.tap()
+                    foundTarget = app.staticTexts["ACERTEI!"].waitForExistence(timeout: 6)
+                    break
+                }
+                let reject = app.buttons["Não foi dessa vez"]
+                if reject.exists {
+                    reject.tap()
+                    continue
+                }
+                break
+            }
+            if app.staticTexts["Quase!"].exists { break }
+
+            let activeAttribute = targetAnswers.keys.first { app.staticTexts["question.\($0)"].exists }
+            guard let activeAttribute, let truth = targetAnswers[activeAttribute] else {
+                XCTFail("A rodada apresentou uma pergunta sem resposta-alvo mapeada")
+                break
+            }
+            var answer = truth
+            if !contradictedFirstAnswer {
+                answer = truth == "Sim" ? "Não" : "Sim"
+                contradictedFirstAnswer = true
+            }
+            let answerButton = app.buttons[answer].firstMatch
+            XCTAssertTrue(answerButton.waitForExistence(timeout: 4))
+            answerButton.tap()
+        }
+
+        XCTAssertTrue(contradictedFirstAnswer)
+        XCTAssertTrue(foundTarget, "A rodada não terminou em vitória após uma resposta contraditória")
+    }
+
     func testCaptureStoreScreens() {
         let app = XCUIApplication()
         app.launchArguments = ["-onboarding.completed", "YES"]

@@ -11,7 +11,7 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 - Bundle identifier resource ID: `XS57YRQC46`
 - Provisioning profile: `Quem Sou Eu Adivinha App Store 2026 v2` (`YX8AJ63395`)
 - Profile UUID: `2bf9e748-a220-4274-a157-c5878696d5dc`
-- Versão `1.2.3`, build `41`: IPA enviado ao TestFlight (run `36331786815`) e submetido à App Review; App Store Connect está em `WAITING_FOR_REVIEW`, com publicação automática após aprovação (`AFTER_APPROVAL`).
+- Versão `1.2.3`, build `41`: IPA enviado ao TestFlight (run `36331786815`) e aprovada, pronta para distribuição (status confirmado pelo usuário).
 - App Store version ID: `056c95ba-e1f4-484b-8377-3622a368f980`; review submission ID: `e452da04-8ccf-4245-ac9d-04d41184cf83`.
 - Site: https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/
 - Repositório do app: https://github.com/socialbot114-cell/quem-sou-eu-adivinha
@@ -27,14 +27,18 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 
 ## Próximos marcos
 
-- Acompanhar a App Review da versão 1.2.3. O workflow de verificação `36336639557` confirmou o build 41 `VALID`, associado à versão; os screenshots do slot iPhone 6,5" estão todos `COMPLETE`.
-- A versão será publicada automaticamente depois da aprovação da Apple (`releaseType: AFTER_APPROVAL`).
-- A submissão foi realizada pelo workflow `.github/workflows/app-store-review.yml` (run `36336324022`); inspeção inicial: `36336221653`.
+- Validar perguntas e respostas dos 305 personagens antes de iniciar lotes para 5.000 perfis; gate atual fechado.
+- Auditoria atual: JERV avaliou as 6.541 células aplicáveis; 741 foram aceitas pelo modelo, 17 têm adjudicação e 5.788 permanecem em revisão humana.
+- Seis respostas foram corrigidas com fontes; 12 contradições JERV continuam pendentes de adjudicação.
+- Há 18 perguntas sem decisão editorial consolidada e 0 violações nas invariantes determinísticas verificadas para datas/estado de vida.
+- Fila e relatório: `docs/content/CATALOG-VALIDATION-STATUS.md` e `docs/content/catalog-validation-queue.json`.
+- Candidata local para a próxima versão: `1.2.4` (build `42`), com palpite antecipado calibrado e auditoria JERV ampliada; XCTest/UI no Simulator e gate factual ainda pendentes.
+- Ferramentas: `scripts/audit_catalog_evidence.py` (evidências) e `scripts/evaluate_gameplay.py` (partidas completas).
 - Screenshots fornecidos: `store-kit/screenshots/iphone/` (três PNGs 1284×2778, slot iPhone 6,5"). O App Store Connect mostra oito imagens `COMPLETE` nesse conjunto.
 - O workflow `ios-release.yml` assinou e enviou o IPA ao TestFlight pela API do App Store Connect. A integração Xcode Cloud é separada e permanece como tarefa posterior.
-- Revisão editorial dos perfis e perguntas da base expandida com o worker JERV concluída.
-- Revisar manualmente as 2.749 células da matriz de respostas dos 150 novos personagens que ainda não atingiram o limiar de evidência JERV.
-- Avaliar a diferença restante em acerto no cenário simulado com uma resposta contraditória antes do próximo release.
+- O JERV final revisou as funções principais dos 229 perfis de expansão e a redação das 72 perguntas dessa expansão; essa revisão não comprova cada atributo/resposta.
+- Adjudicar os 5.788 resultados `human-review` com fontes específicas antes de abrir o gate para novos personagens.
+- Executar XCTest e UI no Simulator para a política candidata do motor (`0,60` confiança / `0,08` margem) antes de incorporá-la à 1.2.4; métricas offline em `docs/content/GAMEPLAY-ENGINE-COMPARISON.md`.
 - Screenshots e vídeo de demonstração foram gerados no simulador macOS via GitHub Actions.
 - Site de suporte e privacidade publicado; App ID e registro App Store Connect configurados.
 - Workflow TestFlight configurado; teste em aparelho físico continua como validação futura.

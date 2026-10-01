@@ -155,4 +155,105 @@ final class GameEngineTests: XCTestCase {
         }
         XCTAssertFalse(seenAttributes.isEmpty)
     }
+
+    func testActualCatalogFindsAnittaWithTruthfulAnswers() {
+        let result = playActualCatalogGame(targetID: "anitta", category: .artists)
+
+        XCTAssertTrue(result.success)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.questionLimit)
+    }
+
+    func testActualCatalogRecoversAfterContradictionAndRejectedGuess() {
+        let result = playActualCatalogGame(
+            targetID: "marilia-mendonca",
+            category: .artists,
+            contradictFirstInformativeAnswer: true
+        )
+
+        XCTAssertNotEqual(result.firstGuessID, Optional("marilia-mendonca"))
+        XCTAssertTrue(result.success)
+        XCTAssertEqual(result.rejectedGuesses, 1)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.questionLimit)
+    }
+
+    private func playActualCatalogGame(
+        targetID: String,
+        category: Category,
+        contradictFirstInformativeAnswer: Bool = false
+    ) -> (success: Bool, firstGuessID: String?, rejectedGuesses: Int, questions: Int) {
+        let base = KnowledgeStore.shared.base
+        guard let target = base.people.first(where: { $0.id == targetID }) else {
+            XCTFail("Personagem não encontrado na base: \(targetID)")
+            return (false, nil, 0, 0)
+        }
+        let people = category == .all
+            ? base.people
+            : base.people.filter { $0.categories.contains(category) }
+        let questions = base.questions.filter {
+            $0.categories.contains(.all) || $0.categories.contains(category) || category == .all
+        }
+        let questionLimit = min(GuessPolicy.questionLimit, Set(questions.map(\.attribute)).count)
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        var questionCount = 0
+        var rejectedGuesses = 0
+        var firstGuessID: String?
+        var contradictionApplied = false
+
+        while true {
+            let question = questionCount < questionLimit ? engine.nextQuestion() : nil
+            if let question {
+                var answer = answer(for: target.attributes[question.attribute])
+                if contradictFirstInformativeAnswer, !contradictionApplied, answer != .unknown {
+                    answer = inverted(answer)
+                    contradictionApplied = true
+                }
+                engine.apply(answer, to: question)
+                questionCount += 1
+            }
+
+            let shouldGuess = question == nil
+                || questionCount >= questionLimit
+                || (
+                    questionCount >= GuessPolicy.minimumAnswersBeforeGuess
+                    && engine.confidence >= GuessPolicy.confidenceThreshold
+                    && engine.margin >= GuessPolicy.marginThreshold
+                )
+            guard shouldGuess else { continue }
+
+            guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
+                return (false, firstGuessID, rejectedGuesses, questionCount)
+            }
+            if firstGuessID == nil { firstGuessID = guess.id }
+            if guess.id == targetID {
+                return (true, firstGuessID, rejectedGuesses, questionCount)
+            }
+
+            engine.reject(guess)
+            rejectedGuesses += 1
+            if rejectedGuesses >= GuessPolicy.maximumRejectedGuesses
+                || questionCount >= questionLimit
+                || engine.bestGuess == nil {
+                return (false, firstGuessID, rejectedGuesses, questionCount)
+            }
+        }
+    }
+
+    private func answer(for value: Double?) -> Answer {
+        guard let value else { return .unknown }
+        if value >= 0.875 { return .yes }
+        if value >= 0.625 { return .probablyYes }
+        if value >= 0.375 { return .unknown }
+        if value >= 0.125 { return .probablyNo }
+        return .no
+    }
+
+    private func inverted(_ answer: Answer) -> Answer {
+        switch answer {
+        case .yes: .no
+        case .probablyYes: .probablyNo
+        case .unknown: .unknown
+        case .probablyNo: .probablyYes
+        case .no: .yes
+        }
+    }
 }

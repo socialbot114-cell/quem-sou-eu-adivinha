@@ -1,5 +1,14 @@
 import Foundation
 
+enum GuessPolicy {
+    static let questionLimit = 14
+    static let minimumAnswersBeforeGuess = 4
+    static let confidenceThreshold = 0.60
+    static let marginThreshold = 0.08
+    static let minimumGuessConfidence = 0.18
+    static let maximumRejectedGuesses = 4
+}
+
 struct GameEngine {
     let people: [Person]
     let questions: [Question]

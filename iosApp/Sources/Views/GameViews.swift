@@ -147,8 +147,6 @@ struct GameView: View {
     @State private var successFeedback = 0
     @State private var failureFeedback = 0
 
-    private static let maxRejected = 4
-
     init(category: Category, playAnotherCategory: @escaping () -> Void) {
         self.category = category
         self.playAnotherCategory = playAnotherCategory
@@ -158,7 +156,7 @@ struct GameView: View {
         _engine = State(initialValue: GameEngine(people: people, questions: questions))
     }
 
-    private var questionLimit: Int { min(14, Set(engine.questions.map(\.attribute)).count) }
+    private var questionLimit: Int { min(GuessPolicy.questionLimit, Set(engine.questions.map(\.attribute)).count) }
 
     var body: some View {
         ZStack {
@@ -265,8 +263,9 @@ struct GameView: View {
     }
 
     private var shouldPresentGuess: Bool {
-        guard questionNumber >= 4 else { return false }
-        return engine.confidence >= 0.68 && engine.margin >= 0.10
+        guard questionNumber >= GuessPolicy.minimumAnswersBeforeGuess else { return false }
+        return engine.confidence >= GuessPolicy.confidenceThreshold
+            && engine.margin >= GuessPolicy.marginThreshold
     }
 
     private func isRoundStillValid(_ saved: InterruptedRoundSummary) -> Bool {
@@ -302,7 +301,7 @@ struct GameView: View {
 
     private func presentBestGuess() {
         question = nil
-        guard let guess = engine.bestGuess, engine.confidence >= 0.18 else {
+        guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
             finishLoss(person: nil)
             return
         }
@@ -325,7 +324,7 @@ struct GameView: View {
         engine.reject(person)
         rejectedPersonIDs.append(person.id)
         persistRound()
-        if rejectedPersonIDs.count >= Self.maxRejected || questionNumber >= questionLimit || engine.bestGuess == nil {
+        if rejectedPersonIDs.count >= GuessPolicy.maximumRejectedGuesses || questionNumber >= questionLimit || engine.bestGuess == nil {
             finishLoss(person: engine.bestGuess)
         } else {
             phase = .asking

@@ -115,8 +115,8 @@ For a dedicated 6.9-inch set, use an accepted portrait size such as `1290x2796` 
 - [x] Answer export compliance.
 - [x] Confirm content rights.
 - [x] Add the App Review notes above.
-- [x] Submit for Review through `.github/workflows/app-store-review.yml`; version state is `WAITING_FOR_REVIEW`.
+- [x] Submit for Review through `.github/workflows/app-store-review.yml`; the user later confirmed version 1.2.3 is approved and ready for distribution.
 
 ## API Workflow
 
-Run `App Store Connect Release` manually from the release branch with `operation=inspect` to read the build, version, screenshot, review-contact, and submission states. To submit, run with `operation=submit` and the exact confirmation `SUBMIT 1.2.3 (41)`. The workflow waits for build 41 to become `VALID`, uploads metadata and screenshots, associates the build, and submits with automatic release after approval. The 1.2.3 submission is currently `WAITING_FOR_REVIEW` (submission ID `e452da04-8ccf-4245-ac9d-04d41184cf83`).
+Run `App Store Connect Release` manually from the release branch with `operation=inspect` to read the build, version, screenshot, review-contact, and submission states. To submit, run with `operation=submit` and the exact confirmation `SUBMIT 1.2.3 (41)`. The workflow waits for build 41 to become `VALID`, uploads metadata and screenshots, associates the build, and submits with automatic release after approval. The 1.2.3 submission was created with ID `e452da04-8ccf-4245-ac9d-04d41184cf83`; the user subsequently confirmed App Store Connect shows it as approved and ready for distribution.

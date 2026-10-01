@@ -19,8 +19,8 @@ BUNDLE_ID = "br.com.quemsoueu.adivinha"
 APP_SKU = "quem-sou-eu-adivinha-001"
 REPOSITORY_OWNER = "socialbot114-cell"
 REPOSITORY_NAME = "quem-sou-eu-adivinha"
-MARKETING_VERSION = "1.2.3"
-BUILD_NUMBER = "41"
+MARKETING_VERSION = "1.2.4"
+BUILD_NUMBER = "42"
 
 
 def make_token() -> str:
