@@ -239,7 +239,7 @@ final class GameEngineTests: XCTestCase {
 
     private func playActualCatalogGame(
         targetID: String,
-        category: Category,
+        category: QuemSouEu.Category,
         contradictedInformativeAnswers: Int = 0
     ) -> (success: Bool, firstGuessID: String?, rejectedGuesses: Int, questions: Int) {
         let base = KnowledgeStore.shared.base
