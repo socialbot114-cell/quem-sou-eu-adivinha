@@ -26,8 +26,21 @@ QUESTION_LIMIT = 14
 EARLY_GUESS_MIN_ANSWERS = 4
 MAX_REJECTED_GUESSES = 4
 MIN_GUESS_CONFIDENCE = 0.18
-DEFAULT_EARLY_GUESS_CONFIDENCE = 0.60
-DEFAULT_MARGIN_THRESHOLD = 0.08
+DEFAULT_EARLY_GUESS_CONFIDENCE = 0.68
+DEFAULT_MARGIN_THRESHOLD = 0.10
+DEFAULT_LIKELIHOOD_FLOOR = 0.18
+EXTRA_QUESTIONS_PER_REJECTED_GUESS = 3
+MAXIMUM_QUESTION_LIMIT = 20
+FREE_UNKNOWN_ANSWERS = 2
+
+
+def question_budget(available_attributes: int, rejected_guesses: int, unknown_answers: int, policy: str) -> int:
+    """Mirror of GuessPolicy.questionBudget in GameEngine.swift."""
+    if policy == "legacy":
+        return min(QUESTION_LIMIT, available_attributes)
+    extended = QUESTION_LIMIT + EXTRA_QUESTIONS_PER_REJECTED_GUESS * rejected_guesses
+    extended += min(unknown_answers, FREE_UNKNOWN_ANSWERS)
+    return min(MAXIMUM_QUESTION_LIMIT, extended, available_attributes)
 
 
 def entropy(values: list[float]) -> float:
@@ -191,14 +204,17 @@ def simulate_game(
     guess_confidence: float,
     margin_threshold: float,
     tie_mode: str = "seeded",
+    policy: str = "adaptive",
 ) -> dict:
     tie_rng = random.Random(seed)
     noise_rng = random.Random(seed ^ 0x5DEECE66D)
     choose_candidate = tie_rng.choice if tie_mode == "seeded" else lambda candidates: candidates[0]
     engine = SimulatedEngine(people, questions, floor, choose_candidate)
-    question_limit = min(QUESTION_LIMIT, len({question["attribute"] for question in questions}))
+    available_attributes = len({question["attribute"] for question in questions})
+    question_limit = question_budget(available_attributes, 0, 0, policy)
     question_count = 0
     informative_count = 0
+    unknown_count = 0
     guesses: list[str] = []
 
     while True:
@@ -211,6 +227,9 @@ def simulate_game(
             answer = apply_noise(answer, scenario, informative_count, noise_rng)
             engine.apply(question["attribute"], answer)
             question_count += 1
+            if answer == "unknown":
+                unknown_count += 1
+            question_limit = question_budget(available_attributes, len(engine.rejected), unknown_count, policy)
 
         should_guess = (
             question is None
@@ -233,6 +252,7 @@ def simulate_game(
             return game_result(target["id"], guesses, question_count, success=True)
 
         engine.reject(guess["id"])
+        question_limit = question_budget(available_attributes, len(engine.rejected), unknown_count, policy)
         if len(engine.rejected) >= MAX_REJECTED_GUESSES or question_count >= question_limit or engine.best_guess is None:
             return game_result(target["id"], guesses, question_count, success=False)
 
@@ -264,6 +284,9 @@ def summarize(results: list[dict]) -> dict:
         "eventualAccuracyWithin14Questions": round(
             sum(result["eventualHit"] and result["questions"] <= 14 for result in results) / len(results), 4
         ),
+        "eventualAccuracyWithin20Questions": round(
+            sum(result["eventualHit"] and result["questions"] <= 20 for result in results) / len(results), 4
+        ),
         "meanQuestions": round(mean(question_counts), 2),
         "p95Questions": question_counts[math.ceil(0.95 * len(question_counts)) - 1],
         "meanGuesses": round(mean(result["guesses"] for result in results), 2),
@@ -282,7 +305,7 @@ def load_catalog() -> dict:
     return base
 
 
-def run(seed: int, floor: float, guess_confidence: float, margin_threshold: float, tie_mode: str) -> dict:
+def run(seed: int, floor: float, guess_confidence: float, margin_threshold: float, tie_mode: str, policy: str = "adaptive") -> dict:
     base = load_catalog()
     scenarios = ("ideal", "one_unknown", "one_contradiction", "two_contradictions", "random_10pct", "probably_answers")
     results: list[dict] = []
@@ -314,6 +337,7 @@ def run(seed: int, floor: float, guess_confidence: float, margin_threshold: floa
                     guess_confidence=guess_confidence,
                     margin_threshold=margin_threshold,
                     tie_mode=tie_mode,
+                    policy=policy,
                 )
                 result.update({"category": category, "scenario": scenario})
                 scenario_results.append(result)
@@ -330,7 +354,11 @@ def run(seed: int, floor: float, guess_confidence: float, margin_threshold: floa
             "earlyGuessConfidence": guess_confidence,
             "marginThreshold": margin_threshold,
             "tieMode": tie_mode,
+            "budgetPolicy": policy,
             "questionLimit": QUESTION_LIMIT,
+            "extraQuestionsPerRejectedGuess": EXTRA_QUESTIONS_PER_REJECTED_GUESS if policy == "adaptive" else 0,
+            "freeUnknownAnswers": FREE_UNKNOWN_ANSWERS if policy == "adaptive" else 0,
+            "maximumQuestionLimit": MAXIMUM_QUESTION_LIMIT if policy == "adaptive" else QUESTION_LIMIT,
             "maxRejectedGuesses": MAX_REJECTED_GUESSES,
         },
         "summary": by_scenario,
@@ -342,10 +370,16 @@ def run(seed: int, floor: float, guess_confidence: float, margin_threshold: floa
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--likelihood-floor", type=float, default=0.25)
+    parser.add_argument("--likelihood-floor", type=float, default=DEFAULT_LIKELIHOOD_FLOOR)
     parser.add_argument("--guess-confidence", type=float, default=DEFAULT_EARLY_GUESS_CONFIDENCE)
     parser.add_argument("--margin-threshold", type=float, default=DEFAULT_MARGIN_THRESHOLD)
     parser.add_argument("--tie-mode", choices=("seeded", "first"), default="seeded")
+    parser.add_argument(
+        "--budget-policy",
+        choices=("adaptive", "legacy"),
+        default="adaptive",
+        help="adaptive: +3 questions per rejected guess and up to 2 free 'Não sei' answers (max 20); legacy: fixed 14",
+    )
     parser.add_argument("--report", type=Path)
     args = parser.parse_args()
     if not 0.0 < args.likelihood_floor < 1.0:
@@ -355,7 +389,7 @@ def main() -> None:
     if not 0.0 <= args.margin_threshold < 1.0:
         parser.error("--margin-threshold must be between 0 and 1")
 
-    report = run(args.seed, args.likelihood_floor, args.guess_confidence, args.margin_threshold, args.tie_mode)
+    report = run(args.seed, args.likelihood_floor, args.guess_confidence, args.margin_threshold, args.tie_mode, args.budget_policy)
     print(json.dumps({"config": report["config"], "summary": report["summary"]}, ensure_ascii=False, indent=2))
     if args.report:
         args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

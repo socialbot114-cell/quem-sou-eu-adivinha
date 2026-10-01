@@ -156,7 +156,13 @@ struct GameView: View {
         _engine = State(initialValue: GameEngine(people: people, questions: questions))
     }
 
-    private var questionLimit: Int { min(GuessPolicy.questionLimit, Set(engine.questions.map(\.attribute)).count) }
+    private var questionLimit: Int {
+        GuessPolicy.questionBudget(
+            availableAttributes: Set(engine.questions.map(\.attribute)).count,
+            rejectedGuesses: rejectedPersonIDs.count,
+            unknownAnswers: answers.filter { $0.answer == .unknown }.count
+        )
+    }
 
     var body: some View {
         ZStack {
@@ -224,6 +230,18 @@ struct GameView: View {
             if let question {
                 QuestionCard(question: question, answer: { respond($0, to: question) })
                     .transition(reduceMotion ? .opacity : .asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity), removal: .move(edge: .leading).combined(with: .opacity)))
+                if !answers.isEmpty {
+                    Button(action: undoLastAnswer) {
+                        Label("Desfazer última resposta", systemImage: "arrow.uturn.backward")
+                            .font(.subheadline.weight(.bold))
+                            .padding(.horizontal, 18)
+                            .frame(minHeight: 44)
+                            .background(.white.opacity(0.16), in: Capsule())
+                    }
+                    .foregroundStyle(.white)
+                    .accessibilityIdentifier("game.undo")
+                    .accessibilityHint("Volta para a pergunta anterior para corrigir a resposta")
+                }
                 Text("Não existe resposta errada. Use “Não sei” quando tiver dúvida.")
                     .foregroundStyle(.white.opacity(0.78)).font(.footnote.weight(.medium)).multilineTextAlignment(.center)
             } else {
@@ -291,6 +309,24 @@ struct GameView: View {
             withAnimation(.snappy) { advance() }
         }
         isTransitioning = false
+    }
+
+    private func undoLastAnswer() {
+        guard !completed, !isTransitioning else { return }
+        guard case .asking = phase, let last = answers.popLast() else { return }
+        engine = engine.replaying(answers, rejectedPersonIDs: rejectedPersonIDs)
+        questionNumber = answers.count
+        if let previous = engine.questions.first(where: { $0.id == last.questionID }) {
+            engine.markAsked(previous)
+            withAnimation(.snappy) { question = previous }
+        } else {
+            advance()
+        }
+        if answers.isEmpty {
+            progress.clearInterruptedRound()
+        } else {
+            persistRound()
+        }
     }
 
     private func advance() {
@@ -517,7 +553,8 @@ private struct GameHelpView: View {
                     HelpRow(number: "1", text: "Pense em alguém da categoria escolhida.")
                     HelpRow(number: "2", text: "Responda com sinceridade. Não existe resposta errada.")
                     HelpRow(number: "3", text: "Use “Não sei” quando estiver em dúvida.")
-                    HelpRow(number: "4", text: "Espere o palpite da Princesa Detetive.")
+                    HelpRow(number: "4", text: "Respondeu errado? Toque em “Desfazer última resposta”.")
+                    HelpRow(number: "5", text: "Espere o palpite da Princesa Detetive.")
                 }.dsCard()
                 Button("Continuar jogando") { dismiss() }.buttonStyle(PrimaryButtonStyle())
                 Spacer()

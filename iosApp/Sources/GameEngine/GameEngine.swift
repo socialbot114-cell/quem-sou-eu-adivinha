@@ -3,10 +3,23 @@ import Foundation
 enum GuessPolicy {
     static let questionLimit = 14
     static let minimumAnswersBeforeGuess = 4
-    static let confidenceThreshold = 0.60
-    static let marginThreshold = 0.08
+    static let confidenceThreshold = 0.68
+    static let marginThreshold = 0.10
     static let minimumGuessConfidence = 0.18
     static let maximumRejectedGuesses = 4
+    static let likelihoodFloor = 0.18
+    static let extraQuestionsPerRejectedGuess = 3
+    static let freeUnknownAnswers = 2
+    static let maximumQuestionLimit = 20
+
+    /// Each rejected guess earns extra questions to recover from a mistaken answer,
+    /// and the first "Não sei" answers do not consume the budget.
+    static func questionBudget(availableAttributes: Int, rejectedGuesses: Int, unknownAnswers: Int) -> Int {
+        let extended = questionLimit
+            + extraQuestionsPerRejectedGuess * max(rejectedGuesses, 0)
+            + min(max(unknownAnswers, 0), freeUnknownAnswers)
+        return max(0, min(maximumQuestionLimit, extended, availableAttributes))
+    }
 }
 
 struct GameEngine {
@@ -26,7 +39,7 @@ struct GameEngine {
         questions: [Question],
         randomIndex: @escaping (Int) -> Int = { Int.random(in: 0..<$0) },
         smoothing: Double = 1e-9,
-        likelihoodFloor: Double = 0.25
+        likelihoodFloor: Double = GuessPolicy.likelihoodFloor
     ) {
         self.people = people
         self.questions = questions
@@ -93,9 +106,14 @@ struct GameEngine {
         let candidates = scored.filter { $0.gain >= bestGain - 0.01 }.map { $0.question }
         guard let selected = safePick(from: candidates) else { return nil }
 
-        asked.insert(selected.id)
-        askedAttributes.insert(selected.attribute)
+        markAsked(selected)
         return selected
+    }
+
+    /// Reserves a question so it is never selected again, e.g. when an undone question is shown again.
+    mutating func markAsked(_ question: Question) {
+        asked.insert(question.id)
+        askedAttributes.insert(question.attribute)
     }
 
     private func safePick(from candidates: [Question]) -> Question? {
@@ -123,11 +141,26 @@ struct GameEngine {
         normalize()
     }
 
+    /// Rebuilds the engine from scratch, used to undo an answer without drifting from the saved round.
+    func replaying(_ answers: [RecordedAnswer], rejectedPersonIDs rejected: [String]) -> GameEngine {
+        var engine = GameEngine(
+            people: people,
+            questions: questions,
+            randomIndex: chooseCandidateIndex,
+            smoothing: smoothing,
+            likelihoodFloor: likelihoodFloor
+        )
+        engine.restore(answers)
+        for id in rejected {
+            if let person = people.first(where: { $0.id == id }) { engine.reject(person) }
+        }
+        return engine
+    }
+
     mutating func restore(_ answers: [RecordedAnswer]) {
         for record in answers {
             guard let question = questions.first(where: { $0.id == record.questionID }) else { continue }
-            asked.insert(question.id)
-            askedAttributes.insert(question.attribute)
+            markAsked(question)
             apply(record.answer, to: question)
         }
     }

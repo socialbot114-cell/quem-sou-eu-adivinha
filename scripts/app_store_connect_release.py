@@ -21,8 +21,10 @@ import jwt
 API_ROOT = "https://api.appstoreconnect.apple.com/v1"
 APP_ID = "6810873964"
 BUNDLE_ID = "br.com.quemsoueu.adivinha"
-APP_VERSION = "1.2.3"
-BUILD_NUMBER = "41"
+# The TestFlight workflow stamps the GitHub run number as the build number, so the
+# submit workflow passes both values explicitly; inspect falls back to the newest build.
+APP_VERSION = os.environ.get("APP_VERSION_STRING", "").strip() or "1.2.4"
+BUILD_NUMBER = os.environ.get("APP_BUILD_NUMBER", "").strip()
 LOCALE = "pt-BR"
 SCREENSHOT_DISPLAY_TYPE = "APP_IPHONE_65"
 SCREENSHOT_SIZE = (1284, 2778)
@@ -40,7 +42,8 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 
 Recursos:
 
-- Partidas rápidas com até 14 perguntas.
+- Partidas rápidas, com palpite em poucas perguntas.
+- Errou uma resposta? Desfaça e corrija na hora.
 - Doze categorias temáticas e modo livre.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
@@ -51,7 +54,7 @@ Não é necessário criar uma conta. O jogo não exibe anúncios, não exige int
     "marketingUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
     "promotionalText": "Pense em uma personalidade. Responda perguntas e veja o jogo descobrir quem você imaginou.",
     "supportUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
-    "whatsNew": "Uma nova experiência para o Quem Sou Eu? Adivinha.\n\n- Jogo de pistas e perguntas offline.\n- 305 personalidades em doze categorias temáticas.\n- 150 novas personalidades adicionadas às categorias existentes, com pistas ampliadas para K-pop, música, esportes, artistas brasileiros e criadores digitais.\n- Onboarding, retomada de partida e coleção de descobertas.\n- Novo visual com a Princesa Detetive.\n- Retratos, compartilhamento, pontos, moedas e sequência.",
+    "whatsNew": "A Princesa Detetive ficou mais esperta.\n\n- Novo botão para desfazer a última resposta.\n- Depois de um palpite errado, o jogo ganha perguntas extras para chegar ao personagem certo.\n- “Não sei” não gasta mais suas perguntas.\n- Palpites mais rápidos quando as respostas são claras.\n- Respostas de personagens revisadas com fontes.",
 }
 COPYRIGHT = "2026 Gustavo De Melo Ferreira"
 REVIEW_NOTES = """Olá,
@@ -187,7 +190,7 @@ def get_release_build(wait_for_valid: bool = False) -> dict[str, Any]:
         candidates = []
         for build in list_pages(f"/apps/{APP_ID}/builds?limit=200"):
             attributes = build.get("attributes", {})
-            if str(attributes.get("version", "")) != BUILD_NUMBER:
+            if BUILD_NUMBER and str(attributes.get("version", "")) != BUILD_NUMBER:
                 continue
             pre_release = optional_request(f"/builds/{build['id']}/preReleaseVersion")
             pre_release_attributes = (pre_release or {}).get("data", {}).get("attributes", {})
@@ -719,6 +722,8 @@ def write_summary(result: dict[str, Any]) -> None:
 
 
 def run_submission(screenshots_dir: Path) -> dict[str, Any]:
+    if not BUILD_NUMBER:
+        raise ReleaseError("Submission requires APP_BUILD_NUMBER (the TestFlight build number)")
     if os.environ.get("CONFIRM_SUBMISSION", "") != SUBMIT_CONFIRMATION:
         raise ReleaseError(f"Submission requires CONFIRM_SUBMISSION={SUBMIT_CONFIRMATION!r}")
     assets = validate_screenshot_package(screenshots_dir)

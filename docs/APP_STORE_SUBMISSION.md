@@ -11,7 +11,7 @@
 - Copyright: `2026 Gustavo De Melo Ferreira`
 - Intended audience: `9+ family experience`
 - Bundle ID: `br.com.quemsoueu.adivinha`
-- Version: `1.2.3` (build 41)
+- Version: `1.2.4` (build = run number do workflow `iOS TestFlight`)
 
 ## Promotional Text
 
@@ -25,7 +25,8 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 
 Recursos:
 
-- Partidas rápidas com até 14 perguntas.
+- Partidas rápidas, com palpite em poucas perguntas.
+- Errou uma resposta? Desfaça e corrija na hora.
 - Doze categorias temáticas e modo livre.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
@@ -39,14 +40,13 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 
 ## What's New
 
-Uma nova experiência para o Quem Sou Eu? Adivinha.
+A Princesa Detetive ficou mais esperta.
 
-- Jogo de pistas e perguntas offline.
-- 305 personalidades em doze categorias temáticas.
-- 150 novas personalidades adicionadas às categorias existentes, com pistas ampliadas para K-pop, música, esportes, artistas brasileiros e criadores digitais.
-- Onboarding, retomada de partida e coleção de descobertas.
-- Novo visual com a Princesa Detetive.
-- Retratos, compartilhamento, pontos, moedas e sequência.
+- Novo botão para desfazer a última resposta.
+- Depois de um palpite errado, o jogo ganha perguntas extras para chegar ao personagem certo.
+- “Não sei” não gasta mais suas perguntas.
+- Palpites mais rápidos quando as respostas são claras.
+- Respostas de personagens revisadas com fontes.
 
 ## URLs
 
@@ -119,4 +119,4 @@ For a dedicated 6.9-inch set, use an accepted portrait size such as `1290x2796` 
 
 ## API Workflow
 
-Run `App Store Connect Release` manually from the release branch with `operation=inspect` to read the build, version, screenshot, review-contact, and submission states. To submit, run with `operation=submit` and the exact confirmation `SUBMIT 1.2.3 (41)`. The workflow waits for build 41 to become `VALID`, uploads metadata and screenshots, associates the build, and submits with automatic release after approval. The 1.2.3 submission was created with ID `e452da04-8ccf-4245-ac9d-04d41184cf83`; the user subsequently confirmed App Store Connect shows it as approved and ready for distribution.
+Run `App Store Connect Release` manually from the release branch with `operation=inspect` and `app_version` to read the build, version, screenshot, review-contact, and submission states. To submit, pass `app_version`, `build_number` (the run number of the `iOS TestFlight` workflow that uploaded the IPA) and the exact confirmation `SUBMIT <version> (<build>)`. The workflow waits for the build to become `VALID`, uploads metadata and screenshots, associates the build, and submits with automatic release after approval. The 1.2.3 submission was created with ID `e452da04-8ccf-4245-ac9d-04d41184cf83`; the user subsequently confirmed App Store Connect shows it as approved and ready for distribution.

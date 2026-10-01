@@ -1,29 +1,43 @@
 # Comparação do motor em partidas completas
 
-Data: 2026-09-30. Catálogo avaliado: 305 personagens, 128 perguntas e 323 combinações personagem–categoria, após seis correções de respostas confirmadas por fonte.
+Data: 2026-10-01. Catálogo avaliado: 305 personagens, 128 perguntas e 323 combinações personagem–categoria, após onze correções de respostas confirmadas por fonte.
 
-O novo `scripts/evaluate_gameplay.py` acompanha uma partida até acertar, perder ou esgotar as quatro rejeições possíveis. Isso corresponde ao fluxo em `GameViews.swift`; ao contrário da simulação anterior, não encerra a partida no primeiro palpite.
+`scripts/evaluate_gameplay.py` acompanha uma partida até acertar, perder ou esgotar as quatro rejeições possíveis, como o fluxo em `GameViews.swift`. Os números abaixo são médias das seeds `42`, `43` e `44` (323 partidas por cenário e seed).
 
 ## Configurações
 
-- Referência: confiança antecipada `0.68`, margem `0.10`, piso de likelihood `0.25`.
-- Candidata: confiança antecipada `0.60`, margem `0.08`, piso de likelihood `0.25`.
-- Três seeds (`42`, `43`, `44`), com 323 partidas por cenário e seed.
-- Os cenários introduzem respostas desconhecidas, uma ou duas contradições, 10% de respostas contraditórias aleatórias e respostas “provavelmente”.
+- **1.2.3 (anterior):** limite fixo de 14 perguntas, confiança antecipada `0,60`, margem `0,08`, piso de likelihood `0,25`.
+- **1.2.4 (adotada):** orçamento adaptativo (`GuessPolicy.questionBudget`): 14 perguntas, +3 por palpite rejeitado, até 2 respostas “Não sei” sem consumir o orçamento, teto de 20; confiança `0,68`, margem `0,10`, piso `0,18`. Também há o botão “Desfazer última resposta”, que o simulador não modela.
+
+Para reproduzir: `python3 scripts/evaluate_gameplay.py --seed 42` (adotada) e `python3 scripts/evaluate_gameplay.py --seed 42 --budget-policy legacy --likelihood-floor 0.25 --guess-confidence 0.60 --margin-threshold 0.08` (anterior).
 
 ## Resultados agregados
 
-| Cenário | Acerto final referência | Acerto final candidata | Perguntas médias referência → candidata |
+| Cenário | 1º palpite 1.2.3 → 1.2.4 | Acerto final 1.2.3 → 1.2.4 | Perguntas médias 1.2.3 → 1.2.4 |
 |---|---:|---:|---:|
-| Ideal | 100,0% | 100,0% | 9,19 → 8,04 |
-| Uma resposta desconhecida | 98,0% | 98,0% | 10,70 → 9,74 |
-| Uma resposta contraditória | 97,3% | 97,5% | 12,27 → 11,65 |
-| Duas respostas contraditórias | 73,5% | 75,4% | 13,16 → 13,01 |
-| 10% de respostas contraditórias aleatórias | 81,7% | 83,3% | 11,13 → 10,29 |
-| Respostas “provavelmente” coerentes com o personagem | 100,0% | 100,0% | 11,55 → 10,38 |
+| Ideal | 99,8% → 99,7% | 100,0% → 100,0% | 8,04 → 7,23 |
+| Uma resposta desconhecida | 95,9% → 95,6% | 98,0% → 100,0% | 9,72 → 9,04 |
+| Uma resposta contraditória | 92,2% → 90,3% | 97,4% → 99,3% | 11,60 → 11,18 |
+| Duas respostas contraditórias | 59,9% → 56,4% | 76,0% → 88,1% | 13,02 → 13,02 |
+| 10% de respostas contraditórias aleatórias | 75,5% → 75,5% | 83,4% → 95,9% | 10,26 → 9,81 |
+| Respostas “provavelmente” | 100,0% → 100,0% | 100,0% → 100,0% | 10,35 → 11,53 |
 
-O acerto no primeiro palpite cai cerca de 1,5 ponto percentual com uma contradição e 2,5 pontos com duas; o acerto final aumenta porque a pessoa pode rejeitar o palpite e continuar. A candidata também usa menos perguntas em todos os cenários medidos. O P95 permanece no limite atual de 14 perguntas.
+Nos cenários com respostas erradas o P95 sobe de 14 para 17 perguntas, porque as perguntas extras só aparecem depois de um palpite rejeitado; no cenário ideal o P95 cai para 13.
 
-## Próxima validação
+## Calibração do piso
 
-Estes números vêm do simulador Python que espelha o motor. Ainda é necessário executar os testes XCTest e o teste UI de recuperação no Simulator macOS antes de escolher estes limiares para a próxima build.
+Com o orçamento adaptativo, pisos mais baixos aceleram a partida, mas derrubam o primeiro palpite quando há respostas erradas:
+
+| Piso / confiança / margem | Perguntas (ideal) | 1º palpite (uma contradição) | Final (duas contradições) | Final (10% aleatórias) |
+|---|---:|---:|---:|---:|
+| 0,15 / 0,60 / 0,08 | 5,91 | 78,0% | 90,2% | 96,3% |
+| 0,20 / 0,60 / 0,08 | 6,81 | 88,3% | 87,6% | 96,2% |
+| **0,18 / 0,68 / 0,10** | **7,23** | **90,3%** | **88,1%** | **95,9%** |
+| 0,25 / 0,60 / 0,08 | 8,04 | 92,2% | 84,6% | 94,3% |
+
+A configuração adotada mantém o primeiro palpite próximo da 1.2.3 e ganha 12 pontos de acerto final nos cenários com erros.
+
+## Limitações conhecidas
+
+- O jogador simulado erra apenas invertendo a resposta; na prática, “provavelmente” em caso de dúvida é mais comum.
+- Na mesma categoria, Alexia Putellas e Aitana Bonmatí não se diferenciam em nenhum atributo, e 117 pares diferem em um único atributo. Preencher esses atributos é o próximo ganho de qualidade.

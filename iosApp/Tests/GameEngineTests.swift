@@ -167,7 +167,7 @@ final class GameEngineTests: XCTestCase {
         let result = playActualCatalogGame(
             targetID: "marilia-mendonca",
             category: .artists,
-            contradictFirstInformativeAnswer: true
+            contradictedInformativeAnswers: 1
         )
 
         XCTAssertNotEqual(result.firstGuessID, Optional("marilia-mendonca"))
@@ -176,10 +176,71 @@ final class GameEngineTests: XCTestCase {
         XCTAssertLessThanOrEqual(result.questions, GuessPolicy.questionLimit)
     }
 
+    func testActualCatalogUsesExtraQuestionsAfterRejectedGuess() {
+        // With the fixed 14-question limit this round was lost; the extra questions after a rejection recover it.
+        let result = playActualCatalogGame(
+            targetID: "lula",
+            category: .politicians,
+            contradictedInformativeAnswers: 2
+        )
+
+        XCTAssertTrue(result.success)
+        XCTAssertGreaterThanOrEqual(result.rejectedGuesses, 1)
+        XCTAssertGreaterThan(result.questions, GuessPolicy.questionLimit)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.maximumQuestionLimit)
+    }
+
+    func testQuestionBudgetGrowsAfterRejectedGuessesAndUnknownAnswers() {
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 0), 14)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 1, unknownAnswers: 0), 17)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 1), 15)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 5), 16)
+    }
+
+    func testQuestionBudgetRespectsCaps() {
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 3, unknownAnswers: 2), GuessPolicy.maximumQuestionLimit)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 9, rejectedGuesses: 2, unknownAnswers: 2), 9)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 0, rejectedGuesses: 0, unknownAnswers: 0), 0)
+    }
+
+    func testReplayingAnswersUndoesLastAnswerExactly() {
+        let questions = [
+            Question(id: "x", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var reference = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        reference.apply(.yes, to: questions[0])
+        reference.reject(people[0])
+
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        engine.apply(.yes, to: questions[0])
+        engine.reject(people[0])
+        engine.apply(.no, to: questions[1])
+
+        let undone = engine.replaying([RecordedAnswer(questionID: "x", answer: .yes)], rejectedPersonIDs: ["a"])
+
+        for person in people {
+            XCTAssertEqual(undone.scores[person.id, default: -1], reference.scores[person.id, default: -2], accuracy: 1e-12)
+        }
+        XCTAssertTrue(undone.rejectedPersonIDs.contains("a"))
+        XCTAssertFalse(undone.asked.contains("y"))
+    }
+
+    func testMarkAskedPreventsQuestionFromBeingSelectedAgain() {
+        let questions = [
+            Question(id: "x", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        engine.markAsked(questions[0])
+        XCTAssertEqual(engine.nextQuestion()?.id, "y")
+        XCTAssertNil(engine.nextQuestion())
+    }
+
     private func playActualCatalogGame(
         targetID: String,
         category: Category,
-        contradictFirstInformativeAnswer: Bool = false
+        contradictedInformativeAnswers: Int = 0
     ) -> (success: Bool, firstGuessID: String?, rejectedGuesses: Int, questions: Int) {
         let base = KnowledgeStore.shared.base
         guard let target = base.people.first(where: { $0.id == targetID }) else {
@@ -192,21 +253,30 @@ final class GameEngineTests: XCTestCase {
         let questions = base.questions.filter {
             $0.categories.contains(.all) || $0.categories.contains(category) || category == .all
         }
-        let questionLimit = min(GuessPolicy.questionLimit, Set(questions.map(\.attribute)).count)
+        let availableAttributes = Set(questions.map(\.attribute)).count
         var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
         var questionCount = 0
+        var unknownAnswers = 0
+        var informativeAnswers = 0
         var rejectedGuesses = 0
         var firstGuessID: String?
-        var contradictionApplied = false
+        var questionLimit: Int {
+            GuessPolicy.questionBudget(
+                availableAttributes: availableAttributes,
+                rejectedGuesses: rejectedGuesses,
+                unknownAnswers: unknownAnswers
+            )
+        }
 
         while true {
             let question = questionCount < questionLimit ? engine.nextQuestion() : nil
             if let question {
                 var answer = answer(for: target.attributes[question.attribute])
-                if contradictFirstInformativeAnswer, !contradictionApplied, answer != .unknown {
-                    answer = inverted(answer)
-                    contradictionApplied = true
+                if answer != .unknown {
+                    informativeAnswers += 1
+                    if informativeAnswers <= contradictedInformativeAnswers { answer = inverted(answer) }
                 }
+                if answer == .unknown { unknownAnswers += 1 }
                 engine.apply(answer, to: question)
                 questionCount += 1
             }

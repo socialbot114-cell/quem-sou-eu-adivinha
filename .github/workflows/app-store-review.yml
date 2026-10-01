@@ -4,15 +4,24 @@ on:
   workflow_dispatch:
     inputs:
       operation:
-        description: Inspect App Store Connect or submit version 1.2.3 (build 41) for review
+        description: Inspect App Store Connect or submit the version below for review
         required: true
         type: choice
         options:
           - inspect
           - submit
         default: inspect
+      app_version:
+        description: Marketing version to inspect or submit
+        required: true
+        type: string
+        default: "1.2.4"
+      build_number:
+        description: TestFlight build number (GitHub run number of the iOS TestFlight workflow); required to submit
+        required: false
+        type: string
       confirm_submission:
-        description: Enter SUBMIT 1.2.3 (41) to submit the release for App Review
+        description: Enter SUBMIT <version> (<build>), e.g. SUBMIT 1.2.4 (12), to submit for App Review
         required: false
         type: string
 
@@ -20,7 +29,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: app-store-release-1.2.3
+  group: app-store-release-${{ inputs.app_version }}
   cancel-in-progress: false
 
 jobs:
@@ -35,15 +44,28 @@ jobs:
         env:
           OPERATION: ${{ inputs.operation }}
           CONFIRM_SUBMISSION: ${{ inputs.confirm_submission }}
+          APP_VERSION_STRING: ${{ inputs.app_version }}
+          APP_BUILD_NUMBER: ${{ inputs.build_number }}
         run: |
           set -euo pipefail
           if [[ "$OPERATION" != "inspect" && "$OPERATION" != "submit" ]]; then
             printf 'Unsupported operation: %s\n' "$OPERATION" >&2
             exit 1
           fi
-          if [[ "$OPERATION" == "submit" && "$CONFIRM_SUBMISSION" != "SUBMIT 1.2.3 (41)" ]]; then
-            printf 'Submission requires the exact confirmation: SUBMIT 1.2.3 (41)\n' >&2
+          if [[ ! "$APP_VERSION_STRING" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+            printf 'Invalid app version: %s\n' "$APP_VERSION_STRING" >&2
             exit 1
+          fi
+          if [[ "$OPERATION" == "submit" ]]; then
+            if [[ ! "$APP_BUILD_NUMBER" =~ ^[0-9]+$ ]]; then
+              printf 'Submission requires a numeric build_number.\n' >&2
+              exit 1
+            fi
+            expected="SUBMIT ${APP_VERSION_STRING} (${APP_BUILD_NUMBER})"
+            if [[ "$CONFIRM_SUBMISSION" != "$expected" ]]; then
+              printf 'Submission requires the exact confirmation: %s\n' "$expected" >&2
+              exit 1
+            fi
           fi
 
       - name: Validate App Store Connect secrets
@@ -80,4 +102,6 @@ jobs:
           APP_STORE_ASSET_TIMEOUT_MINUTES: "20"
           APP_STORE_OPERATION: ${{ inputs.operation }}
           CONFIRM_SUBMISSION: ${{ inputs.confirm_submission }}
+          APP_VERSION_STRING: ${{ inputs.app_version }}
+          APP_BUILD_NUMBER: ${{ inputs.build_number }}
         run: python scripts/app_store_connect_release.py "$APP_STORE_OPERATION" store-kit/screenshots/iphone

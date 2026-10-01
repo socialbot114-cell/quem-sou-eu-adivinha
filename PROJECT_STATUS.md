@@ -28,17 +28,16 @@ Metadata, descrição, palavras-chave, copyright, notas de revisão, URLs de sup
 ## Próximos marcos
 
 - Validar perguntas e respostas dos 305 personagens antes de iniciar lotes para 5.000 perfis; gate atual fechado.
-- Auditoria atual: JERV avaliou as 6.541 células aplicáveis; 741 foram aceitas pelo modelo, 17 têm adjudicação e 5.788 permanecem em revisão humana.
-- Seis respostas foram corrigidas com fontes; 12 contradições JERV continuam pendentes de adjudicação.
+- Auditoria atual: JERV avaliou as 6.541 células aplicáveis; 741 foram aceitas pelo modelo, 22 têm adjudicação e 5.783 permanecem em revisão humana.
+- Onze respostas foram corrigidas com fontes; quatro contradições JERV continuam pendentes de adjudicação.
 - Há 18 perguntas sem decisão editorial consolidada e 0 violações nas invariantes determinísticas verificadas para datas/estado de vida.
 - Fila e relatório: `docs/content/CATALOG-VALIDATION-STATUS.md` e `docs/content/catalog-validation-queue.json`.
-- Candidata local para a próxima versão: `1.2.4` (build `42`), com palpite antecipado calibrado e auditoria JERV ampliada; XCTest/UI no Simulator e gate factual ainda pendentes.
+- Versão `1.2.4`: motor com orçamento adaptativo de perguntas (+3 por palpite rejeitado, até 2 “Não sei” gratuitos, teto 20), piso de likelihood `0,18`, confiança `0,68` / margem `0,10` e botão “Desfazer última resposta”; onze respostas corrigidas com fonte. Métricas em `docs/content/GAMEPLAY-ENGINE-COMPARISON.md`. O build number é o número da execução do workflow `iOS TestFlight`.
 - Ferramentas: `scripts/audit_catalog_evidence.py` (evidências) e `scripts/evaluate_gameplay.py` (partidas completas).
 - Screenshots fornecidos: `store-kit/screenshots/iphone/` (três PNGs 1284×2778, slot iPhone 6,5"). O App Store Connect mostra oito imagens `COMPLETE` nesse conjunto.
 - O workflow `ios-release.yml` assinou e enviou o IPA ao TestFlight pela API do App Store Connect. A integração Xcode Cloud é separada e permanece como tarefa posterior.
 - O JERV final revisou as funções principais dos 229 perfis de expansão e a redação das 72 perguntas dessa expansão; essa revisão não comprova cada atributo/resposta.
-- Adjudicar os 5.788 resultados `human-review` com fontes específicas antes de abrir o gate para novos personagens.
-- Executar XCTest e UI no Simulator para a política candidata do motor (`0,60` confiança / `0,08` margem) antes de incorporá-la à 1.2.4; métricas offline em `docs/content/GAMEPLAY-ENGINE-COMPARISON.md`.
+- Adjudicar os 5.783 resultados `human-review` com fontes específicas antes de abrir o gate para novos personagens.
 - Screenshots e vídeo de demonstração foram gerados no simulador macOS via GitHub Actions.
 - Site de suporte e privacidade publicado; App ID e registro App Store Connect configurados.
 - Workflow TestFlight configurado; teste em aparelho físico continua como validação futura.

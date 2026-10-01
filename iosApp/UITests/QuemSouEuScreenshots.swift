@@ -80,6 +80,39 @@ final class QuemSouEuScreenshots: XCTestCase {
         XCTAssertTrue(foundTarget, "A rodada não terminou em vitória após uma resposta contraditória")
     }
 
+    func testUndoLastAnswerReturnsToTheSameQuestion() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-onboarding.completed", "YES"]
+        app.launch()
+
+        let categoriesTab = app.buttons["tab.categories"]
+        XCTAssertTrue(categoriesTab.waitForExistence(timeout: 8))
+        categoriesTab.tap()
+
+        let categoryScroll = app.scrollViews.firstMatch
+        let artists = app.buttons["category.Artistas brasileiros"]
+        XCTAssertTrue(categoryScroll.waitForExistence(timeout: 4))
+        for _ in 0..<4 where !artists.isHittable {
+            categoryScroll.swipeDown()
+        }
+        XCTAssertTrue(artists.isHittable)
+        artists.tap()
+
+        XCTAssertTrue(app.buttons["Sim"].waitForExistence(timeout: 8))
+        let firstQuestion = app.staticTexts.matching(NSPredicate(format: "identifier BEGINSWITH 'question.'")).firstMatch
+        XCTAssertTrue(firstQuestion.waitForExistence(timeout: 4))
+        let firstIdentifier = firstQuestion.identifier
+        let undo = app.buttons["game.undo"]
+        XCTAssertFalse(undo.exists, "Não deve haver o que desfazer antes da primeira resposta")
+
+        app.buttons["Sim"].firstMatch.tap()
+        XCTAssertTrue(undo.waitForExistence(timeout: 4))
+        undo.tap()
+
+        XCTAssertTrue(app.staticTexts[firstIdentifier].waitForExistence(timeout: 4), "Desfazer deve mostrar a mesma pergunta")
+        XCTAssertFalse(undo.exists, "Depois de desfazer a única resposta não deve sobrar o que desfazer")
+    }
+
     func testCaptureStoreScreens() {
         let app = XCUIApplication()
         app.launchArguments = ["-onboarding.completed", "YES"]
