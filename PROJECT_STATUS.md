@@ -13,6 +13,7 @@ MVP inicial em construção. O projeto já contém configuração XcodeGen, base
 - Profile UUID: `2bf9e748-a220-4274-a157-c5878696d5dc`
 - Versão `1.2.3`, build `41`: IPA enviado ao TestFlight (run `36331786815`) e aprovada, pronta para distribuição (status confirmado pelo usuário).
 - App Store version ID: `056c95ba-e1f4-484b-8377-3622a368f980`; review submission ID: `e452da04-8ccf-4245-ac9d-04d41184cf83`.
+- Versão `1.2.4`, build `42`: CI (XCTest + UI) aprovado no run `36937852282`, IPA enviado ao TestFlight (run `36940046828`) e submetido para revisão em 2026-10-01 (run `36940913783`), estado `WAITING_FOR_REVIEW`, liberação automática após aprovação. App Store version ID: `220a90f8-db90-4465-990a-d9b72aeac931`; review submission ID: `aefc0167-7593-4344-ac6c-b0183a2c6f2e`.
 - Site: https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/
 - Repositório do app: https://github.com/socialbot114-cell/quem-sou-eu-adivinha
 - Repositório do site: https://github.com/socialbot114-cell/quem-sou-eu-adivinha-site
