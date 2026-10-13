@@ -372,13 +372,6 @@
       "needsReview": []
     },
     {
-      "id": "ricardo-kaka",
-      "category": "Futebol",
-      "qid": "Q531814",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q531814",
-      "needsReview": []
-    },
-    {
       "id": "diego-maradona",
       "category": "Futebol",
       "qid": "Q17515",
@@ -746,6 +739,13 @@
       "category": "Futebol",
       "qid": "Q459830",
       "sourceUrl": "https://www.wikidata.org/wiki/Q459830",
+      "needsReview": []
+    },
+    {
+      "id": "peter-shilton",
+      "category": "Futebol",
+      "qid": "Q244799",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q244799",
       "needsReview": []
     },
     {

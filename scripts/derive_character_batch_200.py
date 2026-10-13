@@ -31,7 +31,11 @@ HARVEST_FUTEBOL = Path(sys.argv[1]) if len(sys.argv) > 1 else None
 HARVEST_ARTISTAS = Path(sys.argv[2]) if len(sys.argv) > 2 else None
 
 PER_CATEGORY = 100
-WITHOUT_EDITORIAL_SOURCE = {"Maiara"}
+# Candidates left out: no linked Wikipedia article, or the same person as an existing character.
+EXCLUDED_CANDIDATES = {
+    "Maiara": "sem artigo vinculado na Wikipedia",
+    "Ricardo Kaká": "mesma pessoa que 'Kaká' (artigo Wikipedia já na base)",
+}
 MALE, FEMALE, BRAZIL = "Q6581097", "Q6581072", "Q155"
 NATIONAL_TEAM_TYPE = "Q6979593"  # national association football team
 BARCELONA = "Q7156"
@@ -497,12 +501,12 @@ def main() -> None:
     def usable(record: dict) -> bool:
         return birth_year(record) is not None and gender_of(record) is not None and country_of(record) is not None
 
-    football = ordered_pool([record for record in football if usable(record)], women_quota=15)
+    football = ordered_pool([record for record in football if usable(record) and record["name"] not in EXCLUDED_CANDIDATES], women_quota=15)
     clubs = club_lookup(football)
     football_pool = [football_entry(record, clubs) for record in football]
     # Without a linked Wikipedia article there is no editorial source to cite, so the character is skipped.
     artist_pool = [artist_entry(record) for record in artists
-                   if is_brazilian(record) and usable(record) and record["name"] not in WITHOUT_EDITORIAL_SOURCE]
+                   if is_brazilian(record) and usable(record) and record["name"] not in EXCLUDED_CANDIDATES]
     football_pairs, artist_pairs = fit_catalog(football_pool, artist_pool, PER_CATEGORY, PER_CATEGORY)
 
     people_football = [entry for entry, _ in football_pairs]

@@ -24,6 +24,7 @@ USER_AGENT = "quem-sou-eu-catalog/1.0 (https://github.com/socialbot114-cell/quem
 LICENSE = "CC BY-SA 4.0"
 LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 EXCERPT_LIMIT = 700
+BATCH_TAG = "1.2.5"
 
 
 def get_json(url: str) -> dict:
@@ -66,9 +67,11 @@ def main() -> None:
 
     document = json.loads(SOURCES.read_text(encoding="utf-8"))
     current_ids = {person["id"] for person in people}
-    # Drop sources generated for characters that left the batch; the original items are untouched.
-    generated = {item["id"] for item in json.loads(SOURCES_200.read_text(encoding="utf-8"))["characters"]}
-    document["items"] = [item for item in document["items"] if item["id"] not in generated or item["id"] in current_ids]
+    # Items generated for this batch carry BATCH_TAG; drop those for characters that left the batch.
+    document["items"] = [
+        item for item in document["items"]
+        if item.get("batch") != BATCH_TAG or item["id"] in current_ids
+    ]
     existing = {item["id"] for item in document["items"]}
     today = date.today().isoformat()
     added, missing = [], []
@@ -105,6 +108,7 @@ def main() -> None:
             "lastVerified": today,
             "sourceLicense": LICENSE,
             "sourceLicenseURL": LICENSE_URL,
+            "batch": BATCH_TAG,
         })
         added.append(person["id"])
     document["generatedAt"] = today

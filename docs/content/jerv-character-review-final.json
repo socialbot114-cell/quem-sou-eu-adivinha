@@ -3714,17 +3714,6 @@
       "final_status": "pending",
       "reason": "Personagem do lote 1.2.5; aguarda revisão editorial."
     },
-    "ricardo-kaka-main-role": {
-      "decision": "pending",
-      "confidence": null,
-      "status": "pending",
-      "source_url": "https://pt.wikipedia.org/wiki/Kak%C3%A1",
-      "source_license": "CC BY-SA 4.0",
-      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "last_verified": "2026-10-13",
-      "final_status": "pending",
-      "reason": "Personagem do lote 1.2.5; aguarda revisão editorial."
-    },
     "diego-maradona-main-role": {
       "decision": "pending",
       "confidence": null,
@@ -5391,6 +5380,17 @@
       "confidence": null,
       "status": "pending",
       "source_url": "https://pt.wikipedia.org/wiki/St%C3%AAnio_Garcia",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-13",
+      "final_status": "pending",
+      "reason": "Personagem do lote 1.2.5; aguarda revisão editorial."
+    },
+    "peter-shilton-main-role": {
+      "decision": "pending",
+      "confidence": null,
+      "status": "pending",
+      "source_url": "https://pt.wikipedia.org/wiki/Peter_Shilton",
       "source_license": "CC BY-SA 4.0",
       "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "last_verified": "2026-10-13",

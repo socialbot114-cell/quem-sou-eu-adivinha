@@ -3198,17 +3198,6 @@
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
-      "id": "ricardo-kaka",
-      "name": "Ricardo Kaká",
-      "profession": "Futebolista, diplomata e escritor",
-      "sourceTitle": "Kaká",
-      "sourceURL": "https://pt.wikipedia.org/wiki/Kak%C3%A1",
-      "sourceExcerpt": "Ricardo Izecson dos Santos Leite, mais conhecido como Kaká, é um ex-futebolista brasileiro que atuava como meio-campista.",
-      "lastVerified": "2026-10-13",
-      "sourceLicense": "CC BY-SA 4.0",
-      "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
-    },
-    {
       "id": "diego-maradona",
       "name": "Diego Maradona",
       "profession": "Futebolista, treinador de futebol e ator",
@@ -4876,6 +4865,17 @@
       "sourceTitle": "Stênio Garcia",
       "sourceURL": "https://pt.wikipedia.org/wiki/St%C3%AAnio_Garcia",
       "sourceExcerpt": "Stênio Garcia Faro é um ator brasileiro. Conhecido por suas performances na tela e no palco, ele é ganhador de vários prêmios ao longo de sua carreira de mais de seis décadas, incluindo três Prêmios APCA, um Prêmio Guarani, um Prêmio Molière, um Prêmio Qualidade Brasil, e um Troféu Imprensa, além de ter recebido indicação para um Grande Otelo. Conhecido por seu método de preparação, Garcia é frequentemente associado a um estilo de atuação baseado na imersão, dedicando-se intensamente ao estudo de seus papéis e à incorporação dos aspectos psicológicos, físicos e sociais de seus personagens. Essa entrega integral ao processo interpretativo contribuiu para a construção de figuras marcantes na…",
+      "lastVerified": "2026-10-13",
+      "sourceLicense": "CC BY-SA 4.0",
+      "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "id": "peter-shilton",
+      "name": "Peter Shilton",
+      "profession": "Futebolista e treinador de futebol",
+      "sourceTitle": "Peter Shilton",
+      "sourceURL": "https://pt.wikipedia.org/wiki/Peter_Shilton",
+      "sourceExcerpt": "Peter Leslie Shilton, OBE é um ex-futebolista inglês que jogou como goleiro. Ele atualmente detém o recorde de mais partidas na Seleção Inglesa com 125 jogos.",
       "lastVerified": "2026-10-13",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
