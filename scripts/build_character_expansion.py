@@ -11,6 +11,8 @@ OUTPUT = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
 PRIMARY = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
 BATCH_150 = ROOT / "scripts/character-batch-150.json"
 EXPECTED_BATCH_SIZE = 150
+BATCH_200 = ROOT / "scripts/character-batch-200.json"
+EXPECTED_BATCH_200_SIZE = 200
 
 QUESTION_SPECS = {
     "Outros esportes": [
@@ -121,6 +123,43 @@ SHARED_QUESTIONS = [
     {"id": "creator-tiktok-origin", "text": "Ganhou projeção inicialmente no TikTok?", "attribute": "creator_tiktok_origin", "categories": ["Criadores digitais"]},
     {"id": "creator-engineer", "text": "Tem formação em engenharia?", "attribute": "creator_engineer", "categories": ["Criadores digitais"]},
 ]
+# Objective questions for Artistas brasileiros, filled from Wikidata. They are optional:
+# characters without the data leave the attribute out, which the engine treats as no evidence,
+# so the 150-character batch keeps its original trait layout.
+OPTIONAL_QUESTIONS = [
+    {"id": "genre-mpb", "text": "É conhecido pela MPB?", "attribute": "genre_mpb", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-rock", "text": "Tem o rock como um dos gêneros principais?", "attribute": "genre_rock", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-pop", "text": "É conhecido pela música pop?", "attribute": "genre_pop", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-funk", "text": "É conhecido pelo funk?", "attribute": "genre_funk", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-bossa", "text": "É conhecido pela bossa nova?", "attribute": "genre_bossa", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-pagode", "text": "É conhecido pelo pagode?", "attribute": "genre_pagode", "categories": ["Artistas brasileiros"]},
+    {"id": "born-before-1960", "text": "Nasceu antes de 1960?", "attribute": "born_before_1960", "categories": ["Artistas brasileiros"]},
+    {"id": "born-before-1985", "text": "Nasceu antes de 1985?", "attribute": "born_before_1985", "categories": ["Artistas brasileiros", "Futebol"]},
+    {"id": "played-in-brazil", "text": "Jogou em clube brasileiro?", "attribute": "played_in_brazil", "categories": ["Futebol"]},
+    {"id": "played-in-italy", "text": "Jogou em clube italiano?", "attribute": "played_in_italy", "categories": ["Futebol"]},
+    {"id": "played-in-spain", "text": "Jogou em clube espanhol?", "attribute": "played_in_spain", "categories": ["Futebol"]},
+    {"id": "played-in-germany", "text": "Jogou em clube alemão?", "attribute": "played_in_germany", "categories": ["Futebol"]},
+    {"id": "played-in-france", "text": "Jogou em clube francês?", "attribute": "played_in_france", "categories": ["Futebol"]},
+    {"id": "played-in-portugal", "text": "Jogou em clube português?", "attribute": "played_in_portugal", "categories": ["Futebol"]},
+    {"id": "fifa-best", "text": "Foi eleito o melhor jogador do mundo pela FIFA?", "attribute": "fifa_best", "categories": ["Futebol"]},
+    {"id": "genre-axe", "text": "É conhecido pelo axé?", "attribute": "genre_axe", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-rap", "text": "Canta rap ou hip-hop?", "attribute": "genre_rap", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-choro", "text": "É conhecido pelo choro?", "attribute": "genre_choro", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-jazz", "text": "É conhecido pelo jazz?", "attribute": "genre_jazz", "categories": ["Artistas brasileiros"]},
+    {"id": "genre-electronic", "text": "É conhecido pela música eletrônica?", "attribute": "genre_electronic", "categories": ["Artistas brasileiros"]},
+    {"id": "composer", "text": "É compositor ou compositora?", "attribute": "composer", "categories": ["Artistas brasileiros"]},
+    {"id": "born-before-1965", "text": "Nasceu antes de 1965?", "attribute": "born_before_1965", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-bahia", "text": "Nasceu na Bahia?", "attribute": "born_in_bahia", "categories": ["Artistas brasileiros"]},
+    {"id": "born-before-1945", "text": "Nasceu antes de 1945?", "attribute": "born_before_1945", "categories": ["Artistas brasileiros"]},
+    {"id": "born-before-1955", "text": "Nasceu antes de 1955?", "attribute": "born_before_1955", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-minas-gerais", "text": "Nasceu no estado de Minas Gerais?", "attribute": "born_in_minas_gerais", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-rio", "text": "Nasceu no estado do Rio de Janeiro?", "attribute": "born_in_rio", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-sao-paulo", "text": "Nasceu no estado de São Paulo?", "attribute": "born_in_sao_paulo", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-northeast", "text": "Nasceu no Nordeste?", "attribute": "born_in_northeast", "categories": ["Artistas brasileiros"]},
+    {"id": "born-in-south", "text": "Nasceu na Região Sul?", "attribute": "born_in_south", "categories": ["Artistas brasileiros"]},
+]
+OPTIONAL_ATTRIBUTES = {question["attribute"] for question in OPTIONAL_QUESTIONS}
+
 MEMBERSHIP_IDS = {
     "stray_kids_member": {"lee-know", "hyunjin", "bang-chan"},
     "twice_member": {"nayeon", "momo-hirai"},
@@ -309,16 +348,22 @@ BATCH_DEFAULT_FLAGS = {
 ALLOWED_BATCH_FLAGS = {"football", "artist", "creator", "politician", "historical"}
 
 
-def build_batch_people(existing_people: list[dict], expansion_questions: list[dict]) -> list[dict]:
+def build_batch_people(
+    existing_people: list[dict],
+    expansion_questions: list[dict],
+    batch_path: Path = BATCH_150,
+    expected_size: int = EXPECTED_BATCH_SIZE,
+) -> list[dict]:
     primary = json.loads(PRIMARY.read_text(encoding="utf-8"))
-    batch = json.loads(BATCH_150.read_text(encoding="utf-8"))
+    batch = json.loads(batch_path.read_text(encoding="utf-8"))
     if not isinstance(batch, dict) or set(batch) != {"people"} or not isinstance(batch["people"], dict):
-        raise ValueError("character-batch-150.json must contain a people object keyed by existing category")
+        raise ValueError(f"{batch_path.name} must contain a people object keyed by existing category")
 
     all_questions = primary["questions"] + expansion_questions
     category_attributes = {
         category: [question["attribute"] for question in all_questions
-                   if category in question["categories"] and question["categories"] != ["Todos"]]
+                   if category in question["categories"] and question["categories"] != ["Todos"]
+                   and question["attribute"] not in OPTIONAL_ATTRIBUTES]
         for category in SYMBOLS
     }
     known_ids = {person["id"] for person in existing_people}
@@ -331,11 +376,18 @@ def build_batch_people(existing_people: list[dict], expansion_questions: list[di
         traits = [attribute for attribute in category_traits if attribute not in dynamic_names]
         for candidate in candidates:
             identifier = candidate["id"]
-            values = candidate["traits"]
             if identifier in known_ids:
                 raise ValueError(f"duplicate character id in batch: {identifier}")
-            if len(values) != len(traits) or any(bit not in "01" for bit in values):
+            explicit = candidate.get("attributes")
+            values = candidate.get("traits")
+            if explicit is None and (values is None or len(values) != len(traits) or any(bit not in "01" for bit in values)):
                 raise ValueError(f"invalid trait vector for {identifier}: expected {len(traits)} binary values")
+            if explicit is not None and (
+                not (set(traits) | dynamic_names) <= set(explicit)
+                or not set(explicit) <= (set(traits) | dynamic_names | OPTIONAL_ATTRIBUTES)
+                or any(value not in (0, 1, None) for value in explicit.values())
+            ):
+                raise ValueError(f"invalid explicit attributes for {identifier}: missing or unknown keys")
 
             flags = dict(BATCH_DEFAULT_FLAGS.get(category, {}))
             custom_flags = candidate.get("flags", {})
@@ -358,8 +410,16 @@ def build_batch_people(existing_people: list[dict], expansion_questions: list[di
                 "historical": 0,
             }
             attributes.update(flags)
-            attributes.update({attribute: int(value) for attribute, value in zip(traits, values)})
-            attributes.update(dynamic_attributes(category, identifier, candidate["country"], candidate["birthYear"]))
+            if explicit is not None:
+                # None means "not verified": the attribute is omitted, so the engine treats it as no evidence.
+                attributes.update({attribute: int(value) for attribute, value in explicit.items()
+                                   if attribute not in dynamic_names and value is not None})
+            else:
+                attributes.update({attribute: int(value) for attribute, value in zip(traits, values)})
+            dynamic = dynamic_attributes(category, identifier, candidate["country"], candidate["birthYear"])
+            if explicit is not None:
+                dynamic = {attribute: int(explicit[attribute]) for attribute in dynamic_names if explicit[attribute] is not None}
+            attributes.update(dynamic)
             additions.append({
                 "id": identifier,
                 "name": candidate["name"],
@@ -371,8 +431,8 @@ def build_batch_people(existing_people: list[dict], expansion_questions: list[di
             })
             known_ids.add(identifier)
 
-    if len(additions) != EXPECTED_BATCH_SIZE:
-        raise ValueError(f"expected exactly {EXPECTED_BATCH_SIZE} new characters, got {len(additions)}")
+    if len(additions) != expected_size:
+        raise ValueError(f"expected exactly {expected_size} new characters in {batch_path.name}, got {len(additions)}")
     return additions
 
 
@@ -423,6 +483,7 @@ def build() -> dict:
             })
 
     questions.extend(SHARED_QUESTIONS)
+    questions.extend(OPTIONAL_QUESTIONS)
 
     # A directly sourced Brazilian artist joins the existing Artistas brasileiros category.
     people.append({
@@ -453,7 +514,13 @@ def build() -> dict:
         "avatarSymbol": "music.note",
         "imageName": "djavan.jpg",
     })
-    people.extend(build_batch_people(people, questions))
+    people.extend(build_batch_people(people, questions, BATCH_150, EXPECTED_BATCH_SIZE))
+    people.extend(build_batch_people(people, questions, BATCH_200, EXPECTED_BATCH_200_SIZE))
+    # Optional Wikidata facts for artists added in earlier batches (see build_optional_facts.py).
+    from apply_primary_category_features import optional_facts
+    facts = optional_facts()
+    for person in people:
+        person["attributes"].update(facts.get(person["id"], {}))
     return {"people": people, "questions": questions}
 
 

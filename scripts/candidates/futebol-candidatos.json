@@ -1,0 +1,1736 @@
+[
+ {
+  "name": "Garrincha",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Didi",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "search": "Didi futebolista"
+ },
+ {
+  "name": "Vavá",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Jairzinho",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Tostão",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Rivellino",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gérson de Oliveira Nunes",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Carlos Alberto Torres",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Clodoaldo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Paulo Roberto Falcão",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Zé Roberto",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Dunga",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bebeto",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Edmundo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Juninho Pernambucano",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Adriano Leite Ribeiro",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Lúcio",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Júlio César",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "search": "Júlio César goleiro"
+ },
+ {
+  "name": "Dida",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Taffarel",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gilberto Silva",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Hernanes",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Oscar dos Santos Emboaba Júnior",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Philippe Coutinho",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Fernandinho",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Thiago Silva",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "David Luiz",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Marcelo Vieira",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Daniel Alves",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ederson",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Éder Militão",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Raphinha",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Rodrygo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gabriel Barbosa",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Richarlison",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Roberto Firmino",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ademir da Guia",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Leônidas da Silva",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Nilton Santos",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Djalma Santos",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Zagallo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Cristiane",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sissi",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Debinha",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Rivaldo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Cafu",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Romário",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Rai",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "search": "Rai futebolista"
+ },
+ {
+  "name": "Juninho Paulista",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Paulo Henrique Ganso",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Rogério Ceni",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ricardo Kaká",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Diego Maradona",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Johan Cruyff",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Franz Beckenbauer",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gerd Müller",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Michel Platini",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Alfredo Di Stéfano",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Eusébio",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "George Best",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bobby Charlton",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ferenc Puskás",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Zlatan Ibrahimović",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Andrea Pirlo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Francesco Totti",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Alessandro Del Piero",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Roberto Baggio",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gianluca Vialli",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ruud van Nistelrooy",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ruud Gullit",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Marco van Basten",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Frank Rijkaard",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Dennis Bergkamp",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Patrick Vieira",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Didier Drogba",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Samuel Eto'o",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Yaya Touré",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Kolo Touré",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "George Weah",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Michael Essien",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sadio Mané",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Riyad Mahrez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Virgil van Dijk",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Toni Kroos",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sergio Ramos",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gerard Piqué",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Xavi Hernández",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Carles Puyol",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sergio Busquets",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Andrés Iniesta",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "David Villa",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Fernando Torres",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Raúl González",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Xabi Alonso",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Carlos Tévez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sergio Agüero",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gonzalo Higuaín",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Javier Mascherano",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ángel Di María",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Juan Román Riquelme",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Diego Forlán",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Luis Suárez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Edinson Cavani",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "James Rodríguez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Radamel Falcao",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Arturo Vidal",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Alexis Sánchez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Robin van Persie",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Wayne Rooney",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Steven Gerrard",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Frank Lampard",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "John Terry",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ryan Giggs",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "David Beckham",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Paul Scholes",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gary Neville",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Peter Shilton",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "David Seaman",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Kevin Keegan",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Alan Shearer",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Michael Owen",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sol Campbell",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ashley Cole",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Harry Maguire",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Jack Grealish",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bukayo Saka",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Jordan Henderson",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Thomas Müller",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Philipp Lahm",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bastian Schweinsteiger",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Lothar Matthäus",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Jürgen Klinsmann",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Oliver Kahn",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Miroslav Klose",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Lukas Podolski",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Mesut Özil",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Joshua Kimmich",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Jérôme Boateng",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Antoine Griezmann",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Paul Pogba",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "N'Golo Kanté",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Raphaël Varane",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Olivier Giroud",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Hugo Lloris",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Lilian Thuram",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Marcel Desailly",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Youri Djorkaeff",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Eric Cantona",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Gheorghe Hagi",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Hristo Stoichkov",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Andriy Shevchenko",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Oleg Blokhin",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Luis Figo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Deco",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ricardo Carvalho",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Pepe",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Nani",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bernardo Silva",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bruno Fernandes",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Kai Havertz",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Megan Rapinoe",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Alex Morgan",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sam Kerr",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ada Hegerberg",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Christine Sinclair",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Abby Wambach",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Mia Hamm",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Birgit Prinz",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Wendie Renard",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Ricardo Quaresma",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Marcelo Gallardo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Bruno Conti",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ]
+ },
+ {
+  "name": "Sócrates",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "search": "Sócrates Brasileiro futebolista"
+ }
+]

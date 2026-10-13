@@ -1,0 +1,350 @@
+[
+ {
+  "id": "pele",
+  "name": "Pelé",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "marta",
+  "name": "Marta",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "neymar",
+  "name": "Neymar",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "ronaldo-nazario",
+  "name": "Ronaldo Nazário",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "ronaldinho",
+  "name": "Ronaldinho Gaúcho",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "lionel-messi",
+  "name": "Lionel Messi",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "cristiano-ronaldo",
+  "name": "Cristiano Ronaldo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "kylian-mbappe",
+  "name": "Kylian Mbappé",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "vinicius-junior",
+  "name": "Vinícius Júnior",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "alexia-putellas",
+  "name": "Alexia Putellas",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "erling-haaland",
+  "name": "Erling Haaland",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "luka-modric",
+  "name": "Luka Modrić",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "gianluigi-buffon",
+  "name": "Gianluigi Buffon",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "zinedine-zidane",
+  "name": "Zinédine Zidane",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "alisson-becker",
+  "name": "Alisson Becker",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "casemiro",
+  "name": "Casemiro",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "gabriel-jesus",
+  "name": "Gabriel Jesus",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "robert-lewandowski",
+  "name": "Robert Lewandowski",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "karim-benzema",
+  "name": "Karim Benzema",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "aitana-bonmati",
+  "name": "Aitana Bonmatí",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "alex-morgan",
+  "name": "Alex Morgan",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "sam-kerr",
+  "name": "Sam Kerr",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "megan-rapinoe",
+  "name": "Megan Rapinoe",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "rodri",
+  "name": "Rodri",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "kaka",
+  "name": "Kaká",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "zico-futebol",
+  "name": "Zico",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "didier-drogba",
+  "name": "Didier Drogba",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "andrea-pirlo",
+  "name": "Andrea Pirlo",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ },
+ {
+  "id": "luis-suarez",
+  "name": "Luis Suárez",
+  "categories": [
+   "Futebol"
+  ],
+  "expect": [
+   "futebolista",
+   "jogador de futebol"
+  ],
+  "allowExisting": true
+ }
+]

@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 PRIMARY_PATH = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
+OPTIONAL_FACTS_PATH = ROOT / "docs/content/optional-facts.json"
 
 ARTIST_BIRTH_YEARS = {
     "anitta": 1993,
@@ -68,6 +69,14 @@ def feature_values(identifier: str) -> dict[str, int] | None:
     return None
 
 
+def optional_facts() -> dict[str, dict[str, int]]:
+    """Optional Wikidata-backed facts for existing artists, keyed by character id."""
+    if not OPTIONAL_FACTS_PATH.is_file():
+        return {}
+    characters = json.loads(OPTIONAL_FACTS_PATH.read_text(encoding="utf-8"))["characters"]
+    return {identifier: fact["attributes"] for identifier, fact in characters.items()}
+
+
 def apply(path: Path = PRIMARY_PATH) -> int:
     lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
     expected_ids = set(ARTIST_BIRTH_YEARS) | set(CREATOR_BIRTH_YEARS)
@@ -79,8 +88,8 @@ def apply(path: Path = PRIMARY_PATH) -> int:
         if not identifier_match:
             continue
         identifier = identifier_match.group(1)
-        values = feature_values(identifier)
-        if values is None:
+        values = {**(feature_values(identifier) or {}), **optional_facts().get(identifier, {})}
+        if not values:
             continue
 
         attributes_match = re.search(r'"attributes":\{[^{}]*\}', line)

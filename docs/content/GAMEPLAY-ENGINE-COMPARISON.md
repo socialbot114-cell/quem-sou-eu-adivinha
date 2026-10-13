@@ -41,3 +41,25 @@ A configuração adotada mantém o primeiro palpite próximo da 1.2.3 e ganha 12
 
 - O jogador simulado erra apenas invertendo a resposta; na prática, “provavelmente” em caso de dúvida é mais comum.
 - Na mesma categoria, Alexia Putellas e Aitana Bonmatí não se diferenciam em nenhum atributo, e 117 pares diferem em um único atributo. Preencher esses atributos é o próximo ganho de qualidade.
+
+## Candidata 1.2.5 (429 personagens): decisão de não publicar
+
+Motor da 1.2.4 (piso `0,18`, confiança `0,68`, margem `0,10`, orçamento adaptativo), catálogo com 200 personagens novos e 30 perguntas opcionais. Três sementes, salvo onde indicado.
+
+| Cenário | 1.2.4 1º palpite / final / perguntas | 1.2.5 1º palpite / final / perguntas |
+|---|---:|---:|
+| Ideal | 99,7% / 100% / 7,2 | 98,9% / 100% / 8,7 |
+| Duas respostas contraditórias | 56,4% / 88,1% / 13,0 | 67,8% / 89,9% / 13,7 |
+| 10% de respostas contraditórias | 75,5% / 95,9% / 9,8 | 70,7% / 90,0% / 11,5 |
+
+Decomposição do cenário de 10% (semente 42, 1.2.4 = 96,0% final):
+
+| Variante | Final |
+|---|---:|
+| Personagens antigos + perguntas antigas (1.2.4) | 96,0% |
+| Personagens antigos + perguntas novas | 96,3% |
+| + 100 jogadores novos | 91,5% |
+| + 100 artistas novos | 93,6% |
+| 1.2.5 completa | 89,3% |
+
+Conclusão: as perguntas novas não prejudicam; os personagens novos prejudicam, nas duas categorias. Varrer limiares (piso 0,18–0,21, confiança 0,64–0,68, margem 0,10–0,12) não recupera o cenário de 10%: a margem não limita o resultado e o piso mais alto piora o acerto final. A 1.2.5 fica fora da produção até o motor ser ajustado para catálogos maiores e o cenário de 10% voltar a pelo menos 95%.
