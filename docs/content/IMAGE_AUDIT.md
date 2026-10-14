@@ -1,6 +1,6 @@
-# Auditoria inicial de imagens
+# Auditoria de imagens
 
-Data da revisao: 2026-09-18
+Rodada inicial: 2026-09-18. Segunda rodada: 2026-09-24.
 
 ## Escopo e criterio
 
@@ -12,7 +12,7 @@ Data da revisao: 2026-09-18
 
 ## Resultado
 
-Foram aprovados 10 retratos: 3 de `atores`, 4 de `jogadores`, 2 de `politicos` e 1 de `youtubers`. Os metadados completos e as modificacoes por arquivo estao em `image-credits.json`.
+Na rodada inicial foram aprovados 10 retratos. Na segunda rodada foram aprovados mais 6 retratos de artistas, totalizando 16 retratos licenciados. Os metadados completos e as modificacoes por arquivo estao em `image-credits.json`.
 
 | ID | Pessoa | Fonte | Antes (bytes) | Depois (bytes) | Revisao |
 | --- | --- | --- | ---: | ---: | --- |
@@ -28,13 +28,27 @@ Foram aprovados 10 retratos: 3 de `atores`, 4 de `jogadores`, 2 de `politicos` e
 | `nathalia-arcuri` | Nathalia Arcuri | `youtubers/Nathalia_Arcuri.jpg` | 1.631.298 | 175.786 | Aprovado |
 | **Total** |  |  | **12.149.439** | **1.962.704** | **83,85% menor** |
 
+## Rodada 2 — artistas
+
+| ID | Pessoa | Arquivo Wikimedia Commons | Autor | Licença | Antes (bytes) | Depois (bytes) |
+| --- | --- | --- | --- | --- | ---: | ---: |
+| `anitta` | Anitta | `5 - Anitta (5) (16295636217) - cropped.jpg` | Renan Katayama | CC BY-SA 2.0 | 105.060 | 132.461 |
+| `caetano-veloso` | Caetano Veloso | `Caetano Veloso (cropped).jpg` | Secretaría de Cultura Ciudad de México | CC BY 2.0 | 261.817 | 137.256 |
+| `gilberto-gil` | Gilberto Gil | `Gilberto Gil 2012.jpg` | simenon | CC BY-SA 2.0 | 1.500.285 | 93.737 |
+| `marisa-monte` | Marisa Monte | `Marisa Monte - Ao Vivo (2012).jpg` | Larissa Barreto | CC BY 2.0 | 270.279 | 79.709 |
+| `xuxa` | Xuxa Meneghel | `Xuxa Meneghel.jpg` | Antonio Cruz/Agência Brasil | CC BY 3.0 br | 3.095.274 | 175.136 |
+| `djavan` | Djavan | `Djavan San Javier Jazz 2023 26 (cropped).jpg` | Tsaorin | CC BY-SA 4.0 | 4.053.984 | 108.883 |
+| **Subtotal** |  |  |  |  | **9.286.699** | **727.182** |
+| **Acumulado** | **16 retratos** |  |  |  | **21.436.138** | **2.689.886** |
+
 ## Processamento e validacao
 
 - Corte manual quadrado por sujeito, sem esticar a imagem e preservando rosto e cabelo.
 - Redimensionamento Lanczos com FFmpeg 7.0.2 para 1024x1024.
 - Recompressao JPEG em qualidade 85 e conversao/incorporacao de perfil ICC sRGB com `jpgicc` (Little CMS 2.14).
 - Todos os 10 arquivos foram reabertos e inspecionados visualmente depois do processamento.
-- `ffprobe` confirmou 1024x1024 em todos os arquivos; a presenca do marcador `ICC_PROFILE` foi confirmada nos 10 JPEGs.
+- Na segunda rodada, os seis arquivos também foram reabertos e inspecionados visualmente; todos foram exportados em JPEG 1024x1024, qualidade 85 e perfil sRGB ICC incorporado.
+- Os créditos completos e os links de origem/licença estão em `image-credits.json` e são exibidos pela tela de créditos do app.
 
 ## Exclusoes representativas
 

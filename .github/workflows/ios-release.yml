@@ -2,6 +2,12 @@ name: iOS TestFlight
 
 on:
   workflow_dispatch:
+    inputs:
+      upload_to_testflight:
+        description: Upload the generated IPA to TestFlight after building
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -249,7 +255,10 @@ jobs:
           test -d "$app"
           test -f "$app/Assets.car"
           test -f "$app/KnowledgeBase/knowledge.json"
+          test -f "$app/KnowledgeBase/character-expansion.json"
           test -f "$app/Characters/vinicius-junior.jpg"
+          test -f "$app/Characters/anitta.jpg"
+          test -f "$app/Characters/djavan.jpg"
           test -f "$app/image-credits.json"
           test -f "$app/PrivacyInfo.xcprivacy"
           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "$MARKETING_VERSION"
@@ -306,7 +315,10 @@ jobs:
           app="${apps[0]}"
           test -f "$app/Assets.car"
           test -f "$app/KnowledgeBase/knowledge.json"
+          test -f "$app/KnowledgeBase/character-expansion.json"
           test -f "$app/Characters/vinicius-junior.jpg"
+          test -f "$app/Characters/anitta.jpg"
+          test -f "$app/Characters/djavan.jpg"
           test -f "$app/image-credits.json"
           test -f "$app/PrivacyInfo.xcprivacy"
           test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app/Info.plist")" = "$MARKETING_VERSION"
@@ -323,6 +335,7 @@ jobs:
           retention-days: 14
 
       - name: Upload to TestFlight
+        if: ${{ inputs.upload_to_testflight }}
         env:
           APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
           APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}

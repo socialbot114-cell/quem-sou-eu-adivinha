@@ -8,6 +8,15 @@ final class GameEngineTests: XCTestCase {
         Person(id: "c", name: "C", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0, "y": 0], avatarSymbol: "star.fill")
     ]
 
+    func testCharacterExpansionLoadsIntoTheOfflineKnowledgeBase() {
+        let store = KnowledgeStore.shared
+        XCTAssertNil(store.loadError)
+        XCTAssertTrue(store.base.people.contains { $0.id == "jungkook" })
+        XCTAssertTrue(store.base.people.contains { $0.id == "djavan" })
+        XCTAssertTrue(store.base.questions.contains { $0.attribute == "basketball" })
+        XCTAssertTrue(store.base.people.contains { $0.categories.contains(.technology) })
+    }
+
     func testEngineSelectsDiscriminativeQuestionAndAvoidsRepeatedAttributes() {
         let questions = [
             Question(id: "x-one", text: "X?", attribute: "x", categories: [.all]),
@@ -145,5 +154,176 @@ final class GameEngineTests: XCTestCase {
             engine.apply(.yes, to: question)
         }
         XCTAssertFalse(seenAttributes.isEmpty)
+    }
+
+    func testActualCatalogFindsAnittaWithTruthfulAnswers() {
+        let result = playActualCatalogGame(targetID: "anitta", category: .artists)
+
+        XCTAssertTrue(result.success)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.questionLimit)
+    }
+
+    func testActualCatalogRecoversAfterContradictionAndRejectedGuess() {
+        let result = playActualCatalogGame(
+            targetID: "marilia-mendonca",
+            category: .artists,
+            contradictedInformativeAnswers: 1
+        )
+
+        XCTAssertNotEqual(result.firstGuessID, Optional("marilia-mendonca"))
+        XCTAssertTrue(result.success)
+        XCTAssertEqual(result.rejectedGuesses, 1)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.questionLimit)
+    }
+
+    func testActualCatalogUsesExtraQuestionsAfterRejectedGuess() {
+        // With the fixed 14-question limit this round was lost; the extra questions after a rejection recover it.
+        let result = playActualCatalogGame(
+            targetID: "lula",
+            category: .politicians,
+            contradictedInformativeAnswers: 2
+        )
+
+        XCTAssertTrue(result.success)
+        XCTAssertGreaterThanOrEqual(result.rejectedGuesses, 1)
+        XCTAssertGreaterThan(result.questions, GuessPolicy.questionLimit)
+        XCTAssertLessThanOrEqual(result.questions, GuessPolicy.maximumQuestionLimit)
+    }
+
+    func testQuestionBudgetGrowsAfterRejectedGuessesAndUnknownAnswers() {
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 0), 14)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 1, unknownAnswers: 0), 17)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 1), 15)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 5), 16)
+    }
+
+    func testQuestionBudgetRespectsCaps() {
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 3, unknownAnswers: 2), GuessPolicy.maximumQuestionLimit)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 9, rejectedGuesses: 2, unknownAnswers: 2), 9)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 0, rejectedGuesses: 0, unknownAnswers: 0), 0)
+    }
+
+    func testReplayingAnswersUndoesLastAnswerExactly() {
+        let questions = [
+            Question(id: "x", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var reference = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        reference.apply(.yes, to: questions[0])
+        reference.reject(people[0])
+
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        engine.apply(.yes, to: questions[0])
+        engine.reject(people[0])
+        engine.apply(.no, to: questions[1])
+
+        let undone = engine.replaying([RecordedAnswer(questionID: "x", answer: .yes)], rejectedPersonIDs: ["a"])
+
+        for person in people {
+            XCTAssertEqual(undone.scores[person.id, default: -1], reference.scores[person.id, default: -2], accuracy: 1e-12)
+        }
+        XCTAssertTrue(undone.rejectedPersonIDs.contains("a"))
+        XCTAssertFalse(undone.asked.contains("y"))
+    }
+
+    func testMarkAskedPreventsQuestionFromBeingSelectedAgain() {
+        let questions = [
+            Question(id: "x", text: "X?", attribute: "x", categories: [.all]),
+            Question(id: "y", text: "Y?", attribute: "y", categories: [.all])
+        ]
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        engine.markAsked(questions[0])
+        XCTAssertEqual(engine.nextQuestion()?.id, "y")
+        XCTAssertNil(engine.nextQuestion())
+    }
+
+    private func playActualCatalogGame(
+        targetID: String,
+        category: QuemSouEu.Category,
+        contradictedInformativeAnswers: Int = 0
+    ) -> (success: Bool, firstGuessID: String?, rejectedGuesses: Int, questions: Int) {
+        let base = KnowledgeStore.shared.base
+        guard let target = base.people.first(where: { $0.id == targetID }) else {
+            XCTFail("Personagem não encontrado na base: \(targetID)")
+            return (false, nil, 0, 0)
+        }
+        let people = category == .all
+            ? base.people
+            : base.people.filter { $0.categories.contains(category) }
+        let questions = base.questions.filter {
+            $0.categories.contains(.all) || $0.categories.contains(category) || category == .all
+        }
+        let availableAttributes = Set(questions.map(\.attribute)).count
+        var engine = GameEngine(people: people, questions: questions, randomIndex: { _ in 0 })
+        var questionCount = 0
+        var unknownAnswers = 0
+        var informativeAnswers = 0
+        var rejectedGuesses = 0
+        var firstGuessID: String?
+        var questionLimit: Int {
+            GuessPolicy.questionBudget(
+                availableAttributes: availableAttributes,
+                rejectedGuesses: rejectedGuesses,
+                unknownAnswers: unknownAnswers
+            )
+        }
+
+        while true {
+            let question = questionCount < questionLimit ? engine.nextQuestion() : nil
+            if let question {
+                var answer = answer(for: target.attributes[question.attribute])
+                if answer != .unknown {
+                    informativeAnswers += 1
+                    if informativeAnswers <= contradictedInformativeAnswers { answer = inverted(answer) }
+                }
+                if answer == .unknown { unknownAnswers += 1 }
+                engine.apply(answer, to: question)
+                questionCount += 1
+            }
+
+            let shouldGuess = question == nil
+                || questionCount >= questionLimit
+                || (
+                    questionCount >= GuessPolicy.minimumAnswersBeforeGuess
+                    && engine.confidence >= GuessPolicy.confidenceThreshold
+                    && engine.margin >= GuessPolicy.marginThreshold
+                )
+            guard shouldGuess else { continue }
+
+            guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
+                return (false, firstGuessID, rejectedGuesses, questionCount)
+            }
+            if firstGuessID == nil { firstGuessID = guess.id }
+            if guess.id == targetID {
+                return (true, firstGuessID, rejectedGuesses, questionCount)
+            }
+
+            engine.reject(guess)
+            rejectedGuesses += 1
+            if rejectedGuesses >= GuessPolicy.maximumRejectedGuesses
+                || questionCount >= questionLimit
+                || engine.bestGuess == nil {
+                return (false, firstGuessID, rejectedGuesses, questionCount)
+            }
+        }
+    }
+
+    private func answer(for value: Double?) -> Answer {
+        guard let value else { return .unknown }
+        if value >= 0.875 { return .yes }
+        if value >= 0.625 { return .probablyYes }
+        if value >= 0.375 { return .unknown }
+        if value >= 0.125 { return .probablyNo }
+        return .no
+    }
+
+    private func inverted(_ answer: Answer) -> Answer {
+        switch answer {
+        case .yes: .no
+        case .probablyYes: .probablyNo
+        case .unknown: .unknown
+        case .probablyNo: .probablyYes
+        case .no: .yes
+        }
     }
 }

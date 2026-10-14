@@ -3,12 +3,16 @@ import json
 import math
 import re
 from collections import Counter
+from datetime import date
 from pathlib import Path
 
 
 ROOT = Path(__file__).parents[1]
 CONTENT_PATH = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
+EXPANSION_PATH = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
 CREDITS_PATH = ROOT / "docs/content/image-credits.json"
+SOURCES_PATH = ROOT / "docs/content/character-sources.json"
+JERV_FINAL_PATH = ROOT / "docs/content/jerv-character-review-final.json"
 CHARACTERS_PATH = ROOT / "iosApp/Resources/Characters"
 CATEGORIES = {
     "Criadores digitais",
@@ -17,6 +21,12 @@ CATEGORIES = {
     "Políticos",
     "História",
     "Personalidades mundiais",
+    "Outros esportes",
+    "Música internacional",
+    "K-pop",
+    "Cinema e TV",
+    "Moda e reality",
+    "Tecnologia e negócios",
     "Todos",
 }
 PLAYABLE_CATEGORIES = CATEGORIES - {"Todos"}
@@ -70,7 +80,7 @@ def load_image_credits():
     for index, item in enumerate(data["items"]):
         label = f"image-credits.items[{index}]"
         require(isinstance(item, dict), f"{label} deve ser um objeto")
-        for field in ("id", "name", "file", "reviewStatus"):
+        for field in ("id", "name", "file", "author", "url", "license", "licenseURL", "modifications", "reviewStatus"):
             require_string(item.get(field), f"{label}.{field}")
         require(ID_PATTERN.fullmatch(item["id"]), f"{label}.id deve ser um slug ASCII")
         require(item["id"] not in credits, f"Crédito de imagem duplicado: {item['id']}")
@@ -104,6 +114,16 @@ def load_content():
     require(set(data) == {"people", "questions"}, "A raiz deve conter somente people e questions")
     require(isinstance(data["people"], list), "people deve ser uma lista")
     require(isinstance(data["questions"], list), "questions deve ser uma lista")
+    if EXPANSION_PATH.is_file():
+        try:
+            expansion = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as error:
+            raise AssertionError(f"Expansão de conteúdo JSON inválida: {error}") from error
+        require(isinstance(expansion, dict) and set(expansion) == {"people", "questions"}, "character-expansion.json deve conter people e questions")
+        require(isinstance(expansion["people"], list), "character-expansion.people deve ser uma lista")
+        require(isinstance(expansion["questions"], list), "character-expansion.questions deve ser uma lista")
+        data["people"].extend(expansion["people"])
+        data["questions"].extend(expansion["questions"])
     return data
 
 
@@ -217,6 +237,52 @@ def validate_coverage_and_signatures(people, questions):
     return category_metrics
 
 
+def validate_character_editorial_review():
+    try:
+        expansion = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))
+        sources = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
+        review = json.loads(JERV_FINAL_PATH.read_text(encoding="utf-8"))
+    except FileNotFoundError as error:
+        raise AssertionError(f"Artefato editorial obrigatório ausente: {error.filename}") from error
+    except json.JSONDecodeError as error:
+        raise AssertionError(f"Artefato editorial JSON inválido: {error}") from error
+
+    require(isinstance(expansion, dict) and set(expansion) == {"people", "questions"}, "character-expansion.json inválido")
+    people = expansion["people"]
+    questions = expansion["questions"]
+    require(isinstance(sources, dict) and isinstance(sources.get("items"), list), "character-sources.json deve conter items")
+    source_items = {}
+    for index, item in enumerate(sources["items"]):
+        label = f"character-sources.items[{index}]"
+        require(isinstance(item, dict), f"{label} deve ser um objeto")
+        for field in ("id", "name", "sourceTitle", "sourceURL", "sourceExcerpt", "sourceLicense", "sourceLicenseURL", "lastVerified"):
+            require_string(item.get(field), f"{label}.{field}")
+        require(item["sourceURL"].startswith(("https://", "http://")), f"{label}.sourceURL deve ser http(s)")
+        try:
+            date.fromisoformat(item["lastVerified"])
+        except ValueError as error:
+            raise AssertionError(f"{label}.lastVerified deve ser uma data ISO") from error
+        require(item["id"] not in source_items, f"Fonte duplicada para personagem {item['id']}")
+        source_items[item["id"]] = item
+
+    people_by_id = {person["id"]: person for person in people}
+    require(set(source_items) == set(people_by_id), "Toda personalidade da expansão deve ter exatamente uma fonte editorial")
+    for person_id, source in source_items.items():
+        require(source["name"] == people_by_id[person_id]["name"], f"Nome da fonte diverge do personagem {person_id}")
+
+    question_reviews = review.get("question_reviews", {})
+    claim_reviews = review.get("claim_reviews", {})
+    expected_question_ids = {question["id"] for question in questions}
+    expected_claim_ids = {f"{person['id']}-main-role" for person in people}
+    require(set(question_reviews) == expected_question_ids, "Relatório JERV deve avaliar todas as perguntas da expansão")
+    require(set(claim_reviews) == expected_claim_ids, "Relatório JERV deve avaliar a afirmação principal de cada personagem")
+    for question_id, item in question_reviews.items():
+        require(item.get("final_status") == "accepted", f"Pergunta JERV pendente/rejeitada: {question_id}")
+    for claim_id, item in claim_reviews.items():
+        require(item.get("final_status") == "accepted", f"Perfil JERV pendente/rejeitado: {claim_id}")
+        require(item.get("source_url", "").startswith(("https://", "http://")), f"Perfil JERV sem fonte: {claim_id}")
+
+
 def main():
     data = load_content()
     image_credits = load_image_credits()
@@ -225,6 +291,7 @@ def main():
     known_attributes = validate_questions(questions)
     image_count = validate_people(people, known_attributes, image_credits)
     metrics = validate_coverage_and_signatures(people, questions)
+    validate_character_editorial_review()
     print(f"Conteúdo válido: {len(people)} pessoas, {len(questions)} perguntas, {len(known_attributes)} atributos, {image_count} retratos creditados")
     for category, (candidate_count, eligible_count, useful_count) in metrics.items():
         print(f"- {category}: {candidate_count} pessoas, {useful_count}/{eligible_count} perguntas úteis")

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-30",
+  "reviewer": "OpenCode source review",
+  "report": "jerv-answer-matrix-contradiction-followup-report.json",
+  "items": [
+    {
+      "id": "whindersson-nunes--artist",
+      "previousAnswer": 0,
+      "answer": 1,
+      "status": "confirmed-yes",
+      "rationale": "A biografia identifica Whindersson Nunes como ator, comediante, cantor, compositor e músico; a resposta positiva é compatível com as demais pessoas do catálogo classificadas como artistas por atuação, música ou escrita.",
+      "sourceURLs": [
+        "https://en.wikipedia.org/wiki/Whindersson_Nunes"
+      ]
+    },
+    {
+      "id": "felipe-neto--artist",
+      "previousAnswer": 0,
+      "answer": 1,
+      "status": "confirmed-yes",
+      "rationale": "A biografia identifica Felipe Neto como ator, comediante e escritor, além de criador de conteúdo; essas atividades artísticas satisfazem o uso de artista adotado no catálogo.",
+      "sourceURLs": [
+        "https://en.wikipedia.org/wiki/Felipe_Neto"
+      ]
+    },
+    {
+      "id": "bianca-andrade--artist",
+      "previousAnswer": 0,
+      "answer": 1,
+      "status": "confirmed-yes",
+      "rationale": "A biografia documenta Bianca Andrade como atriz e apresentadora, além de listar papéis em produções de cinema e televisão. O histórico de atuação sustenta a classificação positiva como artista.",
+      "sourceURLs": [
+        "https://pt.wikipedia.org/wiki/Bianca_Andrade"
+      ]
+    },
+    {
+      "id": "camila-loures--artist",
+      "previousAnswer": 0,
+      "answer": 1,
+      "status": "confirmed-yes",
+      "rationale": "A biografia identifica Camila Loures como cantora e registra lançamentos musicais e sua estreia como atriz; essas atividades artísticas sustentam a resposta positiva.",
+      "sourceURLs": [
+        "https://pt.wikipedia.org/wiki/Camila_Loures"
+      ]
+    },
+    {
+      "id": "felipe-neto--comedy_content",
+      "previousAnswer": 0,
+      "answer": 1,
+      "status": "confirmed-yes",
+      "rationale": "A biografia identifica Felipe Neto como comediante e classifica o gênero de seu canal como humor; isso sustenta humor como tema recorrente, ainda que o conteúdo atual também seja descrito como entretenimento geral.",
+      "sourceURLs": [
+        "https://en.wikipedia.org/wiki/Felipe_Neto"
+      ]
+    }
+  ]
+}

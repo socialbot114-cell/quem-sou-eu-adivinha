@@ -1,0 +1,139 @@
+{
+  "model": "jev-latest",
+  "confidence_threshold": 0.8,
+  "evaluated_at": "2026-09-30T22:00:28.274933+00:00",
+  "question_reviews": {
+    "football": {
+      "decision": "clear",
+      "confidence": 0.33,
+      "status": "human-review"
+    },
+    "politician": {
+      "decision": "clear",
+      "confidence": 0.36,
+      "status": "human-review"
+    },
+    "comedy-content": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted"
+    },
+    "artist": {
+      "decision": "clear",
+      "confidence": 0.7,
+      "status": "human-review"
+    },
+    "midfielder": {
+      "decision": "clear",
+      "confidence": 0.69,
+      "status": "human-review"
+    }
+  },
+  "claim_reviews": {
+    "luva-de-pedreiro--football": {
+      "decision": "contradicts",
+      "confidence": 0.9,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Luva_de_Pedreiro",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "martin-luther-king-jr--politician": {
+      "decision": "contradicts",
+      "confidence": 0.74,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "felipe-neto--comedy_content": {
+      "decision": "contradicts",
+      "confidence": 0.99,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Felipe_Neto",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "whindersson-nunes--artist": {
+      "decision": "contradicts",
+      "confidence": 0.99,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Whindersson_Nunes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "caetano-veloso--politician": {
+      "decision": "contradicts",
+      "confidence": 0.99,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Caetano_Veloso",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "marta--midfielder": {
+      "decision": "insufficient",
+      "confidence": 0.89,
+      "status": "human-review",
+      "source_url": "https://pt.wikipedia.org/wiki/Marta_(futebolista)",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "bianca-andrade--artist": {
+      "decision": "contradicts",
+      "confidence": 0.21,
+      "status": "human-review",
+      "source_url": "https://pt.wikipedia.org/wiki/Bianca_Andrade",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "camila-loures--artist": {
+      "decision": "contradicts",
+      "confidence": 0.96,
+      "status": "human-review",
+      "source_url": "https://pt.wikipedia.org/wiki/Camila_Loures",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "neymar--midfielder": {
+      "decision": "supports",
+      "confidence": 0.22,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Neymar",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "felipe-neto--artist": {
+      "decision": "contradicts",
+      "confidence": 0.81,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Felipe_Neto",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    "tiradentes--politician": {
+      "decision": "contradicts",
+      "confidence": 0.99,
+      "status": "human-review",
+      "source_url": "https://en.wikipedia.org/wiki/Tiradentes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    }
+  },
+  "summary": {
+    "questions_accepted": 1,
+    "questions_for_human": 4,
+    "claims_accepted": 0,
+    "claims_for_human": 11
+  }
+}

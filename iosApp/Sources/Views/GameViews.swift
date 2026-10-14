@@ -79,6 +79,12 @@ private struct CategoryCard: View {
         case .politicians: [Color.indigo, DesignSystem.Palette.violet]
         case .history: [Color.brown, Color.orange]
         case .world: [Color.blue, Color.cyan]
+        case .otherSports: [Color.green, Color.teal]
+        case .internationalMusic: [Color.pink, DesignSystem.Palette.violet]
+        case .kpop: [Color.pink, Color.purple]
+        case .cinema: [Color.indigo, Color.blue]
+        case .fashion: [Color.orange, Color.pink]
+        case .technology: [Color.cyan, DesignSystem.Palette.violet]
         case .all: [DesignSystem.Palette.violet, DesignSystem.Palette.violetLight]
         }
     }
@@ -141,8 +147,6 @@ struct GameView: View {
     @State private var successFeedback = 0
     @State private var failureFeedback = 0
 
-    private static let maxRejected = 4
-
     init(category: Category, playAnotherCategory: @escaping () -> Void) {
         self.category = category
         self.playAnotherCategory = playAnotherCategory
@@ -152,7 +156,13 @@ struct GameView: View {
         _engine = State(initialValue: GameEngine(people: people, questions: questions))
     }
 
-    private var questionLimit: Int { min(14, Set(engine.questions.map(\.attribute)).count) }
+    private var questionLimit: Int {
+        GuessPolicy.questionBudget(
+            availableAttributes: Set(engine.questions.map(\.attribute)).count,
+            rejectedGuesses: rejectedPersonIDs.count,
+            unknownAnswers: answers.filter { $0.answer == .unknown }.count
+        )
+    }
 
     var body: some View {
         ZStack {
@@ -220,6 +230,18 @@ struct GameView: View {
             if let question {
                 QuestionCard(question: question, answer: { respond($0, to: question) })
                     .transition(reduceMotion ? .opacity : .asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity), removal: .move(edge: .leading).combined(with: .opacity)))
+                if !answers.isEmpty {
+                    Button(action: undoLastAnswer) {
+                        Label("Desfazer última resposta", systemImage: "arrow.uturn.backward")
+                            .font(.subheadline.weight(.bold))
+                            .padding(.horizontal, 18)
+                            .frame(minHeight: 44)
+                            .background(.white.opacity(0.16), in: Capsule())
+                    }
+                    .foregroundStyle(.white)
+                    .accessibilityIdentifier("game.undo")
+                    .accessibilityHint("Volta para a pergunta anterior para corrigir a resposta")
+                }
                 Text("Não existe resposta errada. Use “Não sei” quando tiver dúvida.")
                     .foregroundStyle(.white.opacity(0.78)).font(.footnote.weight(.medium)).multilineTextAlignment(.center)
             } else {
@@ -259,8 +281,9 @@ struct GameView: View {
     }
 
     private var shouldPresentGuess: Bool {
-        guard questionNumber >= 4 else { return false }
-        return engine.confidence >= 0.68 && engine.margin >= 0.10
+        guard questionNumber >= GuessPolicy.minimumAnswersBeforeGuess else { return false }
+        return engine.confidence >= GuessPolicy.confidenceThreshold
+            && engine.margin >= GuessPolicy.marginThreshold
     }
 
     private func isRoundStillValid(_ saved: InterruptedRoundSummary) -> Bool {
@@ -288,6 +311,24 @@ struct GameView: View {
         isTransitioning = false
     }
 
+    private func undoLastAnswer() {
+        guard !completed, !isTransitioning else { return }
+        guard case .asking = phase, let last = answers.popLast() else { return }
+        engine = engine.replaying(answers, rejectedPersonIDs: rejectedPersonIDs)
+        questionNumber = answers.count
+        if let previous = engine.questions.first(where: { $0.id == last.questionID }) {
+            engine.markAsked(previous)
+            withAnimation(.snappy) { question = previous }
+        } else {
+            advance()
+        }
+        if answers.isEmpty {
+            progress.clearInterruptedRound()
+        } else {
+            persistRound()
+        }
+    }
+
     private func advance() {
         guard !engine.people.isEmpty, questionLimit > 0 else { phase = .unavailable; return }
         question = engine.nextQuestion()
@@ -296,7 +337,7 @@ struct GameView: View {
 
     private func presentBestGuess() {
         question = nil
-        guard let guess = engine.bestGuess, engine.confidence >= 0.18 else {
+        guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
             finishLoss(person: nil)
             return
         }
@@ -319,7 +360,7 @@ struct GameView: View {
         engine.reject(person)
         rejectedPersonIDs.append(person.id)
         persistRound()
-        if rejectedPersonIDs.count >= Self.maxRejected || questionNumber >= questionLimit || engine.bestGuess == nil {
+        if rejectedPersonIDs.count >= GuessPolicy.maximumRejectedGuesses || questionNumber >= questionLimit || engine.bestGuess == nil {
             finishLoss(person: engine.bestGuess)
         } else {
             phase = .asking
@@ -380,6 +421,7 @@ private struct QuestionCard: View {
                 .foregroundStyle(DesignSystem.Palette.ink)
                 .padding(.horizontal, 6)
                 .accessibilityAddTraits(.isHeader)
+                .accessibilityIdentifier("question.\(question.attribute)")
 
             LazyVGrid(columns: columns, spacing: 10) {
                 AnswerButton(title: "Sim", symbol: "checkmark", color: DesignSystem.Palette.lime) { answer(.yes) }
@@ -511,7 +553,8 @@ private struct GameHelpView: View {
                     HelpRow(number: "1", text: "Pense em alguém da categoria escolhida.")
                     HelpRow(number: "2", text: "Responda com sinceridade. Não existe resposta errada.")
                     HelpRow(number: "3", text: "Use “Não sei” quando estiver em dúvida.")
-                    HelpRow(number: "4", text: "Espere o palpite da Princesa Detetive.")
+                    HelpRow(number: "4", text: "Respondeu errado? Toque em “Desfazer última resposta”.")
+                    HelpRow(number: "5", text: "Espere o palpite da Princesa Detetive.")
                 }.dsCard()
                 Button("Continuar jogando") { dismiss() }.buttonStyle(PrimaryButtonStyle())
                 Spacer()
@@ -686,6 +729,7 @@ private struct CreditItem: Decodable, Identifiable {
     let author: String
     let license: String
     let url: URL
+    let modifications: String
 }
 
 private struct CreditsView: View {
@@ -701,6 +745,9 @@ private struct CreditsView: View {
                 Text(credit.name).font(.headline)
                 Text("Foto: \(credit.author)").font(.subheadline)
                 Link("\(credit.license) • Ver fonte", destination: credit.url).font(.caption.weight(.semibold))
+                Text("Modificações: \(credit.modifications)")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
             }.padding(.vertical, 5)
         }
         .navigationTitle("Créditos")

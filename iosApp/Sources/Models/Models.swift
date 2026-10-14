@@ -7,6 +7,12 @@ enum Category: String, Codable, CaseIterable, Identifiable {
     case politicians = "Políticos"
     case history = "História"
     case world = "Personalidades mundiais"
+    case otherSports = "Outros esportes"
+    case internationalMusic = "Música internacional"
+    case kpop = "K-pop"
+    case cinema = "Cinema e TV"
+    case fashion = "Moda e reality"
+    case technology = "Tecnologia e negócios"
     case all = "Todos"
     var id: String { rawValue }
 
@@ -28,7 +34,19 @@ enum Category: String, Codable, CaseIterable, Identifiable {
     }
 
     var symbol: String {
-        switch self { case .creators: "play.rectangle.fill"; case .football: "soccerball"; case .artists: "music.note"; case .politicians: "building.columns.fill"; case .history: "clock.fill"; case .world: "globe.americas.fill"; case .all: "sparkles" }
+        switch self {
+        case .creators: "play.rectangle.fill"
+        case .football: "soccerball"
+        case .artists, .internationalMusic, .kpop: "music.note"
+        case .politicians: "building.columns.fill"
+        case .history: "clock.fill"
+        case .world: "globe.americas.fill"
+        case .otherSports: "sportscourt.fill"
+        case .cinema: "film.fill"
+        case .fashion: "tshirt.fill"
+        case .technology: "lightbulb.fill"
+        case .all: "sparkles"
+        }
     }
 }
 

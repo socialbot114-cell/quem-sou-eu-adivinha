@@ -1,0 +1,195 @@
+{
+  "questions": [
+    {
+      "id": "football",
+      "text": "É do futebol?",
+      "category": "Todos",
+      "attribute": "football"
+    },
+    {
+      "id": "politician",
+      "text": "Exerceu atividade política?",
+      "category": "Todos",
+      "attribute": "politician"
+    },
+    {
+      "id": "comedy-content",
+      "text": "Produz conteúdo de humor como tema recorrente?",
+      "category": "Criadores digitais",
+      "attribute": "comedy_content"
+    },
+    {
+      "id": "artist",
+      "text": "É artista?",
+      "category": "Todos",
+      "attribute": "artist"
+    },
+    {
+      "id": "midfielder",
+      "text": "Jogou principalmente no meio-campo?",
+      "category": "Futebol",
+      "attribute": "midfielder"
+    }
+  ],
+  "claims": [
+    {
+      "id": "luva-de-pedreiro--football",
+      "person_id": "luva-de-pedreiro",
+      "person_name": "Luva de Pedreiro",
+      "question_id": "football",
+      "answer": 0,
+      "claim": "For Luva de Pedreiro, the proposed answer to the game clue ‘É do futebol?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Luva_de_Pedreiro",
+      "source_title": "Luva de Pedreiro",
+      "source_excerpt": "The biography lists his occupations as YouTuber, internet personality and footballer. It says he became known for publishing amateur football videos on social networks and that in 2023 he joined Grêmio's futebol 7 team.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "martin-luther-king-jr--politician",
+      "person_id": "martin-luther-king-jr",
+      "person_name": "Martin Luther King Jr.",
+      "question_id": "politician",
+      "answer": 0,
+      "claim": "For Martin Luther King Jr., the proposed answer to the game clue ‘Exerceu atividade política?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+      "source_title": "Martin Luther King Jr.",
+      "source_excerpt": "The biography identifies King as a civil-rights activist and records him as the first president of the Southern Christian Leadership Conference from 1957 until 1968. It describes his leadership in campaigns for civil rights and voting rights.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "felipe-neto--comedy_content",
+      "person_id": "felipe-neto",
+      "person_name": "Felipe Neto",
+      "question_id": "comedy-content",
+      "answer": 0,
+      "claim": "For Felipe Neto, the proposed answer to the game clue ‘Produz conteúdo de humor como tema recorrente?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Felipe_Neto",
+      "source_title": "Felipe Neto",
+      "source_excerpt": "The biography lists Felipe Neto as a comedian and describes his YouTube channel genres as humor and vlog. It also says that his current videos focus on general entertainment.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "whindersson-nunes--artist",
+      "person_id": "whindersson-nunes",
+      "person_name": "Whindersson Nunes",
+      "question_id": "artist",
+      "answer": 0,
+      "claim": "For Whindersson Nunes, the proposed answer to the game clue ‘É artista?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Whindersson_Nunes",
+      "source_title": "Whindersson Nunes",
+      "source_excerpt": "The biography lists Nunes's occupations as YouTuber, actor, comedian, singer, songwriter and boxer. It also identifies his musical career and film and television roles.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "caetano-veloso--politician",
+      "person_id": "caetano-veloso",
+      "person_name": "Caetano Veloso",
+      "question_id": "politician",
+      "answer": 0,
+      "claim": "For Caetano Veloso, the proposed answer to the game clue ‘Exerceu atividade política?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Caetano_Veloso",
+      "source_title": "Caetano Veloso",
+      "source_excerpt": "The biography lists Veloso's occupations as singer-songwriter, writer and political activist. It describes his anti-authoritarian political stance and conflict with Brazil's military dictatorship, including censorship, arrest and exile.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "marta--midfielder",
+      "person_id": "marta",
+      "person_name": "Marta",
+      "question_id": "midfielder",
+      "answer": 0,
+      "claim": "For Marta, the proposed answer to the game clue ‘Jogou principalmente no meio-campo?’ is no.",
+      "source_url": "https://pt.wikipedia.org/wiki/Marta_(futebolista)",
+      "source_title": "Marta (futebolista)",
+      "source_excerpt": "The biography describes Marta's position as left winger or midfielder. It does not state which position she played primarily.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "bianca-andrade--artist",
+      "person_id": "bianca-andrade",
+      "person_name": "Bianca Andrade",
+      "question_id": "artist",
+      "answer": 0,
+      "claim": "For Bianca Andrade, the proposed answer to the game clue ‘É artista?’ is no.",
+      "source_url": "https://pt.wikipedia.org/wiki/Bianca_Andrade",
+      "source_title": "Bianca Andrade",
+      "source_excerpt": "The biography lists Bianca Andrade's occupations as YouTuber, digital influencer, television presenter, businesswoman, creative director and actress. It documents film and television roles.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "camila-loures--artist",
+      "person_id": "camila-loures",
+      "person_name": "Camila Loures",
+      "question_id": "artist",
+      "answer": 0,
+      "claim": "For Camila Loures, the proposed answer to the game clue ‘É artista?’ is no.",
+      "source_url": "https://pt.wikipedia.org/wiki/Camila_Loures",
+      "source_title": "Camila Loures",
+      "source_excerpt": "The biography identifies Loures as a YouTuber, digital influencer, singer and businesswoman. It records a music career with released songs and music videos, and a film acting debut.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "neymar--midfielder",
+      "person_id": "neymar",
+      "person_name": "Neymar",
+      "question_id": "midfielder",
+      "answer": 0,
+      "claim": "For Neymar, the proposed answer to the game clue ‘Jogou principalmente no meio-campo?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Neymar",
+      "source_title": "Neymar",
+      "source_excerpt": "The biography lists Neymar's positions as attacking midfielder and forward. It does not state that he played primarily as a midfielder.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "felipe-neto--artist",
+      "person_id": "felipe-neto",
+      "person_name": "Felipe Neto",
+      "question_id": "artist",
+      "answer": 0,
+      "claim": "For Felipe Neto, the proposed answer to the game clue ‘É artista?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Felipe_Neto",
+      "source_title": "Felipe Neto",
+      "source_excerpt": "The biography describes Felipe Neto as a YouTuber, businessman, actor, comedian, writer and philanthropist. His filmography and theater sections list acting roles and productions.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    },
+    {
+      "id": "tiradentes--politician",
+      "person_id": "tiradentes",
+      "person_name": "Tiradentes",
+      "question_id": "politician",
+      "answer": 0,
+      "claim": "For Tiradentes, the proposed answer to the game clue ‘Exerceu atividade política?’ is no.",
+      "source_url": "https://en.wikipedia.org/wiki/Tiradentes",
+      "source_title": "Tiradentes",
+      "source_excerpt": "Tiradentes was a leading member of the Inconfidência Mineira, a revolutionary movement that sought independence from Portuguese rule and the creation of a republic. He joined the movement and helped plan its action.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-09-30"
+    }
+  ],
+  "scope": {
+    "people": 10,
+    "answer_cells": 11,
+    "evidence_policy": "Use only the claim-specific biography excerpt. A broad or subjective clue may remain unresolved even when the biography proves a related occupation."
+  }
+}

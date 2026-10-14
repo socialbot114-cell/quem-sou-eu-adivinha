@@ -1,0 +1,173 @@
+#!/usr/bin/env python3
+"""Fetch dated encyclopedic source excerpts for the expansion's identity facts."""
+from __future__ import annotations
+
+import argparse
+import json
+import time
+from datetime import date
+from pathlib import Path
+from urllib.error import HTTPError
+from urllib.parse import quote
+from urllib.request import Request, urlopen
+
+ROOT = Path(__file__).parents[1]
+EXPANSION_PATH = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json"
+PRIMARY_PATH = ROOT / "iosApp/Resources/KnowledgeBase/knowledge.json"
+EXPANSION_OUTPUT_PATH = ROOT / "docs/content/character-sources.json"
+PRIMARY_OUTPUT_PATH = ROOT / "docs/content/primary-character-sources.json"
+TITLE_OVERRIDES = {
+    "beyonce": "Beyoncé",
+    "v-kim-taehyung": "V (singer)",
+    "jin-bts": "Jin (singer)",
+    "rm-bts": "RM (rapper)",
+    "rose-blackpink": "Rosé (singer)",
+    "lisa-blackpink": "Lisa (rapper)",
+    "jennie-blackpink": "Jennie (singer)",
+    "iu": "IU (singer)",
+    "drake": "Drake (musician)",
+    "djavan": "Djavan",
+    "psy": "Psy",
+    "g-dragon": "G-Dragon",
+    "boa": "BoA",
+    "steve-jobs": "Steve Jobs",
+    "sheryl-sandberg": "Sheryl Sandberg",
+    "zhang-yiming": "Zhang Yiming",
+    "ninja": "Ninja (gamer)",
+    "momo-hirai": "Momo Hirai",
+    "cl-singer": "CL (rapper)",
+    "rain-singer": "Rain (entertainer)",
+    "zico-futebol": "Zico (footballer)",
+    "pope-john-paul-ii": "Pope John Paul II",
+    "pope-benedict-xvi": "Pope Benedict XVI",
+    "julius-caesar": "Julius Caesar",
+    "joan-of-arc": "Joan of Arc",
+    "lee-kuan-yew": "Lee Kuan Yew",
+    "alcione": "Alcione Nazareth",
+    "luis-suarez": "Luis Suárez (Uruguayan footballer)",
+    "chungha": "Chung Ha",
+    "karina-aespa": "Karina (South Korean singer)",
+    "ashley-graham": "Ashley Graham (model)",
+    "usher": "Usher (musician)",
+    "mother-teresa": "Mother Teresa",
+    "roberto-carlos": "Roberto Carlos (singer)",
+    "hyunjin": "Hyunjin (Stray Kids singer)",
+    "eliana": "Eliana (television host)",
+    "the-weeknd": "The Weeknd",
+    "lebron-james": "LeBron James",
+    "stephen-curry": "Stephen Curry",
+    "timothee-chalamet": "Timothée Chalamet",
+    "gisele-bundchen": "Gisele Bündchen",
+}
+PRIMARY_TITLE_OVERRIDES = {
+    "marta": "pt:Marta (futebolista)",
+    "ronaldo-nazario": "Ronaldo (Brazilian footballer)",
+    "ronaldinho": "Ronaldinho",
+    "anitta": "Anitta (singer)",
+    "xuxa": "Xuxa",
+    "sandy": "Sandy (Brazilian singer)",
+    "ludmilla": "pt:Ludmilla",
+    "casimiro-miguel": "pt:Casimiro (streamer)",
+    "bianca-andrade": "pt:Bianca Andrade",
+    "camila-loures": "pt:Camila Loures",
+    "lucas-rangel": "pt:Lucas Rangel",
+    "gkay": "pt:Gkay",
+    "ibere-thenorio": "pt:Iberê Thenório",
+    "nathalia-arcuri": "pt:Nathalia Arcuri",
+    "juliette": "pt:Juliette",
+    "lula": "Luiz Inácio Lula da Silva",
+    "cleopatra": "Cleopatra",
+    "dom-pedro-ii": "Pedro II of Brazil",
+    "santos-dumont": "Alberto Santos-Dumont",
+    "napoleon-bonaparte": "Napoleon",
+}
+USER_AGENT = "QuemSouEuContentReview/1.0 (https://github.com/socialbot114-cell/quem-sou-eu-adivinha)"
+WIKIPEDIA_TEXT_LICENSE = "CC BY-SA 4.0"
+WIKIPEDIA_TEXT_LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
+
+
+def fetch_summary(title: str, language: str = "en") -> dict:
+    url = f"https://{language}.wikipedia.org/api/rest_v1/page/summary/" + quote(title.replace(" ", "_"), safe="()')")
+    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+    with urlopen(request, timeout=45) as response:
+        data = json.load(response)
+    if data.get("type") != "standard" or not data.get("extract"):
+        raise ValueError(f"no article summary for {title!r}")
+    return {
+        "sourceTitle": data.get("title", title),
+        "sourceURL": data.get("content_urls", {}).get("desktop", {}).get("page", f"https://{language}.wikipedia.org/wiki/{quote(title.replace(' ', '_'))}"),
+        "sourceExcerpt": data["extract"].strip(),
+        "sourceRevision": data.get("revision"),
+        "sourceLicense": WIKIPEDIA_TEXT_LICENSE,
+        "sourceLicenseURL": WIKIPEDIA_TEXT_LICENSE_URL,
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--scope", choices=("expansion", "primary"), default="expansion")
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+
+    if args.scope == "primary":
+        people = json.loads(PRIMARY_PATH.read_text(encoding="utf-8"))["people"]
+        output_path = args.output or PRIMARY_OUTPUT_PATH
+        title_overrides = PRIMARY_TITLE_OVERRIDES | TITLE_OVERRIDES
+    else:
+        people = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))["people"]
+        output_path = args.output or EXPANSION_OUTPUT_PATH
+        title_overrides = TITLE_OVERRIDES
+
+    cached_items = {}
+    if output_path.is_file():
+        try:
+            current = json.loads(output_path.read_text(encoding="utf-8"))
+            cached_items = {item["id"]: item for item in current.get("items", []) if item.get("sourceExcerpt")}
+        except (OSError, json.JSONDecodeError, TypeError, KeyError):
+            cached_items = {}
+    items = []
+    failures = []
+    for person in people:
+        cached = cached_items.get(person["id"])
+        override = title_overrides.get(person["id"])
+        if (cached and cached.get("name") == person["name"]
+                and (not override or cached.get("sourceTitle") == override)):
+            items.append({
+                **cached,
+                "profession": person["profession"],
+                "sourceExcerpt": cached["sourceExcerpt"].strip(),
+                "sourceLicense": cached.get("sourceLicense", WIKIPEDIA_TEXT_LICENSE),
+                "sourceLicenseURL": cached.get("sourceLicenseURL", WIKIPEDIA_TEXT_LICENSE_URL),
+            })
+            continue
+        title = override or person["name"]
+        language = "en"
+        if title.startswith("pt:"):
+            language = "pt"
+            title = title.removeprefix("pt:")
+        try:
+            source = fetch_summary(title, language)
+            items.append({
+                "id": person["id"],
+                "name": person["name"],
+                "profession": person["profession"],
+                **source,
+                "lastVerified": date.today().isoformat(),
+            })
+        except (HTTPError, OSError, ValueError) as error:
+            failures.append({"id": person["id"], "name": person["name"], "title": title, "error": str(error)})
+        time.sleep(0.5)
+
+    if failures:
+        print(f"Source refresh incomplete ({len(failures)} unresolved); existing complete manifest was preserved.")
+        for item in failures:
+            print(f"- {item['id']} ({item['title']}): {item['error']}")
+        raise SystemExit(1)
+    report = {"schemaVersion": 1, "generatedAt": date.today().isoformat(), "items": items}
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Wrote {len(items)} source excerpts for {args.scope}; unresolved: {len(failures)}")
+
+
+if __name__ == "__main__":
+    main()

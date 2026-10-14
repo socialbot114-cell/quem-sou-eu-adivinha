@@ -1,0 +1,1452 @@
+{
+  "characters": [
+    {
+      "id": "cristiane",
+      "category": "Futebol",
+      "qid": "Q242010",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q242010",
+      "needsReview": []
+    },
+    {
+      "id": "sissi",
+      "category": "Futebol",
+      "qid": "Q898237",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q898237",
+      "needsReview": []
+    },
+    {
+      "id": "debinha",
+      "category": "Futebol",
+      "qid": "Q15830959",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q15830959",
+      "needsReview": []
+    },
+    {
+      "id": "ada-hegerberg",
+      "category": "Futebol",
+      "qid": "Q129118",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q129118",
+      "needsReview": []
+    },
+    {
+      "id": "christine-sinclair",
+      "category": "Futebol",
+      "qid": "Q262802",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q262802",
+      "needsReview": []
+    },
+    {
+      "id": "abby-wambach",
+      "category": "Futebol",
+      "qid": "Q233112",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233112",
+      "needsReview": []
+    },
+    {
+      "id": "birgit-prinz",
+      "category": "Futebol",
+      "qid": "Q109868",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q109868",
+      "needsReview": []
+    },
+    {
+      "id": "wendie-renard",
+      "category": "Futebol",
+      "qid": "Q437048",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q437048",
+      "needsReview": []
+    },
+    {
+      "id": "garrincha",
+      "category": "Futebol",
+      "qid": "Q180642",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q180642",
+      "needsReview": []
+    },
+    {
+      "id": "vava",
+      "category": "Futebol",
+      "qid": "Q311445",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q311445",
+      "needsReview": []
+    },
+    {
+      "id": "jairzinho",
+      "category": "Futebol",
+      "qid": "Q210102",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210102",
+      "needsReview": []
+    },
+    {
+      "id": "tostao",
+      "category": "Futebol",
+      "qid": "Q311407",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q311407",
+      "needsReview": []
+    },
+    {
+      "id": "gerson-de-oliveira-nunes",
+      "category": "Futebol",
+      "qid": "Q280306",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q280306",
+      "needsReview": []
+    },
+    {
+      "id": "carlos-alberto-torres",
+      "category": "Futebol",
+      "qid": "Q295262",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q295262",
+      "needsReview": []
+    },
+    {
+      "id": "paulo-roberto-falcao",
+      "category": "Futebol",
+      "qid": "Q312454",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q312454",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "ze-roberto",
+      "category": "Futebol",
+      "qid": "Q57167",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q57167",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "dunga",
+      "category": "Futebol",
+      "qid": "Q215890",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q215890",
+      "needsReview": []
+    },
+    {
+      "id": "bebeto",
+      "category": "Futebol",
+      "qid": "Q204825",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204825",
+      "needsReview": []
+    },
+    {
+      "id": "edmundo",
+      "category": "Futebol",
+      "qid": "Q445541",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q445541",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "juninho-pernambucano",
+      "category": "Futebol",
+      "qid": "Q203451",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q203451",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "lucio",
+      "category": "Futebol",
+      "qid": "Q156822",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q156822",
+      "needsReview": []
+    },
+    {
+      "id": "dida",
+      "category": "Futebol",
+      "qid": "Q188544",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188544",
+      "needsReview": []
+    },
+    {
+      "id": "taffarel",
+      "category": "Futebol",
+      "qid": "Q295891",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q295891",
+      "needsReview": []
+    },
+    {
+      "id": "gilberto-silva",
+      "category": "Futebol",
+      "qid": "Q190142",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q190142",
+      "needsReview": []
+    },
+    {
+      "id": "hernanes",
+      "category": "Futebol",
+      "qid": "Q313570",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q313570",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "oscar-dos-santos-emboaba-junior",
+      "category": "Futebol",
+      "qid": "Q19497",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19497",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "philippe-coutinho",
+      "category": "Futebol",
+      "qid": "Q311872",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q311872",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "fernandinho",
+      "category": "Futebol",
+      "qid": "Q459356",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q459356",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "thiago-silva",
+      "category": "Futebol",
+      "qid": "Q210453",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210453",
+      "needsReview": []
+    },
+    {
+      "id": "david-luiz",
+      "category": "Futebol",
+      "qid": "Q193706",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q193706",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "marcelo-vieira",
+      "category": "Futebol",
+      "qid": "Q38136",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38136",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "daniel-alves",
+      "category": "Futebol",
+      "qid": "Q172720",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q172720",
+      "needsReview": []
+    },
+    {
+      "id": "ederson",
+      "category": "Futebol",
+      "qid": "Q17074511",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17074511",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "eder-militao",
+      "category": "Futebol",
+      "qid": "Q29950055",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q29950055",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "raphinha",
+      "category": "Futebol",
+      "qid": "Q28861547",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28861547",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "rodrygo",
+      "category": "Futebol",
+      "qid": "Q42728914",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42728914",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "gabriel-barbosa",
+      "category": "Futebol",
+      "qid": "Q13646572",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q13646572",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "richarlison",
+      "category": "Futebol",
+      "qid": "Q20806743",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20806743",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "roberto-firmino",
+      "category": "Futebol",
+      "qid": "Q602525",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q602525",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "ademir-da-guia",
+      "category": "Futebol",
+      "qid": "Q355742",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q355742",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "leonidas-da-silva",
+      "category": "Futebol",
+      "qid": "Q311739",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q311739",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "rivaldo",
+      "category": "Futebol",
+      "qid": "Q483577",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q483577",
+      "needsReview": []
+    },
+    {
+      "id": "cafu",
+      "category": "Futebol",
+      "qid": "Q178683",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q178683",
+      "needsReview": []
+    },
+    {
+      "id": "romario",
+      "category": "Futebol",
+      "qid": "Q178649",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q178649",
+      "needsReview": []
+    },
+    {
+      "id": "juninho-paulista",
+      "category": "Futebol",
+      "qid": "Q318184",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q318184",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "paulo-henrique-ganso",
+      "category": "Futebol",
+      "qid": "Q313835",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q313835",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "rogerio-ceni",
+      "category": "Futebol",
+      "qid": "Q1249859",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1249859",
+      "needsReview": []
+    },
+    {
+      "id": "diego-maradona",
+      "category": "Futebol",
+      "qid": "Q17515",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17515",
+      "needsReview": []
+    },
+    {
+      "id": "johan-cruyff",
+      "category": "Futebol",
+      "qid": "Q17163",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17163",
+      "needsReview": []
+    },
+    {
+      "id": "franz-beckenbauer",
+      "category": "Futebol",
+      "qid": "Q4457",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4457",
+      "needsReview": []
+    },
+    {
+      "id": "gerd-muller",
+      "category": "Futebol",
+      "qid": "Q43744",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43744",
+      "needsReview": []
+    },
+    {
+      "id": "michel-platini",
+      "category": "Futebol",
+      "qid": "Q4261",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4261",
+      "needsReview": []
+    },
+    {
+      "id": "alfredo-di-stefano",
+      "category": "Futebol",
+      "qid": "Q164546",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q164546",
+      "needsReview": []
+    },
+    {
+      "id": "eusebio",
+      "category": "Futebol",
+      "qid": "Q162043",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q162043",
+      "needsReview": []
+    },
+    {
+      "id": "george-best",
+      "category": "Futebol",
+      "qid": "Q164521",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q164521",
+      "needsReview": []
+    },
+    {
+      "id": "bobby-charlton",
+      "category": "Futebol",
+      "qid": "Q171583",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q171583",
+      "needsReview": []
+    },
+    {
+      "id": "ferenc-puskas",
+      "category": "Futebol",
+      "qid": "Q482931",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q482931",
+      "needsReview": []
+    },
+    {
+      "id": "zlatan-ibrahimovic",
+      "category": "Futebol",
+      "qid": "Q46896",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q46896",
+      "needsReview": []
+    },
+    {
+      "id": "francesco-totti",
+      "category": "Futebol",
+      "qid": "Q20110",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20110",
+      "needsReview": []
+    },
+    {
+      "id": "alessandro-del-piero",
+      "category": "Futebol",
+      "qid": "Q624",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q624",
+      "needsReview": []
+    },
+    {
+      "id": "roberto-baggio",
+      "category": "Futebol",
+      "qid": "Q67964",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q67964",
+      "needsReview": []
+    },
+    {
+      "id": "gianluca-vialli",
+      "category": "Futebol",
+      "qid": "Q239688",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q239688",
+      "needsReview": []
+    },
+    {
+      "id": "ruud-van-nistelrooy",
+      "category": "Futebol",
+      "qid": "Q45626",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q45626",
+      "needsReview": []
+    },
+    {
+      "id": "ruud-gullit",
+      "category": "Futebol",
+      "qid": "Q173972",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173972",
+      "needsReview": []
+    },
+    {
+      "id": "frank-rijkaard",
+      "category": "Futebol",
+      "qid": "Q169098",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q169098",
+      "needsReview": []
+    },
+    {
+      "id": "dennis-bergkamp",
+      "category": "Futebol",
+      "qid": "Q185389",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q185389",
+      "needsReview": []
+    },
+    {
+      "id": "patrick-vieira",
+      "category": "Futebol",
+      "qid": "Q46347",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q46347",
+      "needsReview": []
+    },
+    {
+      "id": "samuel-eto-o",
+      "category": "Futebol",
+      "qid": "Q1255625",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1255625",
+      "needsReview": []
+    },
+    {
+      "id": "yaya-toure",
+      "category": "Futebol",
+      "qid": "Q184277",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q184277",
+      "needsReview": []
+    },
+    {
+      "id": "kolo-toure",
+      "category": "Futebol",
+      "qid": "Q147589",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q147589",
+      "needsReview": []
+    },
+    {
+      "id": "george-weah",
+      "category": "Futebol",
+      "qid": "Q173139",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173139",
+      "needsReview": []
+    },
+    {
+      "id": "michael-essien",
+      "category": "Futebol",
+      "qid": "Q969520",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q969520",
+      "needsReview": []
+    },
+    {
+      "id": "riyad-mahrez",
+      "category": "Futebol",
+      "qid": "Q8338725",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8338725",
+      "needsReview": []
+    },
+    {
+      "id": "virgil-van-dijk",
+      "category": "Futebol",
+      "qid": "Q133903",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q133903",
+      "needsReview": []
+    },
+    {
+      "id": "toni-kroos",
+      "category": "Futebol",
+      "qid": "Q131234",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131234",
+      "needsReview": []
+    },
+    {
+      "id": "sergio-ramos",
+      "category": "Futebol",
+      "qid": "Q483309",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q483309",
+      "needsReview": []
+    },
+    {
+      "id": "gerard-pique",
+      "category": "Futebol",
+      "qid": "Q17507",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17507",
+      "needsReview": []
+    },
+    {
+      "id": "xavi-hernandez",
+      "category": "Futebol",
+      "qid": "Q17500",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17500",
+      "needsReview": []
+    },
+    {
+      "id": "carles-puyol",
+      "category": "Futebol",
+      "qid": "Q17158",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17158",
+      "needsReview": []
+    },
+    {
+      "id": "sergio-busquets",
+      "category": "Futebol",
+      "qid": "Q49704",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49704",
+      "needsReview": []
+    },
+    {
+      "id": "david-villa",
+      "category": "Futebol",
+      "qid": "Q83006",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q83006",
+      "needsReview": []
+    },
+    {
+      "id": "fernando-torres",
+      "category": "Futebol",
+      "qid": "Q42731",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42731",
+      "needsReview": []
+    },
+    {
+      "id": "raul-gonzalez",
+      "category": "Futebol",
+      "qid": "Q11576",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11576",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "xabi-alonso",
+      "category": "Futebol",
+      "qid": "Q208104",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q208104",
+      "needsReview": []
+    },
+    {
+      "id": "carlos-tevez",
+      "category": "Futebol",
+      "qid": "Q50600",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q50600",
+      "needsReview": []
+    },
+    {
+      "id": "sergio-aguero",
+      "category": "Futebol",
+      "qid": "Q119562",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q119562",
+      "needsReview": []
+    },
+    {
+      "id": "gonzalo-higuain",
+      "category": "Futebol",
+      "qid": "Q483846",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q483846",
+      "needsReview": []
+    },
+    {
+      "id": "javier-mascherano",
+      "category": "Futebol",
+      "qid": "Q161571",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q161571",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "angel-di-maria",
+      "category": "Futebol",
+      "qid": "Q251683",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q251683",
+      "needsReview": []
+    },
+    {
+      "id": "juan-roman-riquelme",
+      "category": "Futebol",
+      "qid": "Q192965",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q192965",
+      "needsReview": [
+        "título de Copa não verificado"
+      ]
+    },
+    {
+      "id": "diego-forlan",
+      "category": "Futebol",
+      "qid": "Q261534",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q261534",
+      "needsReview": []
+    },
+    {
+      "id": "edinson-cavani",
+      "category": "Futebol",
+      "qid": "Q167790",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q167790",
+      "needsReview": []
+    },
+    {
+      "id": "james-rodriguez",
+      "category": "Futebol",
+      "qid": "Q368441",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q368441",
+      "needsReview": []
+    },
+    {
+      "id": "radamel-falcao",
+      "category": "Futebol",
+      "qid": "Q138172",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q138172",
+      "needsReview": []
+    },
+    {
+      "id": "arturo-vidal",
+      "category": "Futebol",
+      "qid": "Q192671",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q192671",
+      "needsReview": []
+    },
+    {
+      "id": "alexis-sanchez",
+      "category": "Futebol",
+      "qid": "Q180553",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q180553",
+      "needsReview": []
+    },
+    {
+      "id": "robin-van-persie",
+      "category": "Futebol",
+      "qid": "Q2339",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2339",
+      "needsReview": []
+    },
+    {
+      "id": "wayne-rooney",
+      "category": "Futebol",
+      "qid": "Q266613",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q266613",
+      "needsReview": []
+    },
+    {
+      "id": "steven-gerrard",
+      "category": "Futebol",
+      "qid": "Q459830",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q459830",
+      "needsReview": []
+    },
+    {
+      "id": "peter-shilton",
+      "category": "Futebol",
+      "qid": "Q244799",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q244799",
+      "needsReview": []
+    },
+    {
+      "id": "chico-buarque",
+      "category": "Artistas brasileiros",
+      "qid": "Q333632",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q333632",
+      "needsReview": []
+    },
+    {
+      "id": "gal-costa",
+      "category": "Artistas brasileiros",
+      "qid": "Q236361",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q236361",
+      "needsReview": []
+    },
+    {
+      "id": "elis-regina",
+      "category": "Artistas brasileiros",
+      "qid": "Q465877",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q465877",
+      "needsReview": []
+    },
+    {
+      "id": "tim-maia",
+      "category": "Artistas brasileiros",
+      "qid": "Q1262590",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1262590",
+      "needsReview": []
+    },
+    {
+      "id": "cazuza",
+      "category": "Artistas brasileiros",
+      "qid": "Q731775",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q731775",
+      "needsReview": []
+    },
+    {
+      "id": "raul-seixas",
+      "category": "Artistas brasileiros",
+      "qid": "Q1392583",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1392583",
+      "needsReview": []
+    },
+    {
+      "id": "renato-russo",
+      "category": "Artistas brasileiros",
+      "qid": "Q982366",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q982366",
+      "needsReview": []
+    },
+    {
+      "id": "daniela-mercury",
+      "category": "Artistas brasileiros",
+      "qid": "Q465927",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q465927",
+      "needsReview": []
+    },
+    {
+      "id": "claudia-leitte",
+      "category": "Artistas brasileiros",
+      "qid": "Q2980493",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2980493",
+      "needsReview": []
+    },
+    {
+      "id": "vanessa-da-mata",
+      "category": "Artistas brasileiros",
+      "qid": "Q432243",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q432243",
+      "needsReview": []
+    },
+    {
+      "id": "ana-carolina",
+      "category": "Artistas brasileiros",
+      "qid": "Q1131864",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1131864",
+      "needsReview": []
+    },
+    {
+      "id": "maria-gadu",
+      "category": "Artistas brasileiros",
+      "qid": "Q460056",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q460056",
+      "needsReview": []
+    },
+    {
+      "id": "beth-carvalho",
+      "category": "Artistas brasileiros",
+      "qid": "Q458663",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q458663",
+      "needsReview": []
+    },
+    {
+      "id": "martinho-da-vila",
+      "category": "Artistas brasileiros",
+      "qid": "Q385498",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q385498",
+      "needsReview": []
+    },
+    {
+      "id": "arlindo-cruz",
+      "category": "Artistas brasileiros",
+      "qid": "Q2194161",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2194161",
+      "needsReview": []
+    },
+    {
+      "id": "thiaguinho",
+      "category": "Artistas brasileiros",
+      "qid": "Q10382110",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10382110",
+      "needsReview": []
+    },
+    {
+      "id": "belo",
+      "category": "Artistas brasileiros",
+      "qid": "Q16336873",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16336873",
+      "needsReview": []
+    },
+    {
+      "id": "xande-de-pilares",
+      "category": "Artistas brasileiros",
+      "qid": "Q23905439",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23905439",
+      "needsReview": []
+    },
+    {
+      "id": "diogo-nogueira",
+      "category": "Artistas brasileiros",
+      "qid": "Q5279213",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5279213",
+      "needsReview": []
+    },
+    {
+      "id": "jorge-aragao",
+      "category": "Artistas brasileiros",
+      "qid": "Q522137",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q522137",
+      "needsReview": []
+    },
+    {
+      "id": "jorge-vercillo",
+      "category": "Artistas brasileiros",
+      "qid": "Q10308264",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10308264",
+      "needsReview": []
+    },
+    {
+      "id": "sandra-de-sa",
+      "category": "Artistas brasileiros",
+      "qid": "Q545519",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q545519",
+      "needsReview": []
+    },
+    {
+      "id": "luiz-caldas",
+      "category": "Artistas brasileiros",
+      "qid": "Q1597249",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1597249",
+      "needsReview": []
+    },
+    {
+      "id": "carlinhos-brown",
+      "category": "Artistas brasileiros",
+      "qid": "Q727249",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q727249",
+      "needsReview": []
+    },
+    {
+      "id": "lulu-santos",
+      "category": "Artistas brasileiros",
+      "qid": "Q524788",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q524788",
+      "needsReview": []
+    },
+    {
+      "id": "leo-jaime",
+      "category": "Artistas brasileiros",
+      "qid": "Q6711001",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6711001",
+      "needsReview": []
+    },
+    {
+      "id": "ed-motta",
+      "category": "Artistas brasileiros",
+      "qid": "Q2701997",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2701997",
+      "needsReview": []
+    },
+    {
+      "id": "lenine",
+      "category": "Artistas brasileiros",
+      "qid": "Q715987",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q715987",
+      "needsReview": []
+    },
+    {
+      "id": "zelia-duncan",
+      "category": "Artistas brasileiros",
+      "qid": "Q945549",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q945549",
+      "needsReview": []
+    },
+    {
+      "id": "emicida",
+      "category": "Artistas brasileiros",
+      "qid": "Q611208",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q611208",
+      "needsReview": []
+    },
+    {
+      "id": "criolo",
+      "category": "Artistas brasileiros",
+      "qid": "Q5185792",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5185792",
+      "needsReview": []
+    },
+    {
+      "id": "mano-brown",
+      "category": "Artistas brasileiros",
+      "qid": "Q9027456",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9027456",
+      "needsReview": []
+    },
+    {
+      "id": "projota",
+      "category": "Artistas brasileiros",
+      "qid": "Q10354528",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10354528",
+      "needsReview": []
+    },
+    {
+      "id": "gustavo-lima",
+      "category": "Artistas brasileiros",
+      "qid": "Q380821",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q380821",
+      "needsReview": []
+    },
+    {
+      "id": "michel-telo",
+      "category": "Artistas brasileiros",
+      "qid": "Q488387",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q488387",
+      "needsReview": []
+    },
+    {
+      "id": "wesley-safadao",
+      "category": "Artistas brasileiros",
+      "qid": "Q18379958",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18379958",
+      "needsReview": []
+    },
+    {
+      "id": "zeze-di-camargo",
+      "category": "Artistas brasileiros",
+      "qid": "Q10395087",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10395087",
+      "needsReview": []
+    },
+    {
+      "id": "chitaozinho",
+      "category": "Artistas brasileiros",
+      "qid": "Q1789883",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1789883",
+      "needsReview": []
+    },
+    {
+      "id": "eduardo-costa",
+      "category": "Artistas brasileiros",
+      "qid": "Q10270648",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10270648",
+      "needsReview": []
+    },
+    {
+      "id": "ney-matogrosso",
+      "category": "Artistas brasileiros",
+      "qid": "Q742334",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q742334",
+      "needsReview": []
+    },
+    {
+      "id": "joao-gilberto",
+      "category": "Artistas brasileiros",
+      "qid": "Q192359",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q192359",
+      "needsReview": []
+    },
+    {
+      "id": "vinicius-de-moraes",
+      "category": "Artistas brasileiros",
+      "qid": "Q333856",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q333856",
+      "needsReview": []
+    },
+    {
+      "id": "antonio-carlos-jobim",
+      "category": "Artistas brasileiros",
+      "qid": "Q200131",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200131",
+      "needsReview": []
+    },
+    {
+      "id": "ivan-lins",
+      "category": "Artistas brasileiros",
+      "qid": "Q703330",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q703330",
+      "needsReview": []
+    },
+    {
+      "id": "hermeto-pascoal",
+      "category": "Artistas brasileiros",
+      "qid": "Q560969",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q560969",
+      "needsReview": []
+    },
+    {
+      "id": "egberto-gismonti",
+      "category": "Artistas brasileiros",
+      "qid": "Q746182",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q746182",
+      "needsReview": []
+    },
+    {
+      "id": "nelson-freire",
+      "category": "Artistas brasileiros",
+      "qid": "Q783657",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q783657",
+      "needsReview": []
+    },
+    {
+      "id": "baden-powell",
+      "category": "Artistas brasileiros",
+      "qid": "Q464993",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q464993",
+      "needsReview": []
+    },
+    {
+      "id": "sergio-mendes",
+      "category": "Artistas brasileiros",
+      "qid": "Q337359",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q337359",
+      "needsReview": []
+    },
+    {
+      "id": "airto-moreira",
+      "category": "Artistas brasileiros",
+      "qid": "Q409259",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q409259",
+      "needsReview": []
+    },
+    {
+      "id": "erasmo-carlos",
+      "category": "Artistas brasileiros",
+      "qid": "Q2085377",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2085377",
+      "needsReview": []
+    },
+    {
+      "id": "wanderlea",
+      "category": "Artistas brasileiros",
+      "qid": "Q7967244",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7967244",
+      "needsReview": []
+    },
+    {
+      "id": "paulinho-da-viola",
+      "category": "Artistas brasileiros",
+      "qid": "Q241801",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q241801",
+      "needsReview": []
+    },
+    {
+      "id": "cartola",
+      "category": "Artistas brasileiros",
+      "qid": "Q2710419",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2710419",
+      "needsReview": []
+    },
+    {
+      "id": "nelson-cavaquinho",
+      "category": "Artistas brasileiros",
+      "qid": "Q3817099",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3817099",
+      "needsReview": []
+    },
+    {
+      "id": "adriana-calcanhotto",
+      "category": "Artistas brasileiros",
+      "qid": "Q217087",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q217087",
+      "needsReview": []
+    },
+    {
+      "id": "marina-lima",
+      "category": "Artistas brasileiros",
+      "qid": "Q3848053",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3848053",
+      "needsReview": []
+    },
+    {
+      "id": "rita-benneditto",
+      "category": "Artistas brasileiros",
+      "qid": "Q10363048",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10363048",
+      "needsReview": []
+    },
+    {
+      "id": "pitty",
+      "category": "Artistas brasileiros",
+      "qid": "Q462102",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q462102",
+      "needsReview": []
+    },
+    {
+      "id": "marcelo-d2",
+      "category": "Artistas brasileiros",
+      "qid": "Q1275017",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1275017",
+      "needsReview": []
+    },
+    {
+      "id": "nando-reis",
+      "category": "Artistas brasileiros",
+      "qid": "Q6963370",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6963370",
+      "needsReview": []
+    },
+    {
+      "id": "herbert-vianna",
+      "category": "Artistas brasileiros",
+      "qid": "Q1791140",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1791140",
+      "needsReview": []
+    },
+    {
+      "id": "samuel-rosa",
+      "category": "Artistas brasileiros",
+      "qid": "Q7412506",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7412506",
+      "needsReview": []
+    },
+    {
+      "id": "fernanda-abreu",
+      "category": "Artistas brasileiros",
+      "qid": "Q43947",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43947",
+      "needsReview": []
+    },
+    {
+      "id": "naiara-azevedo",
+      "category": "Artistas brasileiros",
+      "qid": "Q28028881",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28028881",
+      "needsReview": []
+    },
+    {
+      "id": "paula-fernandes",
+      "category": "Artistas brasileiros",
+      "qid": "Q483682",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q483682",
+      "needsReview": []
+    },
+    {
+      "id": "iza",
+      "category": "Artistas brasileiros",
+      "qid": "Q43148140",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43148140",
+      "needsReview": []
+    },
+    {
+      "id": "luisa-sonza",
+      "category": "Artistas brasileiros",
+      "qid": "Q43193714",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43193714",
+      "needsReview": []
+    },
+    {
+      "id": "teresa-cristina",
+      "category": "Artistas brasileiros",
+      "qid": "Q10380505",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10380505",
+      "needsReview": []
+    },
+    {
+      "id": "elza-soares",
+      "category": "Artistas brasileiros",
+      "qid": "Q435176",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q435176",
+      "needsReview": []
+    },
+    {
+      "id": "clara-nunes",
+      "category": "Artistas brasileiros",
+      "qid": "Q447984",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q447984",
+      "needsReview": []
+    },
+    {
+      "id": "dona-ivone-lara",
+      "category": "Artistas brasileiros",
+      "qid": "Q5293796",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5293796",
+      "needsReview": []
+    },
+    {
+      "id": "fernanda-torres",
+      "category": "Artistas brasileiros",
+      "qid": "Q465907",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q465907",
+      "needsReview": []
+    },
+    {
+      "id": "lima-duarte",
+      "category": "Artistas brasileiros",
+      "qid": "Q1791430",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1791430",
+      "needsReview": []
+    },
+    {
+      "id": "paulo-autran",
+      "category": "Artistas brasileiros",
+      "qid": "Q1797286",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1797286",
+      "needsReview": []
+    },
+    {
+      "id": "tony-ramos",
+      "category": "Artistas brasileiros",
+      "qid": "Q954355",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q954355",
+      "needsReview": []
+    },
+    {
+      "id": "antonio-fagundes",
+      "category": "Artistas brasileiros",
+      "qid": "Q772892",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q772892",
+      "needsReview": []
+    },
+    {
+      "id": "regina-duarte",
+      "category": "Artistas brasileiros",
+      "qid": "Q1797428",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1797428",
+      "needsReview": []
+    },
+    {
+      "id": "marieta-severo",
+      "category": "Artistas brasileiros",
+      "qid": "Q5038740",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5038740",
+      "needsReview": []
+    },
+    {
+      "id": "alice-braga",
+      "category": "Artistas brasileiros",
+      "qid": "Q230903",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q230903",
+      "needsReview": []
+    },
+    {
+      "id": "juliana-paes",
+      "category": "Artistas brasileiros",
+      "qid": "Q466954",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q466954",
+      "needsReview": []
+    },
+    {
+      "id": "camila-pitanga",
+      "category": "Artistas brasileiros",
+      "qid": "Q2934814",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2934814",
+      "needsReview": []
+    },
+    {
+      "id": "debora-falabella",
+      "category": "Artistas brasileiros",
+      "qid": "Q466580",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q466580",
+      "needsReview": []
+    },
+    {
+      "id": "andrea-beltrao",
+      "category": "Artistas brasileiros",
+      "qid": "Q4760120",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4760120",
+      "needsReview": []
+    },
+    {
+      "id": "marcos-palmeira",
+      "category": "Artistas brasileiros",
+      "qid": "Q2639361",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2639361",
+      "needsReview": []
+    },
+    {
+      "id": "vladimir-brichta",
+      "category": "Artistas brasileiros",
+      "qid": "Q7938290",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7938290",
+      "needsReview": []
+    },
+    {
+      "id": "bruna-marquezine",
+      "category": "Artistas brasileiros",
+      "qid": "Q4281880",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4281880",
+      "needsReview": []
+    },
+    {
+      "id": "giovanna-ewbank",
+      "category": "Artistas brasileiros",
+      "qid": "Q2032441",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2032441",
+      "needsReview": []
+    },
+    {
+      "id": "grande-otelo",
+      "category": "Artistas brasileiros",
+      "qid": "Q1791093",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1791093",
+      "needsReview": []
+    },
+    {
+      "id": "oscarito",
+      "category": "Artistas brasileiros",
+      "qid": "Q1797253",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1797253",
+      "needsReview": []
+    },
+    {
+      "id": "renato-aragao",
+      "category": "Artistas brasileiros",
+      "qid": "Q848556",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q848556",
+      "needsReview": []
+    },
+    {
+      "id": "chico-anysio",
+      "category": "Artistas brasileiros",
+      "qid": "Q1789876",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1789876",
+      "needsReview": []
+    },
+    {
+      "id": "jo-soares",
+      "category": "Artistas brasileiros",
+      "qid": "Q732513",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q732513",
+      "needsReview": []
+    },
+    {
+      "id": "paulo-gustavo",
+      "category": "Artistas brasileiros",
+      "qid": "Q10346618",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10346618",
+      "needsReview": []
+    },
+    {
+      "id": "ingrid-guimaraes",
+      "category": "Artistas brasileiros",
+      "qid": "Q3176161",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3176161",
+      "needsReview": []
+    },
+    {
+      "id": "leandro-hassum",
+      "category": "Artistas brasileiros",
+      "qid": "Q10316778",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10316778",
+      "needsReview": []
+    },
+    {
+      "id": "danilo-gentili",
+      "category": "Artistas brasileiros",
+      "qid": "Q5219606",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5219606",
+      "needsReview": []
+    },
+    {
+      "id": "marcelo-adnet",
+      "category": "Artistas brasileiros",
+      "qid": "Q6756484",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6756484",
+      "needsReview": []
+    },
+    {
+      "id": "jose-wilker",
+      "category": "Artistas brasileiros",
+      "qid": "Q2366279",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2366279",
+      "needsReview": []
+    },
+    {
+      "id": "stenio-garcia",
+      "category": "Artistas brasileiros",
+      "qid": "Q2475191",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2475191",
+      "needsReview": []
+    }
+  ]
+}

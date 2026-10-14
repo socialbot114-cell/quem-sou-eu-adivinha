@@ -14,6 +14,10 @@ Screenshots must come from the final signed app build. The current files in `pri
 
 Use an iPhone 15 Pro Max or another 6.7-inch iPhone simulator. Capture portrait screenshots at the simulator's native resolution. Do not add fake device frames, third-party logos, copyrighted photographs or promotional text over the screenshots.
 
+## GitHub Actions review capture
+
+Run the `Quem Sou Eu iOS Screenshots` workflow manually. On a macOS iPhone simulator it captures the home screen, category grid, a real Artistas brasileiros round, a K-pop round that exercises the added membership and birth-year clues, results, and the profile/credits screen, plus an MP4 screen recording. Download the `quem-sou-eu-ios-screenshots-iphone` artifact for PNG attachments and `quem-sou-eu-ios-demo-iphone` for the MP4. These captures are for QA and layout review; before App Store upload, repeat the store screenshot checklist with the exact signed release build and verify the required App Store Connect dimensions.
+
 ## Before Upload
 
 - Confirm the app opens with populated questions and personalities.

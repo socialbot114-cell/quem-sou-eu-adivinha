@@ -11,7 +11,7 @@
 - Copyright: `2026 Gustavo De Melo Ferreira`
 - Intended audience: `9+ family experience`
 - Bundle ID: `br.com.quemsoueu.adivinha`
-- Version: `1.2` (build 6)
+- Version: `1.2.4` (build = run number do workflow `iOS TestFlight`)
 
 ## Promotional Text
 
@@ -25,8 +25,9 @@ O jogo faz perguntas simples, combina suas respostas e apresenta o palpite mais 
 
 Recursos:
 
-- Partidas rápidas com até 14 perguntas.
-- Seis categorias completas e modo livre.
+- Partidas rápidas, com palpite em poucas perguntas.
+- Errou uma resposta? Desfaça e corrija na hora.
+- Doze categorias temáticas e modo livre.
 - Motor de descoberta que funciona totalmente offline.
 - Pontos, moedas, sequência e conquistas salvos no aparelho.
 - Princesa Detetive, coleção de descobertas e interface premium.
@@ -39,13 +40,13 @@ adivinha,quiz,perguntas,jogo,personalidades,trivia,quem sou eu
 
 ## What's New
 
-Uma nova experiência para o Quem Sou Eu? Adivinha.
+A Princesa Detetive ficou mais esperta.
 
-- Jogo de pistas e perguntas offline.
-- 76 personalidades em seis categorias.
-- Onboarding, retomada de partida e coleção de descobertas.
-- Novo visual com a Princesa Detetive.
-- Retratos, compartilhamento, pontos, moedas e sequência.
+- Novo botão para desfazer a última resposta.
+- Depois de um palpite errado, o jogo ganha perguntas extras para chegar ao personagem certo.
+- “Não sei” não gasta mais suas perguntas.
+- Palpites mais rápidos quando as respostas são claras.
+- Respostas de personagens revisadas com fontes.
 
 ## URLs
 
@@ -90,7 +91,9 @@ Obrigado.
 
 Use screenshots capturadas do build final em um iPhone real ou no Simulator. Não use as imagens de referência da pasta `prints/`.
 
-Recommended order for the 6.7-inch iPhone slot:
+The release package is in `store-kit/screenshots/iphone/` and contains three real app screenshots at `1284x2778` for the 6.5-inch iPhone slot (`APP_IPHONE_65`). Apple currently requires the 6.5-inch set when a 6.9-inch set is not provided, and scales it for supported displays. See [Apple's screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/). The 1.2.3 submission currently has eight screenshots in this set, all processed as `COMPLETE`.
+
+Recommended order when expanding the set:
 
 1. Home screen showing the mascot and `Jogar agora`.
 2. Category screen showing the category grid.
@@ -98,18 +101,22 @@ Recommended order for the 6.7-inch iPhone slot:
 4. Result screen showing a successful guess.
 5. Profile screen showing offline operation and privacy information.
 
-Recommended screenshot size: `1290x2796` pixels in portrait for the 6.7-inch slot. Capture the final build after the build is marked `VALID` in App Store Connect.
+For a dedicated 6.9-inch set, use an accepted portrait size such as `1290x2796` pixels and the `APP_IPHONE_67` display type. Capture the final release candidate after its build is marked `VALID` in App Store Connect.
 
 ## Final Submission Checklist
 
-- [ ] Build 6 is uploaded and marked `VALID`.
-- [ ] Select build 6 for version 1.2.
-- [ ] Upload five real iPhone screenshots.
-- [ ] Confirm subtitle, description, keywords and URLs.
-- [ ] Set `Games` / `Trivia` and free pricing.
-- [ ] Complete the age-rating questionnaire for the intended 9+ family audience.
-- [ ] Set App Privacy to `Data Not Collected`.
-- [ ] Answer export compliance.
-- [ ] Confirm content rights.
-- [ ] Paste the review notes above.
-- [ ] Submit for Review.
+- [x] Confirm build 41 is marked `VALID` through the App Store Connect API.
+- [x] Associate build 41 with version 1.2.3.
+- [x] Upload and process the 6.5-inch screenshots; eight images show `COMPLETE`.
+- [x] Confirm subtitle, description, keywords and URLs.
+- [x] Set `Games` / `Trivia` and free pricing.
+- [x] Confirm the age-rating questionnaire matches the app content (currently recorded as 4+ in `PROJECT_STATUS.md`).
+- [x] Set App Privacy to `Data Not Collected`.
+- [x] Answer export compliance.
+- [x] Confirm content rights.
+- [x] Add the App Review notes above.
+- [x] Submit for Review through `.github/workflows/app-store-review.yml`; the user later confirmed version 1.2.3 is approved and ready for distribution.
+
+## API Workflow
+
+Run `App Store Connect Release` manually from the release branch with `operation=inspect` and `app_version` to read the build, version, screenshot, review-contact, and submission states. To submit, pass `app_version`, `build_number` (the run number of the `iOS TestFlight` workflow that uploaded the IPA) and the exact confirmation `SUBMIT <version> (<build>)`. The workflow waits for the build to become `VALID`, uploads metadata and screenshots, associates the build, and submits with automatic release after approval. The 1.2.3 submission was created with ID `e452da04-8ccf-4245-ac9d-04d41184cf83`; the user subsequently confirmed App Store Connect shows it as approved and ready for distribution.
