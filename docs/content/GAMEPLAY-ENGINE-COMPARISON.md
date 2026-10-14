@@ -42,7 +42,7 @@ A configuração adotada mantém o primeiro palpite próximo da 1.2.3 e ganha 12
 - O jogador simulado erra apenas invertendo a resposta; na prática, “provavelmente” em caso de dúvida é mais comum.
 - Na mesma categoria, Alexia Putellas e Aitana Bonmatí não se diferenciam em nenhum atributo, e 117 pares diferem em um único atributo. Preencher esses atributos é o próximo ganho de qualidade.
 
-## Candidata 1.2.5 (429 personagens): decisão de não publicar
+## Candidata 1.2.5 (429 personagens): publicada por decisão do responsável
 
 Motor da 1.2.4 (piso `0,18`, confiança `0,68`, margem `0,10`, orçamento adaptativo), catálogo com 200 personagens novos e 30 perguntas opcionais. Três sementes, salvo onde indicado.
 
@@ -63,3 +63,5 @@ Decomposição do cenário de 10% (semente 42, 1.2.4 = 96,0% final):
 | 1.2.5 completa | 89,3% |
 
 Conclusão: as perguntas novas não prejudicam; os personagens novos prejudicam, nas duas categorias. Varrer limiares (piso 0,18–0,21, confiança 0,64–0,68, margem 0,10–0,12) não recupera o cenário de 10%: a margem não limita o resultado e o piso mais alto piora o acerto final. A 1.2.5 fica fora da produção até o motor ser ajustado para catálogos maiores e o cenário de 10% voltar a pelo menos 95%.
+
+Decisão registrada em 2026-10-13: o responsável optou por lançar a 1.2.5 com os 200 personagens, aceitando a queda de cerca de 6 pontos no cenário de 10% de respostas erradas e partidas mais longas. O aceite editorial foi feito sem revisão humana completa. Um duplicado (Ricardo Kaká, mesma pessoa que Kaká) foi removido antes do lançamento.

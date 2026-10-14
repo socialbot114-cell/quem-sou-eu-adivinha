@@ -23,7 +23,7 @@ APP_ID = "6810873964"
 BUNDLE_ID = "br.com.quemsoueu.adivinha"
 # The TestFlight workflow stamps the GitHub run number as the build number, so the
 # submit workflow passes both values explicitly; inspect falls back to the newest build.
-APP_VERSION = os.environ.get("APP_VERSION_STRING", "").strip() or "1.2.4"
+APP_VERSION = os.environ.get("APP_VERSION_STRING", "").strip() or "1.2.5"
 BUILD_NUMBER = os.environ.get("APP_BUILD_NUMBER", "").strip()
 LOCALE = "pt-BR"
 SCREENSHOT_DISPLAY_TYPE = "APP_IPHONE_65"
@@ -54,7 +54,7 @@ Não é necessário criar uma conta. O jogo não exibe anúncios, não exige int
     "marketingUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
     "promotionalText": "Pense em uma personalidade. Responda perguntas e veja o jogo descobrir quem você imaginou.",
     "supportUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
-    "whatsNew": "A Princesa Detetive ficou mais esperta.\n\n- Novo botão para desfazer a última resposta.\n- Depois de um palpite errado, o jogo ganha perguntas extras para chegar ao personagem certo.\n- “Não sei” não gasta mais suas perguntas.\n- Palpites mais rápidos quando as respostas são claras.\n- Respostas de personagens revisadas com fontes.",
+    "whatsNew": "Mais personagens para descobrir.\n\n- 200 novas personalidades: jogadores de futebol e artistas brasileiros.\n- Novas perguntas sobre clubes, gêneros musicais, cidades e estados de origem.\n- Cada personalidade nova tem fonte na Wikipédia.\n- Novo botão para desfazer a última resposta e perguntas extras após um palpite errado.",
 }
 COPYRIGHT = "2026 Gustavo De Melo Ferreira"
 REVIEW_NOTES = """Olá,
