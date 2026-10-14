@@ -25,7 +25,6 @@ final class QuemSouEuScreenshots: XCTestCase {
             "male": "Não",
             "born_before_1970": "Não",
             "born_before_1990": "Não",
-            "born_before_1975": "Não",
             "football": "Não",
             "artist": "Sim",
             "creator": "Não",
@@ -38,8 +37,32 @@ final class QuemSouEuScreenshots: XCTestCase {
             "instrumentalist": "Sim",
             "director": "Não",
             "grammy_winner": "Não",
+            "born_before_1975": "Não",
             "samba_artist": "Não",
             "sertanejo_artist": "Sim",
+            "genre_mpb": "Não",
+            "genre_rock": "Não",
+            "genre_pop": "Não",
+            "genre_funk": "Não",
+            "genre_bossa": "Não",
+            "genre_pagode": "Não",
+            "born_before_1960": "Não",
+            "born_before_1985": "Não",
+            "genre_axe": "Não",
+            "genre_rap": "Não",
+            "genre_choro": "Não",
+            "genre_jazz": "Não",
+            "genre_electronic": "Não",
+            "composer": "Sim",
+            "born_before_1965": "Não",
+            "born_in_bahia": "Não",
+            "born_before_1945": "Não",
+            "born_before_1955": "Não",
+            "born_in_minas_gerais": "Não",
+            "born_in_rio": "Não",
+            "born_in_sao_paulo": "Não",
+            "born_in_northeast": "Não",
+            "born_in_south": "Não",
         ]
 
         var contradictedFirstAnswer = false
@@ -152,7 +175,6 @@ final class QuemSouEuScreenshots: XCTestCase {
             "male": "Não",
             "born_before_1970": "Não",
             "born_before_1990": "Não",
-            "born_before_1975": "Não",
             "football": "Não",
             "artist": "Sim",
             "creator": "Não",
@@ -165,11 +187,35 @@ final class QuemSouEuScreenshots: XCTestCase {
             "instrumentalist": "Não",
             "director": "Não",
             "grammy_winner": "Não",
+            "born_before_1975": "Não",
             "samba_artist": "Não",
             "sertanejo_artist": "Não",
+            "genre_mpb": "Não",
+            "genre_rock": "Não",
+            "genre_pop": "Sim",
+            "genre_funk": "Sim",
+            "genre_bossa": "Não",
+            "genre_pagode": "Não",
+            "born_before_1960": "Não",
+            "born_before_1985": "Não",
+            "genre_axe": "Não",
+            "genre_rap": "Não",
+            "genre_choro": "Não",
+            "genre_jazz": "Não",
+            "genre_electronic": "Não",
+            "composer": "Sim",
+            "born_before_1965": "Não",
+            "born_in_bahia": "Não",
+            "born_before_1945": "Não",
+            "born_before_1955": "Não",
+            "born_in_minas_gerais": "Não",
+            "born_in_rio": "Sim",
+            "born_in_sao_paulo": "Não",
+            "born_in_northeast": "Não",
+            "born_in_south": "Não",
         ]
 
-        for _ in 0..<14 {
+        for _ in 0..<24 {
             if app.staticTexts["Já tenho um palpite!"].exists { break }
             let activeAttribute = targetAnswers.keys.first { app.staticTexts["question.\($0)"].exists }
             guard let activeAttribute, let answer = targetAnswers[activeAttribute] else {
@@ -239,7 +285,7 @@ final class QuemSouEuScreenshots: XCTestCase {
             "ioi_member": "Não",
         ]
 
-        for _ in 0..<14 {
+        for _ in 0..<24 {
             if app.staticTexts["Já tenho um palpite!"].exists { break }
             let activeAttribute = kpopTargetAnswers.keys.first { app.staticTexts["question.\($0)"].exists }
             guard let activeAttribute, let answer = kpopTargetAnswers[activeAttribute] else {
