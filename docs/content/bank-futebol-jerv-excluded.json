@@ -1,0 +1,1500 @@
+{
+  "generatedAt": "2026-10-15",
+  "excluded": [
+    {
+      "id": "dwayne-johnson",
+      "name": "Dwayne Johnson",
+      "motivo": "JERV não aceitou a afirmação principal",
+      "decision": "contradicts",
+      "confidence": 0.53
+    },
+    {
+      "id": "hans-gamper",
+      "name": "Hans Gamper",
+      "motivo": "JERV não aceitou a afirmação principal",
+      "decision": "insufficient",
+      "confidence": 0.3
+    },
+    {
+      "id": "heinz-flohe",
+      "name": "Heinz Flohe",
+      "motivo": "JERV não aceitou a afirmação principal",
+      "decision": "supports",
+      "confidence": 0.74
+    },
+    {
+      "id": "reinhard-libuda",
+      "name": "Reinhard Libuda",
+      "motivo": "JERV não aceitou a afirmação principal",
+      "decision": "supports",
+      "confidence": 0.69
+    },
+    {
+      "id": "jan-schlaudraff",
+      "name": "Jan Schlaudraff",
+      "motivo": "JERV não aceitou a afirmação principal",
+      "decision": "supports",
+      "confidence": 0.51
+    },
+    {
+      "id": "junya-ito",
+      "name": "Junya Itō",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nicolas-otamendi",
+      "name": "Nicolás Otamendi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "orbelin-pineda",
+      "name": "Orbelin Pineda",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "alphonso-davies",
+      "name": "Alphonso Davies",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thomas-partey",
+      "name": "Thomas Partey",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "achraf-hakimi",
+      "name": "Achraf Hakimi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mario-pasalic",
+      "name": "Mario Pašalić",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "anibal-godoy",
+      "name": "Aníbal Godoy",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "aissa-mandi",
+      "name": "Aïssa Mandi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "erick-davis",
+      "name": "Erick Davis",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lucas-paqueta",
+      "name": "Lucas Paquetá",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "julian-alvarez",
+      "name": "Julián Alvarez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "giorgian-de-arrascaeta",
+      "name": "Giorgian De Arrascaeta",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "joao-cancelo",
+      "name": "João Cancelo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "yuto-nagatomo",
+      "name": "Yūto Nagatomo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "denzel-dumfries",
+      "name": "Denzel Dumfries",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thomas-meunier",
+      "name": "Thomas Meunier",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jose-maria-gimenez",
+      "name": "José María Giménez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nicolas-pepe",
+      "name": "Nicolas Pépé",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marquinhos",
+      "name": "Marquinhos",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ritsu-doan",
+      "name": "Ritsu Dōan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "joao-felix",
+      "name": "João Félix",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ramy-bensebaini",
+      "name": "Ramy Bensebaini",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ruben-vargas",
+      "name": "Ruben Vargas",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dani-olmo",
+      "name": "Dani Olmo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "karim-boudiaf",
+      "name": "Karim Boudiaf",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lee-kang-in",
+      "name": "Lee Kang-in",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "guillermo-ochoa",
+      "name": "Guillermo Ochoa",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mikel-merino",
+      "name": "Mikel Merino",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "tajon-buchanan",
+      "name": "Tajon Buchanan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fidel-escobar",
+      "name": "Fidel Escobar",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "azzedine-ounahi",
+      "name": "Azzedine Ounahi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "zeki-amdouni",
+      "name": "Zeki Amdouni",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ro-ro",
+      "name": "Ró-Ró",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fernando-muslera",
+      "name": "Fernando Muslera",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "yerry-mina",
+      "name": "Yerry Mina",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "derrick-etienne-jr",
+      "name": "Derrick Etienne Jr.",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "david-ospina",
+      "name": "David Ospina",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gonzalo-plata",
+      "name": "Gonzalo Plata",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gustavo-gomez",
+      "name": "Gustavo Gómez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ousmane-dembele",
+      "name": "Ousmane Dembélé",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "adrien-rabiot",
+      "name": "Adrien Rabiot",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "leandro-paredes",
+      "name": "Leandro Paredes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "goncalo-ramos",
+      "name": "Gonçalo Ramos",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "manuel-neuer",
+      "name": "Manuel Neuer",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kalidou-koulibaly",
+      "name": "Kalidou Koulibaly",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "merih-demiral",
+      "name": "Merih Demiral",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "manuel-akanji",
+      "name": "Manuel Akanji",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "timothy-weah",
+      "name": "Timothy Weah",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kim-min-jae",
+      "name": "Kim Min-jae",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "antonio-sanabria",
+      "name": "Antonio Sanabria",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "goncalo-guedes",
+      "name": "Gonçalo Guedes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "antonio-rudiger",
+      "name": "Antonio Rüdiger",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thibaut-courtois",
+      "name": "Thibaut Courtois",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "juan-quintero",
+      "name": "Juan Quintero",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rodrigo-de-paul",
+      "name": "Rodrigo de Paul",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "giovani-lo-celso",
+      "name": "Giovani Lo Celso",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "victor-lindelof",
+      "name": "Victor Lindelöf",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "alexis-mac-allister",
+      "name": "Alexis Mac Allister",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jean-seri",
+      "name": "Jean Seri",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mathew-ryan",
+      "name": "Mathew Ryan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rodrigo-betancur",
+      "name": "Rodrigo Betancur",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pervis-estupinan",
+      "name": "Pervis Estupiñán",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "seko-fofana",
+      "name": "Seko Fofana",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jalal-hassan",
+      "name": "Jalal Hassan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fabian-ruiz",
+      "name": "Fabián Ruiz",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "enzo-fernandez",
+      "name": "Enzo Fernández",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pedri",
+      "name": "Pedri",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "felix-torres",
+      "name": "Félix Torres",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jhon-arias",
+      "name": "Jhon Arias",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ante-budimir",
+      "name": "Ante Budimir",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nico-elvedi",
+      "name": "Nico Elvedi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "stephen-eustaquio",
+      "name": "Stephen Eustáquio",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "yassine-bounou",
+      "name": "Yassine Bounou",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "vozinha",
+      "name": "Vozinha",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dodi-lukebakio",
+      "name": "Dodi Lukebakio",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "charles-de-ketelaere",
+      "name": "Charles De Ketelaere",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "n-golo-kante",
+      "name": "N'Golo Kanté",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "j-rgen-strand-larsen",
+      "name": "Jørgen Strand Larsen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "frenkie-de-jong",
+      "name": "Frenkie de Jong",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "arthur-masuaku",
+      "name": "Arthur Masuaku",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lamine-yamal",
+      "name": "Lamine Yamal",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jordan-pickford",
+      "name": "Jordan Pickford",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "johnny-placide",
+      "name": "Johnny Placide",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "danilo-luiz-da-silva",
+      "name": "Danilo Luiz da Silva",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "aymeric-laporte",
+      "name": "Aymeric Laporte",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sead-kolasinac",
+      "name": "Sead Kolašinac",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gabriel-teodoro-martinelli-silva",
+      "name": "Gabriel Teodoro Martinelli Silva",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "emiliano-martinez",
+      "name": "Emiliano Martínez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lucas-digne",
+      "name": "Lucas Digne",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "teun-koopmeiners",
+      "name": "Teun Koopmeiners",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nuno-mendes",
+      "name": "Nuno Mendes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nelson-semedo",
+      "name": "Nélson Semedo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jules-kounde",
+      "name": "Jules Koundé",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lucas-hernandez",
+      "name": "Lucas Hernández",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lisandro-martinez",
+      "name": "Lisandro Martínez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marc-cucurella",
+      "name": "Marc Cucurella",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ederson-moraes",
+      "name": "Ederson Moraes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ibrahima-konate",
+      "name": "Ibrahima Konaté",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "alex-ferguson",
+      "name": "Alex Ferguson",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jose-mourinho",
+      "name": "José Mourinho",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mesut-ozil",
+      "name": "Mesut Özil",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thierry-henry",
+      "name": "Thierry Henry",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "miroslav-klose",
+      "name": "Miroslav Klose",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "antoine-griezmann",
+      "name": "Antoine Griezmann",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "iker-casillas",
+      "name": "Iker Casillas",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "josep-guardiola",
+      "name": "Josep Guardiola",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thomas-muller",
+      "name": "Thomas Müller",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "arjen-robben",
+      "name": "Arjen Robben",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "paul-pogba",
+      "name": "Paul Pogba",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lukas-podolski",
+      "name": "Lukas Podolski",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mario-balotelli",
+      "name": "Mario Balotelli",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "carlo-ancelotti",
+      "name": "Carlo Ancelotti",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "franck-ribery",
+      "name": "Franck Ribéry",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gary-lineker",
+      "name": "Gary Lineker",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "olivier-giroud",
+      "name": "Olivier Giroud",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andriy-shevchenko",
+      "name": "Andriy Shevchenko",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lev-yashin",
+      "name": "Lev Yashin",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "julio-iglesias",
+      "name": "Julio Iglesias",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jurgen-klopp",
+      "name": "Jürgen Klopp",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "philipp-lahm",
+      "name": "Philipp Lahm",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "cesc-fabregas",
+      "name": "Cesc Fàbregas",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fabio-cannavaro",
+      "name": "Fabio Cannavaro",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "hugo-lloris",
+      "name": "Hugo Lloris",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "oliver-kahn",
+      "name": "Oliver Kahn",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "michael-ballack",
+      "name": "Michael Ballack",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "david-de-gea",
+      "name": "David de Gea",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "paolo-maldini",
+      "name": "Paolo Maldini",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "luis-figo",
+      "name": "Luís Figo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "michael-owen",
+      "name": "Michael Owen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jerome-boateng",
+      "name": "Jérôme Boateng",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "paulo-dybala",
+      "name": "Paulo Dybala",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "didier-deschamps",
+      "name": "Didier Deschamps",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "edwin-van-der-sar",
+      "name": "Edwin van der Sar",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nemanja-vidic",
+      "name": "Nemanja Vidić",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "raphael-varane",
+      "name": "Raphaël Varane",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jurgen-klinsmann",
+      "name": "Jürgen Klinsmann",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "louis-van-gaal",
+      "name": "Louis van Gaal",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mario-gotze",
+      "name": "Mario Götze",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "robinho",
+      "name": "Robinho",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "wesley-sneijder",
+      "name": "Wesley Sneijder",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bastian-schweinsteiger",
+      "name": "Bastian Schweinsteiger",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "david-silva",
+      "name": "David Silva",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "diego-godin",
+      "name": "Diego Godín",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pepe",
+      "name": "Pepe",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sami-khedira",
+      "name": "Sami Khedira",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mats-hummels",
+      "name": "Mats Hummels",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pepe-reina",
+      "name": "Pepe Reina",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "petr-cech",
+      "name": "Petr Čech",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "juan-manuel-mata",
+      "name": "Juan Manuel Mata",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "keisuke-honda",
+      "name": "Keisuke Honda",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lilian-thuram",
+      "name": "Lilian Thuram",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nani",
+      "name": "Nani",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "victor-valdes",
+      "name": "Víctor Valdés",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "diego-costa",
+      "name": "Diego Costa",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kevin-keegan",
+      "name": "Kevin Keegan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pierre-emerick-aubameyang",
+      "name": "Pierre-Emerick Aubameyang",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "hidetoshi-nakata",
+      "name": "Hidetoshi Nakata",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "keylor-navas",
+      "name": "Keylor Navas",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "wojciech-szczesny",
+      "name": "Wojciech Szczęsny",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andrey-arshavin",
+      "name": "Andrey Arshavin",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "emmanuel-adebayor",
+      "name": "Emmanuel Adebayor",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "hristo-stoichkov",
+      "name": "Hristo Stoichkov",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "xherdan-shaqiri",
+      "name": "Xherdan Shaqiri",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "alvaro-arbeloa",
+      "name": "Álvaro Arbeloa",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dani-carvajal",
+      "name": "Dani Carvajal",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "david-trezeguet",
+      "name": "David Trezeguet",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "deco",
+      "name": "Deco",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "klaas-jan-huntelaar",
+      "name": "Klaas-Jan Huntelaar",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marc-andre-ter-stegen",
+      "name": "Marc-André ter Stegen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mario-kempes",
+      "name": "Mario Kempes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "nicolas-anelka",
+      "name": "Nicolas Anelka",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andre-schurrle",
+      "name": "André Schürrle",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gabriel-batistuta",
+      "name": "Gabriel Batistuta",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mikel-arteta",
+      "name": "Mikel Arteta",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "patrice-evra",
+      "name": "Patrice Evra",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ronald-koeman",
+      "name": "Ronald Koeman",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "eric-abidal",
+      "name": "Éric Abidal",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dino-zoff",
+      "name": "Dino Zoff",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "luis-enrique-martinez-garcia",
+      "name": "Luis Enrique Martínez García",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "raul-albiol",
+      "name": "Raúl Albiol",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "samuel-umtiti",
+      "name": "Samuel Umtiti",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "diego-simeone",
+      "name": "Diego Simeone",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "hulk",
+      "name": "Hulk",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jens-lehmann",
+      "name": "Jens Lehmann",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "julian-draxler",
+      "name": "Julian Draxler",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "makoto-hasebe",
+      "name": "Makoto Hasebe",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "per-mertesacker",
+      "name": "Per Mertesacker",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rafael-van-der-vaart",
+      "name": "Rafael van der Vaart",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "clarence-seedorf",
+      "name": "Clarence Seedorf",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "igor-akinfeyev",
+      "name": "Igor Akinfeyev",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ilkay-gundogan",
+      "name": "İlkay Gündoğan",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "khvicha-kvaratskhelia",
+      "name": "Khvicha Kvaratskhelia",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "oleg-blokhin",
+      "name": "Oleg Blokhin",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ansu-fati",
+      "name": "Ansu Fati",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "karl-heinz-rummenigge",
+      "name": "Karl-Heinz Rummenigge",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "peter-schmeichel",
+      "name": "Peter Schmeichel",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ricardo-carvalho",
+      "name": "Ricardo Carvalho",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ricardo-quaresma",
+      "name": "Ricardo Quaresma",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "shkodran-mustafi",
+      "name": "Shkodran Mustafi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bruno-alves",
+      "name": "Bruno Alves",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fred",
+      "name": "Fred",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "julio-cesar-soares-espindola",
+      "name": "Júlio César Soares Espíndola",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kasper-schmeichel",
+      "name": "Kasper Schmeichel",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marta-vieira-da-silva",
+      "name": "Marta Vieira da Silva",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "santi-cazorla",
+      "name": "Santi Cazorla",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sergio-romero",
+      "name": "Sergio Romero",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thomas-vermaelen",
+      "name": "Thomas Vermaelen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "yasuhito-endo",
+      "name": "Yasuhito Endō",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ciro-immobile",
+      "name": "Ciro Immobile",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "denis-cheryshev",
+      "name": "Denis Cheryshev",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fabien-barthez",
+      "name": "Fabien Barthez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "felipao",
+      "name": "Felipão",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "franco-baresi",
+      "name": "Franco Baresi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kazuyoshi-miura",
+      "name": "Kazuyoshi Miura",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kevin-prince-boateng",
+      "name": "Kevin-Prince Boateng",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "leonardo-nascimento-de-araujo",
+      "name": "Leonardo Nascimento de Araújo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marcel-desailly",
+      "name": "Marcel Desailly",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "paul-breitner",
+      "name": "Paul Breitner",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "socrates",
+      "name": "Sócrates",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "toby-alderweireld",
+      "name": "Toby Alderweireld",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "willian-borges-da-silva",
+      "name": "Willian Borges da Silva",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "benjamin-pavard",
+      "name": "Benjamin Pavard",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "claudio-bravo",
+      "name": "Claudio Bravo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "diego-milito",
+      "name": "Diego Milito",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dimitar-berbatov",
+      "name": "Dimitar Berbatov",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "eiji-kawashima",
+      "name": "Eiji Kawashima",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jupp-heynckes",
+      "name": "Jupp Heynckes",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rudi-voller",
+      "name": "Rudi Völler",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "vicente-del-bosque",
+      "name": "Vicente del Bosque",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "alexandre-pato",
+      "name": "Alexandre Pato",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andreas-brehme",
+      "name": "Andreas Brehme",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "cacau",
+      "name": "Cacau",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "carlos-valderrama",
+      "name": "Carlos Valderrama",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "chris-smalling",
+      "name": "Chris Smalling",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dimitri-payet",
+      "name": "Dimitri Payet",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fernando-llorente",
+      "name": "Fernando Llorente",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "just-fontaine",
+      "name": "Just Fontaine",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kepa-arrizabalaga",
+      "name": "Kepa Arrizabalaga",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "thiago-motta",
+      "name": "Thiago Motta",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "adil-rami",
+      "name": "Adil Rami",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andrea-barzagli",
+      "name": "Andrea Barzagli",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bojan-krkic",
+      "name": "Bojan Krkić",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "giovanni-van-bronckhorst",
+      "name": "Giovanni van Bronckhorst",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "gordon-banks",
+      "name": "Gordon Banks",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "marco-materazzi",
+      "name": "Marco Materazzi",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "mark-van-bommel",
+      "name": "Mark van Bommel",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "pedro-rodriguez-ledesma",
+      "name": "Pedro Rodríguez Ledesma",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rafael-marquez",
+      "name": "Rafael Márquez",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "rui-patricio",
+      "name": "Rui Patrício",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sulley-muntari",
+      "name": "Sulley Muntari",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sunil-chhetri",
+      "name": "Sunil Chhetri",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "victor-osimhen",
+      "name": "Victor Osimhen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "anthony-martial",
+      "name": "Anthony Martial",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bixente-lizarazu",
+      "name": "Bixente Lizarazu",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "claude-makelele",
+      "name": "Claude Makélélé",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dragan-stojkovic",
+      "name": "Dragan Stojković",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jan-oblak",
+      "name": "Jan Oblak",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "joao-moutinho",
+      "name": "João Moutinho",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "laurent-blanc",
+      "name": "Laurent Blanc",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "maicon-douglas-sisenando",
+      "name": "Maicon Douglas Sisenando",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "raul-meireles",
+      "name": "Raul Meireles",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "robert-pires",
+      "name": "Robert Pirès",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "tito-vilanova",
+      "name": "Tito Vilanova",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "yoshito-okubo",
+      "name": "Yoshito Okubo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "fritz-walter",
+      "name": "Fritz Walter",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sepp-maier",
+      "name": "Sepp Maier",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "sandor-kocsis",
+      "name": "Sándor Kocsis",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "dante",
+      "name": "Dante",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "geoff-hurst",
+      "name": "Geoff Hurst",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "enzo-francescoli",
+      "name": "Enzo Francescoli",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "raymond-domenech",
+      "name": "Raymond Domenech",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andoni-zubizarreta",
+      "name": "Andoni Zubizarreta",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "karel-poborsky",
+      "name": "Karel Poborský",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "andreas-kopke",
+      "name": "Andreas Köpke",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jimmy-floyd-hasselbaink",
+      "name": "Jimmy Floyd Hasselbaink",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ron-robert-zieler",
+      "name": "Ron-Robert Zieler",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "harald-schumacher",
+      "name": "Harald Schumacher",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "lucien-laurent",
+      "name": "Lucien Laurent",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jens-nowotny",
+      "name": "Jens Nowotny",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "julius-bielik",
+      "name": "Július Bielik",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "jennifer-hermoso",
+      "name": "Jennifer Hermoso",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "karlheinz-forster",
+      "name": "Karlheinz Förster",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "kaj-leo-johannesen",
+      "name": "Kaj Leo Johannesen",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "eike-immel",
+      "name": "Eike Immel",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "ray-wilson",
+      "name": "Ray Wilson",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "winston-bogarde",
+      "name": "Winston Bogarde",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "anja-mittag",
+      "name": "Anja Mittag",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bordon",
+      "name": "Bordon",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "john-connelly",
+      "name": "John Connelly",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "luis-rubiales",
+      "name": "Luis Rubiales",
+      "motivo": "fora do limite do portão de jogo (38)"
+    },
+    {
+      "id": "bruno-cabrerizo",
+      "name": "Bruno Cabrerizo",
+      "motivo": "fora do limite do portão de jogo (38)"
+    }
+  ]
+}

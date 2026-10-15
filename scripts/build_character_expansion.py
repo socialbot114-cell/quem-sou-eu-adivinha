@@ -13,6 +13,7 @@ BATCH_150 = ROOT / "scripts/character-batch-150.json"
 EXPECTED_BATCH_SIZE = 150
 BATCH_200 = ROOT / "scripts/character-batch-200.json"
 EXPECTED_BATCH_200_SIZE = 200
+BATCH_BANK_FUTEBOL = ROOT / "scripts/character-batch-bank-futebol.json"
 
 QUESTION_SPECS = {
     "Outros esportes": [
@@ -352,7 +353,7 @@ def build_batch_people(
     existing_people: list[dict],
     expansion_questions: list[dict],
     batch_path: Path = BATCH_150,
-    expected_size: int = EXPECTED_BATCH_SIZE,
+    expected_size: int | None = EXPECTED_BATCH_SIZE,
 ) -> list[dict]:
     primary = json.loads(PRIMARY.read_text(encoding="utf-8"))
     batch = json.loads(batch_path.read_text(encoding="utf-8"))
@@ -431,7 +432,7 @@ def build_batch_people(
             })
             known_ids.add(identifier)
 
-    if len(additions) != expected_size:
+    if expected_size is not None and len(additions) != expected_size:
         raise ValueError(f"expected exactly {expected_size} new characters in {batch_path.name}, got {len(additions)}")
     return additions
 
@@ -516,6 +517,9 @@ def build() -> dict:
     })
     people.extend(build_batch_people(people, questions, BATCH_150, EXPECTED_BATCH_SIZE))
     people.extend(build_batch_people(people, questions, BATCH_200, EXPECTED_BATCH_200_SIZE))
+    # Footballers from the editorial bank, kept only after JERV accepted their main-role claim (build_bank_football_wave.py).
+    if BATCH_BANK_FUTEBOL.is_file():
+        people.extend(build_batch_people(people, questions, BATCH_BANK_FUTEBOL, expected_size=None))
     # Optional Wikidata facts for artists added in earlier batches (see build_optional_facts.py).
     from apply_primary_category_features import optional_facts
     facts = optional_facts()

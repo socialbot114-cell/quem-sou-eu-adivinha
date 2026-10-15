@@ -1,0 +1,2072 @@
+{
+  "generatedAt": "2026-10-15",
+  "method": "Player articles linked in the squads of the winning teams; only winning squads are read.",
+  "license": "CC BY-SA 4.0",
+  "tournaments": [
+    {
+      "tournament": "1930 FIFA World Cup",
+      "winner": "Uruguay",
+      "page": "https://en.wikipedia.org/wiki/1930_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1934 FIFA World Cup",
+      "winner": "Italy",
+      "page": "https://en.wikipedia.org/wiki/1934_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1938 FIFA World Cup",
+      "winner": "Italy",
+      "page": "https://en.wikipedia.org/wiki/1938_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1950 FIFA World Cup",
+      "winner": "Uruguay",
+      "page": "https://en.wikipedia.org/wiki/1950_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1954 FIFA World Cup",
+      "winner": "West Germany",
+      "page": "https://en.wikipedia.org/wiki/1954_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1958 FIFA World Cup",
+      "winner": "Brazil",
+      "page": "https://en.wikipedia.org/wiki/1958_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1962 FIFA World Cup",
+      "winner": "Brazil",
+      "page": "https://en.wikipedia.org/wiki/1962_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1966 FIFA World Cup",
+      "winner": "England",
+      "page": "https://en.wikipedia.org/wiki/1966_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1970 FIFA World Cup",
+      "winner": "Brazil",
+      "page": "https://en.wikipedia.org/wiki/1970_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1974 FIFA World Cup",
+      "winner": "West Germany",
+      "page": "https://en.wikipedia.org/wiki/1974_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1978 FIFA World Cup",
+      "winner": "Argentina",
+      "page": "https://en.wikipedia.org/wiki/1978_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1982 FIFA World Cup",
+      "winner": "Italy",
+      "page": "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1986 FIFA World Cup",
+      "winner": "Argentina",
+      "page": "https://en.wikipedia.org/wiki/1986_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1990 FIFA World Cup",
+      "winner": "West Germany",
+      "page": "https://en.wikipedia.org/wiki/1990_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1994 FIFA World Cup",
+      "winner": "Brazil",
+      "page": "https://en.wikipedia.org/wiki/1994_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "1998 FIFA World Cup",
+      "winner": "France",
+      "page": "https://en.wikipedia.org/wiki/1998_FIFA_World_Cup_squads",
+      "players": 22
+    },
+    {
+      "tournament": "2002 FIFA World Cup",
+      "winner": "Brazil",
+      "page": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2006 FIFA World Cup",
+      "winner": "Italy",
+      "page": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2010 FIFA World Cup",
+      "winner": "Spain",
+      "page": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2014 FIFA World Cup",
+      "winner": "Germany",
+      "page": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2018 FIFA World Cup",
+      "winner": "France",
+      "page": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2022 FIFA World Cup",
+      "winner": "Argentina",
+      "page": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads",
+      "players": 26
+    },
+    {
+      "tournament": "1991 FIFA Women's World Cup",
+      "winner": "United States",
+      "page": "https://en.wikipedia.org/wiki/1991_FIFA_Women's_World_Cup_squads",
+      "players": 18
+    },
+    {
+      "tournament": "1995 FIFA Women's World Cup",
+      "winner": "Norway",
+      "page": "https://en.wikipedia.org/wiki/1995_FIFA_Women's_World_Cup_squads",
+      "players": 20
+    },
+    {
+      "tournament": "1999 FIFA Women's World Cup",
+      "winner": "United States",
+      "page": "https://en.wikipedia.org/wiki/1999_FIFA_Women's_World_Cup_squads",
+      "players": 20
+    },
+    {
+      "tournament": "2003 FIFA Women's World Cup",
+      "winner": "Germany",
+      "page": "https://en.wikipedia.org/wiki/2003_FIFA_Women's_World_Cup_squads",
+      "players": 20
+    },
+    {
+      "tournament": "2007 FIFA Women's World Cup",
+      "winner": "Germany",
+      "page": "https://en.wikipedia.org/wiki/2007_FIFA_Women's_World_Cup_squads",
+      "players": 21
+    },
+    {
+      "tournament": "2011 FIFA Women's World Cup",
+      "winner": "Japan",
+      "page": "https://en.wikipedia.org/wiki/2011_FIFA_Women's_World_Cup_squads",
+      "players": 21
+    },
+    {
+      "tournament": "2015 FIFA Women's World Cup",
+      "winner": "United States",
+      "page": "https://en.wikipedia.org/wiki/2015_FIFA_Women's_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2019 FIFA Women's World Cup",
+      "winner": "United States",
+      "page": "https://en.wikipedia.org/wiki/2019_FIFA_Women's_World_Cup_squads",
+      "players": 23
+    },
+    {
+      "tournament": "2023 FIFA Women's World Cup",
+      "winner": "Spain",
+      "page": "https://en.wikipedia.org/wiki/2023_FIFA_Women's_World_Cup_squads",
+      "players": 0
+    }
+  ],
+  "champions": {
+    "Abby Dahlkemper": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Abby Wambach": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Adil Rami": [
+      "2018 FIFA World Cup"
+    ],
+    "Ado (footballer)": [
+      "1970 FIFA World Cup"
+    ],
+    "Adrianna Franch": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Agnete Carlsen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Alain Boghossian": [
+      "1998 FIFA World Cup"
+    ],
+    "Alan Ball Jr.": [
+      "1966 FIFA World Cup"
+    ],
+    "Alberto Gilardino": [
+      "2006 FIFA World Cup"
+    ],
+    "Alberto Tarantini": [
+      "1978 FIFA World Cup"
+    ],
+    "Alcides Ghiggia": [
+      "1950 FIFA World Cup"
+    ],
+    "Aldair": [
+      "1994 FIFA World Cup"
+    ],
+    "Aldo Donati (footballer)": [
+      "1938 FIFA World Cup"
+    ],
+    "Aldo Olivieri": [
+      "1938 FIFA World Cup"
+    ],
+    "Alessandro Altobelli": [
+      "1982 FIFA World Cup"
+    ],
+    "Alessandro Del Piero": [
+      "2006 FIFA World Cup"
+    ],
+    "Alessandro Nesta": [
+      "2006 FIFA World Cup"
+    ],
+    "Alex Morgan": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Alexis Mac Allister": [
+      "2022 FIFA World Cup"
+    ],
+    "Alfred Pfaff": [
+      "1954 FIFA World Cup"
+    ],
+    "Alfredo Foni": [
+      "1938 FIFA World Cup"
+    ],
+    "Ali Krieger": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Allie Long": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Alphonse Areola": [
+      "2018 FIFA World Cup"
+    ],
+    "Altair Gomes de Figueiredo": [
+      "1962 FIFA World Cup"
+    ],
+    "Alyssa Naeher": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Amarildo Tavares da Silveira": [
+      "1962 FIFA World Cup"
+    ],
+    "Amedeo Biavati": [
+      "1938 FIFA World Cup"
+    ],
+    "Amy Griffin": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Amy Rodriguez": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Américo Gallego": [
+      "1978 FIFA World Cup"
+    ],
+    "Andrea Barzagli": [
+      "2006 FIFA World Cup"
+    ],
+    "Andrea Pirlo": [
+      "2006 FIFA World Cup"
+    ],
+    "Andreas Brehme": [
+      "1990 FIFA World Cup"
+    ],
+    "Andreas Köpke": [
+      "1990 FIFA World Cup"
+    ],
+    "Andreas Möller": [
+      "1990 FIFA World Cup"
+    ],
+    "André Schürrle": [
+      "2014 FIFA World Cup"
+    ],
+    "Andrés Iniesta": [
+      "2010 FIFA World Cup"
+    ],
+    "Anfilogino Guarisi": [
+      "1934 FIFA World Cup"
+    ],
+    "Angelo Peruzzi": [
+      "2006 FIFA World Cup"
+    ],
+    "Angelo Schiavio": [
+      "1934 FIFA World Cup"
+    ],
+    "Anita Waage": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Anja Mittag": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Ann Kristin Aarønes": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Anne Nymark Andersen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Annike Krahn": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Antoine Griezmann": [
+      "2018 FIFA World Cup"
+    ],
+    "Antonio Cabrini": [
+      "1982 FIFA World Cup"
+    ],
+    "Antônio Wilson Vieira Honório": [
+      "1962 FIFA World Cup"
+    ],
+    "Aníbal Paz": [
+      "1950 FIFA World Cup"
+    ],
+    "April Heinrichs": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Ariane Hingst": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Armando Castellazzi": [
+      "1934 FIFA World Cup"
+    ],
+    "Ashlyn Harris": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Asuna Tanaka": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Attilio Demaría": [
+      "1934 FIFA World Cup"
+    ],
+    "Attilio Ferraris": [
+      "1934 FIFA World Cup"
+    ],
+    "Aya Miyama": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Aya Sameshima": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Ayumi Kaihori": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Azusa Iwashimizu": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Babett Peter": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Baldocchi": [
+      "1970 FIFA World Cup"
+    ],
+    "Bastian Schweinsteiger": [
+      "2014 FIFA World Cup"
+    ],
+    "Bebeto": [
+      "1994 FIFA World Cup"
+    ],
+    "Becky Sauerbrunn": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Benedikt Höwedes": [
+      "2014 FIFA World Cup"
+    ],
+    "Benjamin Mendy": [
+      "2018 FIFA World Cup"
+    ],
+    "Benjamin Pavard": [
+      "2018 FIFA World Cup"
+    ],
+    "Bente Nordby": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Bernard Diomède": [
+      "1998 FIFA World Cup"
+    ],
+    "Bernard Lama": [
+      "1998 FIFA World Cup"
+    ],
+    "Bernd Hölzenbein": [
+      "1974 FIFA World Cup"
+    ],
+    "Bernhard Cullmann": [
+      "1974 FIFA World Cup"
+    ],
+    "Bernhard Klodt": [
+      "1954 FIFA World Cup"
+    ],
+    "Berti Vogts": [
+      "1974 FIFA World Cup"
+    ],
+    "Bettina Wiegmann": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Birgit Prinz": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Bixente Lizarazu": [
+      "1998 FIFA World Cup"
+    ],
+    "Blaise Matuidi": [
+      "2018 FIFA World Cup"
+    ],
+    "Bobby Charlton": [
+      "1966 FIFA World Cup"
+    ],
+    "Bobby Moore": [
+      "1966 FIFA World Cup"
+    ],
+    "Bodo Illgner": [
+      "1990 FIFA World Cup"
+    ],
+    "Branco (footballer)": [
+      "1994 FIFA World Cup"
+    ],
+    "Brandi Chastain": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Briana Scurry": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Brito (footballer, born 1939)": [
+      "1970 FIFA World Cup"
+    ],
+    "Bruno Chizzo": [
+      "1938 FIFA World Cup"
+    ],
+    "Bruno Conti": [
+      "1982 FIFA World Cup"
+    ],
+    "Cafu": [
+      "1994 FIFA World Cup",
+      "2002 FIFA World Cup"
+    ],
+    "Carin Jennings-Gabarra": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Carla Overbeck": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Carles Puyol": [
+      "2010 FIFA World Cup"
+    ],
+    "Carli Lloyd": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Carlo Ceresoli": [
+      "1938 FIFA World Cup"
+    ],
+    "Carlos Alberto Torres": [
+      "1970 FIFA World Cup"
+    ],
+    "Carlos Daniel Tapia": [
+      "1986 FIFA World Cup"
+    ],
+    "Carlos José Castilho": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Carlos Marchena": [
+      "2010 FIFA World Cup"
+    ],
+    "Carlos Riolfo": [
+      "1930 FIFA World Cup"
+    ],
+    "Carlos Romero (footballer, born 1927)": [
+      "1950 FIFA World Cup"
+    ],
+    "Cesc Fàbregas": [
+      "2010 FIFA World Cup"
+    ],
+    "Christen Press": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Christian Karembeu": [
+      "1998 FIFA World Cup"
+    ],
+    "Christie Pearce": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Christie Rampone": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Christoph Kramer": [
+      "2014 FIFA World Cup"
+    ],
+    "Christophe Dugarry": [
+      "1998 FIFA World Cup"
+    ],
+    "Cindy Parlow Cone": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Claudio Borghi (football manager)": [
+      "1986 FIFA World Cup"
+    ],
+    "Claudio Gentile": [
+      "1982 FIFA World Cup"
+    ],
+    "Clodoaldo": [
+      "1970 FIFA World Cup"
+    ],
+    "Cláudio Taffarel": [
+      "1994 FIFA World Cup"
+    ],
+    "Conduelo Píriz": [
+      "1930 FIFA World Cup"
+    ],
+    "Conny Pohlers": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Corentin Tolisso": [
+      "2018 FIFA World Cup"
+    ],
+    "Cristian Romero (footballer, born 1998)": [
+      "2022 FIFA World Cup"
+    ],
+    "Cristian Zaccardo": [
+      "2006 FIFA World Cup"
+    ],
+    "Crystal Dunn": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Dadá Maravilha": [
+      "1970 FIFA World Cup"
+    ],
+    "Daniel Bertoni": [
+      "1978 FIFA World Cup"
+    ],
+    "Daniel Killer": [
+      "1978 FIFA World Cup"
+    ],
+    "Daniel Passarella": [
+      "1978 FIFA World Cup",
+      "1986 FIFA World Cup"
+    ],
+    "Daniele De Rossi": [
+      "2006 FIFA World Cup"
+    ],
+    "Daniele Massaro": [
+      "1982 FIFA World Cup"
+    ],
+    "Danielle Fotopoulos": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "David Silva": [
+      "2010 FIFA World Cup"
+    ],
+    "David Trezeguet": [
+      "1998 FIFA World Cup"
+    ],
+    "David Villa": [
+      "2010 FIFA World Cup"
+    ],
+    "Debbie Rademacher": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Denílson (footballer, born 1977)": [
+      "2002 FIFA World Cup"
+    ],
+    "Dida (footballer, born 1973)": [
+      "2002 FIFA World Cup"
+    ],
+    "Didier Deschamps": [
+      "1998 FIFA World Cup"
+    ],
+    "Diego Maradona": [
+      "1986 FIFA World Cup"
+    ],
+    "Dieter Herzog": [
+      "1974 FIFA World Cup"
+    ],
+    "Dino Sani": [
+      "1958 FIFA World Cup"
+    ],
+    "Dino Zoff": [
+      "1982 FIFA World Cup"
+    ],
+    "Djalma Santos": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Djibril Sidibé (footballer, born 1992)": [
+      "2018 FIFA World Cup"
+    ],
+    "Domingo Tejera": [
+      "1930 FIFA World Cup"
+    ],
+    "Dunga": [
+      "1994 FIFA World Cup"
+    ],
+    "Edmílson": [
+      "2002 FIFA World Cup"
+    ],
+    "Edu (footballer, born 1949)": [
+      "1970 FIFA World Cup"
+    ],
+    "Edvaldo Alves de Santa Rosa": [
+      "1958 FIFA World Cup"
+    ],
+    "Edílson": [
+      "2002 FIFA World Cup"
+    ],
+    "Emiliano Martínez": [
+      "2022 FIFA World Cup"
+    ],
+    "Emilio Recoba": [
+      "1930 FIFA World Cup"
+    ],
+    "Emily Sonnett": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Emmanuel Petit": [
+      "1998 FIFA World Cup"
+    ],
+    "Enrique Ballestrero": [
+      "1930 FIFA World Cup"
+    ],
+    "Enrique Guaita": [
+      "1934 FIFA World Cup"
+    ],
+    "Enzo Fernández": [
+      "2022 FIFA World Cup"
+    ],
+    "Eraldo Monzeglio": [
+      "1934 FIFA World Cup",
+      "1938 FIFA World Cup"
+    ],
+    "Erik Durm": [
+      "2014 FIFA World Cup"
+    ],
+    "Ernesto Mascheroni": [
+      "1930 FIFA World Cup"
+    ],
+    "Ernesto Vidal": [
+      "1950 FIFA World Cup"
+    ],
+    "Eusebio Tejera": [
+      "1950 FIFA World Cup"
+    ],
+    "Everaldo (footballer, born 1944)": [
+      "1970 FIFA World Cup"
+    ],
+    "Exequiel Palacios": [
+      "2022 FIFA World Cup"
+    ],
+    "Fabien Barthez": [
+      "1998 FIFA World Cup"
+    ],
+    "Fabio Cannavaro": [
+      "2006 FIFA World Cup"
+    ],
+    "Fabio Grosso": [
+      "2006 FIFA World Cup"
+    ],
+    "Fatmire Alushi": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Felice Borel": [
+      "1934 FIFA World Cup"
+    ],
+    "Fernando Llorente": [
+      "2010 FIFA World Cup"
+    ],
+    "Fernando Torres": [
+      "2010 FIFA World Cup"
+    ],
+    "Filippo Inzaghi": [
+      "2006 FIFA World Cup"
+    ],
+    "Florian Thauvin": [
+      "2018 FIFA World Cup"
+    ],
+    "Fontana (footballer)": [
+      "1970 FIFA World Cup"
+    ],
+    "Francesco Graziani": [
+      "1982 FIFA World Cup"
+    ],
+    "Francesco Totti": [
+      "2006 FIFA World Cup"
+    ],
+    "Franco Armani": [
+      "2022 FIFA World Cup"
+    ],
+    "Franco Baresi": [
+      "1982 FIFA World Cup"
+    ],
+    "Franco Causio": [
+      "1982 FIFA World Cup"
+    ],
+    "Franco Selvaggi": [
+      "1982 FIFA World Cup"
+    ],
+    "Frank Leboeuf": [
+      "1998 FIFA World Cup"
+    ],
+    "Frank Mill": [
+      "1990 FIFA World Cup"
+    ],
+    "Franz Beckenbauer": [
+      "1974 FIFA World Cup"
+    ],
+    "Fritz Laband": [
+      "1954 FIFA World Cup"
+    ],
+    "Fritz Walter": [
+      "1954 FIFA World Cup"
+    ],
+    "Fulvio Collovati": [
+      "1982 FIFA World Cup"
+    ],
+    "Félix (footballer)": [
+      "1970 FIFA World Cup"
+    ],
+    "Gabriele Oriali": [
+      "1982 FIFA World Cup"
+    ],
+    "Gaetano Scirea": [
+      "1982 FIFA World Cup"
+    ],
+    "Garrincha": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Gennaro Gattuso": [
+      "2006 FIFA World Cup"
+    ],
+    "Geoff Hurst": [
+      "1966 FIFA World Cup"
+    ],
+    "George Cohen": [
+      "1966 FIFA World Cup"
+    ],
+    "George Eastham": [
+      "1966 FIFA World Cup"
+    ],
+    "Gerard Piqué": [
+      "2010 FIFA World Cup"
+    ],
+    "Gerd Müller": [
+      "1974 FIFA World Cup"
+    ],
+    "Germán Pezzella": [
+      "2022 FIFA World Cup"
+    ],
+    "Gerry Byrne (footballer, born 1938)": [
+      "1966 FIFA World Cup"
+    ],
+    "Gerónimo Rulli": [
+      "2022 FIFA World Cup"
+    ],
+    "Giampiero Marini": [
+      "1982 FIFA World Cup"
+    ],
+    "Giancarlo Antognoni": [
+      "1982 FIFA World Cup"
+    ],
+    "Gianluca Zambrotta": [
+      "2006 FIFA World Cup"
+    ],
+    "Gianluigi Buffon": [
+      "2006 FIFA World Cup"
+    ],
+    "Gianpiero Combi": [
+      "1934 FIFA World Cup"
+    ],
+    "Gilberto Silva": [
+      "2002 FIFA World Cup"
+    ],
+    "Gilmar Rinaldi": [
+      "1994 FIFA World Cup"
+    ],
+    "Gino Colaussi": [
+      "1938 FIFA World Cup"
+    ],
+    "Giovanni Ferrari": [
+      "1934 FIFA World Cup",
+      "1938 FIFA World Cup"
+    ],
+    "Giovanni Galli": [
+      "1982 FIFA World Cup"
+    ],
+    "Giuseppe Bergomi": [
+      "1982 FIFA World Cup"
+    ],
+    "Giuseppe Cavanna": [
+      "1934 FIFA World Cup"
+    ],
+    "Giuseppe Dossena": [
+      "1982 FIFA World Cup"
+    ],
+    "Giuseppe Meazza": [
+      "1934 FIFA World Cup",
+      "1938 FIFA World Cup"
+    ],
+    "Gonzalo Montiel": [
+      "2022 FIFA World Cup"
+    ],
+    "Gordon Banks": [
+      "1966 FIFA World Cup"
+    ],
+    "Gro Espeseth": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Guido Buchwald": [
+      "1990 FIFA World Cup"
+    ],
+    "Guido Masetti": [
+      "1934 FIFA World Cup",
+      "1938 FIFA World Cup"
+    ],
+    "Guido Rodríguez": [
+      "2022 FIFA World Cup"
+    ],
+    "Gylmar dos Santos Neves": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Gérson": [
+      "1970 FIFA World Cup"
+    ],
+    "Günter Hermann": [
+      "1990 FIFA World Cup"
+    ],
+    "Günter Netzer": [
+      "1974 FIFA World Cup"
+    ],
+    "Hans Bauer (footballer)": [
+      "1954 FIFA World Cup"
+    ],
+    "Hans Pflügler": [
+      "1990 FIFA World Cup"
+    ],
+    "Hans Schäfer": [
+      "1954 FIFA World Cup"
+    ],
+    "Hans-Georg Schwarzenbeck": [
+      "1974 FIFA World Cup"
+    ],
+    "Heather O'Reilly": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Hege Gunnerød": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Hege Riise": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Heidi Støre": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Heinz Flohe": [
+      "1974 FIFA World Cup"
+    ],
+    "Heinz Kubsch": [
+      "1954 FIFA World Cup"
+    ],
+    "Heinz Kwiatkowski": [
+      "1954 FIFA World Cup"
+    ],
+    "Helmut Kremers": [
+      "1974 FIFA World Cup"
+    ],
+    "Helmut Rahn": [
+      "1954 FIFA World Cup"
+    ],
+    "Herbert Erhardt": [
+      "1954 FIFA World Cup"
+    ],
+    "Herbert Wimmer": [
+      "1974 FIFA World Cup"
+    ],
+    "Hilderaldo Bellini": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Homare Sawa": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Hope Solo": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Horst Eckel": [
+      "1954 FIFA World Cup"
+    ],
+    "Horst-Dieter Höttges": [
+      "1974 FIFA World Cup"
+    ],
+    "Hugo Lloris": [
+      "2018 FIFA World Cup"
+    ],
+    "Héctor Baley": [
+      "1978 FIFA World Cup"
+    ],
+    "Héctor Castro": [
+      "1930 FIFA World Cup"
+    ],
+    "Héctor Enrique": [
+      "1986 FIFA World Cup"
+    ],
+    "Héctor Scarone": [
+      "1930 FIFA World Cup"
+    ],
+    "Héctor Vilches": [
+      "1950 FIFA World Cup"
+    ],
+    "Héctor Zelada": [
+      "1986 FIFA World Cup"
+    ],
+    "Ian Callaghan": [
+      "1966 FIFA World Cup"
+    ],
+    "Iker Casillas": [
+      "2010 FIFA World Cup"
+    ],
+    "Ingrid Sternhoff": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Ivano Bordon": [
+      "1982 FIFA World Cup"
+    ],
+    "Jack Charlton": [
+      "1966 FIFA World Cup"
+    ],
+    "Jair Marinho": [
+      "1962 FIFA World Cup"
+    ],
+    "Jair da Costa": [
+      "1962 FIFA World Cup"
+    ],
+    "Jairzinho": [
+      "1970 FIFA World Cup"
+    ],
+    "Javi Martínez": [
+      "2010 FIFA World Cup"
+    ],
+    "Jessica McDonald": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Jesús Navas": [
+      "2010 FIFA World Cup"
+    ],
+    "Jimmy Armfield": [
+      "1966 FIFA World Cup"
+    ],
+    "Jimmy Greaves": [
+      "1966 FIFA World Cup"
+    ],
+    "Joan Capdevila": [
+      "2010 FIFA World Cup"
+    ],
+    "Joel Antônio Martins": [
+      "1958 FIFA World Cup"
+    ],
+    "Joel Camargo": [
+      "1970 FIFA World Cup"
+    ],
+    "John Connelly (footballer, born 1938)": [
+      "1966 FIFA World Cup"
+    ],
+    "Jorge Burruchaga": [
+      "1986 FIFA World Cup"
+    ],
+    "Jorge Olguín": [
+      "1978 FIFA World Cup"
+    ],
+    "Jorge Valdano": [
+      "1986 FIFA World Cup"
+    ],
+    "Jorginho (footballer, born 1964)": [
+      "1994 FIFA World Cup"
+    ],
+    "Josef Posipal": [
+      "1954 FIFA World Cup"
+    ],
+    "José Altafini": [
+      "1958 FIFA World Cup"
+    ],
+    "José Daniel Valencia": [
+      "1978 FIFA World Cup"
+    ],
+    "José Ely de Miranda": [
+      "1962 FIFA World Cup"
+    ],
+    "José Ferreira Franco": [
+      "1962 FIFA World Cup"
+    ],
+    "José Kléberson": [
+      "2002 FIFA World Cup"
+    ],
+    "José Leandro Andrade": [
+      "1930 FIFA World Cup"
+    ],
+    "José Luis Brown": [
+      "1986 FIFA World Cup"
+    ],
+    "José Luis Cuciuffo": [
+      "1986 FIFA World Cup"
+    ],
+    "José Macia": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "José Nasazzi": [
+      "1930 FIFA World Cup"
+    ],
+    "Joy Fawcett": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Juan Alberto Schiaffino": [
+      "1950 FIFA World Cup"
+    ],
+    "Juan Burgueño": [
+      "1950 FIFA World Cup"
+    ],
+    "Juan Carlos Calvo": [
+      "1930 FIFA World Cup"
+    ],
+    "Juan Carlos González": [
+      "1950 FIFA World Cup"
+    ],
+    "Juan Foyth": [
+      "2022 FIFA World Cup"
+    ],
+    "Juan Mata": [
+      "2010 FIFA World Cup"
+    ],
+    "Julian Draxler": [
+      "2014 FIFA World Cup"
+    ],
+    "Juliano Belletti": [
+      "2002 FIFA World Cup"
+    ],
+    "Julie Ertz": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Julie Foudy": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Julie Johnston": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Julio César Britos": [
+      "1950 FIFA World Cup"
+    ],
+    "Julio Olarticoechea": [
+      "1986 FIFA World Cup"
+    ],
+    "Julio Pérez (footballer, born 1926)": [
+      "1950 FIFA World Cup"
+    ],
+    "Julián Alvarez": [
+      "2022 FIFA World Cup"
+    ],
+    "Juninho Paulista": [
+      "2002 FIFA World Cup"
+    ],
+    "Jupp Heynckes": [
+      "1974 FIFA World Cup"
+    ],
+    "Jupp Kapellmann": [
+      "1974 FIFA World Cup"
+    ],
+    "Jurandir de Freitas": [
+      "1962 FIFA World Cup"
+    ],
+    "Jérôme Boateng": [
+      "2014 FIFA World Cup"
+    ],
+    "Júnior (footballer, born 1973)": [
+      "2002 FIFA World Cup"
+    ],
+    "Jürgen Grabowski": [
+      "1974 FIFA World Cup"
+    ],
+    "Jürgen Klinsmann": [
+      "1990 FIFA World Cup"
+    ],
+    "Jürgen Kohler": [
+      "1990 FIFA World Cup"
+    ],
+    "Kaká": [
+      "2002 FIFA World Cup"
+    ],
+    "Karina Maruyama": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Karl Mai": [
+      "1954 FIFA World Cup"
+    ],
+    "Karl-Heinz Metzner": [
+      "1954 FIFA World Cup"
+    ],
+    "Karl-Heinz Riedle": [
+      "1990 FIFA World Cup"
+    ],
+    "Kate Markgraf": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Kelley O'Hara": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Kerstin Garefrekes": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Kerstin Stegemann": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Kevin Großkreutz": [
+      "2014 FIFA World Cup"
+    ],
+    "Kim Maslin-Kammerdeiner": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Klaus Augenthaler": [
+      "1990 FIFA World Cup"
+    ],
+    "Kozue Ando": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Kristin Sandberg": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Kristine Lilly": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Kylian Mbappé": [
+      "2018 FIFA World Cup"
+    ],
+    "Kyoko Yano": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Lauren Holiday": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Laurent Blanc": [
+      "1998 FIFA World Cup"
+    ],
+    "Lautaro Martínez": [
+      "2022 FIFA World Cup"
+    ],
+    "Leandro Paredes": [
+      "2022 FIFA World Cup"
+    ],
+    "Leonardo Araújo": [
+      "1994 FIFA World Cup"
+    ],
+    "Leopoldo Luque": [
+      "1978 FIFA World Cup"
+    ],
+    "Lilian Thuram": [
+      "1998 FIFA World Cup"
+    ],
+    "Linda Bresonik": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Linda Hamilton (soccer)": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Linda Medalen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Lindsey Horan": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Lionel Charbonnier": [
+      "1998 FIFA World Cup"
+    ],
+    "Lionel Messi": [
+      "2022 FIFA World Cup"
+    ],
+    "Lisandro Martínez": [
+      "2022 FIFA World Cup"
+    ],
+    "Lorenzo Fernández": [
+      "1930 FIFA World Cup"
+    ],
+    "Lori Chalupny": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Lori Henry": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Lorrie Fair": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Lothar Matthäus": [
+      "1990 FIFA World Cup"
+    ],
+    "Luca Toni": [
+      "2006 FIFA World Cup"
+    ],
+    "Lucas Hernandez": [
+      "2018 FIFA World Cup"
+    ],
+    "Luigi Allemandi": [
+      "1934 FIFA World Cup"
+    ],
+    "Luigi Bertolini": [
+      "1934 FIFA World Cup"
+    ],
+    "Luis Galván": [
+      "1978 FIFA World Cup"
+    ],
+    "Luis Islas": [
+      "1986 FIFA World Cup"
+    ],
+    "Luis Monti": [
+      "1934 FIFA World Cup"
+    ],
+    "Luis Rijo": [
+      "1950 FIFA World Cup"
+    ],
+    "Luizão (footballer, born 1975)": [
+      "2002 FIFA World Cup"
+    ],
+    "Lukas Podolski": [
+      "2014 FIFA World Cup"
+    ],
+    "Lúcio": [
+      "2002 FIFA World Cup"
+    ],
+    "Mallory Pugh": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Mana Iwabuchi": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Manuel Neuer": [
+      "2014 FIFA World Cup"
+    ],
+    "Marcel Desailly": [
+      "1998 FIFA World Cup"
+    ],
+    "Marcelo Trobbiani": [
+      "1986 FIFA World Cup"
+    ],
+    "Marco Amelia": [
+      "2006 FIFA World Cup"
+    ],
+    "Marco Antônio (footballer, born 1951)": [
+      "1970 FIFA World Cup"
+    ],
+    "Marco Materazzi": [
+      "2006 FIFA World Cup"
+    ],
+    "Marco Tardelli": [
+      "1982 FIFA World Cup"
+    ],
+    "Marcos Acuña": [
+      "2022 FIFA World Cup"
+    ],
+    "Marcos Roberto Silveira Reis": [
+      "2002 FIFA World Cup"
+    ],
+    "Maren Meinert": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Marianne Pettersen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Mario Genta": [
+      "1938 FIFA World Cup"
+    ],
+    "Mario Götze": [
+      "2014 FIFA World Cup"
+    ],
+    "Mario Kempes": [
+      "1978 FIFA World Cup"
+    ],
+    "Mario Perazzolo": [
+      "1938 FIFA World Cup"
+    ],
+    "Mario Pizziolo": [
+      "1934 FIFA World Cup"
+    ],
+    "Mario Varglien": [
+      "1934 FIFA World Cup"
+    ],
+    "Martin Peters": [
+      "1966 FIFA World Cup"
+    ],
+    "Martina Müller (footballer)": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Mary Harvey": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Massimo Oddo": [
+      "2006 FIFA World Cup"
+    ],
+    "Mats Hummels": [
+      "2014 FIFA World Cup"
+    ],
+    "Matthias Ginter": [
+      "2014 FIFA World Cup"
+    ],
+    "Matías González (footballer, born 1925)": [
+      "1950 FIFA World Cup"
+    ],
+    "Mauro Camoranesi": [
+      "2006 FIFA World Cup"
+    ],
+    "Mauro Ramos": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Mauro Silva": [
+      "1994 FIFA World Cup"
+    ],
+    "Max Morlock": [
+      "1954 FIFA World Cup"
+    ],
+    "Mazinho": [
+      "1994 FIFA World Cup"
+    ],
+    "Megan Rapinoe": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Meghan Klingenberg": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Megumi Kamionobe": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Megumi Takase": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Melanie Behringer": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Mengálvio Pedro Figueiró": [
+      "1962 FIFA World Cup"
+    ],
+    "Merete Myklebust": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Mesut Özil": [
+      "2014 FIFA World Cup"
+    ],
+    "Mia Hamm": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Michele Andreolo": [
+      "1938 FIFA World Cup"
+    ],
+    "Michelle Akers": [
+      "1991 FIFA Women's World Cup",
+      "1999 FIFA Women's World Cup"
+    ],
+    "Miguel Capuccini": [
+      "1930 FIFA World Cup"
+    ],
+    "Miguel Oviedo": [
+      "1978 FIFA World Cup"
+    ],
+    "Miho Fukumoto": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Miroslav Klose": [
+      "2014 FIFA World Cup"
+    ],
+    "Mizuho Sakaguchi": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Moacir Claudino Pinto": [
+      "1958 FIFA World Cup"
+    ],
+    "Morgan Brian": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Morgan Gautrat": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Márcio Santos (footballer, born 1969)": [
+      "1994 FIFA World Cup"
+    ],
+    "Mário Zagallo": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Müller (footballer, born 1966)": [
+      "1994 FIFA World Cup"
+    ],
+    "N'Golo Kanté": [
+      "2018 FIFA World Cup"
+    ],
+    "Nabil Fekir": [
+      "2018 FIFA World Cup"
+    ],
+    "Nadine Angerer": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Nahomi Kawasumi": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Nahuel Molina": [
+      "2022 FIFA World Cup"
+    ],
+    "Nery Pumpido": [
+      "1986 FIFA World Cup"
+    ],
+    "Nia Künzer": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Nicolás Otamendi": [
+      "2022 FIFA World Cup"
+    ],
+    "Nicolás Tagliafico": [
+      "2022 FIFA World Cup"
+    ],
+    "Nina Nymark Andersen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Nobby Stiles": [
+      "1966 FIFA World Cup"
+    ],
+    "Norbert Nigbur": [
+      "1974 FIFA World Cup"
+    ],
+    "Norberto Alonso": [
+      "1978 FIFA World Cup"
+    ],
+    "Norman Hunter (footballer)": [
+      "1966 FIFA World Cup"
+    ],
+    "Nozomi Yamago": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Néstor Clausen": [
+      "1986 FIFA World Cup"
+    ],
+    "Nílton Santos": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Nílton de Sordi": [
+      "1958 FIFA World Cup"
+    ],
+    "Obdulio Varela": [
+      "1950 FIFA World Cup"
+    ],
+    "Olaf Thon": [
+      "1990 FIFA World Cup"
+    ],
+    "Olivier Giroud": [
+      "2018 FIFA World Cup"
+    ],
+    "Omar Larrosa": [
+      "1978 FIFA World Cup"
+    ],
+    "Oreco": [
+      "1958 FIFA World Cup"
+    ],
+    "Orlando Peçanha": [
+      "1958 FIFA World Cup"
+    ],
+    "Oscar Garré": [
+      "1986 FIFA World Cup"
+    ],
+    "Oscar Míguez": [
+      "1950 FIFA World Cup"
+    ],
+    "Oscar Ortiz (footballer)": [
+      "1978 FIFA World Cup"
+    ],
+    "Oscar Ruggeri": [
+      "1986 FIFA World Cup"
+    ],
+    "Osvaldo Ardiles": [
+      "1978 FIFA World Cup"
+    ],
+    "Ottmar Walter": [
+      "1954 FIFA World Cup"
+    ],
+    "Ousmane Dembélé": [
+      "2018 FIFA World Cup"
+    ],
+    "Pablo Dorado": [
+      "1930 FIFA World Cup"
+    ],
+    "Paolo Rossi": [
+      "1982 FIFA World Cup"
+    ],
+    "Papu Gómez": [
+      "2022 FIFA World Cup"
+    ],
+    "Patrick Vieira": [
+      "1998 FIFA World Cup"
+    ],
+    "Paul Breitner": [
+      "1974 FIFA World Cup"
+    ],
+    "Paul Mebus": [
+      "1954 FIFA World Cup"
+    ],
+    "Paul Pogba": [
+      "2018 FIFA World Cup"
+    ],
+    "Paul Steiner": [
+      "1990 FIFA World Cup"
+    ],
+    "Paulo Cézar Caju": [
+      "1970 FIFA World Cup"
+    ],
+    "Paulo Dybala": [
+      "2022 FIFA World Cup"
+    ],
+    "Paulo Sérgio (footballer, born June 1969)": [
+      "1994 FIFA World Cup"
+    ],
+    "Pedro (footballer, born 1987)": [
+      "2010 FIFA World Cup"
+    ],
+    "Pedro Cea": [
+      "1930 FIFA World Cup"
+    ],
+    "Pedro Pasculli": [
+      "1986 FIFA World Cup"
+    ],
+    "Pedro Petrone": [
+      "1930 FIFA World Cup"
+    ],
+    "Pelé": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup",
+      "1970 FIFA World Cup"
+    ],
+    "Pepe Reina": [
+      "2010 FIFA World Cup"
+    ],
+    "Per Mertesacker": [
+      "2014 FIFA World Cup"
+    ],
+    "Peregrino Anselmo": [
+      "1930 FIFA World Cup"
+    ],
+    "Peter Bonetti": [
+      "1966 FIFA World Cup"
+    ],
+    "Petra Wimbersky": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Philipp Lahm": [
+      "2014 FIFA World Cup"
+    ],
+    "Pia Wunderlich": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Piero Pasinati": [
+      "1938 FIFA World Cup"
+    ],
+    "Pierre Littbarski": [
+      "1990 FIFA World Cup"
+    ],
+    "Pietro Arcari": [
+      "1934 FIFA World Cup"
+    ],
+    "Pietro Ferraris": [
+      "1938 FIFA World Cup"
+    ],
+    "Pietro Rava": [
+      "1938 FIFA World Cup"
+    ],
+    "Pietro Serantoni": [
+      "1938 FIFA World Cup"
+    ],
+    "Pietro Vierchowod": [
+      "1982 FIFA World Cup"
+    ],
+    "Presnel Kimpembe": [
+      "2018 FIFA World Cup"
+    ],
+    "Raimond Aumann": [
+      "1990 FIFA World Cup"
+    ],
+    "Raimundo Orsi": [
+      "1934 FIFA World Cup"
+    ],
+    "Rainer Bonhof": [
+      "1974 FIFA World Cup"
+    ],
+    "Randi Leinan": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Raphaël Varane": [
+      "2018 FIFA World Cup"
+    ],
+    "Ray Wilson (English footballer)": [
+      "1966 FIFA World Cup"
+    ],
+    "Raí": [
+      "1994 FIFA World Cup"
+    ],
+    "Raúl Albiol": [
+      "2010 FIFA World Cup"
+    ],
+    "Reidun Seth": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Renate Lingor": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Renato Olmi": [
+      "1938 FIFA World Cup"
+    ],
+    "René Houseman": [
+      "1978 FIFA World Cup"
+    ],
+    "Ricardinho (footballer, born May 1976)": [
+      "2002 FIFA World Cup"
+    ],
+    "Ricardo Bochini": [
+      "1986 FIFA World Cup"
+    ],
+    "Ricardo Giusti": [
+      "1986 FIFA World Cup"
+    ],
+    "Ricardo La Volpe": [
+      "1978 FIFA World Cup"
+    ],
+    "Ricardo Rocha (footballer, born 1962)": [
+      "1994 FIFA World Cup"
+    ],
+    "Ricardo Villa": [
+      "1978 FIFA World Cup"
+    ],
+    "Richard Herrmann": [
+      "1954 FIFA World Cup"
+    ],
+    "Rivaldo": [
+      "2002 FIFA World Cup"
+    ],
+    "Rivellino": [
+      "1970 FIFA World Cup"
+    ],
+    "Robert Pires": [
+      "1998 FIFA World Cup"
+    ],
+    "Roberto Carlos": [
+      "2002 FIFA World Cup"
+    ],
+    "Roberto Miranda": [
+      "1970 FIFA World Cup"
+    ],
+    "Rodolfo Pini": [
+      "1950 FIFA World Cup"
+    ],
+    "Rodrigo De Paul": [
+      "2022 FIFA World Cup"
+    ],
+    "Roger Hunt": [
+      "1966 FIFA World Cup"
+    ],
+    "Rogério Ceni": [
+      "2002 FIFA World Cup"
+    ],
+    "Roman Weidenfeller": [
+      "2014 FIFA World Cup"
+    ],
+    "Romário": [
+      "1994 FIFA World Cup"
+    ],
+    "Ron Flowers": [
+      "1966 FIFA World Cup"
+    ],
+    "Ron Springett": [
+      "1966 FIFA World Cup"
+    ],
+    "Ron-Robert Zieler": [
+      "2014 FIFA World Cup"
+    ],
+    "Ronaldinho": [
+      "2002 FIFA World Cup"
+    ],
+    "Ronaldo (Brazilian footballer)": [
+      "1994 FIFA World Cup",
+      "2002 FIFA World Cup"
+    ],
+    "Ronaldo Rodrigues de Jesus": [
+      "1994 FIFA World Cup"
+    ],
+    "Roque Júnior": [
+      "2002 FIFA World Cup"
+    ],
+    "Roque Máspoli": [
+      "1950 FIFA World Cup"
+    ],
+    "Rose Lavelle": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Rubén Galván (footballer)": [
+      "1978 FIFA World Cup"
+    ],
+    "Rubén Morán": [
+      "1950 FIFA World Cup"
+    ],
+    "Rubén Pagnanini": [
+      "1978 FIFA World Cup"
+    ],
+    "Rudi Völler": [
+      "1990 FIFA World Cup"
+    ],
+    "Rumi Utsugi": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Saki Kumagai": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Sam Mewis": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Sami Khedira": [
+      "2014 FIFA World Cup"
+    ],
+    "Samuel Umtiti": [
+      "2018 FIFA World Cup"
+    ],
+    "Sandra Minnert": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Sandra Smisek": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Santos Iriarte": [
+      "1930 FIFA World Cup"
+    ],
+    "Santos Urdinarán": [
+      "1930 FIFA World Cup"
+    ],
+    "Sara Whalen": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Saskia Bartusiak": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Saskia Webber": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Schubert Gambetta": [
+      "1950 FIFA World Cup"
+    ],
+    "Sepp Maier": [
+      "1974 FIFA World Cup"
+    ],
+    "Sergio Batista": [
+      "1986 FIFA World Cup"
+    ],
+    "Sergio Bertoni": [
+      "1938 FIFA World Cup"
+    ],
+    "Sergio Busquets": [
+      "2010 FIFA World Cup"
+    ],
+    "Sergio Omar Almirón": [
+      "1986 FIFA World Cup"
+    ],
+    "Sergio Ramos": [
+      "2010 FIFA World Cup"
+    ],
+    "Shannon Boxx": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Shannon Higgins-Cirovski": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Shannon MacMillan": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Shinobu Ohno": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Shkodran Mustafi": [
+      "2014 FIFA World Cup"
+    ],
+    "Silke Rottenberg": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Silvio Piola": [
+      "1938 FIFA World Cup"
+    ],
+    "Simone Barone": [
+      "2006 FIFA World Cup"
+    ],
+    "Simone Laudehr": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Simone Perrotta": [
+      "2006 FIFA World Cup"
+    ],
+    "Sonja Fuss": [
+      "2003 FIFA Women's World Cup",
+      "2007 FIFA Women's World Cup"
+    ],
+    "Stefan Reuter": [
+      "1990 FIFA World Cup"
+    ],
+    "Stefanie Gottschlich": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Steffi Jones": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Steve Mandanda": [
+      "2018 FIFA World Cup"
+    ],
+    "Steven Nzonzi": [
+      "2018 FIFA World Cup"
+    ],
+    "Stéphane Guivarc'h": [
+      "1998 FIFA World Cup"
+    ],
+    "Sydney Leroux": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "Terry Paine": [
+      "1966 FIFA World Cup"
+    ],
+    "Thiago Almada": [
+      "2022 FIFA World Cup"
+    ],
+    "Thierry Henry": [
+      "1998 FIFA World Cup"
+    ],
+    "Thomas Berthold": [
+      "1990 FIFA World Cup"
+    ],
+    "Thomas Häßler": [
+      "1990 FIFA World Cup"
+    ],
+    "Thomas Lemar": [
+      "2018 FIFA World Cup"
+    ],
+    "Thomas Müller": [
+      "2014 FIFA World Cup"
+    ],
+    "Tierna Davidson": [
+      "2019 FIFA Women's World Cup"
+    ],
+    "Tiffany Roberts": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Tiffeny Milbrett": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Tina Svensson": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Tisha Venturini": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Tobin Heath": [
+      "2015 FIFA Women's World Cup",
+      "2019 FIFA Women's World Cup"
+    ],
+    "Tone Gunn Frustøl": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Tone Haugen": [
+      "1995 FIFA Women's World Cup"
+    ],
+    "Toni Kroos": [
+      "2014 FIFA World Cup"
+    ],
+    "Toni Turek": [
+      "1954 FIFA World Cup"
+    ],
+    "Tostão": [
+      "1970 FIFA World Cup"
+    ],
+    "Tracey Leone": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Tracy Ducar": [
+      "1999 FIFA Women's World Cup"
+    ],
+    "Ubaldo Fillol": [
+      "1978 FIFA World Cup"
+    ],
+    "Ugo Locatelli": [
+      "1938 FIFA World Cup"
+    ],
+    "Uli Hoeneß": [
+      "1974 FIFA World Cup"
+    ],
+    "Ulrich Biesinger": [
+      "1954 FIFA World Cup"
+    ],
+    "Umberto Caligaris": [
+      "1934 FIFA World Cup"
+    ],
+    "Ursula Holl": [
+      "2007 FIFA Women's World Cup"
+    ],
+    "Uwe Bein": [
+      "1990 FIFA World Cup"
+    ],
+    "Valdir Pereira": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Vampeta": [
+      "2002 FIFA World Cup"
+    ],
+    "Vavá": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Vincent Candela": [
+      "1998 FIFA World Cup"
+    ],
+    "Vincenzo Iaquinta": [
+      "2006 FIFA World Cup"
+    ],
+    "Viola (footballer)": [
+      "1994 FIFA World Cup"
+    ],
+    "Viola Odebrecht": [
+      "2003 FIFA Women's World Cup"
+    ],
+    "Virginio Rosetta": [
+      "1934 FIFA World Cup"
+    ],
+    "Víctor Rodríguez Andrade": [
+      "1950 FIFA World Cup"
+    ],
+    "Víctor Valdés": [
+      "2010 FIFA World Cup"
+    ],
+    "Washington Ortuño": [
+      "1950 FIFA World Cup"
+    ],
+    "Wendy Gebauer": [
+      "1991 FIFA Women's World Cup"
+    ],
+    "Werner Kohlmeyer": [
+      "1954 FIFA World Cup"
+    ],
+    "Werner Liebrich": [
+      "1954 FIFA World Cup"
+    ],
+    "Whitney Engen": [
+      "2015 FIFA Women's World Cup"
+    ],
+    "William Martínez (footballer)": [
+      "1950 FIFA World Cup"
+    ],
+    "Wilson Piazza": [
+      "1970 FIFA World Cup"
+    ],
+    "Wolfgang Kleff": [
+      "1974 FIFA World Cup"
+    ],
+    "Wolfgang Overath": [
+      "1974 FIFA World Cup"
+    ],
+    "Xabi Alonso": [
+      "2010 FIFA World Cup"
+    ],
+    "Xavi (footballer, born 1980)": [
+      "2010 FIFA World Cup"
+    ],
+    "Youri Djorkaeff": [
+      "1998 FIFA World Cup"
+    ],
+    "Yukari Kinga": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Yūki Nagasato": [
+      "2011 FIFA Women's World Cup"
+    ],
+    "Zetti": [
+      "1994 FIFA World Cup"
+    ],
+    "Zinedine Zidane": [
+      "1998 FIFA World Cup"
+    ],
+    "Zinho": [
+      "1994 FIFA World Cup"
+    ],
+    "Zito (footballer, born 1932)": [
+      "1958 FIFA World Cup"
+    ],
+    "Zoilo Saldombide": [
+      "1930 FIFA World Cup"
+    ],
+    "Zé Maria (footballer, born 1949)": [
+      "1970 FIFA World Cup"
+    ],
+    "Zózimo": [
+      "1958 FIFA World Cup",
+      "1962 FIFA World Cup"
+    ],
+    "Álvaro Arbeloa": [
+      "2010 FIFA World Cup"
+    ],
+    "Álvaro Gestido": [
+      "1930 FIFA World Cup"
+    ],
+    "Ángel Correa": [
+      "2022 FIFA World Cup"
+    ],
+    "Ángel Di María": [
+      "2022 FIFA World Cup"
+    ],
+    "Ángel Melogno": [
+      "1930 FIFA World Cup"
+    ],
+    "Ânderson Polga": [
+      "2002 FIFA World Cup"
+    ],
+    "Émerson Leão": [
+      "1970 FIFA World Cup"
+    ]
+  }
+}

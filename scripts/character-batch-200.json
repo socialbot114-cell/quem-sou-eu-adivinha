@@ -1306,7 +1306,7 @@
           "brazil_team": 1,
           "played_premier_league": 0,
           "played_in_europe": 0,
-          "world_cup_winner": 0,
+          "world_cup_winner": 1,
           "born_before_1985": 1,
           "played_in_brazil": 1,
           "played_in_italy": 0,

@@ -54,7 +54,7 @@ Não é necessário criar uma conta. O jogo não exibe anúncios, não exige int
     "marketingUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
     "promotionalText": "Pense em uma personalidade. Responda perguntas e veja o jogo descobrir quem você imaginou.",
     "supportUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
-    "whatsNew": "Correções no jogo.\n\n- O jogo agora sempre tenta adivinhar: não termina mais sem palpite.\n- Quando as perguntas acabam, o jogo oferece o próximo candidato em vez de encerrar.\n- Mais chances de acertar quando você responde \"Não sei\" ou erra uma resposta.\n- Novos personagens e perguntas da versão 1.2.5 continuam disponíveis.",
+    "whatsNew": "Correções no jogo e novos personagens.\n\n- O jogo agora sempre tenta adivinhar: não termina mais sem palpite.\n- Quando as perguntas acabam, o jogo oferece o próximo candidato em vez de encerrar.\n- Mais chances de acertar quando você responde \"Não sei\" ou erra uma resposta.\n- Mais 38 jogadores de futebol.\n- Corrigido o status de campeão de Copa do Mundo de alguns jogadores.\n- Novos personagens e perguntas das versões anteriores continuam disponíveis.",
 }
 COPYRIGHT = "2026 Gustavo De Melo Ferreira"
 REVIEW_NOTES = """Olá,
