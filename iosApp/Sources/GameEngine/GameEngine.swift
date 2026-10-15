@@ -32,9 +32,41 @@ enum GuessPolicy {
     }
 }
 
+/// Lookup tables for one catalog. Every copy of an engine built from the same people shares it,
+/// so undoing an answer does not rebuild them.
+private final class CatalogIndex {
+    let ids: [String]
+    let positions: [String: Int]
+    private let people: [Person]
+    /// The value of every person for one attribute, aligned with `people`. Built on first use.
+    private var columns: [String: [Double?]] = [:]
+
+    init(people: [Person]) {
+        self.people = people
+        ids = people.map { $0.id }
+        var positions: [String: Int] = [:]
+        for (index, id) in ids.enumerated() {
+            positions[id] = index
+        }
+        self.positions = positions
+    }
+
+    func column(for attribute: String) -> [Double?] {
+        if let cached = columns[attribute] {
+            return cached
+        }
+        let built = people.map { $0.attributes[attribute] }
+        columns[attribute] = built
+        return built
+    }
+}
+
 struct GameEngine {
+    private static let informativeAnswers = Answer.allCases.filter { $0 != .unknown }
+
     let people: [Person]
     let questions: [Question]
+    /// Scores by person id, kept in step with `weights` for callers that look people up by id.
     private(set) var scores: [String: Double]
     private(set) var asked: Set<String> = []
     private(set) var askedAttributes: Set<String> = []
@@ -43,6 +75,11 @@ struct GameEngine {
     private let chooseCandidateIndex: (Int) -> Int
     private let smoothing: Double
     private let likelihoodFloor: Double
+    private let catalog: CatalogIndex
+    /// Scores aligned with `people`. The calculations read these, so they never hash a person id.
+    private var weights: [Double]
+    /// Rejected people, aligned with `people`.
+    private var isRejected: [Bool]
 
     init(
         people: [Person],
@@ -51,51 +88,101 @@ struct GameEngine {
         smoothing: Double = 1e-9,
         likelihoodFloor: Double = GuessPolicy.likelihoodFloor
     ) {
+        self.init(
+            people: people,
+            questions: questions,
+            catalog: CatalogIndex(people: people),
+            randomIndex: randomIndex,
+            smoothing: smoothing,
+            likelihoodFloor: likelihoodFloor
+        )
+    }
+
+    private init(
+        people: [Person],
+        questions: [Question],
+        catalog: CatalogIndex,
+        randomIndex: @escaping (Int) -> Int,
+        smoothing: Double,
+        likelihoodFloor: Double
+    ) {
         self.people = people
         self.questions = questions
+        self.catalog = catalog
         self.chooseCandidateIndex = randomIndex
         self.smoothing = smoothing
         self.likelihoodFloor = likelihoodFloor
-        self.scores = Dictionary(uniqueKeysWithValues: people.map { ($0.id, 1.0 / Double(max(people.count, 1))) })
+        let uniform = 1.0 / Double(max(people.count, 1))
+        self.weights = Array(repeating: uniform, count: people.count)
+        self.isRejected = Array(repeating: false, count: people.count)
+        self.scores = [:]
+        publishScores()
     }
 
     // MARK: - Ranking
 
+    /// Indices of every person, highest score first. Equal scores keep the catalog order.
+    private var rankedIndices: [Int] {
+        weights.indices.sorted { lhs, rhs in
+            weights[lhs] != weights[rhs] ? weights[lhs] > weights[rhs] : lhs < rhs
+        }
+    }
+
     var ranked: [Person] {
-        people.sorted { scores[$0.id, default: 0] > scores[$1.id, default: 0] }
+        rankedIndices.map { people[$0] }
     }
 
     var activePeople: [Person] {
-        ranked.filter { scores[$0.id, default: 0] > 0 }
+        rankedIndices.filter { weights[$0] > 0 }.map { people[$0] }
+    }
+
+    /// The two leaders still in play, found in one pass. Equal scores go to the earlier person,
+    /// the same order `activePeople` gives.
+    private var leaders: (first: Int?, second: Int?) {
+        var first: Int?
+        var second: Int?
+        for index in weights.indices where weights[index] > 0 {
+            let value = weights[index]
+            if let best = first, value <= weights[best] {
+                if let runnerUp = second, value <= weights[runnerUp] { continue }
+                second = index
+            } else {
+                second = first
+                first = index
+            }
+        }
+        return (first, second)
     }
 
     var bestGuess: Person? {
-        activePeople.first
+        leaders.first.map { people[$0] }
     }
 
     var confidence: Double {
-        bestGuess.map { scores[$0.id, default: 0] } ?? 0
+        leaders.first.map { weights[$0] } ?? 0
     }
 
     var secondBest: Person? {
-        activePeople.count > 1 ? activePeople[1] : nil
+        leaders.second.map { people[$0] }
     }
 
     var margin: Double {
-        guard let first = bestGuess else { return 0 }
-        guard let second = secondBest else { return scores[first.id, default: 0] }
-        return scores[first.id, default: 0] - scores[second.id, default: 0]
+        let pair = leaders
+        guard let first = pair.first else { return 0 }
+        guard let second = pair.second else { return weights[first] }
+        return weights[first] - weights[second]
     }
 
     var ratio: Double {
-        guard let first = bestGuess, let second = secondBest else { return .greatestFiniteMagnitude }
-        let secondScore = scores[second.id, default: 0]
+        let pair = leaders
+        guard let first = pair.first, let second = pair.second else { return .greatestFiniteMagnitude }
+        let secondScore = weights[second]
         guard secondScore > 0 else { return .greatestFiniteMagnitude }
-        return scores[first.id, default: 0] / secondScore
+        return weights[first] / secondScore
     }
 
     var entropyValue: Double {
-        entropy(scores.values)
+        entropy(weights)
     }
 
     var effectiveCandidates: Double {
@@ -106,9 +193,10 @@ struct GameEngine {
 
     mutating func nextQuestion() -> Question? {
         guard !people.isEmpty else { return nil }
+        let priorEntropy = entropy(weights)
         let scored = questions
             .filter { !asked.contains($0.id) && !askedAttributes.contains($0.attribute) }
-            .map { (question: $0, gain: informationGain($0)) }
+            .map { (question: $0, gain: informationGain($0, priorEntropy: priorEntropy)) }
             .filter { $0.gain > 0.001 }
         guard !scored.isEmpty else { return nil }
 
@@ -139,15 +227,20 @@ struct GameEngine {
         guard answer != .unknown else { return }
         guard !recordedQuestionIDs.contains(question.id) else { return }
         recordedQuestionIDs.insert(question.id)
-        for person in people {
-            scores[person.id] = scores[person.id, default: 0] * likelihood(person.attributes[question.attribute] ?? 0.5, answer)
+        let values = catalog.column(for: question.attribute)
+        for index in weights.indices {
+            let value = values[index] ?? 0.5
+            weights[index] *= likelihood(value, answer, normalizer: normalizer(for: value))
         }
         normalize()
     }
 
     mutating func reject(_ person: Person) {
         rejectedPersonIDs.insert(person.id)
-        scores[person.id] = 0
+        if let index = catalog.positions[person.id] {
+            isRejected[index] = true
+            weights[index] = 0
+        }
         normalize()
     }
 
@@ -156,6 +249,7 @@ struct GameEngine {
         var engine = GameEngine(
             people: people,
             questions: questions,
+            catalog: catalog,
             randomIndex: chooseCandidateIndex,
             smoothing: smoothing,
             likelihoodFloor: likelihoodFloor
@@ -178,59 +272,80 @@ struct GameEngine {
     // MARK: - Normalization
 
     private mutating func normalize() {
-        for id in rejectedPersonIDs {
-            scores[id] = 0
+        defer { publishScores() }
+        for index in weights.indices where isRejected[index] {
+            weights[index] = 0
         }
-        let activeIDs = scores.keys.filter { !rejectedPersonIDs.contains($0) }
+        var activeCount = 0
+        for rejected in isRejected where !rejected {
+            activeCount += 1
+        }
 
-        let total = scores.values.reduce(0, +)
+        let total = weights.reduce(0, +)
         if total <= 0 {
-            guard !activeIDs.isEmpty else { return }
-            let share = 1.0 / Double(activeIDs.count)
-            for id in scores.keys {
-                scores[id] = rejectedPersonIDs.contains(id) ? 0 : share
+            guard activeCount > 0 else { return }
+            let share = 1.0 / Double(activeCount)
+            for index in weights.indices {
+                weights[index] = isRejected[index] ? 0 : share
             }
             return
         }
 
-        for id in activeIDs {
-            scores[id] = scores[id, default: 0] + smoothing
+        for index in weights.indices where !isRejected[index] {
+            weights[index] += smoothing
         }
-        let smoothedTotal = scores.values.reduce(0, +)
-        for id in scores.keys {
-            let value = scores[id] ?? 0
-            scores[id] = (value.isFinite && value >= 0) ? value / smoothedTotal : 0
+        let smoothedTotal = weights.reduce(0, +)
+        for index in weights.indices {
+            let value = weights[index]
+            weights[index] = (value.isFinite && value >= 0) ? value / smoothedTotal : 0
         }
+    }
+
+    private mutating func publishScores() {
+        scores = Dictionary(uniqueKeysWithValues: zip(catalog.ids, weights))
     }
 
     // MARK: - Information gain
 
-    private func informationGain(_ question: Question) -> Double {
-        let coverage = people.reduce(0.0) { partial, person in
-            partial + (person.attributes[question.attribute] == nil ? 0 : scores[person.id, default: 0])
+    private func informationGain(_ question: Question, priorEntropy: Double) -> Double {
+        let values = catalog.column(for: question.attribute)
+        var coverage = 0.0
+        for index in weights.indices where values[index] != nil {
+            coverage += weights[index]
         }
         guard coverage >= 0.6 else { return 0 }
 
-        let priorEntropy = entropy(scores.values)
-        let expectedEntropy = Answer.allCases.filter { $0 != .unknown }.reduce(0.0) { total, answer in
-            var weighted: [String: Double] = [:]
-            for person in people {
-                let answerWeight = likelihood(person.attributes[question.attribute] ?? 0.5, answer)
-                weighted[person.id] = scores[person.id, default: 0] * answerWeight
+        let normalizers = values.map { normalizer(for: $0 ?? 0.5) }
+        var expectedEntropy = 0.0
+        for answer in GameEngine.informativeAnswers {
+            var probability = 0.0
+            for index in weights.indices {
+                probability += weights[index] * likelihood(values[index] ?? 0.5, answer, normalizer: normalizers[index])
             }
-            let probability = weighted.values.reduce(0, +)
-            guard probability > 0 else { return total }
-            return total + probability * entropy(weighted.values.map { $0 / probability })
+            guard probability > 0 else { continue }
+
+            var answerEntropy = 0.0
+            for index in weights.indices {
+                let share = weights[index] * likelihood(values[index] ?? 0.5, answer, normalizer: normalizers[index]) / probability
+                guard share > 0 else { continue }
+                answerEntropy -= share * log2(share)
+            }
+            expectedEntropy += probability * answerEntropy
         }
         return max(0, priorEntropy - expectedEntropy) * coverage
     }
 
-    private func likelihood(_ value: Double, _ answer: Answer) -> Double {
+    /// The likelihoods of the informative answers for one value add up to this normalizer.
+    /// It does not depend on the answer, so it is computed once per person and question.
+    private func normalizer(for value: Double) -> Double {
+        GameEngine.informativeAnswers.reduce(0.0) { total, option in
+            total + max(likelihoodFloor, 1.0 - abs(value - option.evidence))
+        }
+    }
+
+    private func likelihood(_ value: Double, _ answer: Answer, normalizer: Double) -> Double {
         let raw = max(likelihoodFloor, 1.0 - abs(value - answer.evidence))
-        let total = Answer.allCases
-            .filter { $0 != .unknown }
-            .reduce(0.0) { $0 + max(likelihoodFloor, 1.0 - abs(value - $1.evidence)) }
-        return total > 0 ? raw / total : 1.0
+        return normalizer > 0 ? raw / normalizer : 1.0
     }
 
     private func entropy<S: Sequence>(_ values: S) -> Double where S.Element == Double {

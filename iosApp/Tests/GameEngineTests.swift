@@ -265,6 +265,49 @@ final class GameEngineTests: XCTestCase {
         XCTAssertNil(engine.nextQuestion())
     }
 
+    func testLeadersMatchTheRankedListIncludingTies() {
+        let tied = (0..<6).map { index in
+            Person(id: "t\(index)", name: "T\(index)", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": index % 2 == 0 ? 1 : 0], avatarSymbol: "star.fill")
+        }
+        let questions = [Question(id: "x", text: "X?", attribute: "x", categories: [.all])]
+        var engine = GameEngine(people: tied, questions: questions, randomIndex: { _ in 0 })
+        engine.apply(.probablyYes, to: questions[0])
+
+        while let guess = engine.bestGuess {
+            let active = engine.activePeople
+            XCTAssertEqual(guess.id, active.first?.id)
+            XCTAssertEqual(engine.secondBest?.id, active.count > 1 ? active[1].id : nil)
+            XCTAssertEqual(engine.confidence, engine.scores[guess.id, default: -1], accuracy: 1e-12)
+            engine.reject(guess)
+        }
+        XCTAssertTrue(engine.activePeople.isEmpty)
+        XCTAssertNil(engine.secondBest)
+    }
+
+    func testFullGameWithFiveThousandPeopleStaysResponsive() {
+        let attributes = (0..<160).map { "a\($0)" }
+        let questions = attributes.map { Question(id: "q-\($0)", text: "Pergunta?", attribute: $0, categories: [.all]) }
+        let catalog: [Person] = (0..<5_000).map { index in
+            var values: [String: Double] = [:]
+            for (offset, attribute) in attributes.enumerated() where offset < 30 || (index + offset) % 10 == 0 {
+                values[attribute] = (index / (offset + 1)) % 2 == 0 ? 1 : 0
+            }
+            return Person(id: "p\(index)", name: "P\(index)", categories: [.all], country: "BR", profession: "Teste", attributes: values, avatarSymbol: "star.fill")
+        }
+        let target = catalog[1_234]
+
+        let started = Date()
+        var engine = GameEngine(people: catalog, questions: questions, randomIndex: { _ in 0 })
+        for _ in 0..<GuessPolicy.questionLimit {
+            guard let question = engine.nextQuestion() else { break }
+            engine.apply(answer(for: target.attributes[question.attribute]), to: question)
+        }
+        let elapsed = Date().timeIntervalSince(started)
+
+        XCTAssertNotNil(engine.bestGuess)
+        XCTAssertLessThan(elapsed, 8, "Uma partida com 5.000 personagens deve continuar fluida (\(elapsed) s)")
+    }
+
     private func playActualCatalogGame(
         targetID: String,
         category: QuemSouEu.Category,
