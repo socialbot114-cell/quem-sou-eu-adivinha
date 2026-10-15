@@ -207,6 +207,7 @@ final class GameEngineTests: XCTestCase {
     func testEngineKeepsALeaderWhenQuestionsRunOut() {
         let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
         var engine = GameEngine(people: people, questions: [question], randomIndex: { _ in 0 })
+        XCTAssertEqual(engine.nextQuestion()?.id, "x")  // o jogo faz a pergunta antes de recebê-la
         engine.apply(.unknown, to: question)
         XCTAssertNil(engine.nextQuestion(), "sem pergunta útil para uma resposta desconhecida")
         XCTAssertNotNil(engine.bestGuess, "mesmo sem pergunta, o motor precisa oferecer um palpite")
