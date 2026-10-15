@@ -141,14 +141,14 @@ def simulate_round(people, questions, target, scenario="ideal"):
     while True:
         if question_count >= QUESTION_LIMIT:
             guess = best_guess()
-            if guess is None or scores[guess["id"]] < 0.18:
+            if guess is None:  # sempre oferece o líder; não desiste com confiança baixa
                 return None, question_count, first_guess
             return guess["id"], question_count, first_guess
 
         q = next_question()
         if q is None:
             guess = best_guess()
-            if guess is None or scores[guess["id"]] < 0.18:
+            if guess is None:  # sempre oferece o líder; não desiste com confiança baixa
                 return None, question_count, first_guess
             return guess["id"], question_count, first_guess
 
@@ -174,7 +174,7 @@ def simulate_round(people, questions, target, scenario="ideal"):
 
         if question_count >= QUESTION_LIMIT:
             guess = best_guess()
-            if guess is None or scores[guess["id"]] < 0.18:
+            if guess is None:  # sempre oferece o líder; não desiste com confiança baixa
                 return None, question_count, first_guess
             return guess["id"], question_count, first_guess
 

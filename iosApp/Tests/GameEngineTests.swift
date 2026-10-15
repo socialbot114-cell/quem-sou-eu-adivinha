@@ -197,6 +197,33 @@ final class GameEngineTests: XCTestCase {
         XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 5), 16)
     }
 
+    func testQuestionLimitKeepsAskingWhileUncertainAndStopsWhenConfident() {
+        XCTAssertEqual(GuessPolicy.effectiveQuestionLimit(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 0, confidence: 0.30), GuessPolicy.maximumQuestionLimit)
+        XCTAssertEqual(GuessPolicy.effectiveQuestionLimit(availableAttributes: 100, rejectedGuesses: 0, unknownAnswers: 0, confidence: 0.90), 14)
+        // Nunca passa do número de atributos disponíveis.
+        XCTAssertEqual(GuessPolicy.effectiveQuestionLimit(availableAttributes: 9, rejectedGuesses: 0, unknownAnswers: 0, confidence: 0.10), 9)
+    }
+
+    func testEngineKeepsALeaderWhenQuestionsRunOut() {
+        let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
+        var engine = GameEngine(people: people, questions: [question], randomIndex: { _ in 0 })
+        engine.apply(.unknown, to: question)
+        XCTAssertNil(engine.nextQuestion(), "sem pergunta útil para uma resposta desconhecida")
+        XCTAssertNotNil(engine.bestGuess, "mesmo sem pergunta, o motor precisa oferecer um palpite")
+    }
+
+    func testEveryCategorySampleEndsWithAGuessEvenWithFrequentUnknownAnswers() {
+        // Regressão: antes, partidas com muitos "Não sei" terminavam sem nenhum palpite.
+        for category in [QuemSouEu.Category.football, .artists, .technology] {
+            let base = KnowledgeStore.shared.base
+            let ids = base.people.filter { $0.categories.contains(category) }.prefix(12).map(\.id)
+            for id in ids {
+                let result = playActualCatalogGame(targetID: id, category: category, unknownEvery: 2)
+                XCTAssertNotNil(result.firstGuessID, "\(id) em \(category.rawValue) terminou sem palpite")
+            }
+        }
+    }
+
     func testQuestionBudgetRespectsCaps() {
         XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 3, unknownAnswers: 2), GuessPolicy.maximumQuestionLimit)
         XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 9, rejectedGuesses: 2, unknownAnswers: 2), 9)
@@ -240,7 +267,8 @@ final class GameEngineTests: XCTestCase {
     private func playActualCatalogGame(
         targetID: String,
         category: QuemSouEu.Category,
-        contradictedInformativeAnswers: Int = 0
+        contradictedInformativeAnswers: Int = 0,
+        unknownEvery: Int = 0
     ) -> (success: Bool, firstGuessID: String?, rejectedGuesses: Int, questions: Int) {
         let base = KnowledgeStore.shared.base
         guard let target = base.people.first(where: { $0.id == targetID }) else {
@@ -261,10 +289,11 @@ final class GameEngineTests: XCTestCase {
         var rejectedGuesses = 0
         var firstGuessID: String?
         var questionLimit: Int {
-            GuessPolicy.questionBudget(
+            GuessPolicy.effectiveQuestionLimit(
                 availableAttributes: availableAttributes,
                 rejectedGuesses: rejectedGuesses,
-                unknownAnswers: unknownAnswers
+                unknownAnswers: unknownAnswers,
+                confidence: engine.confidence
             )
         }
 
@@ -272,6 +301,9 @@ final class GameEngineTests: XCTestCase {
             let question = questionCount < questionLimit ? engine.nextQuestion() : nil
             if let question {
                 var answer = answer(for: target.attributes[question.attribute])
+                if unknownEvery > 0, (questionCount + 1) % unknownEvery == 0 {
+                    answer = .unknown  // simula "Não sei" frequente, como num jogo real
+                }
                 if answer != .unknown {
                     informativeAnswers += 1
                     if informativeAnswers <= contradictedInformativeAnswers { answer = inverted(answer) }
@@ -290,7 +322,7 @@ final class GameEngineTests: XCTestCase {
                 )
             guard shouldGuess else { continue }
 
-            guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
+            guard let guess = engine.bestGuess else {
                 return (false, firstGuessID, rejectedGuesses, questionCount)
             }
             if firstGuessID == nil { firstGuessID = guess.id }
@@ -301,7 +333,6 @@ final class GameEngineTests: XCTestCase {
             engine.reject(guess)
             rejectedGuesses += 1
             if rejectedGuesses >= GuessPolicy.maximumRejectedGuesses
-                || questionCount >= questionLimit
                 || engine.bestGuess == nil {
                 return (false, firstGuessID, rejectedGuesses, questionCount)
             }

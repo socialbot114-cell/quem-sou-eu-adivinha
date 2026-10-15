@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import random
 from pathlib import Path
 from statistics import mean
@@ -26,6 +27,7 @@ QUESTION_LIMIT = 14
 EARLY_GUESS_MIN_ANSWERS = 4
 MAX_REJECTED_GUESSES = 4
 MIN_GUESS_CONFIDENCE = 0.18
+EXTENSION_CONFIDENCE = 0.50
 DEFAULT_EARLY_GUESS_CONFIDENCE = 0.68
 DEFAULT_MARGIN_THRESHOLD = 0.10
 DEFAULT_LIKELIHOOD_FLOOR = 0.18
@@ -186,11 +188,21 @@ def apply_noise(answer: str, scenario: str, informative_index: int, rng: random.
         return invert_answer(answer)
     if scenario == "two_contradictions" and informative_index <= 2:
         return invert_answer(answer)
+    if scenario == "unknown_50" and rng.random() < 0.50:
+        return "unknown"
     if scenario == "random_10pct" and rng.random() < 0.10:
         return invert_answer(answer)
     if scenario == "probably_answers":
         return "probablyYes" if answer in {"yes", "probablyYes"} else "probablyNo"
     return answer
+
+
+def current_limit(available: int, rejected: int, unknown: int, policy: str, confidence: float, guess_confidence: float) -> int:
+    """Mirror of GuessPolicy.questionLimit(...confidence:) in GameEngine.swift (adaptive policy)."""
+    extend_below = float(os.environ.get("EXT_TH", EXTENSION_CONFIDENCE))  # = GuessPolicy.extensionConfidence
+    if policy in ("adaptive", "adaptive_old") and confidence < extend_below and policy == "adaptive":
+        return max(0, min(MAXIMUM_QUESTION_LIMIT, available))
+    return question_budget(available, rejected, unknown, policy)
 
 
 def simulate_game(
@@ -211,7 +223,7 @@ def simulate_game(
     choose_candidate = tie_rng.choice if tie_mode == "seeded" else lambda candidates: candidates[0]
     engine = SimulatedEngine(people, questions, floor, choose_candidate)
     available_attributes = len({question["attribute"] for question in questions})
-    question_limit = question_budget(available_attributes, 0, 0, policy)
+    question_limit = current_limit(available_attributes, 0, 0, policy, engine.confidence, guess_confidence)
     question_count = 0
     informative_count = 0
     unknown_count = 0
@@ -229,7 +241,7 @@ def simulate_game(
             question_count += 1
             if answer == "unknown":
                 unknown_count += 1
-            question_limit = question_budget(available_attributes, len(engine.rejected), unknown_count, policy)
+            question_limit = current_limit(available_attributes, len(engine.rejected), unknown_count, policy, engine.confidence, guess_confidence)
 
         should_guess = (
             question is None
@@ -244,7 +256,8 @@ def simulate_game(
             continue
 
         guess = engine.best_guess
-        if guess is None or engine.confidence < MIN_GUESS_CONFIDENCE:
+        # "legacy" reproduz a versão 1.2.3, que desistia com confiança baixa; "adaptive" sempre oferece o líder.
+        if guess is None or (policy in ("legacy", "adaptive_old") and engine.confidence < MIN_GUESS_CONFIDENCE):
             return game_result(target["id"], guesses, question_count, success=False, stopped_without_guess=True)
 
         guesses.append(guess["id"])
@@ -252,8 +265,9 @@ def simulate_game(
             return game_result(target["id"], guesses, question_count, success=True)
 
         engine.reject(guess["id"])
-        question_limit = question_budget(available_attributes, len(engine.rejected), unknown_count, policy)
-        if len(engine.rejected) >= MAX_REJECTED_GUESSES or question_count >= question_limit or engine.best_guess is None:
+        question_limit = current_limit(available_attributes, len(engine.rejected), unknown_count, policy, engine.confidence, guess_confidence)
+        # Como no app: o orçamento de perguntas não encerra a partida; só as rejeições ou a falta de candidatos.
+        if len(engine.rejected) >= MAX_REJECTED_GUESSES or engine.best_guess is None:
             return game_result(target["id"], guesses, question_count, success=False)
 
 
@@ -307,7 +321,9 @@ def load_catalog() -> dict:
 
 def run(seed: int, floor: float, guess_confidence: float, margin_threshold: float, tie_mode: str, policy: str = "adaptive") -> dict:
     base = load_catalog()
-    scenarios = ("ideal", "one_unknown", "one_contradiction", "two_contradictions", "random_10pct", "probably_answers")
+    scenarios = ("ideal", "one_unknown", "one_contradiction", "two_contradictions", "random_10pct", "probably_answers", "unknown_50")
+    if os.environ.get("SCEN"):
+        scenarios = tuple(os.environ["SCEN"].split(","))
     results: list[dict] = []
     by_scenario: dict[str, dict] = {}
     by_category: dict[str, dict] = {}

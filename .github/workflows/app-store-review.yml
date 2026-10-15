@@ -15,13 +15,13 @@ on:
         description: Marketing version to inspect or submit
         required: true
         type: string
-        default: "1.2.5"
+        default: "1.2.6"
       build_number:
         description: TestFlight build number (GitHub run number of the iOS TestFlight workflow); required to submit
         required: false
         type: string
       confirm_submission:
-        description: Enter SUBMIT <version> (<build>), e.g. SUBMIT 1.2.5 (12), to submit for App Review
+        description: Enter SUBMIT <version> (<build>), e.g. SUBMIT 1.2.6 (12), to submit for App Review
         required: false
         type: string
 

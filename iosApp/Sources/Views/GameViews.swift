@@ -157,10 +157,11 @@ struct GameView: View {
     }
 
     private var questionLimit: Int {
-        GuessPolicy.questionBudget(
+        GuessPolicy.effectiveQuestionLimit(
             availableAttributes: Set(engine.questions.map(\.attribute)).count,
             rejectedGuesses: rejectedPersonIDs.count,
-            unknownAnswers: answers.filter { $0.answer == .unknown }.count
+            unknownAnswers: answers.filter { $0.answer == .unknown }.count,
+            confidence: engine.confidence
         )
     }
 
@@ -331,13 +332,19 @@ struct GameView: View {
 
     private func advance() {
         guard !engine.people.isEmpty, questionLimit > 0 else { phase = .unavailable; return }
+        // O orçamento limita perguntas, não palpites: sem perguntas restantes, oferece o próximo candidato.
+        if questionNumber >= questionLimit {
+            presentBestGuess()
+            return
+        }
         question = engine.nextQuestion()
         if question == nil { presentBestGuess() } else { phase = .asking }
     }
 
     private func presentBestGuess() {
         question = nil
-        guard let guess = engine.bestGuess, engine.confidence >= GuessPolicy.minimumGuessConfidence else {
+        // Always offer the leading character while any candidate remains: the game must not give up silently.
+        guard let guess = engine.bestGuess else {
             finishLoss(person: nil)
             return
         }
@@ -360,7 +367,8 @@ struct GameView: View {
         engine.reject(person)
         rejectedPersonIDs.append(person.id)
         persistRound()
-        if rejectedPersonIDs.count >= GuessPolicy.maximumRejectedGuesses || questionNumber >= questionLimit || engine.bestGuess == nil {
+        // Só encerra quando as rejeições acabam ou não sobra candidato. O limite de perguntas não encerra o jogo.
+        if rejectedPersonIDs.count >= GuessPolicy.maximumRejectedGuesses || engine.bestGuess == nil {
             finishLoss(person: engine.bestGuess)
         } else {
             phase = .asking

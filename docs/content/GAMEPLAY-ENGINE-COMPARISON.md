@@ -65,3 +65,32 @@ Decomposição do cenário de 10% (semente 42, 1.2.4 = 96,0% final):
 Conclusão: as perguntas novas não prejudicam; os personagens novos prejudicam, nas duas categorias. Varrer limiares (piso 0,18–0,21, confiança 0,64–0,68, margem 0,10–0,12) não recupera o cenário de 10%: a margem não limita o resultado e o piso mais alto piora o acerto final. A 1.2.5 fica fora da produção até o motor ser ajustado para catálogos maiores e o cenário de 10% voltar a pelo menos 95%.
 
 Decisão registrada em 2026-10-13: o responsável optou por lançar a 1.2.5 com os 200 personagens, aceitando a queda de cerca de 6 pontos no cenário de 10% de respostas erradas e partidas mais longas. O aceite editorial foi feito sem revisão humana completa. Um duplicado (Ricardo Kaká, mesma pessoa que Kaká) foi removido antes do lançamento.
+
+## Correção 1.2.6: o motor não pode desistir
+
+Relato dos jogadores (1.2.5): em várias partidas o jogo terminava sem nunca tentar adivinhar. Causas encontradas e reproduzidas no simulador (`scripts/evaluate_gameplay.py`, que espelha o motor Swift):
+
+1. **Portão de palpite (0,18).** `presentBestGuess()` só mostrava palpite com confiança ≥ 0,18. Abaixo disso, a partida terminava sem palpite. Com muitos candidatos, a confiança fica baixa mesmo quando o líder é o certo.
+2. **Orçamento de perguntas parado.** O limite base (14, mais 3 por rejeição e 2 "Não sei" grátis) não acompanha categorias maiores (Futebol tem 27 atributos para centenas de personagens; Artistas, 43). Ao atingir o limite com confiança baixa, a partida desistia.
+3. **Pool pequeno de perguntas.** Categorias como Tecnologia, Cinema e Moda têm 17–18 atributos. Depois de ~15 perguntas, não sobra pergunta útil e o jogo desistia.
+4. **Rejeição no limite encerrava a partida.** Ao rejeitar um palpite com o orçamento já esgotado, `reject()` terminava o jogo mesmo com candidatos restantes. Foi o bug que mais derrubou partidas perfeitas.
+
+Correções:
+
+- Sempre oferecer o líder enquanto houver candidato (sem portão de confiança).
+- Quando a confiança do líder está abaixo de 0,50, o limite de perguntas se estende até o teto de 20 (ou até acabarem os atributos).
+- Após uma rejeição, o jogo só encerra se as rejeições acabarem ou se não sobrar candidato. Sem perguntas restantes, oferece o próximo candidato.
+
+Resultados (3 sementes, 429 personagens, 102 perguntas):
+
+| Cenário | Antes: acerto final / perguntas / sem palpite | Depois: acerto final / perguntas / sem palpite |
+|---|---:|---:|
+| Sem erros | 100,0% / 8,69 / 0 | 100,0% / 8,75 / 0 |
+| Uma resposta "Não sei" | 100,0% / 10,20 / 0 | 100,0% / 10,33 / 0 |
+| Uma resposta errada | 99,4% / 12,05 / 9 | 100,0% / 12,54 / 0 |
+| Duas respostas erradas | 89,8% / 13,71 / 150 | 99,0% / 14,94 / 0 |
+| 10% de respostas erradas | 91,0% / 11,47 / 110 | 95,2% / 12,10 / 0 |
+| "Provavelmente" coerente | 100,0% / 12,37 / 0 | 100,0% / 13,16 / 0 |
+| 50% de "Não sei" | 72,5% / 14,91 / 430 | 94,1% / 16,51 / 0 |
+
+Nenhuma partida termina sem palpite. O custo é de cerca de 0,1 pergunta nas partidas perfeitas e 1,5 com metade de "Não sei".

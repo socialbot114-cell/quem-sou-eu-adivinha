@@ -4,8 +4,9 @@ enum GuessPolicy {
     static let questionLimit = 14
     static let minimumAnswersBeforeGuess = 4
     static let confidenceThreshold = 0.68
+    /// Abaixo deste nível, o jogo continua perguntando até o teto, em vez de parar no orçamento base.
+    static let extensionConfidence = 0.50
     static let marginThreshold = 0.10
-    static let minimumGuessConfidence = 0.18
     static let maximumRejectedGuesses = 4
     static let likelihoodFloor = 0.18
     static let extraQuestionsPerRejectedGuess = 3
@@ -19,6 +20,15 @@ enum GuessPolicy {
             + extraQuestionsPerRejectedGuess * max(rejectedGuesses, 0)
             + min(max(unknownAnswers, 0), freeUnknownAnswers)
         return max(0, min(maximumQuestionLimit, extended, availableAttributes))
+    }
+
+    /// While the leading character is still uncertain, the game keeps asking (up to the maximum)
+    /// instead of stopping at the base budget, so a long game can still reach a guess.
+    static func effectiveQuestionLimit(availableAttributes: Int, rejectedGuesses: Int, unknownAnswers: Int, confidence: Double) -> Int {
+        guard confidence < extensionConfidence else {
+            return questionBudget(availableAttributes: availableAttributes, rejectedGuesses: rejectedGuesses, unknownAnswers: unknownAnswers)
+        }
+        return max(0, min(maximumQuestionLimit, availableAttributes))
     }
 }
 
