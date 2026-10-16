@@ -14,6 +14,13 @@ EXPECTED_BATCH_SIZE = 150
 BATCH_200 = ROOT / "scripts/character-batch-200.json"
 EXPECTED_BATCH_200_SIZE = 200
 BATCH_BANK_FUTEBOL = ROOT / "scripts/character-batch-bank-futebol.json"
+# Waves: every character-batch-wave-*.json (people, alphabetical order) and every question-wave-*.json
+# (extra questions) in scripts/ is read by build(). Wave questions are optional, like OPTIONAL_QUESTIONS,
+# so existing batches keep their trait layout; a person without a value leaves the attribute out.
+SCRIPTS_DIR = Path(__file__).parent
+BATCH_WAVE_GLOB = "character-batch-wave-*.json"
+QUESTION_WAVE_GLOB = "question-wave-*.json"
+QUESTION_KEYS = {"id", "text", "attribute", "categories"}
 
 QUESTION_SPECS = {
     "Outros esportes": [
@@ -354,7 +361,10 @@ def build_batch_people(
     expansion_questions: list[dict],
     batch_path: Path = BATCH_150,
     expected_size: int | None = EXPECTED_BATCH_SIZE,
+    optional_attributes: set[str] | None = None,
 ) -> list[dict]:
+    if optional_attributes is None:
+        optional_attributes = OPTIONAL_ATTRIBUTES | wave_question_attributes()
     primary = json.loads(PRIMARY.read_text(encoding="utf-8"))
     batch = json.loads(batch_path.read_text(encoding="utf-8"))
     if not isinstance(batch, dict) or set(batch) != {"people"} or not isinstance(batch["people"], dict):
@@ -364,7 +374,7 @@ def build_batch_people(
     category_attributes = {
         category: [question["attribute"] for question in all_questions
                    if category in question["categories"] and question["categories"] != ["Todos"]
-                   and question["attribute"] not in OPTIONAL_ATTRIBUTES]
+                   and question["attribute"] not in optional_attributes]
         for category in SYMBOLS
     }
     known_ids = {person["id"] for person in existing_people}
@@ -385,7 +395,7 @@ def build_batch_people(
                 raise ValueError(f"invalid trait vector for {identifier}: expected {len(traits)} binary values")
             if explicit is not None and (
                 not (set(traits) | dynamic_names) <= set(explicit)
-                or not set(explicit) <= (set(traits) | dynamic_names | OPTIONAL_ATTRIBUTES)
+                or not set(explicit) <= (set(traits) | dynamic_names | optional_attributes)
                 or any(value not in (0, 1, None) for value in explicit.values())
             ):
                 raise ValueError(f"invalid explicit attributes for {identifier}: missing or unknown keys")
@@ -437,7 +447,53 @@ def build_batch_people(
     return additions
 
 
-def build() -> dict:
+def wave_question_attributes() -> set[str]:
+    """Attributes of the question-wave files: optional wherever a batch is built, as in build()."""
+    return {question["attribute"] for path in question_wave_paths() for question in load_question_file(path)}
+
+
+INTEGRATED_WAVES_PATH = SCRIPTS_DIR / "waves-integrated.json"
+
+
+def integrated_waves() -> list[str]:
+    """Names of the waves the app includes, in the order they are listed in waves-integrated.json.
+
+    A wave file in scripts/ is not used until it is listed there, so unfinished waves never reach the app.
+    """
+    if not INTEGRATED_WAVES_PATH.is_file():
+        return []
+    return json.loads(INTEGRATED_WAVES_PATH.read_text(encoding="utf-8"))["waves"]
+
+
+def batch_wave_paths() -> list[Path]:
+    """Integrated wave batches character-batch-wave-<name>.json."""
+    return [SCRIPTS_DIR / f"character-batch-wave-{name}.json" for name in integrated_waves()
+            if (SCRIPTS_DIR / f"character-batch-wave-{name}.json").is_file()]
+
+
+def question_wave_paths() -> list[Path]:
+    """Integrated question waves question-wave-<name>.json."""
+    return [SCRIPTS_DIR / f"question-wave-{name}.json" for name in integrated_waves()
+            if (SCRIPTS_DIR / f"question-wave-{name}.json").is_file()]
+
+
+def load_question_file(path: Path) -> list[dict]:
+    """Read a question-wave file: a list of {id, text, attribute, categories} objects."""
+    questions = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(questions, list):
+        raise ValueError(f"{path.name} must contain a list of questions")
+    for index, question in enumerate(questions):
+        if not isinstance(question, dict) or set(question) != QUESTION_KEYS:
+            raise ValueError(f"{path.name}[{index}] must contain exactly {sorted(QUESTION_KEYS)}")
+        if not isinstance(question["categories"], list) or not question["categories"]:
+            raise ValueError(f"{path.name}[{index}].categories must be a non-empty list")
+        if not set(question["categories"]) <= set(SYMBOLS) | {"Todos"}:
+            raise ValueError(f"{path.name}[{index}] uses an unknown category: {question['categories']}")
+    return questions
+
+
+def build(extra_questions: list[dict] | None = None, extra_batches: list[Path] | None = None) -> dict:
+    """Build the expansion. The extra arguments let check_wave test a wave that is not in scripts/ yet."""
     people = []
     questions = []
     seen_ids: set[str] = set()
@@ -486,6 +542,23 @@ def build() -> dict:
     questions.extend(SHARED_QUESTIONS)
     questions.extend(OPTIONAL_QUESTIONS)
 
+    # Wave questions come after the fixed ones and are optional, so no existing batch needs a new value.
+    wave_questions = []
+    for path in question_wave_paths():
+        wave_questions.extend(load_question_file(path))
+    wave_questions.extend(extra_questions or [])
+    # Primary questions (knowledge.json) also hold attributes, e.g. the footballers' traits.
+    primary_questions = json.loads(PRIMARY.read_text(encoding="utf-8"))["questions"]
+    known_attributes = {question["attribute"] for question in primary_questions + questions}
+    known_question_ids = {question["id"] for question in primary_questions + questions}
+    for question in wave_questions:
+        if question["attribute"] in known_attributes or question["id"] in known_question_ids:
+            raise ValueError(f"question wave repeats an attribute or id: {question['id']}")
+        known_attributes.add(question["attribute"])
+        known_question_ids.add(question["id"])
+    questions.extend(wave_questions)
+    optional_attributes = OPTIONAL_ATTRIBUTES | {question["attribute"] for question in wave_questions}
+
     # A directly sourced Brazilian artist joins the existing Artistas brasileiros category.
     people.append({
         "id": "djavan",
@@ -515,11 +588,14 @@ def build() -> dict:
         "avatarSymbol": "music.note",
         "imageName": "djavan.jpg",
     })
-    people.extend(build_batch_people(people, questions, BATCH_150, EXPECTED_BATCH_SIZE))
-    people.extend(build_batch_people(people, questions, BATCH_200, EXPECTED_BATCH_200_SIZE))
+    people.extend(build_batch_people(people, questions, BATCH_150, EXPECTED_BATCH_SIZE, optional_attributes=optional_attributes))
+    people.extend(build_batch_people(people, questions, BATCH_200, EXPECTED_BATCH_200_SIZE, optional_attributes=optional_attributes))
     # Footballers from the editorial bank, kept only after JERV accepted their main-role claim (build_bank_football_wave.py).
     if BATCH_BANK_FUTEBOL.is_file():
-        people.extend(build_batch_people(people, questions, BATCH_BANK_FUTEBOL, expected_size=None))
+        people.extend(build_batch_people(people, questions, BATCH_BANK_FUTEBOL, expected_size=None, optional_attributes=optional_attributes))
+    # Editorial waves: every character-batch-wave-*.json in alphabetical order, then any extra batch passed in.
+    for path in batch_wave_paths() + list(extra_batches or []):
+        people.extend(build_batch_people(people, questions, path, expected_size=None, optional_attributes=optional_attributes))
     # Optional Wikidata facts for artists added in earlier batches (see build_optional_facts.py).
     from apply_primary_category_features import optional_facts
     facts = optional_facts()

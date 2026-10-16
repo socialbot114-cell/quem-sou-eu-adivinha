@@ -25,14 +25,14 @@ ANSWER_EVIDENCE = {
 ANSWER_ORDER = tuple(ANSWER_EVIDENCE)
 QUESTION_LIMIT = 14
 EARLY_GUESS_MIN_ANSWERS = 4
-MAX_REJECTED_GUESSES = 4
+MAX_REJECTED_GUESSES = 8  # mirror of GuessPolicy.maximumRejectedGuesses
 MIN_GUESS_CONFIDENCE = 0.18
 EXTENSION_CONFIDENCE = 0.50
 DEFAULT_EARLY_GUESS_CONFIDENCE = 0.68
 DEFAULT_MARGIN_THRESHOLD = 0.10
 DEFAULT_LIKELIHOOD_FLOOR = 0.18
 EXTRA_QUESTIONS_PER_REJECTED_GUESS = 3
-MAXIMUM_QUESTION_LIMIT = 20
+MAXIMUM_QUESTION_LIMIT = 30  # mirror of GuessPolicy.maximumQuestionLimit
 FREE_UNKNOWN_ANSWERS = 2
 
 
@@ -310,17 +310,25 @@ def summarize(results: list[dict]) -> dict:
     }
 
 
-def load_catalog() -> dict:
+def load_catalog(expansion_path: Path = EXPANSION_PATH) -> dict:
     base = json.loads(CONTENT_PATH.read_text(encoding="utf-8"))
-    if EXPANSION_PATH.is_file():
-        expansion = json.loads(EXPANSION_PATH.read_text(encoding="utf-8"))
+    if expansion_path.is_file():
+        expansion = json.loads(expansion_path.read_text(encoding="utf-8"))
         base["people"].extend(expansion["people"])
         base["questions"].extend(expansion["questions"])
     return base
 
 
-def run(seed: int, floor: float, guess_confidence: float, margin_threshold: float, tie_mode: str, policy: str = "adaptive") -> dict:
-    base = load_catalog()
+def run(
+    seed: int,
+    floor: float,
+    guess_confidence: float,
+    margin_threshold: float,
+    tie_mode: str,
+    policy: str = "adaptive",
+    expansion_path: Path = EXPANSION_PATH,
+) -> dict:
+    base = load_catalog(expansion_path)
     scenarios = ("ideal", "one_unknown", "one_contradiction", "two_contradictions", "random_10pct", "probably_answers", "unknown_50")
     if os.environ.get("SCEN"):
         scenarios = tuple(os.environ["SCEN"].split(","))
@@ -397,6 +405,12 @@ def main() -> None:
         help="adaptive: +3 questions per rejected guess and up to 2 free 'Não sei' answers (max 20); legacy: fixed 14",
     )
     parser.add_argument("--report", type=Path)
+    parser.add_argument(
+        "--expansion",
+        type=Path,
+        default=EXPANSION_PATH,
+        help="expansion file added to knowledge.json (default: the app's character-expansion.json)",
+    )
     args = parser.parse_args()
     if not 0.0 < args.likelihood_floor < 1.0:
         parser.error("--likelihood-floor must be between 0 and 1")
@@ -404,8 +418,18 @@ def main() -> None:
         parser.error("--guess-confidence must be between 0 and 1")
     if not 0.0 <= args.margin_threshold < 1.0:
         parser.error("--margin-threshold must be between 0 and 1")
+    if not args.expansion.is_file():
+        parser.error(f"--expansion file not found: {args.expansion}")
 
-    report = run(args.seed, args.likelihood_floor, args.guess_confidence, args.margin_threshold, args.tie_mode, args.budget_policy)
+    report = run(
+        args.seed,
+        args.likelihood_floor,
+        args.guess_confidence,
+        args.margin_threshold,
+        args.tie_mode,
+        args.budget_policy,
+        args.expansion,
+    )
     print(json.dumps({"config": report["config"], "summary": report["summary"]}, ensure_ascii=False, indent=2))
     if args.report:
         args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

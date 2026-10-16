@@ -1,0 +1,597 @@
+{
+  "generatedAt": "2026-10-16",
+  "rule": "59 clubes não seleções, sem reservas, com pelo menos 8 candidatos do banco (Barcelona excluído: já existe played_barcelona)",
+  "candidatePool": 786,
+  "clubs": [
+    {
+      "qid": "Q8682",
+      "wikidataLabel": "Real Madrid Club de Fútbol",
+      "display": "Real Madrid",
+      "article": "no",
+      "attribute": "club_real_madrid",
+      "questionId": "club-real-madrid",
+      "text": "Jogou no Real Madrid?",
+      "candidates": 63
+    },
+    {
+      "qid": "Q9616",
+      "wikidataLabel": "Chelsea Football Club",
+      "display": "Chelsea",
+      "article": "no",
+      "attribute": "club_chelsea",
+      "questionId": "club-chelsea",
+      "text": "Jogou no Chelsea?",
+      "candidates": 60
+    },
+    {
+      "qid": "Q1543",
+      "wikidataLabel": "A.C. Milan",
+      "display": "Milan",
+      "article": "no",
+      "attribute": "club_milan",
+      "questionId": "club-milan",
+      "text": "Jogou no Milan?",
+      "candidates": 59
+    },
+    {
+      "qid": "Q18656",
+      "wikidataLabel": "Manchester United Football Club",
+      "display": "Manchester United",
+      "article": "no",
+      "attribute": "club_manchester_united",
+      "questionId": "club-manchester-united",
+      "text": "Jogou no Manchester United?",
+      "candidates": 55
+    },
+    {
+      "qid": "Q9617",
+      "wikidataLabel": "Arsenal Football Club",
+      "display": "Arsenal",
+      "article": "no",
+      "attribute": "club_arsenal",
+      "questionId": "club-arsenal",
+      "text": "Jogou no Arsenal?",
+      "candidates": 52
+    },
+    {
+      "qid": "Q1422",
+      "wikidataLabel": "Juventus Football Club",
+      "display": "Juventus",
+      "article": "na",
+      "attribute": "club_juventus",
+      "questionId": "club-juventus",
+      "text": "Jogou na Juventus?",
+      "candidates": 50
+    },
+    {
+      "qid": "Q15789",
+      "wikidataLabel": "Bayern de Munique",
+      "display": "Bayern de Munique",
+      "article": "no",
+      "attribute": "club_bayern_de_munique",
+      "questionId": "club-bayern-de-munique",
+      "text": "Jogou no Bayern de Munique?",
+      "candidates": 50
+    },
+    {
+      "qid": "Q50602",
+      "wikidataLabel": "Manchester City Football Club",
+      "display": "Manchester City",
+      "article": "no",
+      "attribute": "club_manchester_city",
+      "questionId": "club-manchester-city",
+      "text": "Jogou no Manchester City?",
+      "candidates": 49
+    },
+    {
+      "qid": "Q631",
+      "wikidataLabel": "Football Club Internazionale Milano",
+      "display": "Inter de Milão",
+      "article": "na",
+      "attribute": "club_inter_de_milao",
+      "questionId": "club-inter-de-milao",
+      "text": "Jogou na Inter de Milão?",
+      "candidates": 46
+    },
+    {
+      "qid": "Q1130849",
+      "wikidataLabel": "Liverpool Football Club",
+      "display": "Liverpool",
+      "article": "no",
+      "attribute": "club_liverpool",
+      "questionId": "club-liverpool",
+      "text": "Jogou no Liverpool?",
+      "candidates": 37
+    },
+    {
+      "qid": "Q483020",
+      "wikidataLabel": "Paris Saint-Germain",
+      "display": "PSG",
+      "article": "no",
+      "attribute": "club_psg",
+      "questionId": "club-psg",
+      "text": "Jogou no PSG?",
+      "candidates": 36
+    },
+    {
+      "qid": "Q41420",
+      "wikidataLabel": "Borussia Dortmund",
+      "display": "Borussia Dortmund",
+      "article": "no",
+      "attribute": "club_borussia_dortmund",
+      "questionId": "club-borussia-dortmund",
+      "text": "Jogou no Borussia Dortmund?",
+      "candidates": 32
+    },
+    {
+      "qid": "Q18741",
+      "wikidataLabel": "Tottenham Hotspur Football Club",
+      "display": "Tottenham",
+      "article": "no",
+      "attribute": "club_tottenham",
+      "questionId": "club-tottenham",
+      "text": "Jogou no Tottenham?",
+      "candidates": 31
+    },
+    {
+      "qid": "Q2739",
+      "wikidataLabel": "Associazione Sportiva Roma",
+      "display": "Roma",
+      "article": "na",
+      "attribute": "club_roma",
+      "questionId": "club-roma",
+      "text": "Jogou na Roma?",
+      "candidates": 31
+    },
+    {
+      "qid": "Q180305",
+      "wikidataLabel": "Association Sportive de Monaco Football Club",
+      "display": "Mônaco",
+      "article": "no",
+      "attribute": "club_monaco",
+      "questionId": "club-monaco",
+      "text": "Jogou no Mônaco?",
+      "candidates": 30
+    },
+    {
+      "qid": "Q8701",
+      "wikidataLabel": "Club Atlético de Madrid",
+      "display": "Atlético de Madrid",
+      "article": "no",
+      "attribute": "club_atletico_de_madrid",
+      "questionId": "club-atletico-de-madrid",
+      "text": "Jogou no Atlético de Madrid?",
+      "candidates": 29
+    },
+    {
+      "qid": "Q132885",
+      "wikidataLabel": "Olympique de Marseille",
+      "display": "Olympique de Marselha",
+      "article": "no",
+      "attribute": "club_olympique_de_marselha",
+      "questionId": "club-olympique-de-marselha",
+      "text": "Jogou no Olympique de Marselha?",
+      "candidates": 28
+    },
+    {
+      "qid": "Q81888",
+      "wikidataLabel": "Amsterdamsche Football Club Ajax",
+      "display": "Ajax",
+      "article": "no",
+      "attribute": "club_ajax",
+      "questionId": "club-ajax",
+      "text": "Jogou no Ajax?",
+      "candidates": 27
+    },
+    {
+      "qid": "Q18711",
+      "wikidataLabel": "Aston Villa Football Club",
+      "display": "Aston Villa",
+      "article": "no",
+      "attribute": "club_aston_villa",
+      "questionId": "club-aston-villa",
+      "text": "Jogou no Aston Villa?",
+      "candidates": 26
+    },
+    {
+      "qid": "Q32494",
+      "wikidataLabel": "Fußball-Club Gelsenkirchen-Schalke 04",
+      "display": "Schalke 04",
+      "article": "no",
+      "attribute": "club_schalke_04",
+      "questionId": "club-schalke-04",
+      "text": "Jogou no Schalke 04?",
+      "candidates": 26
+    },
+    {
+      "qid": "Q131499",
+      "wikidataLabel": "Sport Lisboa e Benfica",
+      "display": "Benfica",
+      "article": "no",
+      "attribute": "club_benfica",
+      "questionId": "club-benfica",
+      "text": "Jogou no Benfica?",
+      "candidates": 23
+    },
+    {
+      "qid": "Q19516",
+      "wikidataLabel": "Lille Olympique Sporting Club Métropole",
+      "display": "Lille",
+      "article": "no",
+      "attribute": "club_lille",
+      "questionId": "club-lille",
+      "text": "Jogou no Lille?",
+      "candidates": 21
+    },
+    {
+      "qid": "Q4512",
+      "wikidataLabel": "Verein für Bewegungsspiele Stuttgart 1893",
+      "display": "Stuttgart",
+      "article": "no",
+      "attribute": "club_stuttgart",
+      "questionId": "club-stuttgart",
+      "text": "Jogou no Stuttgart?",
+      "candidates": 21
+    },
+    {
+      "qid": "Q495299",
+      "wikidataLabel": "Galatasaray Spor Kulübü",
+      "display": "Galatasaray",
+      "article": "no",
+      "attribute": "club_galatasaray",
+      "questionId": "club-galatasaray",
+      "text": "Jogou no Galatasaray?",
+      "candidates": 21
+    },
+    {
+      "qid": "Q5794",
+      "wikidataLabel": "Everton Football Club",
+      "display": "Everton",
+      "article": "no",
+      "attribute": "club_everton",
+      "questionId": "club-everton",
+      "text": "Jogou no Everton?",
+      "candidates": 21
+    },
+    {
+      "qid": "Q10333",
+      "wikidataLabel": "Valencia Club de Fútbol",
+      "display": "Valencia",
+      "article": "no",
+      "attribute": "club_valencia",
+      "questionId": "club-valencia",
+      "text": "Jogou no Valencia?",
+      "candidates": 20
+    },
+    {
+      "qid": "Q18747",
+      "wikidataLabel": "West Ham United Football Club",
+      "display": "West Ham",
+      "article": "no",
+      "attribute": "club_west_ham",
+      "questionId": "club-west-ham",
+      "text": "Jogou no West Ham?",
+      "candidates": 20
+    },
+    {
+      "qid": "Q12297",
+      "wikidataLabel": "Villarreal Club de Fútbol",
+      "display": "Villarreal",
+      "article": "no",
+      "attribute": "club_villarreal",
+      "questionId": "club-villarreal",
+      "text": "Jogou no Villarreal?",
+      "candidates": 19
+    },
+    {
+      "qid": "Q6601875",
+      "wikidataLabel": "Fenerbahçe Spor Kulübü",
+      "display": "Fenerbahçe",
+      "article": "no",
+      "attribute": "club_fenerbahce",
+      "questionId": "club-fenerbahce",
+      "text": "Jogou no Fenerbahçe?",
+      "candidates": 19
+    },
+    {
+      "qid": "Q10329",
+      "wikidataLabel": "Sevilla Fútbol Club",
+      "display": "Sevilla",
+      "article": "no",
+      "attribute": "club_sevilla",
+      "questionId": "club-sevilla",
+      "text": "Jogou no Sevilla?",
+      "candidates": 18
+    },
+    {
+      "qid": "Q11938",
+      "wikidataLabel": "PSV Eindhoven",
+      "display": "PSV",
+      "article": "no",
+      "attribute": "club_psv",
+      "questionId": "club-psv",
+      "text": "Jogou no PSV?",
+      "candidates": 18
+    },
+    {
+      "qid": "Q2641",
+      "wikidataLabel": "Società Sportiva Calcio Napoli",
+      "display": "Napoli",
+      "article": "no",
+      "attribute": "club_napoli",
+      "questionId": "club-napoli",
+      "text": "Jogou no Napoli?",
+      "candidates": 18
+    },
+    {
+      "qid": "Q101859",
+      "wikidataLabel": "VfL Wolfsburg",
+      "display": "Wolfsburg",
+      "article": "no",
+      "attribute": "club_wolfsburg",
+      "questionId": "club-wolfsburg",
+      "text": "Jogou no Wolfsburg?",
+      "candidates": 17
+    },
+    {
+      "qid": "Q18716",
+      "wikidataLabel": "Newcastle United Football Club",
+      "display": "Newcastle",
+      "article": "no",
+      "attribute": "club_newcastle",
+      "questionId": "club-newcastle",
+      "text": "Jogou no Newcastle?",
+      "candidates": 17
+    },
+    {
+      "qid": "Q128446",
+      "wikidataLabel": "Futebol Clube do Porto",
+      "display": "Porto",
+      "article": "no",
+      "attribute": "club_porto",
+      "questionId": "club-porto",
+      "text": "Jogou no Porto?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q19481",
+      "wikidataLabel": "Leicester City Football Club",
+      "display": "Leicester",
+      "article": "no",
+      "attribute": "club_leicester",
+      "questionId": "club-leicester",
+      "text": "Jogou no Leicester?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q201006",
+      "wikidataLabel": "FC Dinamo Tbilisi",
+      "display": "Dinamo Tbilisi",
+      "article": "no",
+      "attribute": "club_dinamo_tbilisi",
+      "questionId": "club-dinamo-tbilisi",
+      "text": "Jogou no Dinamo Tbilisi?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q2052",
+      "wikidataLabel": "ACF Fiorentina",
+      "display": "Fiorentina",
+      "article": "na",
+      "attribute": "club_fiorentina",
+      "questionId": "club-fiorentina",
+      "text": "Jogou na Fiorentina?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q2609",
+      "wikidataLabel": "Società Sportiva Lazio",
+      "display": "Lazio",
+      "article": "na",
+      "attribute": "club_lazio",
+      "questionId": "club-lazio",
+      "text": "Jogou na Lazio?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q704",
+      "wikidataLabel": "Olympique Lyonnais",
+      "display": "Lyon",
+      "article": "no",
+      "attribute": "club_lyon",
+      "questionId": "club-lyon",
+      "text": "Jogou no Lyon?",
+      "candidates": 16
+    },
+    {
+      "qid": "Q104761",
+      "wikidataLabel": "Bayer 04 Leverkusen",
+      "display": "Bayer Leverkusen",
+      "article": "no",
+      "attribute": "club_bayer_leverkusen",
+      "questionId": "club-bayer-leverkusen",
+      "text": "Jogou no Bayer Leverkusen?",
+      "candidates": 15
+    },
+    {
+      "qid": "Q193481",
+      "wikidataLabel": "AC Sparta Praha",
+      "display": "Sparta Praha",
+      "article": "no",
+      "attribute": "club_sparta_praha",
+      "questionId": "club-sparta-praha",
+      "text": "Jogou no Sparta Praha?",
+      "candidates": 15
+    },
+    {
+      "qid": "Q19593",
+      "wikidataLabel": "Celtic Football Club",
+      "display": "Celtic",
+      "article": "no",
+      "attribute": "club_celtic",
+      "questionId": "club-celtic",
+      "text": "Jogou no Celtic?",
+      "candidates": 15
+    },
+    {
+      "qid": "Q75729",
+      "wikidataLabel": "Sporting Clube de Portugal",
+      "display": "Sporting",
+      "article": "no",
+      "attribute": "club_sporting",
+      "questionId": "club-sporting",
+      "text": "Jogou no Sporting?",
+      "candidates": 15
+    },
+    {
+      "qid": "Q844271",
+      "wikidataLabel": "Vissel Kobe",
+      "display": "Vissel Kobe",
+      "article": "no",
+      "attribute": "club_vissel_kobe",
+      "questionId": "club-vissel-kobe",
+      "text": "Jogou no Vissel Kobe?",
+      "candidates": 15
+    },
+    {
+      "qid": "Q10315",
+      "wikidataLabel": "Real Sociedad de Fútbol",
+      "display": "Real Sociedad",
+      "article": "na",
+      "attribute": "club_real_sociedad",
+      "questionId": "club-real-sociedad",
+      "text": "Jogou na Real Sociedad?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q185163",
+      "wikidataLabel": "Olympique Gymnaste Club de Nice Côte d'Azur",
+      "display": "Nice",
+      "article": "no",
+      "attribute": "club_nice",
+      "questionId": "club-nice",
+      "text": "Jogou no Nice?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q18708",
+      "wikidataLabel": "Fulham Football Club",
+      "display": "Fulham",
+      "article": "no",
+      "attribute": "club_fulham",
+      "questionId": "club-fulham",
+      "text": "Jogou no Fulham?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q19490",
+      "wikidataLabel": "Nottingham Forest Football Club",
+      "display": "Nottingham Forest",
+      "article": "no",
+      "attribute": "club_nottingham_forest",
+      "questionId": "club-nottingham-forest",
+      "text": "Jogou no Nottingham Forest?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q2074",
+      "wikidataLabel": "Genoa Cricket and Football Club",
+      "display": "Genoa",
+      "article": "no",
+      "attribute": "club_genoa",
+      "questionId": "club-genoa",
+      "text": "Jogou no Genoa?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q38245",
+      "wikidataLabel": "Eintracht Frankfurt",
+      "display": "Eintracht Frankfurt",
+      "article": "no",
+      "attribute": "club_eintracht_frankfurt",
+      "questionId": "club-eintracht-frankfurt",
+      "text": "Jogou no Eintracht Frankfurt?",
+      "candidates": 14
+    },
+    {
+      "qid": "Q1457",
+      "wikidataLabel": "Unione Calcio Sampdoria",
+      "display": "Sampdoria",
+      "article": "na",
+      "attribute": "club_sampdoria",
+      "questionId": "club-sampdoria",
+      "text": "Jogou na Sampdoria?",
+      "candidates": 13
+    },
+    {
+      "qid": "Q172567",
+      "wikidataLabel": "Beşiktaş Jimnastik Kulübü",
+      "display": "Beşiktaş",
+      "article": "no",
+      "attribute": "club_besiktas",
+      "questionId": "club-besiktas",
+      "text": "Jogou no Beşiktaş?",
+      "candidates": 13
+    },
+    {
+      "qid": "Q19453",
+      "wikidataLabel": "Brighton & Hove Albion Football Club",
+      "display": "Brighton",
+      "article": "no",
+      "attribute": "club_brighton",
+      "questionId": "club-brighton",
+      "text": "Jogou no Brighton?",
+      "candidates": 13
+    },
+    {
+      "qid": "Q19500",
+      "wikidataLabel": "Wolverhampton Wanderers F.C.",
+      "display": "Wolverhampton",
+      "article": "no",
+      "attribute": "club_wolverhampton",
+      "questionId": "club-wolverhampton",
+      "text": "Jogou no Wolverhampton?",
+      "candidates": 13
+    },
+    {
+      "qid": "Q101959",
+      "wikidataLabel": "Borussia Verein für Leibesübungen 1900 Mönchengladbach e. V.",
+      "display": "Borussia Mönchengladbach",
+      "article": "no",
+      "attribute": "club_borussia_monchengladbach",
+      "questionId": "club-borussia-monchengladbach",
+      "text": "Jogou no Borussia Mönchengladbach?",
+      "candidates": 12
+    },
+    {
+      "qid": "Q134241",
+      "wikidataLabel": "Feyenoord",
+      "display": "Feyenoord",
+      "article": "no",
+      "attribute": "club_feyenoord",
+      "questionId": "club-feyenoord",
+      "text": "Jogou no Feyenoord?",
+      "candidates": 12
+    },
+    {
+      "qid": "Q187528",
+      "wikidataLabel": "RSC Anderlecht",
+      "display": "Anderlecht",
+      "article": "no",
+      "attribute": "club_anderlecht",
+      "questionId": "club-anderlecht",
+      "text": "Jogou no Anderlecht?",
+      "candidates": 12
+    },
+    {
+      "qid": "Q1886",
+      "wikidataLabel": "Atalanta Bergamasca Calcio",
+      "display": "Atalanta",
+      "article": "na",
+      "attribute": "club_atalanta",
+      "questionId": "club-atalanta",
+      "text": "Jogou na Atalanta?",
+      "candidates": 12
+    }
+  ]
+}

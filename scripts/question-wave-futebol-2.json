@@ -1,0 +1,450 @@
+[
+  {
+    "id": "club-real-madrid",
+    "text": "Jogou no Real Madrid?",
+    "attribute": "club_real_madrid",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-chelsea",
+    "text": "Jogou no Chelsea?",
+    "attribute": "club_chelsea",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-milan",
+    "text": "Jogou no Milan?",
+    "attribute": "club_milan",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-manchester-united",
+    "text": "Jogou no Manchester United?",
+    "attribute": "club_manchester_united",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-arsenal",
+    "text": "Jogou no Arsenal?",
+    "attribute": "club_arsenal",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-juventus",
+    "text": "Jogou na Juventus?",
+    "attribute": "club_juventus",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-bayern-de-munique",
+    "text": "Jogou no Bayern de Munique?",
+    "attribute": "club_bayern_de_munique",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-manchester-city",
+    "text": "Jogou no Manchester City?",
+    "attribute": "club_manchester_city",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-inter-de-milao",
+    "text": "Jogou na Inter de Milão?",
+    "attribute": "club_inter_de_milao",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-liverpool",
+    "text": "Jogou no Liverpool?",
+    "attribute": "club_liverpool",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-psg",
+    "text": "Jogou no PSG?",
+    "attribute": "club_psg",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-borussia-dortmund",
+    "text": "Jogou no Borussia Dortmund?",
+    "attribute": "club_borussia_dortmund",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-tottenham",
+    "text": "Jogou no Tottenham?",
+    "attribute": "club_tottenham",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-roma",
+    "text": "Jogou na Roma?",
+    "attribute": "club_roma",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-monaco",
+    "text": "Jogou no Mônaco?",
+    "attribute": "club_monaco",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-atletico-de-madrid",
+    "text": "Jogou no Atlético de Madrid?",
+    "attribute": "club_atletico_de_madrid",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-olympique-de-marselha",
+    "text": "Jogou no Olympique de Marselha?",
+    "attribute": "club_olympique_de_marselha",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-ajax",
+    "text": "Jogou no Ajax?",
+    "attribute": "club_ajax",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-aston-villa",
+    "text": "Jogou no Aston Villa?",
+    "attribute": "club_aston_villa",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-schalke-04",
+    "text": "Jogou no Schalke 04?",
+    "attribute": "club_schalke_04",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-benfica",
+    "text": "Jogou no Benfica?",
+    "attribute": "club_benfica",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-lille",
+    "text": "Jogou no Lille?",
+    "attribute": "club_lille",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-stuttgart",
+    "text": "Jogou no Stuttgart?",
+    "attribute": "club_stuttgart",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-galatasaray",
+    "text": "Jogou no Galatasaray?",
+    "attribute": "club_galatasaray",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-everton",
+    "text": "Jogou no Everton?",
+    "attribute": "club_everton",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-valencia",
+    "text": "Jogou no Valencia?",
+    "attribute": "club_valencia",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-west-ham",
+    "text": "Jogou no West Ham?",
+    "attribute": "club_west_ham",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-villarreal",
+    "text": "Jogou no Villarreal?",
+    "attribute": "club_villarreal",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-fenerbahce",
+    "text": "Jogou no Fenerbahçe?",
+    "attribute": "club_fenerbahce",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-sevilla",
+    "text": "Jogou no Sevilla?",
+    "attribute": "club_sevilla",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-psv",
+    "text": "Jogou no PSV?",
+    "attribute": "club_psv",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-napoli",
+    "text": "Jogou no Napoli?",
+    "attribute": "club_napoli",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-wolfsburg",
+    "text": "Jogou no Wolfsburg?",
+    "attribute": "club_wolfsburg",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-newcastle",
+    "text": "Jogou no Newcastle?",
+    "attribute": "club_newcastle",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-porto",
+    "text": "Jogou no Porto?",
+    "attribute": "club_porto",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-leicester",
+    "text": "Jogou no Leicester?",
+    "attribute": "club_leicester",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-fiorentina",
+    "text": "Jogou na Fiorentina?",
+    "attribute": "club_fiorentina",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-lazio",
+    "text": "Jogou na Lazio?",
+    "attribute": "club_lazio",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-lyon",
+    "text": "Jogou no Lyon?",
+    "attribute": "club_lyon",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-bayer-leverkusen",
+    "text": "Jogou no Bayer Leverkusen?",
+    "attribute": "club_bayer_leverkusen",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-sparta-praha",
+    "text": "Jogou no Sparta Praha?",
+    "attribute": "club_sparta_praha",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-celtic",
+    "text": "Jogou no Celtic?",
+    "attribute": "club_celtic",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-sporting",
+    "text": "Jogou no Sporting?",
+    "attribute": "club_sporting",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-vissel-kobe",
+    "text": "Jogou no Vissel Kobe?",
+    "attribute": "club_vissel_kobe",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-real-sociedad",
+    "text": "Jogou na Real Sociedad?",
+    "attribute": "club_real_sociedad",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-nice",
+    "text": "Jogou no Nice?",
+    "attribute": "club_nice",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-fulham",
+    "text": "Jogou no Fulham?",
+    "attribute": "club_fulham",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-nottingham-forest",
+    "text": "Jogou no Nottingham Forest?",
+    "attribute": "club_nottingham_forest",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-eintracht-frankfurt",
+    "text": "Jogou no Eintracht Frankfurt?",
+    "attribute": "club_eintracht_frankfurt",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-sampdoria",
+    "text": "Jogou na Sampdoria?",
+    "attribute": "club_sampdoria",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-wolverhampton",
+    "text": "Jogou no Wolverhampton?",
+    "attribute": "club_wolverhampton",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-borussia-monchengladbach",
+    "text": "Jogou no Borussia Mönchengladbach?",
+    "attribute": "club_borussia_monchengladbach",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-feyenoord",
+    "text": "Jogou no Feyenoord?",
+    "attribute": "club_feyenoord",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-anderlecht",
+    "text": "Jogou no Anderlecht?",
+    "attribute": "club_anderlecht",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "club-atalanta",
+    "text": "Jogou na Atalanta?",
+    "attribute": "club_atalanta",
+    "categories": [
+      "Futebol"
+    ]
+  },
+  {
+    "id": "position-defender",
+    "text": "Jogou como defensor, de zagueiro ou lateral?",
+    "attribute": "defender",
+    "categories": [
+      "Futebol"
+    ]
+  }
+]

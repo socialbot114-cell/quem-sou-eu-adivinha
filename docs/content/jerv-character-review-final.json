@@ -814,6 +814,398 @@
       "status": "accepted",
       "final_status": "accepted",
       "reason": "Aceite do responsável em 2026-10-13 sem revisão humana completa; conteúdo sustentado por fonte Wikipédia/Wikidata e checagens automáticas."
+    },
+    "club-real-madrid": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-chelsea": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-milan": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-manchester-united": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-arsenal": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-juventus": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-bayern-de-munique": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-manchester-city": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-inter-de-milao": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-liverpool": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-psg": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-borussia-dortmund": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-tottenham": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-roma": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-monaco": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-atletico-de-madrid": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-olympique-de-marselha": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-ajax": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-aston-villa": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-schalke-04": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-benfica": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-lille": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-stuttgart": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-galatasaray": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-everton": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-valencia": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-west-ham": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-villarreal": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-fenerbahce": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-sevilla": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-psv": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-napoli": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-wolfsburg": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-newcastle": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-porto": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-leicester": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-fiorentina": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-lazio": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-lyon": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-bayer-leverkusen": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-sparta-praha": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-celtic": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-sporting": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-vissel-kobe": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-real-sociedad": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-nice": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-fulham": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-nottingham-forest": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-eintracht-frankfurt": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-sampdoria": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-wolverhampton": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-borussia-monchengladbach": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-feyenoord": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-anderlecht": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "club-atalanta": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "position-defender": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
     }
   },
   "claim_reviews": {
@@ -5814,6 +6206,556 @@
       "last_verified": "2026-10-15",
       "final_status": "accepted",
       "review_method": "jerv-automatico"
+    },
+    "junya-ito-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jun%27ya_It%C5%8D",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "nicolas-otamendi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "orbelin-pineda-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Orbel%C3%ADn_Pineda",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "alphonso-davies-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Alphonso_Davies",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "thomas-partey-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thomas_Partey",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "achraf-hakimi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Achraf_Hakimi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "mario-pasalic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mario_Pa%C5%A1ali%C4%87",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "anibal-godoy-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/An%C3%ADbal_Godoy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "aissa-mandi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/A%C3%AFssa_Mandi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "erick-davis-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Eric_Davis_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "lucas-paqueta-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lucas_Paquet%C3%A1",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "julian-alvarez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "giorgian-de-arrascaeta-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Giorgian_de_Arrascaeta",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "joao-cancelo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Cancelo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "yuto-nagatomo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Y%C5%ABto_Nagatomo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "denzel-dumfries-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Denzel_Dumfries",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "thomas-meunier-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thomas_Meunier",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "jose-maria-gimenez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Gim%C3%A9nez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "nicolas-pepe-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "marquinhos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Marcos_Ao%C3%A1s_Corr%C3%AAa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "ritsu-doan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ritsu_D%C5%8Dan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "joao-felix-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_F%C3%A9lix",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "ramy-bensebaini-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ramy_Bensebaini",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "ruben-vargas-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Rub%C3%A9n_Vargas",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "dani-olmo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Dani_Olmo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "karim-boudiaf-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Karim_Boudiaf",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "lee-kang-in-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lee_Kang-in",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "guillermo-ochoa-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Guillermo_Ochoa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "mikel-merino-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mikel_Merino",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "tajon-buchanan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Tajon_Buchanan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "fidel-escobar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fidel_Escobar",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "azzedine-ounahi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Azzedine_Ounahi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "zeki-amdouni-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zeki_Amdouni",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "ro-ro-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/R%C3%B3-R%C3%B3",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "fernando-muslera-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fernando_Muslera",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "yerry-mina-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Yerry_Mina",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "derrick-etienne-jr-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Derrick_Etienne_Jr.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "david-ospina-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/David_Ospina",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "gonzalo-plata-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gonzalo_Plata",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "gustavo-gomez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gustavo_G%C3%B3mez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "ousmane-dembele-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "adrien-rabiot-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Adrien_Rabiot",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "leandro-paredes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Leandro_Paredes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "goncalo-ramos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Ramos",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "manuel-neuer-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Manuel_Neuer",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "kalidou-koulibaly-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Kalidou_Koulibaly",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "merih-demiral-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Merih_Demiral",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "manuel-akanji-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Manuel_Akanji",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "timothy-weah-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Timothy_Weah",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
+    },
+    "kim-min-jae-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Kim_Min-jae_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15",
+      "final_status": "accepted",
+      "review_method": "jerv-automatico"
     }
   },
   "summary": {
@@ -5825,9 +6767,9 @@
   "editorial_reviewed_at": "2026-10-13",
   "editorial_reviewer": "responsável pelo projeto (aceite sem revisão humana completa)",
   "final_summary": {
-    "questions_accepted": 72,
+    "questions_accepted": 158,
     "questions_pending": 0,
-    "claims_accepted": 467,
+    "claims_accepted": 517,
     "claims_pending": 0
   }
 }

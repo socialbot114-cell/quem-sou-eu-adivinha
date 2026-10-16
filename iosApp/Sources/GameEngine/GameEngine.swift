@@ -7,11 +7,13 @@ enum GuessPolicy {
     /// Abaixo deste nível, o jogo continua perguntando até o teto, em vez de parar no orçamento base.
     static let extensionConfidence = 0.50
     static let marginThreshold = 0.10
-    static let maximumRejectedGuesses = 4
+    /// Wrong guesses before the game gives up. Raised from 4: a character eliminated by mistaken answers
+    /// is still recovered with more guesses (simulated: unsolved games 38 -> 6 with 10% wrong answers).
+    static let maximumRejectedGuesses = 8
     static let likelihoodFloor = 0.18
     static let extraQuestionsPerRejectedGuess = 3
     static let freeUnknownAnswers = 2
-    static let maximumQuestionLimit = 20
+    static let maximumQuestionLimit = 30
 
     /// Each rejected guess earns extra questions to recover from a mistaken answer,
     /// and the first "Não sei" answers do not consume the budget.

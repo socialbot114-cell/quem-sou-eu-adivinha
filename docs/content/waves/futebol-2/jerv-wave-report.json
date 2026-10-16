@@ -1,0 +1,1660 @@
+{
+  "model": "jev-latest",
+  "confidence_threshold": 0.8,
+  "evaluated_at": "2026-10-16T03:09:30.253743+00:00",
+  "question_reviews": {
+    "club-real-madrid": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-chelsea": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-milan": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-manchester-united": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-arsenal": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-juventus": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-bayern-de-munique": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-manchester-city": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-inter-de-milao": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-liverpool": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-psg": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-borussia-dortmund": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-tottenham": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-roma": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-monaco": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-atletico-de-madrid": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-olympique-de-marselha": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-ajax": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-aston-villa": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-schalke-04": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-benfica": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-lille": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-stuttgart": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-galatasaray": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-everton": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-valencia": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-west-ham": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-villarreal": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-fenerbahce": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-sevilla": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-psv": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-napoli": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-wolfsburg": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-newcastle": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-porto": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-leicester": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-fiorentina": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-lazio": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-lyon": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-bayer-leverkusen": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-sparta-praha": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-celtic": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-sporting": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-vissel-kobe": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-real-sociedad": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-nice": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-fulham": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-nottingham-forest": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-genoa": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted"
+    },
+    "club-eintracht-frankfurt": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-sampdoria": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-besiktas": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-brighton": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    },
+    "club-wolverhampton": {
+      "decision": "clear",
+      "confidence": 0.98,
+      "status": "accepted"
+    },
+    "club-borussia-monchengladbach": {
+      "decision": "clear",
+      "confidence": 0.95,
+      "status": "accepted"
+    },
+    "club-feyenoord": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "club-anderlecht": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted"
+    },
+    "club-atalanta": {
+      "decision": "clear",
+      "confidence": 0.94,
+      "status": "accepted"
+    },
+    "position-defender": {
+      "decision": "clear",
+      "confidence": 0.97,
+      "status": "accepted"
+    }
+  },
+  "claim_reviews": {
+    "junya-ito-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jun%27ya_It%C5%8D",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nicolas-otamendi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nicol%C3%A1s_Otamendi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "orbelin-pineda-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Orbel%C3%ADn_Pineda",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "alphonso-davies-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Alphonso_Davies",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "thomas-partey-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thomas_Partey",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "achraf-hakimi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Achraf_Hakimi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mario-pasalic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mario_Pa%C5%A1ali%C4%87",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "anibal-godoy-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/An%C3%ADbal_Godoy",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "aissa-mandi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/A%C3%AFssa_Mandi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "erick-davis-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Eric_Davis_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lucas-paqueta-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lucas_Paquet%C3%A1",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "julian-alvarez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Juli%C3%A1n_Alvarez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "giorgian-de-arrascaeta-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Giorgian_de_Arrascaeta",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "joao-cancelo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_Cancelo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "yuto-nagatomo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Y%C5%ABto_Nagatomo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "denzel-dumfries-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Denzel_Dumfries",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "thomas-meunier-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thomas_Meunier",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jose-maria-gimenez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Gim%C3%A9nez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nicolas-pepe-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nicolas_P%C3%A9p%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "marquinhos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Marcos_Ao%C3%A1s_Corr%C3%AAa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ritsu-doan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ritsu_D%C5%8Dan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "joao-felix-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jo%C3%A3o_F%C3%A9lix",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ramy-bensebaini-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ramy_Bensebaini",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ruben-vargas-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Rub%C3%A9n_Vargas",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "dani-olmo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Dani_Olmo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "karim-boudiaf-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Karim_Boudiaf",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lee-kang-in-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lee_Kang-in",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "guillermo-ochoa-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Guillermo_Ochoa",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mikel-merino-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mikel_Merino",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "tajon-buchanan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Tajon_Buchanan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "fidel-escobar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fidel_Escobar",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "azzedine-ounahi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Azzedine_Ounahi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "zeki-amdouni-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Zeki_Amdouni",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ro-ro-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/R%C3%B3-R%C3%B3",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "fernando-muslera-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fernando_Muslera",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "yerry-mina-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Yerry_Mina",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "derrick-etienne-jr-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Derrick_Etienne_Jr.",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "david-ospina-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/David_Ospina",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "gonzalo-plata-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gonzalo_Plata",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "gustavo-gomez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gustavo_G%C3%B3mez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ousmane-dembele-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ousmane_Demb%C3%A9l%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "adrien-rabiot-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Adrien_Rabiot",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "leandro-paredes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Leandro_Paredes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "goncalo-ramos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Ramos",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "manuel-neuer-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Manuel_Neuer",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "kalidou-koulibaly-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Kalidou_Koulibaly",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "merih-demiral-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Merih_Demiral",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "manuel-akanji-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Manuel_Akanji",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "timothy-weah-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Timothy_Weah",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "kim-min-jae-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Kim_Min-jae_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "antonio-sanabria-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Antonio_Sanabria",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "goncalo-guedes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gon%C3%A7alo_Guedes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "antonio-rudiger-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Antonio_R%C3%BCdiger",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "thibaut-courtois-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thibaut_Courtois",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "juan-quintero-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Juan_Quintero",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "rodrigo-de-paul-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Rodrigo_De_Paul",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "giovani-lo-celso-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Giovani_Lo_Celso",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "victor-lindelof-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Victor_Lindel%C3%B6f",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "alexis-mac-allister-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Alexis_Mac_Allister",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jean-seri-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jean_Micha%C3%ABl_Seri",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mathew-ryan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mathew_Ryan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "rodrigo-betancur-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Rodrigo_Bentancur",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "pervis-estupinan-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Pervis_Estupi%C3%B1%C3%A1n",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "seko-fofana-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Seko_Fofana",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jalal-hassan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jalal_Hassan",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "fabian-ruiz-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fabi%C3%A1n_Ruiz",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "enzo-fernandez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "pedri-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Pedri",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "felix-torres-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/F%C3%A9lix_Torres",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jhon-arias-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jhon_Arias",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ante-budimir-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ante_Budimir",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nico-elvedi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nico_Elvedi",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "stephen-eustaquio-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Stephen_Eust%C3%A1quio",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "yassine-bounou-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Yassine_Bounou",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "vozinha-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Vozinha",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "dodi-lukebakio-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Dodi_Lukebakio",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "charles-de-ketelaere-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Charles_De_Ketelaere",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "n-golo-kante-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/N%27Golo_Kant%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "j-rgen-strand-larsen-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/J%C3%B8rgen_Strand_Larsen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "frenkie-de-jong-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Frenkie_de_Jong",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "arthur-masuaku-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://en.wikipedia.org/wiki/Arthur_Masuaku",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lamine-yamal-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lamine_Yamal",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jordan-pickford-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jordan_Pickford",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "johnny-placide-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Johny_Placide",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "danilo-luiz-da-silva-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Danilo_Luiz_da_Silva",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "aymeric-laporte-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Aymeric_Laporte",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "sead-kolasinac-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Sead_Kola%C5%A1inac",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "gabriel-teodoro-martinelli-silva-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gabriel_Martinelli",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "emiliano-martinez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lucas-digne-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lucas_Digne",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "teun-koopmeiners-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Teun_Koopmeiners",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nuno-mendes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nuno_Mendes_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nelson-semedo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/N%C3%A9lson_Semedo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jules-kounde-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jules_Kound%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lucas-hernandez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lucas_Hern%C3%A1ndez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lisandro-martinez-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lisandro_Mart%C3%ADnez",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "marc-cucurella-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Marc_Cucurella",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ederson-moraes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ederson_Moraes",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "ibrahima-konate-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Ibrahima_Konat%C3%A9",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "alex-ferguson-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Alex_Ferguson",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jose-mourinho-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Jos%C3%A9_Mourinho",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mesut-ozil-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mesut_%C3%96zil",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "thierry-henry-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thierry_Henry",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "miroslav-klose-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Miroslav_Klose",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "antoine-griezmann-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Antoine_Griezmann",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "iker-casillas-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Iker_Casillas",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "josep-guardiola-main-role": {
+      "decision": "supports",
+      "confidence": 0.95,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Josep_Guardiola",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "thomas-muller-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Thomas_M%C3%BCller",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "arjen-robben-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Arjen_Robben",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "paul-pogba-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Paul_Pogba",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lukas-podolski-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lukas_Podolski",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mario-balotelli-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mario_Balotelli",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "carlo-ancelotti-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Carlo_Ancelotti",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "franck-ribery-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Franck_Rib%C3%A9ry",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "gary-lineker-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Gary_Lineker",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "olivier-giroud-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Olivier_Giroud",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "andriy-shevchenko-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Andriy_Shevchenko",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "lev-yashin-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lev_Yashin",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "julio-iglesias-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Julio_Iglesias",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jurgen-klopp-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/J%C3%BCrgen_Klopp",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "philipp-lahm-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Philipp_Lahm",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "cesc-fabregas-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Cesc_F%C3%A0bregas",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "fabio-cannavaro-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Fabio_Cannavaro",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "hugo-lloris-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Hugo_Lloris",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "oliver-kahn-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Oliver_Kahn",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "michael-ballack-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Michael_Ballack",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "david-de-gea-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/David_de_Gea",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "paolo-maldini-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Paolo_Maldini",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "luis-figo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Lu%C3%ADs_Figo",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "michael-owen-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Michael_Owen",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jerome-boateng-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/J%C3%A9r%C3%B4me_Boateng",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "paulo-dybala-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Paulo_Dybala",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "didier-deschamps-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Didier_Deschamps",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "edwin-van-der-sar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Edwin_van_der_Sar",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "nemanja-vidic-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Nemanja_Vidi%C4%87",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "raphael-varane-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Rapha%C3%ABl_Varane",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "jurgen-klinsmann-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/J%C3%BCrgen_Klinsmann",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "louis-van-gaal-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Louis_van_Gaal",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mario-gotze-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mario_G%C3%B6tze",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "robinho-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Robinho",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "wesley-sneijder-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Wesley_Sneijder",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "bastian-schweinsteiger-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Bastian_Schweinsteiger",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "david-silva-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/David_Silva",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "diego-godin-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Diego_God%C3%ADn",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "pepe-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Pepe_%28futebolista%29",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "sami-khedira-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Sami_Khedira",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "mats-hummels-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Mats_Hummels",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "pepe-reina-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Pepe_Reina",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "petr-cech-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Petr_%C4%8Cech",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    },
+    "juan-manuel-mata-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://pt.wikipedia.org/wiki/Juan_Mata",
+      "source_license": "CC BY-SA 4.0",
+      "source_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "last_verified": "2026-10-15"
+    }
+  },
+  "summary": {
+    "questions_accepted": 59,
+    "questions_for_human": 0,
+    "claims_accepted": 150,
+    "claims_for_human": 0
+  }
+}

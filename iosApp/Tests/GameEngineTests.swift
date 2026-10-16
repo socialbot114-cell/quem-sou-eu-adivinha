@@ -226,7 +226,7 @@ final class GameEngineTests: XCTestCase {
     }
 
     func testQuestionBudgetRespectsCaps() {
-        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 3, unknownAnswers: 2), GuessPolicy.maximumQuestionLimit)
+        XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 100, rejectedGuesses: 6, unknownAnswers: 2), GuessPolicy.maximumQuestionLimit)
         XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 9, rejectedGuesses: 2, unknownAnswers: 2), 9)
         XCTAssertEqual(GuessPolicy.questionBudget(availableAttributes: 0, rejectedGuesses: 0, unknownAnswers: 0), 0)
     }
