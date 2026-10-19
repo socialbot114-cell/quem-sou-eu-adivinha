@@ -23,7 +23,7 @@ APP_ID = "6810873964"
 BUNDLE_ID = "br.com.quemsoueu.adivinha"
 # The TestFlight workflow stamps the GitHub run number as the build number, so the
 # submit workflow passes both values explicitly; inspect falls back to the newest build.
-APP_VERSION = os.environ.get("APP_VERSION_STRING", "").strip() or "1.2.7"
+APP_VERSION = os.environ.get("APP_VERSION_STRING", "").strip() or "1.2.8"
 BUILD_NUMBER = os.environ.get("APP_BUILD_NUMBER", "").strip()
 LOCALE = "pt-BR"
 SCREENSHOT_DISPLAY_TYPE = "APP_IPHONE_65"
@@ -54,7 +54,7 @@ Não é necessário criar uma conta. O jogo não exibe anúncios, não exige int
     "marketingUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
     "promotionalText": "Pense em uma personalidade. Responda perguntas e veja o jogo descobrir quem você imaginou.",
     "supportUrl": "https://socialbot114-cell.github.io/quem-sou-eu-adivinha-site/",
-    "whatsNew": "Jogo mais preciso e mais personagens.\n\n- Quando um palpite está errado, o jogo continua perguntando e tenta outros candidatos: menos partidas sem resposta.\n- Mais chances de acertar quando você responde \"Não sei\" ou dá respostas contraditórias.\n- Mais 50 jogadores de futebol, com perguntas sobre clubes.\n- Corrigido o status de campeão de Copa do Mundo de alguns jogadores.\n- Novos personagens e perguntas das versões anteriores continuam disponíveis.",
+    "whatsNew": "Mais personagens e jogo mais rápido.\n\n- Mais 180 jogadores de futebol, com perguntas sobre clubes.\n- O jogo oferece o palpite mais cedo, com menos perguntas por partida.\n- Quando um palpite está errado, o jogo continua perguntando e tenta outros candidatos: menos partidas sem resposta.\n- Corrigido o status de campeão de Copa do Mundo de alguns jogadores.\n- Novos personagens e perguntas das versões anteriores continuam disponíveis.",
 }
 COPYRIGHT = "2026 Gustavo De Melo Ferreira"
 REVIEW_NOTES = """Olá,

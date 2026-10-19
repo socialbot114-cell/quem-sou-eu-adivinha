@@ -3,7 +3,9 @@ import Foundation
 enum GuessPolicy {
     static let questionLimit = 14
     static let minimumAnswersBeforeGuess = 4
-    static let confidenceThreshold = 0.68
+    /// Confidence at which the game offers an early guess. Lowered from 0.68: fewer questions in every
+    /// scenario with no loss of final accuracy (simulated; 0.50 saves more questions but lowers first guesses).
+    static let confidenceThreshold = 0.55
     /// Abaixo deste nível, o jogo continua perguntando até o teto, em vez de parar no orçamento base.
     static let extensionConfidence = 0.50
     static let marginThreshold = 0.10
