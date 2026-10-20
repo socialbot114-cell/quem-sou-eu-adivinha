@@ -151,10 +151,8 @@ struct GameView: View {
     init(category: Category, playAnotherCategory: @escaping () -> Void) {
         self.category = category
         self.playAnotherCategory = playAnotherCategory
-        let base = KnowledgeStore.shared.base
-        let people = category == .all ? base.people : base.people.filter { $0.categories.contains(category) }
-        let questions = base.questions.filter { $0.categories.contains(.all) || $0.categories.contains(category) || category == .all }
-        _engine = State(initialValue: GameEngine(people: people, questions: questions))
+        let pool = KnowledgeStore.shared.base.pool(for: category)
+        _engine = State(initialValue: GameEngine(people: pool.people, questions: pool.questions))
     }
 
     private var questionLimit: Int {
@@ -400,10 +398,8 @@ struct GameView: View {
     }
 
     private func resetRound() {
-        let base = KnowledgeStore.shared.base
-        let people = category == .all ? base.people : base.people.filter { $0.categories.contains(category) }
-        let questions = base.questions.filter { $0.categories.contains(.all) || $0.categories.contains(category) || category == .all }
-        engine = GameEngine(people: people, questions: questions)
+        let pool = KnowledgeStore.shared.base.pool(for: category)
+        engine = GameEngine(people: pool.people, questions: pool.questions)
         answers = []
         rejectedPersonIDs = []
         questionNumber = 0

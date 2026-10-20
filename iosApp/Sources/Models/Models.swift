@@ -94,4 +94,17 @@ struct Question: Codable, Identifiable, Equatable {
 struct KnowledgeBase: Codable {
     let people: [Person]
     let questions: [Question]
+
+    /// Characters and questions for one game mode. "Todos" leaves out Animais, and the Animais mode
+    /// uses only its own questions, so the themed questions never reach the other categories.
+    func pool(for category: Category) -> (people: [Person], questions: [Question]) {
+        switch category {
+        case .all:
+            return (people.filter { !$0.categories.contains(.animals) }, questions.filter { !$0.categories.contains(.animals) })
+        case .animals:
+            return (people.filter { $0.categories.contains(.animals) }, questions.filter { $0.categories.contains(.animals) })
+        default:
+            return (people.filter { $0.categories.contains(category) }, questions.filter { $0.categories.contains(.all) || $0.categories.contains(category) })
+        }
+    }
 }

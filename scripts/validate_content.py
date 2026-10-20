@@ -32,6 +32,7 @@ CATEGORIES = {
 }
 PLAYABLE_CATEGORIES = CATEGORIES - {"Todos"}
 GLOBAL_CATEGORY = "Todos"
+TODOS_EXCLUDED_CATEGORIES = {"Animais"}  # not in the "Todos" mode; they use only their own questions
 MIN_PEOPLE_PER_CATEGORY = 12
 MIN_USEFUL_QUESTIONS = 6
 MIN_ATTRIBUTE_COVERAGE = 0.8
@@ -197,7 +198,9 @@ def validate_coverage_and_signatures(people, questions):
     for category in sorted(PLAYABLE_CATEGORIES):
         candidates = [person for person in people if category in person["categories"]]
         require(len(candidates) >= MIN_PEOPLE_PER_CATEGORY, f"Categoria {category} tem {len(candidates)} pessoas; mínimo: {MIN_PEOPLE_PER_CATEGORY}")
-        eligible = [question for question in questions if GLOBAL_CATEGORY in question["categories"] or category in question["categories"]]
+        eligible = [question for question in questions
+                    if category in question["categories"]
+                    or (GLOBAL_CATEGORY in question["categories"] and category not in TODOS_EXCLUDED_CATEGORIES)]
         useful = []
         for question in eligible:
             attribute = question["attribute"]
@@ -217,9 +220,10 @@ def validate_coverage_and_signatures(people, questions):
         require(not collisions, f"Pessoas indistinguíveis em {category}: {collisions}")
         category_metrics[category] = (len(candidates), len(eligible), len(useful))
 
+    todos_people = [person for person in people if not set(person["categories"]) & TODOS_EXCLUDED_CATEGORIES]
     all_attributes = [question["attribute"] for question in questions]
     all_signatures = {}
-    for person in people:
+    for person in todos_people:
         signature = tuple(person["attributes"].get(attribute) for attribute in all_attributes)
         all_signatures.setdefault(signature, []).append(person["id"])
     all_collisions = [ids for ids in all_signatures.values() if len(ids) > 1]
@@ -227,7 +231,7 @@ def validate_coverage_and_signatures(people, questions):
 
     unused = []
     for question in questions:
-        relevant_people = people if GLOBAL_CATEGORY in question["categories"] else [
+        relevant_people = todos_people if GLOBAL_CATEGORY in question["categories"] else [
             person for person in people if set(person["categories"]) & set(question["categories"])
         ]
         values = [person["attributes"][question["attribute"]] for person in relevant_people if question["attribute"] in person["attributes"]]

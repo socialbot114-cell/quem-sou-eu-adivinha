@@ -8,6 +8,20 @@ final class GameEngineTests: XCTestCase {
         Person(id: "c", name: "C", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0, "y": 0], avatarSymbol: "star.fill")
     ]
 
+    func testTodosModeLeavesOutAnimalsAndAnimalsUseOnlyTheirOwnQuestions() {
+        let base = KnowledgeStore.shared.base
+
+        let todos = base.pool(for: .all)
+        XCTAssertFalse(todos.people.isEmpty)
+        XCTAssertFalse(todos.people.contains { $0.categories.contains(.animals) })
+        XCTAssertFalse(todos.questions.contains { $0.categories.contains(.animals) })
+
+        let animals = base.pool(for: .animals)
+        XCTAssertGreaterThanOrEqual(animals.people.count, 12)
+        XCTAssertTrue(animals.people.allSatisfy { $0.categories.contains(.animals) })
+        XCTAssertTrue(animals.questions.allSatisfy { $0.categories.contains(.animals) })
+    }
+
     func testCharacterExpansionLoadsIntoTheOfflineKnowledgeBase() {
         let store = KnowledgeStore.shared
         XCTAssertNil(store.loadError)

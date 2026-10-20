@@ -205,6 +205,22 @@ def current_limit(available: int, rejected: int, unknown: int, policy: str, conf
     return question_budget(available, rejected, unknown, policy)
 
 
+def pool_for(base: dict, category: str) -> tuple[list, list]:
+    """Characters and questions of one game mode, as KnowledgeBase.pool(for:) in the app.
+
+    "Todos" leaves out Animais. Animais uses only its own questions, so the global questions never reach it.
+    """
+    people, questions = base["people"], base["questions"]
+    if category == "Todos":
+        return ([p for p in people if "Animais" not in p["categories"]],
+                [q for q in questions if "Animais" not in q["categories"]])
+    if category == "Animais":
+        return ([p for p in people if category in p["categories"]],
+                [q for q in questions if category in q["categories"]])
+    return ([p for p in people if category in p["categories"]],
+            [q for q in questions if "Todos" in q["categories"] or category in q["categories"]])
+
+
 def simulate_game(
     target: dict,
     people: list[dict],
@@ -342,15 +358,7 @@ def run(
         category_results: dict[str, list[dict]] = {}
         for target in base["people"]:
             for category in target["categories"]:
-                people = base["people"] if category == "Todos" else [
-                    person for person in base["people"] if category in person["categories"]
-                ]
-                questions = [
-                    question for question in base["questions"]
-                    if category == "Todos"
-                    or "Todos" in question["categories"]
-                    or category in question["categories"]
-                ]
+                people, questions = pool_for(base, category)
                 result = simulate_game(
                     target,
                     people,
