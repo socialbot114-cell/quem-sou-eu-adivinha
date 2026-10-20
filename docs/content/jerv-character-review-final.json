@@ -1206,6 +1206,156 @@
       "status": "accepted",
       "final_status": "accepted",
       "review_method": "jerv-automatico"
+    },
+    "animal-mamifero": {
+      "decision": "clear",
+      "confidence": 0.92,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "animal-insetos": {
+      "decision": "clear",
+      "confidence": 0.51,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-outros-vertebrados": {
+      "decision": "clear",
+      "confidence": 0.77,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-peixes": {
+      "decision": "clear",
+      "confidence": 0.74,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-carnica": {
+      "decision": "clear",
+      "confidence": 0.8,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "animal-vegetais": {
+      "decision": "clear",
+      "confidence": 0.74,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-frutas": {
+      "decision": "clear",
+      "confidence": 0.8,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "animal-sementes": {
+      "decision": "clear",
+      "confidence": 0.76,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-folhas": {
+      "decision": "clear",
+      "confidence": 0.79,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-nectar": {
+      "decision": "clear",
+      "confidence": 0.72,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-menos-30g": {
+      "decision": "clear",
+      "confidence": 0.25,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-menos-300g": {
+      "decision": "clear",
+      "confidence": 0.3,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-menos-3kg": {
+      "decision": "clear",
+      "confidence": 0.7,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-menos-30kg": {
+      "decision": "clear",
+      "confidence": 0.8,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "animal-menos-100kg": {
+      "decision": "clear",
+      "confidence": 0.89,
+      "status": "accepted",
+      "final_status": "accepted"
+    },
+    "animal-noturno": {
+      "decision": "clear",
+      "confidence": 0.7,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
+    },
+    "animal-ameacado": {
+      "decision": "not_answerable",
+      "confidence": 0.51,
+      "status": "human-review",
+      "editorial_review": {
+        "decision": "accepted",
+        "reviewedAt": "2026-10-19"
+      },
+      "final_status": "accepted"
     }
   },
   "claim_reviews": {
@@ -8736,6 +8886,1066 @@
       "last_verified": "2026-10-15",
       "final_status": "accepted",
       "review_method": "jerv-automatico"
+    },
+    "apodemus-agrarius-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q631822",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "gato-bravo-de-patas-negras-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q204814",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "leirao-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q465786",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "ornitorrinco-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q15343",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "mandril-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q189868",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "oreophasis-derbianus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q147327",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "trinta-reis-ribeirinho-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q28514",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "milhafre-preto-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q80362",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "loris-garrulo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1051641",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "makalata-didelphoides-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1765003",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "pinguim-imperador-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q161829",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "delanymys-brooksi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q302989",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "pardal-domestico-main-role": {
+      "decision": "supports",
+      "confidence": 0.88,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q14683",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "garca-real-europeia-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25273",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "trepadeira-corsa-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q180051",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "lagostrophus-fasciatus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q670056",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "zarro-comum-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q26742",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "funambulus-sublineatus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q308491",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rato-domestico-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q83310",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "morcego-pescador-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1073474",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "condor-dos-andes-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q170598",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "tadorna-paraiso-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q747813",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "albatroz-errante-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q208682",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "mellisuga-helenae-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q213036",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "passaro-do-petroleo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q213785",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "codorniz-da-california-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q830385",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "setifer-setosus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q717929",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "tamandua-bandeira-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q203033",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "anathana-ellioti-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q581371",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "dom-fafe-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25382",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "leao-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q140",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "morsa-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q40994",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "graxaim-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q832036",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "picoteiro-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q26135",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "gaivota-tridactila-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q26612",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "leopardo-nebuloso-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q36135",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rolieiro-indiano-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q477133",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "urso-do-mar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q7966",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "urso-de-oculos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q137641",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "sagui-leaozinho-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q244361",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "coruja-vermelha-de-madagascar-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1265138",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "hipopotamo-comum-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q34505",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "pombo-comum-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q42326",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "calhandra-cornuda-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q207249",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "queixada-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q756073",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "cegonha-bico-de-sapato-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q18700",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rato-castanho-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q184224",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "marta-de-garganta-amarela-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q220248",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "macaca-fascicularis-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q301676",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "sigmodon-ochrognathus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1770129",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "narval-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q159426",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "avestruz-main-role": {
+      "decision": "supports",
+      "confidence": 0.89,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q17592",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "gato-de-cabeca-chata-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q274177",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "texugo-europeu-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q27066",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "faisao-pavao-da-palawan-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q591987",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "balaenoptera-edeni-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q2144297",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "miopithecus-talapoin-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q682347",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "tatupeba-main-role": {
+      "decision": "supports",
+      "confidence": 0.86,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q902876",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "dendrolagus-goodfellowi-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q209581",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "lobo-cinzento-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q18498",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "urso-negro-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q122783",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "sapayoa-aenigma-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1090032",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rola-comum-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q168514",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "falcao-de-pes-vermelhos-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q179625",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "arctocephalus-philippii-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q848780",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "javali-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q58697",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rousettus-aegyptiacus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q754983",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "glis-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q147128",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "ourico-preto-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q894229",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "arachnothera-magna-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q773105",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "garcinha-branca-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q131709",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "ganso-bravo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25882",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "lophocebus-albigena-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q636490",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "pega-rabuda-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25307",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "lontra-marinha-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q41407",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "porquinho-da-india-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q79803",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "mocho-galego-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q129958",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "aguia-real-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q41181",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "saira-pintor-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1071698",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "lemur-de-cauda-anelada-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q185385",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "salanoia-concolor-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q790653",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "arganaz-castanho-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q207148",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "foca-monge-do-mediterraneo-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q208549",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "alcedo-meninting-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q32048",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "gymnobelideus-leadbeateri-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q301042",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "mutum-do-sudeste-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q685738",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "octodontomys-gliroides-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q615863",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "aardvark-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q46212",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "coelho-de-amami-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q687102",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "didelphis-imperfecta-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q194232",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "emu-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q93208",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "buceros-bicornis-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q232768",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "macrotus-waterhousii-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1831620",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "megaerops-wetmorei-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1765896",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "musaranho-pigmeu-main-role": {
+      "decision": "supports",
+      "confidence": 0.98,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q369889",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "bufo-real-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q130933",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "baleia-azul-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q42196",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "doninha-ana-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25311",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "coala-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q36101",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "alveola-branca-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q25399",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rena-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q39624",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "diabo-da-tasmania-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q134964",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "rinoceronte-de-sumatra-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q29220",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "atlantoxerus-main-role": {
+      "decision": "supports",
+      "confidence": 0.97,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q757289",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "corvus-nasicus-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q1584566",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
+    },
+    "apteryx-australis-main-role": {
+      "decision": "supports",
+      "confidence": 1.0,
+      "status": "accepted",
+      "source_url": "https://www.wikidata.org/wiki/Q667778",
+      "source_license": "CC0 1.0",
+      "source_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "last_verified": "2026-10-19",
+      "final_status": "accepted"
     }
   },
   "summary": {
@@ -8747,9 +9957,9 @@
   "editorial_reviewed_at": "2026-10-13",
   "editorial_reviewer": "responsável pelo projeto (aceite sem revisão humana completa)",
   "final_summary": {
-    "questions_accepted": 158,
+    "questions_accepted": 175,
     "questions_pending": 0,
-    "claims_accepted": 697,
+    "claims_accepted": 803,
     "claims_pending": 0
   }
 }

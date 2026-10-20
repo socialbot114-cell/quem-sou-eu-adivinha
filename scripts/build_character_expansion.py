@@ -338,6 +338,7 @@ SYMBOLS = {
     "Música internacional": "music.note",
     "K-pop": "music.mic",
     "Tecnologia e negócios": "lightbulb.fill",
+    "Animais": "pawprint.fill",
 }
 ARTIST_CATEGORIES = {"Música internacional", "K-pop", "Cinema e TV"}
 ARTIST_EXCEPTIONS = {"naomi-campbell", "tyra-banks"}

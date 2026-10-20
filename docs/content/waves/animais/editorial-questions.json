@@ -1,0 +1,91 @@
+{
+  "note": "Revisão editorial das perguntas de Animais que o JERV não aceitou no limite de 0,80. Todas aprovadas pelo responsável editorial.",
+  "questionReviews": [
+    {
+      "id": "animal-ameacado",
+      "text": "A espécie está ameaçada de extinção segundo a IUCN?",
+      "jerv_decision": "not_answerable",
+      "jerv_confidence": 0.51,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-folhas",
+      "text": "Folhas, raízes ou caules são a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.79,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-insetos",
+      "text": "Insetos são a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.51,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-menos-300g",
+      "text": "Um adulto da espécie pesa menos de 300 gramas?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.3,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-menos-30g",
+      "text": "Um adulto da espécie pesa menos de 30 gramas?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.25,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-menos-3kg",
+      "text": "Um adulto da espécie pesa menos de 3 quilos?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.7,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-nectar",
+      "text": "Néctar de flores é a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.72,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-noturno",
+      "text": "Ele costuma ser ativo à noite?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.7,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-outros-vertebrados",
+      "text": "Ele se alimenta principalmente de outros animais, como peixes, aves ou mamíferos?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.77,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-peixes",
+      "text": "Peixes são a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.74,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-sementes",
+      "text": "Sementes são a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.76,
+      "editorial_decision": "accepted"
+    },
+    {
+      "id": "animal-vegetais",
+      "text": "Plantas são a principal comida dele?",
+      "jerv_decision": "clear",
+      "jerv_confidence": 0.74,
+      "editorial_decision": "accepted"
+    }
+  ],
+  "reviewer": "responsável editorial do projeto (aprovação registrada na conversa)",
+  "reviewedAt": "2026-10-19"
+}

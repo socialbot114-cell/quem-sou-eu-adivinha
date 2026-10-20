@@ -27,6 +27,7 @@ CATEGORIES = {
     "Cinema e TV",
     "Moda e reality",
     "Tecnologia e negócios",
+    "Animais",
     "Todos",
 }
 PLAYABLE_CATEGORIES = CATEGORIES - {"Todos"}

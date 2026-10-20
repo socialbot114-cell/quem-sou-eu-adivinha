@@ -85,6 +85,7 @@ private struct CategoryCard: View {
         case .cinema: [Color.indigo, Color.blue]
         case .fashion: [Color.orange, Color.pink]
         case .technology: [Color.cyan, DesignSystem.Palette.violet]
+        case .animals: [Color.mint, Color.brown]
         case .all: [DesignSystem.Palette.violet, DesignSystem.Palette.violetLight]
         }
     }

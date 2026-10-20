@@ -1,0 +1,138 @@
+[
+  {
+    "id": "animal-mamifero",
+    "text": "É um mamífero?",
+    "attribute": "animal_mamifero",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-insetos",
+    "text": "Insetos são a principal comida dele?",
+    "attribute": "animal_insetos",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-outros-vertebrados",
+    "text": "Ele se alimenta principalmente de outros animais, como peixes, aves ou mamíferos?",
+    "attribute": "animal_outros_vertebrados",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-peixes",
+    "text": "Peixes são a principal comida dele?",
+    "attribute": "animal_peixes",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-carnica",
+    "text": "Ele come principalmente animais mortos, ou seja, carniça?",
+    "attribute": "animal_carnica",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-vegetais",
+    "text": "Plantas são a principal comida dele?",
+    "attribute": "animal_vegetais",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-frutas",
+    "text": "Frutas são a principal comida dele?",
+    "attribute": "animal_frutas",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-sementes",
+    "text": "Sementes são a principal comida dele?",
+    "attribute": "animal_sementes",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-folhas",
+    "text": "Folhas, raízes ou caules são a principal comida dele?",
+    "attribute": "animal_folhas",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-nectar",
+    "text": "Néctar de flores é a principal comida dele?",
+    "attribute": "animal_nectar",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-menos-30g",
+    "text": "Um adulto da espécie pesa menos de 30 gramas?",
+    "attribute": "animal_menos_30g",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-menos-300g",
+    "text": "Um adulto da espécie pesa menos de 300 gramas?",
+    "attribute": "animal_menos_300g",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-menos-3kg",
+    "text": "Um adulto da espécie pesa menos de 3 quilos?",
+    "attribute": "animal_menos_3kg",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-menos-30kg",
+    "text": "Um adulto da espécie pesa menos de 30 quilos?",
+    "attribute": "animal_menos_30kg",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-menos-100kg",
+    "text": "Um adulto da espécie pesa menos de 100 quilos?",
+    "attribute": "animal_menos_100kg",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-noturno",
+    "text": "Ele costuma ser ativo à noite?",
+    "attribute": "animal_noturno",
+    "categories": [
+      "Animais"
+    ]
+  },
+  {
+    "id": "animal-ameacado",
+    "text": "A espécie está ameaçada de extinção segundo a IUCN?",
+    "attribute": "animal_ameacado",
+    "categories": [
+      "Animais"
+    ]
+  }
+]

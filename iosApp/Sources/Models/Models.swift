@@ -13,6 +13,7 @@ enum Category: String, Codable, CaseIterable, Identifiable {
     case cinema = "Cinema e TV"
     case fashion = "Moda e reality"
     case technology = "Tecnologia e negócios"
+    case animals = "Animais"
     case all = "Todos"
     var id: String { rawValue }
 
@@ -45,6 +46,7 @@ enum Category: String, Codable, CaseIterable, Identifiable {
         case .cinema: "film.fill"
         case .fashion: "tshirt.fill"
         case .technology: "lightbulb.fill"
+        case .animals: "pawprint.fill"
         case .all: "sparkles"
         }
     }
