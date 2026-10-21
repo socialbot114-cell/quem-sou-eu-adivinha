@@ -22,6 +22,12 @@ final class GameEngineTests: XCTestCase {
         XCTAssertTrue(animals.questions.allSatisfy { $0.categories.contains(.animals) })
     }
 
+    func testEveryAnimalHasAnIllustrationOrAnEmoji() {
+        let animals = KnowledgeStore.shared.base.pool(for: .animals).people
+        XCTAssertFalse(animals.isEmpty)
+        XCTAssertTrue(animals.allSatisfy { $0.imageName != nil || $0.emoji != nil })
+    }
+
     func testCharacterExpansionLoadsIntoTheOfflineKnowledgeBase() {
         let store = KnowledgeStore.shared
         XCTAssertNil(store.loadError)

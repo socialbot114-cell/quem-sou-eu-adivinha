@@ -71,21 +71,26 @@ private struct CategoryCard: View {
     let category: Category
     let count: Int
 
+    // Deepened so white card text reaches at least 4.5:1 (WCAG AA) on every gradient.
+    private func rgb(_ red: Double, _ green: Double, _ blue: Double) -> Color {
+        Color(red: red / 255, green: green / 255, blue: blue / 255)
+    }
+
     private var colors: [Color] {
         switch category {
-        case .creators: [Color.pink, DesignSystem.Palette.violet]
-        case .football: [Color.green, Color.teal]
-        case .artists: [DesignSystem.Palette.gold, Color.orange]
-        case .politicians: [Color.indigo, DesignSystem.Palette.violet]
-        case .history: [Color.brown, Color.orange]
-        case .world: [Color.blue, Color.cyan]
-        case .otherSports: [Color.green, Color.teal]
-        case .internationalMusic: [Color.pink, DesignSystem.Palette.violet]
-        case .kpop: [Color.pink, Color.purple]
-        case .cinema: [Color.indigo, Color.blue]
-        case .fashion: [Color.orange, Color.pink]
-        case .technology: [Color.cyan, DesignSystem.Palette.violet]
-        case .animals: [Color.mint, Color.brown]
+        case .creators: [rgb(224, 40, 75), rgb(100, 31, 240)]
+        case .football: [rgb(35, 135, 61), rgb(35, 128, 145)]
+        case .artists: [rgb(153, 110, 12), rgb(173, 101, 0)]
+        case .politicians: [rgb(88, 86, 214), rgb(100, 31, 240)]
+        case .history: [rgb(139, 114, 81), rgb(173, 101, 0)]
+        case .world: [rgb(0, 113, 237), rgb(36, 126, 168)]
+        case .otherSports: [rgb(35, 135, 61), rgb(35, 128, 145)]
+        case .internationalMusic: [rgb(224, 40, 75), rgb(100, 31, 240)]
+        case .kpop: [rgb(224, 40, 75), rgb(166, 78, 211)]
+        case .cinema: [rgb(88, 86, 214), rgb(0, 113, 237)]
+        case .fashion: [rgb(173, 101, 0), rgb(224, 40, 75)]
+        case .technology: [rgb(36, 126, 168), rgb(100, 31, 240)]
+        case .animals: [rgb(0, 133, 127), rgb(139, 114, 81)]
         case .all: [DesignSystem.Palette.violet, DesignSystem.Palette.violetLight]
         }
     }
@@ -438,7 +443,7 @@ private struct QuestionCard: View {
                 Label("Não", systemImage: "xmark").frame(maxWidth: .infinity, minHeight: 48)
             }
             .font(.headline.weight(.bold))
-            .foregroundStyle(.red)
+            .foregroundStyle(Color(red: 0.72, green: 0.13, blue: 0.11))
             .background(.red.opacity(0.11), in: Capsule())
         }
         .padding(24)
@@ -748,7 +753,7 @@ private struct CreditsView: View {
         List(credits) { credit in
             VStack(alignment: .leading, spacing: 5) {
                 Text(credit.name).font(.headline)
-                Text("Foto: \(credit.author)").font(.subheadline)
+                Text("Autor: \(credit.author)").font(.subheadline)
                 Link("\(credit.license) • Ver fonte", destination: credit.url).font(.caption.weight(.semibold))
                 Text("Modificações: \(credit.modifications)")
                     .font(.caption2)

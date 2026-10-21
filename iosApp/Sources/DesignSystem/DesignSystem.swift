@@ -16,7 +16,7 @@ enum DesignSystem {
 
     enum Gradient {
         static let primary = LinearGradient(
-            colors: [Palette.violetLight, Palette.violet],
+            colors: [Color(red: 0.49, green: 0.23, blue: 0.93), Palette.violet],  // white text reaches 5.6:1 on the start colour
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         )

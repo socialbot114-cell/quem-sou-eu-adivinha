@@ -71,8 +71,9 @@ struct Person: Codable, Identifiable, Equatable {
     let attributes: [String: Double]
     let avatarSymbol: String
     let imageName: String?
+    let emoji: String?
 
-    init(id: String, name: String, categories: [Category], country: String, profession: String, attributes: [String: Double], avatarSymbol: String, imageName: String? = nil) {
+    init(id: String, name: String, categories: [Category], country: String, profession: String, attributes: [String: Double], avatarSymbol: String, imageName: String? = nil, emoji: String? = nil) {
         self.id = id
         self.name = name
         self.categories = categories
@@ -81,6 +82,7 @@ struct Person: Codable, Identifiable, Equatable {
         self.attributes = attributes
         self.avatarSymbol = avatarSymbol
         self.imageName = imageName
+        self.emoji = emoji
     }
 }
 

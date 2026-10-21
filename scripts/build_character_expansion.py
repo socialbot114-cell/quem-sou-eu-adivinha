@@ -439,7 +439,8 @@ def build_batch_people(
                 "country": candidate["country"],
                 "profession": candidate["profession"],
                 "attributes": attributes,
-                "avatarSymbol": SYMBOLS[category],
+                "avatarSymbol": candidate.get("avatarSymbol", SYMBOLS[category]),
+                **{key: candidate[key] for key in ("imageName", "emoji") if key in candidate},
             })
             known_ids.add(identifier)
 

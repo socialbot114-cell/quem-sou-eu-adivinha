@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20",
+  "generatedAt": "2026-10-21",
   "category": "Animais",
   "people": [
     {
@@ -28,7 +28,10 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦁",
+      "imageName": "leao.png"
     },
     {
       "id": "lobo-cinzento",
@@ -56,7 +59,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐺",
+      "imageName": "lobo-cinzento.png"
     },
     {
       "id": "javali",
@@ -84,7 +90,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐗"
     },
     {
       "id": "avestruz",
@@ -112,7 +120,10 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "avestruz.png"
     },
     {
       "id": "hipopotamo-comum",
@@ -140,7 +151,10 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦛",
+      "imageName": "hipopotamo-comum.png"
     },
     {
       "id": "pardal-domestico",
@@ -168,7 +182,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "pardal-domestico.png"
     },
     {
       "id": "pega-rabuda",
@@ -196,7 +213,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "pega-rabuda.png"
     },
     {
       "id": "coala",
@@ -224,7 +244,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾",
+      "imageName": "coala.png"
     },
     {
       "id": "texugo-europeu",
@@ -252,7 +275,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦡",
+      "imageName": "texugo-europeu.png"
     },
     {
       "id": "doninha-ana",
@@ -280,7 +306,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦦",
+      "imageName": "doninha-ana.png"
     },
     {
       "id": "rena",
@@ -308,7 +337,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦌",
+      "imageName": "rena.png"
     },
     {
       "id": "rato-domestico",
@@ -336,7 +368,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐭",
+      "imageName": "rato-domestico.png"
     },
     {
       "id": "morsa",
@@ -364,7 +399,10 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦭",
+      "imageName": "morsa.png"
     },
     {
       "id": "pombo-comum",
@@ -392,7 +430,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🕊️",
+      "imageName": "pombo-comum.png"
     },
     {
       "id": "ornitorrinco",
@@ -420,7 +461,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾",
+      "imageName": "ornitorrinco.png"
     },
     {
       "id": "alveola-branca",
@@ -448,7 +492,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "alveola-branca.png"
     },
     {
       "id": "garca-real-europeia",
@@ -476,7 +523,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "garca-real-europeia.png"
     },
     {
       "id": "baleia-azul",
@@ -504,7 +554,10 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐋",
+      "imageName": "baleia-azul.png"
     },
     {
       "id": "aguia-real",
@@ -532,7 +585,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦅",
+      "imageName": "aguia-real.png"
     },
     {
       "id": "bufo-real",
@@ -560,7 +616,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦉",
+      "imageName": "bufo-real.png"
     },
     {
       "id": "porquinho-da-india",
@@ -588,7 +647,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾",
+      "imageName": "porquinho-da-india.png"
     },
     {
       "id": "ganso-bravo",
@@ -616,7 +678,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🪿",
+      "imageName": "ganso-bravo.png"
     },
     {
       "id": "aardvark",
@@ -644,7 +709,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "milhafre-preto",
@@ -672,7 +739,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦅",
+      "imageName": "milhafre-preto.png"
     },
     {
       "id": "dom-fafe",
@@ -700,7 +770,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "dom-fafe.png"
     },
     {
       "id": "urso-negro",
@@ -728,7 +801,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐻",
+      "imageName": "urso-negro.png"
     },
     {
       "id": "emu",
@@ -756,7 +832,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "emu.png"
     },
     {
       "id": "mocho-galego",
@@ -784,7 +863,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦉",
+      "imageName": "mocho-galego.png"
     },
     {
       "id": "diabo-da-tasmania",
@@ -812,7 +894,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "garcinha-branca",
@@ -840,7 +924,10 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦",
+      "imageName": "garcinha-branca.png"
     },
     {
       "id": "rola-comum",
@@ -868,7 +955,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🕊️"
     },
     {
       "id": "narval",
@@ -896,7 +985,9 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐋"
     },
     {
       "id": "condor-dos-andes",
@@ -924,7 +1015,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦅"
     },
     {
       "id": "zarro-comum",
@@ -952,7 +1045,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦆"
     },
     {
       "id": "leopardo-nebuloso",
@@ -980,7 +1075,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐆"
     },
     {
       "id": "pinguim-imperador",
@@ -1008,7 +1105,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐧"
     },
     {
       "id": "cegonha-bico-de-sapato",
@@ -1036,7 +1135,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦆"
     },
     {
       "id": "rato-castanho",
@@ -1064,7 +1165,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐭"
     },
     {
       "id": "lontra-marinha",
@@ -1092,7 +1195,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦦"
     },
     {
       "id": "picoteiro",
@@ -1120,7 +1225,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "falcao-de-pes-vermelhos",
@@ -1148,7 +1255,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦅"
     },
     {
       "id": "rinoceronte-de-sumatra",
@@ -1176,7 +1285,9 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦏"
     },
     {
       "id": "urso-de-oculos",
@@ -1204,7 +1315,9 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐻"
     },
     {
       "id": "lemur-de-cauda-anelada",
@@ -1232,7 +1345,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐒"
     },
     {
       "id": "glis",
@@ -1260,7 +1375,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "gato-bravo-de-patas-negras",
@@ -1288,7 +1405,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐱"
     },
     {
       "id": "gaivota-tridactila",
@@ -1316,7 +1435,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "mandril",
@@ -1344,7 +1465,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐒"
     },
     {
       "id": "foca-monge-do-mediterraneo",
@@ -1372,7 +1495,9 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦭"
     },
     {
       "id": "arganaz-castanho",
@@ -1400,7 +1525,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "tamandua-bandeira",
@@ -1428,7 +1555,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "calhandra-cornuda",
@@ -1456,7 +1585,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "mellisuga-helenae",
@@ -1484,7 +1615,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "rolieiro-indiano",
@@ -1512,7 +1645,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "buceros-bicornis",
@@ -1540,7 +1675,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "macaca-fascicularis",
@@ -1568,7 +1705,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "passaro-do-petroleo",
@@ -1596,7 +1735,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "musaranho-pigmeu",
@@ -1624,7 +1765,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "gato-de-cabeca-chata",
@@ -1652,7 +1795,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐱"
     },
     {
       "id": "marta-de-garganta-amarela",
@@ -1680,7 +1825,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "albatroz-errante",
@@ -1708,7 +1855,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "leirao",
@@ -1736,7 +1885,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "sagui-leaozinho",
@@ -1764,7 +1915,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦁"
     },
     {
       "id": "graxaim",
@@ -1792,7 +1945,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "apodemus-agrarius",
@@ -1820,7 +1975,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "apteryx-australis",
@@ -1848,7 +2005,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "urso-do-mar",
@@ -1876,7 +2035,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐻"
     },
     {
       "id": "trinta-reis-ribeirinho",
@@ -1904,7 +2065,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "alcedo-meninting",
@@ -1932,7 +2095,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦌"
     },
     {
       "id": "coelho-de-amami",
@@ -1960,7 +2125,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐰"
     },
     {
       "id": "rousettus-aegyptiacus",
@@ -1988,7 +2155,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "sapayoa-aenigma",
@@ -2016,7 +2185,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "queixada",
@@ -2044,7 +2215,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐗"
     },
     {
       "id": "dendrolagus-goodfellowi",
@@ -2072,7 +2245,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🕊️"
     },
     {
       "id": "tatupeba",
@@ -2100,7 +2275,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "atlantoxerus",
@@ -2128,7 +2305,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "arctocephalus-philippii",
@@ -2156,7 +2335,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "lagostrophus-fasciatus",
@@ -2184,7 +2365,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "trepadeira-corsa",
@@ -2212,7 +2395,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "tadorna-paraiso",
@@ -2240,7 +2425,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "faisao-pavao-da-palawan",
@@ -2268,7 +2455,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "gymnobelideus-leadbeateri",
@@ -2296,7 +2485,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "anathana-ellioti",
@@ -2324,7 +2515,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "oreophasis-derbianus",
@@ -2352,7 +2545,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "codorniz-da-california",
@@ -2380,7 +2575,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "morcego-pescador",
@@ -2408,7 +2605,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦇"
     },
     {
       "id": "lophocebus-albigena",
@@ -2436,7 +2635,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "salanoia-concolor",
@@ -2464,7 +2665,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "miopithecus-talapoin",
@@ -2492,7 +2695,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "corvus-nasicus",
@@ -2520,7 +2725,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "mutum-do-sudeste",
@@ -2548,7 +2755,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "arachnothera-magna",
@@ -2576,7 +2785,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "loris-garrulo",
@@ -2604,7 +2815,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐒"
     },
     {
       "id": "setifer-setosus",
@@ -2632,7 +2845,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "coruja-vermelha-de-madagascar",
@@ -2660,7 +2875,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🦉"
     },
     {
       "id": "saira-pintor",
@@ -2688,7 +2905,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "bird.fill",
+      "emoji": "🐦"
     },
     {
       "id": "ourico-preto",
@@ -2716,7 +2935,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🦔"
     },
     {
       "id": "octodontomys-gliroides",
@@ -2744,7 +2965,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "didelphis-imperfecta",
@@ -2772,7 +2995,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "funambulus-sublineatus",
@@ -2800,7 +3025,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 0,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "megaerops-wetmorei",
@@ -2828,7 +3055,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "sigmodon-ochrognathus",
@@ -2856,7 +3085,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "macrotus-waterhousii",
@@ -2884,7 +3115,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "delanymys-brooksi",
@@ -2912,7 +3145,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 1
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "makalata-didelphoides",
@@ -2940,7 +3175,9 @@
         "animal_menos_100kg": 1,
         "animal_noturno": 1,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     },
     {
       "id": "balaenoptera-edeni",
@@ -2968,7 +3205,9 @@
         "animal_menos_100kg": 0,
         "animal_noturno": 0,
         "animal_ameacado": 0
-      }
+      },
+      "avatarSymbol": "pawprint.fill",
+      "emoji": "🐾"
     }
   ],
   "sources": [
@@ -2981,7 +3220,7 @@
       "sourceExcerpt": "O leão [feminino: leoa] é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia. Foi extinto na África do Norte e no Sudoeste Asiático em tempos históricos, e até o Pleistoceno Superior, há cerca de 10 000 anos, era o mais difundido grande mamífero terrestre depois dos humanos, sendo encontrado na maior parte da África, em muito da Eurásia, da Europa Ocidental à Índia, e na América, do Yukon ao México. É um dos quatro grandes felinos, com alguns machos excedendo 250 quilogramas em peso, sendo o segundo maior felino recente depois do tigre.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "lobo-cinzento",
@@ -2992,7 +3231,7 @@
       "sourceExcerpt": "O Lobo-cinzento; é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família Canidae. O sequenciamento de DNA e estudos genéticos reafirmam que o lobo-cinzento é ancestral do cão doméstico, contudo alguns aspectos desta afirmação têm sido questionados recentemente. Uma série de outras subespécies do lobo-cinzento foram identificadas, embora o número real de subespécies ainda esteja em discussão. Os lobos-cinzentos são tipicamente predadores ápice nos ecossistemas que ocupam. Embora não sejam tão adaptáveis à presença humana como geralmente ocorre com as demais espécies de canídeos, os lobos se desenvolveram em diversos ambientes, como florestas temperadas, florestas tropicais, pantanos, praias, desertos, montanhas, tundras, selvas, taigas, campos e até mesmo em algumas áreas urbanas e rurais. O lobo-cinzento, o lobo-etíope e o lobo-dourado-africano são as únicas espécies classificadas como lobos legítimos. Os demais lobos correspondem a subespécies destas espécies.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "javali",
@@ -3003,7 +3242,7 @@
       "sourceExcerpt": "O javali ou javali-euroasiático, também conhecido como javardo, porco-bravo, porco-monteiro, porco-selvagem-euroasiático e porco-montês, é um animal artiodáctilo da família Suidae, do género Sus. Tem ampla distribuição geográfica, sendo nativo da Europa, Ásia, Ilhas Sonda e Norte da África. Em tempos recentes, a subespécie javali-europeu foi introduzida nas Américas e na Oceania.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "avestruz",
@@ -3014,7 +3253,7 @@
       "sourceExcerpt": "O avestruz-comum é uma espécie de ave não voadora, originária da África. É uma das duas únicas espécies vivas da família Struthionidae, do género Struthio e da ordem das Struthioniformes, juntamente com o avestruz-somali, reconhecido como uma espécie separada em 2014. O avestruz-comum é considerado a maior espécie viva de ave.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "hipopotamo-comum",
@@ -3025,7 +3264,7 @@
       "sourceExcerpt": "O hipopótamo-comum ou hipopótamo-do-nilo é um mamífero herbívoro de grande porte da África subsariana e uma das duas únicas espécies não extintas da família Hippopotamidae, sendo a outra o hipopótamo-pigmeu. O seu nome provém do grego antigo, significando \"cavalo do rio\". Apesar das suas semelhanças físicas com os porcos e outros ungulados artiodáctilos, os seus parentes vivos mais próximos são os cetáceos dos quais divergiram há cerca de 55 milhões de anos. O antepassado comum das baleias e dos hipopótamos demarcou-se dos outros artiodáctilos há cerca de 60 milhões de anos. O fóssil mais antigo conhecido de hipopótamo, pertencente ao género Kenyapotamus em África, data de há cerca de 16 milhões de anos. Já foi designado como cavalo-marinho e peixe-cavalo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "pardal-domestico",
@@ -3036,7 +3275,7 @@
       "sourceExcerpt": "Pardal-comum é uma ave da família Passeridae bastante comum em Portugal. A sua distribuição geográfica compreendia, originalmente, a maior parte da Europa e da Ásia, tendo sido introduzido acidental ou propositadamente na maioria da América, África subsariana, Austrália e Nova Zelândia. É atualmente a espécie de ave com maior distribuição geográfica no mundo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "pega-rabuda",
@@ -3047,7 +3286,7 @@
       "sourceExcerpt": "A pega-rabuda é uma ave da família Corvidae (corvos), com um aspecto inconfundível. Essa é uma\ndas espécies de aves mais inteligentes \ndo mundo, sendo uma das 9 espécies que podem reconhecer seu reflexo no espelho.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "coala",
@@ -3058,7 +3297,7 @@
       "sourceExcerpt": "O Coala é um mamífero marsupial herbívoro arbóreo nativo da Austrália. É o único representante existente da família Phascolarctidae e seus parentes vivos mais próximos são os vombates, que são membros da família Vombatidae. O coala é encontrado em áreas costeiras das regiões leste e sul do continente, habitando Queensland, Nova Gales do Sul, Vitória e Austrália do Sul. É facilmente reconhecível por seu corpo robusto e sem cauda, uma cabeça grande com orelhas redondas e macias, e um nariz grande em forma de colher. O coala tem um comprimento de corpo de 60 a 85 cm e pesa de 4 a 15 kg. A cor do pelo varia de cinza prateado a marrom chocolate. Os coalas das populações do norte são tipicamente menores e de cor mais clara do que seus pares localizados mais ao sul. Essas populações possivelmente são subespécies separadas, mas isso é contestado.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "texugo-europeu",
@@ -3069,7 +3308,7 @@
       "sourceExcerpt": "O texugo-europeu, também conhecido como texugo-euroasiático, é um mamífero mustelídeo indígena da maior parte da Europa e de muitas áreas da Ásia. É uma das três espécies do género Meles. A nível nacional e global é considerada uma espécie Pouco Preocupante (LC).",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "doninha-ana",
@@ -3080,7 +3319,7 @@
       "sourceExcerpt": "A doninha-anã é uma espécie de doninha, um pequeno mamífero carnívoro da família dos mustelídeos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rena",
@@ -3091,7 +3330,7 @@
       "sourceExcerpt": "Rena ou caribu é um cervídeo de grande porte que habita a tundra e florestas boreais da Groenlândia, Escandinávia, Rússia, Alasca e Canadá. Se divide em dois ecotipos ; a primeira anualmente migra cerca de cinco mil quilômetros entre a tundra e floresta em grandes manadas de mais de meio milhão de animais, enquanto a segunda é bem menos numerosa. Na Europa, foi domesticada.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rato-domestico",
@@ -3102,7 +3341,7 @@
       "sourceExcerpt": "O camundongo (português brasileiro) ou rato-doméstico (português europeu) ou ainda murganho ou catita é uma espécie de pequeno roedor da família dos murídeos, encontrado originalmente na Europa e Ásia, e atualmente distribuído por todo o mundo, geralmente associado a habitações humanas. Tem cerca de 8 cm de comprimento, pelagem macia, branca ou cinza-acastanhada, mais clara nas partes inferiores, orelhas grandes e arredondadas e cauda nua e longa.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "morsa",
@@ -3113,7 +3352,7 @@
       "sourceExcerpt": "A morsa é um animal de grande porte que vive nas águas do Ártico. É a única espécie não extinta do gênero Odobenus e da família Odobenidae. Uma morsa fêmea adulta chega a 2,60 metros de comprimento e pode pesar de 400 até 1 250 kg. O macho adulto é ainda maior, podendo ter de 3 a 4 m de comprimento. Os machos adultos do Pacífico podem pesar até mais de 2 000 kg e, entre pinípedes, são ultrapassados ​​em tamanho apenas pelas duas espécies de elefantes-marinhos. Subdivide-se em três subespécies: morsa do Atlântico que vive no oceano Atlântico, a morsa do Pacífico que habita no oceano Pacífico e O. rosmarus laptevi, que vive no mar de Laptev.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "pombo-comum",
@@ -3124,7 +3363,7 @@
       "sourceExcerpt": "Columba livia, conhecida pelos nomes comuns de pombo-comum, pombo-doméstico ou pombo-das-rochas ou simplesmente pombo, é uma espécie de ave da família Columbidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "ornitorrinco",
@@ -3135,7 +3374,7 @@
       "sourceExcerpt": "O ornitorrinco é um mamífero semiaquático natural da Austrália e Tasmânia. É o único representante vivo da família Ornithorhynchidae, e a única espécie do gênero Ornithorhynchus. Juntamente com as equidnas, formam o grupo dos monotremados, os únicos mamíferos ovíparos existentes. A espécie é monotípica, ou seja, não tem subespécies ou variedades reconhecidas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "alveola-branca",
@@ -3146,7 +3385,7 @@
       "sourceExcerpt": "A alvéola-branca, conhecida como labandeira ou lavandeira, é um pequeno pássaro da ordem Passeriformes, família Motacillidae, que abarca também os géneros Anthus e Macronyx.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "garca-real-europeia",
@@ -3157,7 +3396,7 @@
       "sourceExcerpt": "A Ardea cinerea, comummente conhecida como garça-real-comum, é uma ave pernalta ciconiforme, da família dos Ardeídeos, que marca presença em território português.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "baleia-azul",
@@ -3168,7 +3407,7 @@
       "sourceExcerpt": "A baleia-azul é um mamífero marinho pertencente à subordem dos misticetos (Mysticeti) dos cetáceos. Com até 32 metros de comprimento e até 240 toneladas de peso, são os maiores animais que já existiram em relação ao seu peso e tamanho. Longo e esguio, o corpo das baleias-azuis apresenta seu dorso em diferentes tons azuis-acinzentados, enquanto seu ventre é geralmente mais claro.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "aguia-real",
@@ -3179,7 +3418,7 @@
       "sourceExcerpt": "A águia-real é uma ave de rapina europeia, de hábitos diurnos, da família Accipitridae. Habita em grande parte do Hemisfério Norte: Europa, Ásia, Norte da África e grande parte da América do Norte.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "bufo-real",
@@ -3190,7 +3429,7 @@
       "sourceExcerpt": "O Bubo bubo, comummente conhecido como bufo-real, é uma espécie de ave estrigiforme pertencente à família dos Estrigídeos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "porquinho-da-india",
@@ -3201,7 +3440,7 @@
       "sourceExcerpt": "O porquinho-da-índia ou cuy é uma espécie de roedor sul-americano da família dos caviídeos, que também inclui os preás, mocós e maras. Também são conhecidos popularmente como cobaia, cobaia-andino e preá-do-reino. São muito confundidos por leigos como um rato por terem muita semelhança. São oriundos dos Andes, na América do Sul, e estudos baseados em bioquímica e hibridação sugerem que eles são descendentes domesticados de uma espécie de preá intimamente relacionada como C. tschudii. Eles foram originalmente domesticados para a alimentação dos incas e outros povos indígenas, os quais ainda mantêm essa prática. Devido a essa domesticação, esses roedores não existem mais na natureza.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "ganso-bravo",
@@ -3212,7 +3451,7 @@
       "sourceExcerpt": "O ganso-bravo ou ganso-comum-ocidental é uma ave da família Anatidae caracterizada pelo aspeto de ganso de granja, com bico laranja, plumagem cinza pardo e patas rosas. A voz é muito forte. Põe 4 a 6 ovos em uma ninhada, de maio a junho. Se alimenta arrancando ervas e brotos do solo; às vezes, se alimenta de insetos; e escava procurando raízes. Está presente em quase toda a Europa, em zonas húmidas, por vezes pantanosas. Em muitos casos, os indivíduos introduzidos se naturalizam e se fazem residentes, perdendo seu caráter selvagem.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "aardvark",
@@ -3223,7 +3462,7 @@
       "sourceExcerpt": "O porco-formigueiro, porco-da-terra, jimbo, timba, orictéropo ou oricteropo é um mamífero africano, o único representante vivo da ordem Tubulidentata, da família Orycteropodidae e do género Orycteropus. Distribui-se por todas as planícies e savanas do sul de África.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "milhafre-preto",
@@ -3234,7 +3473,7 @@
       "sourceExcerpt": "O milhafre-preto, que também é conhecido como rabo-de-bacalhau ou milhano-preto, é uma ave de rapina diurna do grupo dos milhafres. É uma espécie migradora, que está presente no território português de Março a Agosto. O seu Inverno é passado em África, a sul do deserto do Saara.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "dom-fafe",
@@ -3245,7 +3484,7 @@
       "sourceExcerpt": "O dom-fafe é uma pequena ave passeriforme da família dos fringilídeos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "urso-negro",
@@ -3256,7 +3495,7 @@
       "sourceExcerpt": "O urso-negro, também conhecido como baribal, é um urso norte-americano, encontrado do Alasca ao Norte do México. Alcança 2,20 m de comprimento, 1,10 m de altura na cernelha e 360 kg de peso. O urso negro geralmente vive cerca de 15 anos, mas alguns podem alcançar até 40 anos. É um bom nadador e pode correr a até 50 km/h. Sua pelagem pode ser de cor negra, marrom, bege ou branca. Algumas subespécies estão ameaçadas de extinção.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "emu",
@@ -3267,7 +3506,7 @@
       "sourceExcerpt": "Emu ou ema-australiana é uma espécie de ave terrestre endêmica de Austrália, a segunda maior do mundo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "mocho-galego",
@@ -3278,7 +3517,7 @@
       "sourceExcerpt": "O mocho-galego ou chio é uma espécie de ave estrigiforme pertencente à família Strigidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "diabo-da-tasmania",
@@ -3289,7 +3528,7 @@
       "sourceExcerpt": "O diabo-da-tasmânia ou demônio-da-tasmânia é um mamífero marsupial da família Dasyuridae, endêmico da ilha da Tasmânia, Austrália. Através do registro fóssil, sabe-se que a espécie habitou também a Austrália continental, onde se extinguiu há cerca de três mil anos. As causas desse desaparecimento são desconhecidas, mas acredita-se que tenha sido influenciado pela introdução do dingo, pela chegada e expansão dos aborígenes e por influência climática de El Niño durante o Holoceno.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "garcinha-branca",
@@ -3300,7 +3539,7 @@
       "sourceExcerpt": "A garça-pequena-europeia ou garça-branca-pequena é uma ave Pelicaniforme da família dos ardeídeos nativa do Velho Mundo. Distingue-se da garça-boieira pelo bico preto e comprido e pelas patas pretas com os pés amarelos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rola-comum",
@@ -3311,7 +3550,7 @@
       "sourceExcerpt": "A rola-comum ou rola-brava é uma ave da família Columbidae, família que inclui as rolas, as rolinhas e os pombos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "narval",
@@ -3322,7 +3561,7 @@
       "sourceExcerpt": "O narval ou unicórnio-do-mar é um cetáceo odontoceto de tamanho médio e o animal com os maiores caninos. Vive durante todo o ano no Ártico. É uma das duas espécies vivas de baleias da família Monodontidae, juntamente com a beluga e o Golfinho-do-irauádi. Os narvais machos são distinguidos por uma presa helicoidal longa e reta que, na verdade, é um canino superior esquerdo alongado. Vale ressaltar que aproximadamente 15% das fêmeas também desenvolvem essa presa. Encontrados principalmente no Norte do Canadá e águas da Gronelândia, raramente ao sul de 65° N de latitude, os narvais são predadores do ártico excepcionalmente especializados.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "condor-dos-andes",
@@ -3333,7 +3572,7 @@
       "sourceExcerpt": "O condor é uma ave da família dos catartídeos, parente próximo do condor-da-califórnia e dos urubus, que habita a Cordilheira Andina, na América do Sul.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "zarro-comum",
@@ -3344,7 +3583,7 @@
       "sourceExcerpt": "Zarro-comum é uma ave pertencente ao género Aythya e à família Anatidae. Pertence ao grupo dos chamados patos mergulhadores. Distingue-se pela cabeça vermelha e pela plumagem cinzenta (macho).",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "leopardo-nebuloso",
@@ -3355,7 +3594,7 @@
       "sourceExcerpt": "O leopardo-nebuloso ou pantera-nebulosa é uma espécie de mamífero carnívoro da família Felidae. Ocorre dos sopés do Himalaia no Nepal e Índia através do sudeste asiático, até a China, ao sul do rio Yangtzé; está regionalmente extinto no Taiwan. É uma espécie dependente de áreas florestais. É um felino de tamanho médio, medindo de 60 a 110 cm de comprimento e pesando entre 11,5 e 23 kg. Possui pelagem bronzeada ou marrom-clara e distintamente marcada com grandes elipses irregulares, de bordas escuras, das quais se diz terem formato de nebulosas, daí tanto seu nome vulgar quanto científico.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "pinguim-imperador",
@@ -3366,7 +3605,7 @@
       "sourceExcerpt": "Pinguim-imperador é a maior ave da família Spheniscidae (pinguins). Os adultos podem medir até 1,22 metros de altura e pesar até 37 kg. Os machos desta espécie são um dos poucos animais que passam o inverno na Antártida.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "cegonha-bico-de-sapato",
@@ -3377,7 +3616,7 @@
       "sourceExcerpt": "O bico-de-sapato, popularmente conhecido como bico-de-tamanco ou cegonha-bico-de-sapato, é uma ave de bico grande. Tem características de uma cegonha, um pelicano, e de uma garça, mas não é parente de nenhum deles, os cientistas acreditam que o seu parente mais próximo seja o cabeça-de-martelo. Vive em regiões pantanosas localizadas no centro do continente africano, do Sudão à Zâmbia. Alimenta-se, basicamente, de peixes e rãs. É uma espécie de ave pelecaniforme, a única da família Balaenicipitidae. Seu nome comum se refere à forma de seu enorme bico.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rato-castanho",
@@ -3388,7 +3627,7 @@
       "sourceExcerpt": "Rattus norvegicus (Berkenhout, 1769), ratazana, é uma espécie de roedor originária do leste da Ásia, mas actualmente naturalizada em quase todas as regiões povoadas do planeta, sendo a mais comum e conhecida de todas as espécie de ratos. Sendo uma das mais corpulentas espécies murinas, tem pelagem cinzento-acastanhada a acastanhada, até 25 cm de comprimento corporal e uma cauda com sensivelmente o mesmo comprimento do corpo. O macho pesa até 350 gramas, e uma ratazana fêmea, até 250 g, é considerada a espécie de mamífero com mais sucesso do planeta, após os humanos. Ocorrendo em pequenos grupos, compostos por um macho e várias fêmeas, constrói abrigos em galerias subterrâneas escavadas no solo ou no interior de condutas, cavidades e outros espaços confinados em paredes e outras estruturas construídas. A criação selectiva da espécie produziu o rato de laboratório, um organismo modelo na investigação biológica, bem como diversas raças de ratazanas de estimação.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "lontra-marinha",
@@ -3399,7 +3638,7 @@
       "sourceExcerpt": "A lontra-marinha é um mamífero carnívoro marinho da família Mustelidae, nativo das regiões costeiras do norte e do leste do Oceano Pacífico. As lontras-marinhas adultas pesam tipicamente entre 14 e 45 kg, tornando-os nos mais pesados dos membros da família, e entre os pequenos mamíferos marinhos. De modo distinto da maioria dos mamíferos marinhos, a forma primária de isolamento da lontra-marinha é um casaco de pele grossa, a mais densa no reino animal. Embora possa andar sobre a terra, esta lontra vive principalmente no oceano, este \"casaco\", retém minusculas bolhas de ar, que lhe permitem flutuar com tanta eficácia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "picoteiro",
@@ -3410,7 +3649,7 @@
       "sourceExcerpt": "Picoteiro-comum ou tagarela-europeia é uma espécie de ave da família dos bombicilídeos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "falcao-de-pes-vermelhos",
@@ -3421,7 +3660,7 @@
       "sourceExcerpt": "Falcão-de-pés-vermelhos ou falcão-vespertino é uma ave falconiforme da família dos falconídeos. Como nidificante, distribui-se por uma vasta área, que vai desde o leste da Europa até à Mongólia. É uma ave migradora que inverna na África austral.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rinoceronte-de-sumatra",
@@ -3432,7 +3671,7 @@
       "sourceExcerpt": "O rinoceronte-de-sumatra ou rinoceronte-de-samatra é uma das cinco espécies viventes de rinocerontes da família Rhinocerotidae. Outras denominações vérnaculas incluem rinoceronte-sumatrano, rinoceronte-peludo, e rinoceronte-de-dois-chifres-asiático.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "urso-de-oculos",
@@ -3443,7 +3682,7 @@
       "sourceExcerpt": "O urso-de-óculos, também conhecido como jukumari, urso-andino ou urso-de-lunetas constitui a única espécie vivente de urso nativa da América do Sul e é o único membro vivente da subfamília Temarctinae. Os parentes mais próximos do urso-de-óculos são o extinto urso-de-óculos-da-flórida e os gigantes ursos-de-face-curta do Pleistoceno Médio. A espécie é classificada como uma vulnerável pela UICN, sendo ameaçada principalmente pela destruição e fragmentação de seu habitat.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "lemur-de-cauda-anelada",
@@ -3454,7 +3693,7 @@
       "sourceExcerpt": "O lémure-de-cauda-anelada (lêmure-de-cauda-anelada em PB) é um primata estrepsirrino de grandes dimensões e o lémure mais reconhecível devido à sua cauda anelada de cores preta e branca. Pertence à família Lemuridae, uma das quatro famílias de lémures. É o único membro do género Lemur. Tal como os outros lémures é endémico da ilha de Madagáscar. Denominado localmente por hira (malgaxe) ou maki, habita florestas de galeria e zonas arbustivas de espinhosas, nas regiões mais a Sul da ilha. É herbívoro e é o mais terrestre dos lémures. O animal é diurno, estando ativo exclusivamente em horas com luz de dia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "glis",
@@ -3465,7 +3704,7 @@
       "sourceExcerpt": "Glis é um gênero monotípico de roedores, cuja única espécie é o arganaz ou leirão-cinzento, presente na Europa, dos Pirenéus à Rússia. Apesar do nome, não deve ser confundido com outros roedores também chamados de arganaz.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "gato-bravo-de-patas-negras",
@@ -3476,7 +3715,7 @@
       "sourceExcerpt": "O gato-bravo-de-patas-negras, é o menor gato selvagem na África, tendo um comprimento de cabeça e corpo de 35-52 centímetros. Apesar de seu nome, apenas as solas de suas patas são pretas. Com suas pintas e listras escuras em seu pelo amarelo acastanhado, ele é bem camuflado, especialmente em noites sob o luar. Ele tem faixas pretas que vão do canto de seus olhos até as bochechas, e sua cauda listrada tem uma ponta preta.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "gaivota-tridactila",
@@ -3487,7 +3726,7 @@
       "sourceExcerpt": "A gaivota-tridáctila é uma pequena gaivota, pertencente ao género Rissa e à família Laridae. Caracteriza-se pelas patas pretas, pelo bico amarelo e pelas asas prateadas com a ponta preta.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "mandril",
@@ -3498,7 +3737,7 @@
       "sourceExcerpt": "O mandril é um primata da família dos Cercopithecidae, parentes próximos dos babuínos e ainda mais próximos do dril. Tanto o mandril quanto o dril eram antes classificados como babuínos do gênero Papio, mas pesquisas recentes determinaram que eles deveriam constituir um gênero à parte, Mandrillus.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "foca-monge-do-mediterraneo",
@@ -3509,7 +3748,7 @@
       "sourceExcerpt": "A foca-monge-do-mediterrâneo é provavelmente o membro da família das focas mais ameaçado de extinção. Outrora espalhada pelo Mediterrâneo, costa e ilhas Atlânticas, hoje estima-se que sobrevivam cerca de 400 indivíduos restantes desse mamífero marinho, o que faz da espécie Monachus monachus a foca mais rara do mundo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "arganaz-castanho",
@@ -3520,7 +3759,7 @@
       "sourceExcerpt": "Arganaz e leirão são termos usados para designar as espécies de roedores da família dos glirídeos e também as espécies do gênero Microtus da família dos cricetídeos, mas trata especificamente das espécies Glis glis, Muscardinus avellanarius e Dryomys nitedula, que são roedores arborícolas aparentados com os esquilos e habitam a Europa, Ásia e África.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "tamandua-bandeira",
@@ -3531,7 +3770,7 @@
       "sourceExcerpt": "O tamanduá-bandeira, também chamado bandeira, bandurra, iurumi, jurumi, jurumim, tamanduá-açu, tamanduá-cavalo, papa-formigas-gigante e urso-formigueiro-gigante, é uma espécie de mamífero xenartro da família dos mirmecofagídeos, encontrado na América Central e na América do Sul. É a maior das quatro espécies de tamanduás e, junto com as preguiças, está incluído na ordem Pilosa. Tem hábito predominantemente terrestre, diferente de seus parentes próximos, o tamanduá-mirim e o tamanduaí, que são arborícolas. O animal mede entre 1,8 e 2,1 metros de comprimento e pesa até 41 kg. É facilmente reconhecido pelo seu focinho longo e padrão característico de pelagem. Possui longas garras nos dedos das patas anteriores, o que faz com que ande com uma postura nodopedálica. O aparelho bucal é adaptado a sua dieta especializada em formigas e cupins, mas em cativeiro ele pode ser alimentado com carne moída, ovos e ração, por exemplo. A longa pelagem o predispõe a ser parasitado por ectoparasitas, como carrapatos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "calhandra-cornuda",
@@ -3542,7 +3781,7 @@
       "sourceExcerpt": "Calhandra-cornuda ou calhandra-cornuda-comum, comummente conhecida como calhandra-cornuda, é um pássaro da família dos Alaudídeos, que se pode encontrar em todo o hemisfério norte, incluindo Portugal.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "mellisuga-helenae",
@@ -3553,7 +3792,7 @@
       "sourceExcerpt": "O colibri-abelha-cubano, beija-flor-de-helena, colibri-abelha ou beija-flor-abelha é uma espécie de beija-flor endêmica de Cuba e da Ilha da Juventude. É a menor ave do mundo medindo cerca de 5,7 centímetros e pesa aproximadamente 1,6 gramas, segundo o Guinness World Records. Também é chamado de beija-flor-zumbidor e zunzuncito.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rolieiro-indiano",
@@ -3564,7 +3803,7 @@
       "sourceExcerpt": "O rolieiro-indiano é uma espécie de ave da família Coraciidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "buceros-bicornis",
@@ -3575,7 +3814,7 @@
       "sourceExcerpt": "Calau-malhado-grande ou calau-bicórnio também conhecido como tucano-da-malásia, é uma espécie de ave coraciiforme da família Bucerotidae, de aspecto inconfundível, que habita as selvas existentes entre o noroeste da Índia e a península malaia, e na ilha de Sumatra.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "macaca-fascicularis",
@@ -3586,7 +3825,7 @@
       "sourceExcerpt": "Macaca fascicularis é um Macaco do Velho Mundo da subfamília Cercopithecinae, nativo do Sudeste Asiático. Em laboratórios, é conhecido como macaco-cinomolgo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "passaro-do-petroleo",
@@ -3597,7 +3836,7 @@
       "sourceExcerpt": "O guácharo, conhecido também como pássaro-oleoso e ave-das-cavernas, é uma espécie de ave encontrada no norte da América do Sul e na ilha caribenha de Trindade. É a única espécie do gênero Steatornis, da família Steatornithidae e da ordem Steatornithiformes. Nidificando em colônias em cavernas, os guácharos são noturnos e se alimentam de frutos. São as únicas aves frugívoras noturnas do mundo. Forrageiam durante a noite, com visão especialmente adaptada. No entanto, usam ecolocalização para se orientarem durante o voo, de forma parecida com os morcegos, uma das poucas aves conhecidas que o fazem. Produzem sons extremamente agudos com cerca de 2 kHz.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "musaranho-pigmeu",
@@ -3608,7 +3847,7 @@
       "sourceExcerpt": "O musaranho-pigmeu é um micromamífero pertencente à Ordem\nSoricomorpha. É conhecido por ser o menor mamífero conhecido no\nmundo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "gato-de-cabeca-chata",
@@ -3619,7 +3858,7 @@
       "sourceExcerpt": "O gato-de-cabeça-chata é uma espécie de felino que habita a Reserva Florestal de Dermakot, na Malásia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "marta-de-garganta-amarela",
@@ -3630,7 +3869,7 @@
       "sourceExcerpt": "A marta-de-garganta-amarela é uma espécie de marta nativa do Himalaia, do Sudeste e do Leste Asiático. Sua pelagem é de cor amarelo-dourado brilhante, com cabeça e dorso distintamente mais escuros, mesclando preto, branco, amarelo-dourado e marrom. É a segunda maior espécie de marta do Velho Mundo, após a marta-de-nilgiri, com a cauda representando mais da metade do comprimento do corpo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "albatroz-errante",
@@ -3641,7 +3880,7 @@
       "sourceExcerpt": "Albatroz-errante, albatroz-gigante ou albatroz-viageiro é uma ave da família Diomedeidae que ocorre na maior parte do oceano austral, das margens do gelo que circunda a Antártica (68°S) até o Trópico de Capricórnio (23°S) e, ocasionalmente, até mais ao norte, com alguns registros fora da Califórnia e no Atlântico Norte. Durante o inverno, a maior parte das aves se concentra ao norte da Convergência Antártica.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "leirao",
@@ -3652,7 +3891,7 @@
       "sourceExcerpt": "O leirão ou rato-dos-pomares,, é um roedor endémico de grande parte do continente europeu, com corpo de cerca de 15 cm e cauda de cerca de 11 cm de comprimento e 100 gramas de peso.\nÉ comum em Portugal, mas com o habitat fragmaentado, tem hábitos crepusculares/noturnos, é omnívoro, constrói ninhos com folhas e outros materiais em muros, sebes e buracos nas árvores; neles se abriga principalmente no inverno.\nO período de acasalamento na primavera é assinalado por fortes guinchos produzidos pelas fêmeas receptivas ao acasalamento.\nSe agarrado pela cauda imprime ao corpo um movimento rápido de rotação que faz soltar a pele, o que lhe permite fugir.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "sagui-leaozinho",
@@ -3663,7 +3902,7 @@
       "sourceExcerpt": "Cebuella pygmaea, também conhecido como sagui-leãozinho, é a menor espécie de símio conhecida, medindo apenas cerca de 15 centímetros de comprimento e pesando 130 gramas, de pelagem acastanhada.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "graxaim",
@@ -3674,7 +3913,7 @@
       "sourceExcerpt": "O graxaim, graxaim-do-Pampa, sorro ou zorro é um mamífero carnívoro da família dos canídeos endêmico da América do Sul, sendo encontrado preferencialmente nos campos úmidos da Bolívia, Paraguai, Uruguai, Argentina, e sul do Brasil. Também é conhecido como raposa-dos-pampas, guaraxaim e sorro. Nos países de língua espanhola, é conhecido como aguarachay ou zorro pampeano.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "apodemus-agrarius",
@@ -3685,7 +3924,7 @@
       "sourceExcerpt": "The striped field mouse is a rodent in the family Muridae. The range of this species stretches from Eastern Europe to Eastern Asia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "apteryx-australis",
@@ -3696,7 +3935,7 @@
       "sourceExcerpt": "Kiwi-do-sul ou quiuí-castanho-do-sul ou quiuí-marrom-do-sul (português brasileiro) ou kiwi-do-sul (português europeu) é uma espécie de ave da família Apterygidae endêmica da Nova Zelândia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "urso-do-mar",
@@ -3707,7 +3946,7 @@
       "sourceExcerpt": "O lobo-marinho-do-norte ou urso-do-mar é um otariídeo encontrado ao longo do norte do oceano Pacífico, no mar de Bering e no mar de Okhotsk. É o maior dos lobos-marinhos e é a única espécie viva do gênero Callorhinus. Uma única espécie fóssil, Callorhinus gilmorei, é conhecida do período Plioceno, no Japão e no oeste da América do Norte.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "trinta-reis-ribeirinho",
@@ -3718,7 +3957,7 @@
       "sourceExcerpt": "The river tern or Indian river tern is a tern in the family Laridae, the largest species currently included in the genus Sterna of typical terns. It is a resident breeder along inland rivers from Pakistan east through the Indian subcontinent, to Myanmar, Thailand, and Cambodia, where it is uncommon. Unlike most Sterna terns, it is almost exclusively found on freshwater, rarely venturing even to tidal creeks.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "alcedo-meninting",
@@ -3729,7 +3968,7 @@
       "sourceExcerpt": "The blue-eared kingfisher is found in Asia, ranging across the Indian subcontinent and Southeast Asia. It is found mainly in dense shaded forests where it hunts in small streams. It is darker crowned, with darker rufous underparts and lacking the rufous ear stripe of the common kingfisher which is found in more open habitats. A number of subspecies have been described that differ in measurement and colour shade. Adult males have an all dark bill while females have a reddish lower mandible.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "coelho-de-amami",
@@ -3740,7 +3979,7 @@
       "sourceExcerpt": "O coelho-de-amami, também chamado de coelho-das-riukiu, é encontrado em duas pequenas ilhas, Amami Oshima e Tokunoshima, doJapão. É a única espécie conhecida do género Pentalagus.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "rousettus-aegyptiacus",
@@ -3751,7 +3990,7 @@
       "sourceExcerpt": "Rousettus aegyptiacus é uma espécie de morcego da família Pteropodidae. Pode ser encontrado na África, sudoeste da Ásia, Irã, Paquistão, Turquia e Chipre.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "sapayoa-aenigma",
@@ -3762,7 +4001,7 @@
       "sourceExcerpt": "Sapayoa aenigma é uma espécie de ave cuja posição familiar é ainda incerta, alguns a incluem numa família própria Sapayoidae, enquanto outros na Eurylaimidae sensu lato.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "queixada",
@@ -3773,7 +4012,7 @@
       "sourceExcerpt": "A queixada, também chamado de queixada-ruiva, queixo-ruivo, canela-ruiva, sabucu, tacuité, taiaçu, tajaçu, tanhaçu, tanhocati, taguicati, tiririca, porco-do-mato e pecari, é uma mamífero artiodáctilo (artiodactyla) da família dos taiaçuídeos (Tayassuidae) e gênero Tayassu. Outrora, tal gênero também incluía o caititu.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "dendrolagus-goodfellowi",
@@ -3784,7 +4023,7 @@
       "sourceExcerpt": "Dendrolagus goodfellowi é uma espécie de marsupial da família Macropodidae. Endêmica das florestas tropicais de Nova Guiné. É uma espécie em perigo de extinção graças à caça e à destruição do seu habitat. Seu nome é uma homenagem à Walter Goodfellow.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "tatupeba",
@@ -3795,7 +4034,7 @@
       "sourceExcerpt": "O tatupeba, também conhecido como papa-defunto, peba, peludo, tatu-cascudo, tatu-de-mão-amarela, tatu-peludo, tatupeva e tatupoiú é um tatu da América do Sul encontrado em grande parte do Brasil, norte da Argentina, Paraguai, Uruguai, Bolívia e Suriname. Único membro existente de seu gênero, foi descrito pela primeira vez pelo zoólogo sueco Carlos Lineu em 1758. Tem normalmente entre 40 e 50 centímetros de comprimento da cabeça e do corpo e pesa 3,2 a 6,5 quilogramas. A carapaça é de amarelo pálido a marrom avermelhado, marcada por escamas de igual comprimento e escassamente coberta por pelos amarelados a brancos semelhantes a cerdas. Possui seis ou oito cintas de placas móveis e sua cabeça é cônica e achatada. Os pés dianteiros têm cinco dedos distintos, cada um com garras moderadamente desenvolvidas. Tem cerca de 5 subespécies, cada uma com determinadas variações na sua aparência.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "atlantoxerus",
@@ -3806,7 +4045,7 @@
       "sourceExcerpt": "O Atlantoxerus getulus é um esquilo-terrestre e é monotípico de seu gênero Atlantoxerus.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "arctocephalus-philippii",
@@ -3817,7 +4056,7 @@
       "sourceExcerpt": "The Juan Fernández fur seal is the second smallest of the fur seals, after the Galápagos fur seal. They are found only on the Pacific Coast of South America, more specifically on the Juan Fernández Islands and the Desventuradas Islands. Much is still unknown about this species. Scientists do not yet know the average lifespan of this species, or the diet and behavior of males outside the breeding season.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "lagostrophus-fasciatus",
@@ -3828,7 +4067,7 @@
       "sourceExcerpt": "Lagostrophus fasciatus é uma espécie de marsupial da família Macropodidae. É a única espécie descrita para o gênero Lagostrophus. Endêmica da Austrália.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "trepadeira-corsa",
@@ -3839,7 +4078,7 @@
       "sourceExcerpt": "A trepadeira-corsa é uma espécie de ave da família Sittidae. É uma trepadeira relativamente pequena, medindo cerca de 12 cm de comprimento total. As partes superiores são cinza-azuladas e as partes inferiores são branco-acinzentadas. O macho se distingue da fêmea por sua coroa totalmente preta. A espécie é sedentária, territorial e não muito tímida. Frequentemente se alimenta no alto dos pinheiros-larícios, consumindo principalmente pinhões, mas também capturando alguns insetos voadores. A época de reprodução ocorre entre abril e maio; o ninho é colocado no tronco de um pinheiro velho, e a ninhada tem de cinco a seis ovos. Os filhotes aprendem a voar 22 a 24 dias após a eclosão.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "tadorna-paraiso",
@@ -3850,7 +4089,7 @@
       "sourceExcerpt": "A Tadorna variegata, comummente conhecida como pato-do-paraíso, é uma espécie de ave palmípede, da família dos Anatídeos, endémico da Nova Zelândia.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "faisao-pavao-da-palawan",
@@ -3861,7 +4100,7 @@
       "sourceExcerpt": "The Palawan peacock-pheasant is a medium-sized bird in the family Phasianidae endemic to the island of Palawan in the Philippines. The spectacular male has a black body with blue marks on the wings, a grayish, finely speckled back and tail with blue peacock \"eyes,\" white marks on the face, and a red eye-ring. Females are mostly brown but with a white face. It is known as tandikan in the some local Palawano, Tagbanwa, and Batak languages of Palawan. It is featured prominently in the culture of the indigenous people of Palawan. The bird is also depicted in the official seal of the city of Puerto Princesa and is in the Philippine one hundred-peso note This species is threatened by habitat loss, the illegal wildlife trade and hunting and is listed as a Vulnerable species by the International Union for Conservation of Nature.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "gymnobelideus-leadbeateri",
@@ -3872,7 +4111,7 @@
       "sourceExcerpt": "Gymnobelideus leadbeateri é uma espécie de marsupial da família Petauridae. É a única espécie do gênero Gymnobelideus. Endêmica da Austrália.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "anathana-ellioti",
@@ -3883,7 +4122,7 @@
       "sourceExcerpt": "Anathana ellioti é um pequeno mamífero arborícola da família Tupaiidae. É a única espécie do gênero Anathana. É endêmica das florestas montanhosas da Índia peninsular. Possui 16-18 centímetros de comprimento, mais uma cauda de comprimento igual ou maior que o do restante do corpo, e é um animal onívoro, alimentando-se principalmente de insetos e plantas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "oreophasis-derbianus",
@@ -3894,7 +4133,7 @@
       "sourceExcerpt": "O mutum-cornudo, guano-cornudo ou jacu-chifrudo é uma espécie de ave da família dos cracídeos encontrado no México e Guatemala.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "codorniz-da-california",
@@ -3905,7 +4144,7 @@
       "sourceExcerpt": "The California quail, also known as the California valley quail or Valley quail, is a small ground-dwelling bird in the New World quail family, inhabiting western North America. It is the state bird of California.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "morcego-pescador",
@@ -3916,7 +4155,7 @@
       "sourceExcerpt": "O morcego-pescador é um morcego da família Noctilionidae, com distribuição neotropical desde a costa sul do México até à Argentina.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "lophocebus-albigena",
@@ -3927,7 +4166,7 @@
       "sourceExcerpt": "Mangabei-de-bochechas-cinzas é um Macaco do Velho Mundo encontrado nas floresta da África Central. Ocorre desde Camarões até o Gabão. É um macaco de pelagem escura, parecendo um pequeno e peludo babuíno. A pelagem de cor marrom, dá a impressão de ser inteiramente negra dentro da floresta, com uma pelagem dourada ao redor do pescoço. Há pouco dimorfismo sexual, mas os machos são um pouco maiores das fêmeas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "salanoia-concolor",
@@ -3938,7 +4177,7 @@
       "sourceExcerpt": "The brown-tailed mongoose, brown-tailed vontsira, Malagasy brown-tailed mongoose, or salano is a species of mammal in the family Eupleridae. It is endemic to Madagascar. Its natural habitat is moist lowland tropical forest. It is threatened by habitat loss.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "miopithecus-talapoin",
@@ -3949,7 +4188,7 @@
       "sourceExcerpt": "Miopithecus talapoin, o talapoim-angolano ou talapoim-do-sul, é um macaco do Velho Mundo, da subfamília Cercopithecinae. É encontrado em floresta riparias de Angola e da República Democrática do Congo. Ao contrário de Miopithecus ogouensis, essa espécie possui orelhas e face de cor preta. Os talapoins são a menor espécie de macacos do Velho Mundo.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "corvus-nasicus",
@@ -3960,7 +4199,7 @@
       "sourceExcerpt": "The Cuban crow is a crow species native to the northern Caribbean.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "mutum-do-sudeste",
@@ -3971,7 +4210,7 @@
       "sourceExcerpt": "O mutum-do-sudeste ou mutum-de-bico-vermelho é uma espécie de ave galiforme da família dos cracídeos (Cracidae). É uma ave de grande porte, habitando estritamente as florestas do sudeste do Brasil. Ameaçada de extinção, sua população está diminuindo devido à caça e ao desmatamento.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "arachnothera-magna",
@@ -3982,7 +4221,7 @@
       "sourceExcerpt": "Papa-aranhas-estriado ou aranheiro-estriado é uma espécie de ave da família Nectariniidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "loris-garrulo",
@@ -3993,7 +4232,7 @@
       "sourceExcerpt": "Lóris-tagarela ou lóri-das-molucas-setentrionais, comumente conhecido como lóris-amor-amor, é uma ave da família Psittaculidae endêmica das Molucas do Norte, Indonésia. É considerado vulnerável, sendo a principal ameaça a captura para o comércio de aves exóticas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "setifer-setosus",
@@ -4004,7 +4243,7 @@
       "sourceExcerpt": "O tenreque-ouriço-gigante ou ouriço-de-madagáscar, é uma espécie de mamífero da família Tenrecidae. É a única espécie do gênero Setifer. É encontrada na região do platô central, em Madagascar.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "coruja-vermelha-de-madagascar",
@@ -4015,7 +4254,7 @@
       "sourceExcerpt": "A coruja-malgaxe é uma espécie de coruja que pertence à família Tytonidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "saira-pintor",
@@ -4026,7 +4265,7 @@
       "sourceExcerpt": "A saíra-pintor ou pintor-verdadeiro é uma ave que atinge 13,5 cm de comprimento. A sua alimentação básica, em ambiente natural, consiste de pequenas frutas, bagas e insetos que recolhem nas folhagens e ramos. É uma espécie endêmica da região Nordeste do Brasil. Ocorre no litoral dos estados de Pernambuco a Alagoas e também no Rio Grande do Norte. Tem o seu habitar nas porções remanescentes de Mata Atlântica, no Nordeste.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "ourico-preto",
@@ -4037,7 +4276,7 @@
       "sourceExcerpt": "O ouriço-preto(nome comum acadêmico) ou luís-cacheiro-preto(nome comum popular) é uma espécie de roedor da família dos eretizontídeos (Erethizontidae) que é endêmico da porção central da Mata Atlântica, do sul do estado de Sergipe, Bahia, Espírito Santo até o norte do Rio de Janeiro. Localizado na porção basal da árvore filogenética dos eretizontídeos, o ouriço-preto é a espécie mais antiga da família.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "octodontomys-gliroides",
@@ -4048,7 +4287,7 @@
       "sourceExcerpt": "Octodontomys gliroides é um gênero de roedor da família Octodontidae. É a única espécie do gênero Octodontomys. É encontrada nos Andes do norte do Chile, noroeste da Argentina e sudoeste da Bolívia, associado a habitats xéricos.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "didelphis-imperfecta",
@@ -4059,7 +4298,7 @@
       "sourceExcerpt": "O gambá-de-orelha-branca-da-guiana é uma espécie de marsupial da família dos didelfiídeos (Didelphidae). Pode ser encontrado no Brasil, Venezuela, Guiana, Suriname e Guiana Francesa.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "funambulus-sublineatus",
@@ -4070,7 +4309,7 @@
       "sourceExcerpt": "The Nilgiri striped squirrel is a threatened species of rodent, a small squirrel (Sciuridae) from rainforests in the southern Western Ghats, including the Nilgiris, in Peninsular India. It formerly included Funambulus obscurus from Sri Lanka as a subspecies, at which point the English name of the \"combined species\" also was dusky striped squirrel.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "megaerops-wetmorei",
@@ -4081,7 +4320,7 @@
       "sourceExcerpt": "Megaerops wetmorei é uma espécie de morcego da família Pteropodidae. Pode ser encontrada na Malásia, Indonésia e Filipinas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "sigmodon-ochrognathus",
@@ -4092,7 +4331,7 @@
       "sourceExcerpt": "Sigmodon ochrognathus é uma espécie de roedor da família Cricetidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "macrotus-waterhousii",
@@ -4103,7 +4342,7 @@
       "sourceExcerpt": "O Macrotus waterhousii é uma espécie de morcego da família Phyllostomidae. É encontrada nas Ilhas Cayman, Cuba, República Dominicana, Guatemala, Haiti, Jamaica e México, com uma extensão de Sonora a Hidalgo México, ao sul até a Guatemala e as Grandes Antilhas.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "delanymys-brooksi",
@@ -4114,7 +4353,7 @@
       "sourceExcerpt": "Delanymys brooksi é uma espécie de roedor da família Nesomyidae. É a única espécie do género Delanymys.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "makalata-didelphoides",
@@ -4125,7 +4364,7 @@
       "sourceExcerpt": "Makalata didelphoides é uma espécie de roedor da família Echimyidae.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     },
     {
       "id": "balaenoptera-edeni",
@@ -4136,7 +4375,7 @@
       "sourceExcerpt": "Bryde's whale, or the Bryde's whale complex, putatively comprises three species of rorqual and possibly four. The \"complex\" means the number and classification remain unclear because of a lack of definitive information and research. The common Bryde's whale is a larger form that occurs worldwide in warm temperate and tropical waters, and the Sittang or Eden's whale is a smaller form that may be restricted to the Indo-Pacific. Also, a smaller, coastal form of B. brydei is found off southern Africa, and perhaps another form in the Indo-Pacific differs in skull morphology, tentatively referred to as the Indo-Pacific Bryde's whale. The recently described Omura's whale, was formerly thought to be a pygmy form of Bryde's, but is now recognized as a distinct species. Rice's whale, which makes its home solely in the Gulf of Mexico, was once considered a distinct population of Bryde's whale, but in 2021 it was described as a separate species.",
       "sourceLicense": "CC BY-SA 4.0",
       "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "lastVerified": "2026-10-20"
+      "lastVerified": "2026-10-21"
     }
   ]
 }

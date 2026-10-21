@@ -60,6 +60,28 @@ POOL_SIZE = 330  # a few extra species, so species JERV rejects can be replaced
 EXTINCT = {"Q237350", "Q239509"}  # extinct, extinct in the wild
 THREATENED = {"Q278113", "Q11394", "Q219413"}  # IUCN vulnerable, endangered, critically endangered
 CLASS_NAME = {"mammal": "mamífero", "bird": "ave"}
+ART_DIR = ROOT / "iosApp/Resources/Characters"  # transparent illustrations, named <person id>.png
+# Emoji shown when a species has no illustration yet; first matching word wins (Portuguese name, lowercase).
+EMOJI_BY_WORD = [
+    ("urso-marinho", "🦭"), ("leão", "🦁"), ("tigre", "🐯"), ("leopardo", "🐆"), ("urso", "🐻"), ("lobo", "🐺"),
+    ("raposa", "🦊"), ("coelho", "🐰"), ("lebre", "🐰"), ("macaco", "🐒"), ("lémur", "🐒"), ("sagui", "🐒"),
+    ("mandril", "🐒"), ("lóris", "🐒"), ("elefante", "🐘"), ("girafa", "🦒"), ("zebra", "🦓"), ("hipopótamo", "🦛"),
+    ("rinoceronte", "🦏"), ("javali", "🐗"), ("queixada", "🐗"), ("porco", "🐷"), ("rena", "🦌"), ("veado", "🦌"),
+    ("alce", "🦌"), ("morcego", "🦇"), ("ouriço", "🦔"), ("esquilo", "🐿️"), ("rato", "🐭"), ("camundongo", "🐭"),
+    ("doninha", "🦦"), ("lontra", "🦦"), ("texugo", "🦡"), ("gato", "🐱"), ("avestruz", "🐦"), ("ganso", "🪿"),
+    ("pinguim", "🐧"), ("pato", "🦆"), ("zarro", "🦆"), ("gaivota", "🐦"), ("coruja", "🦉"), ("mocho", "🦉"),
+    ("bufo", "🦉"), ("águia", "🦅"), ("falcão", "🦅"), ("milhafre", "🦅"), ("abutre", "🦅"), ("condor", "🦅"),
+    ("baleia", "🐋"), ("narval", "🐋"), ("foca", "🦭"), ("morsa", "🦭"), ("golfinho", "🐬"), ("pombo", "🕊️"),
+    ("rola", "🕊️"), ("pássaro", "🐦"), ("ave", "🐦"),
+]
+
+
+def emoji_for(name: str, cls: str) -> str:
+    lowered = name.lower()
+    for word, emoji in EMOJI_BY_WORD:
+        if word in lowered:
+            return emoji
+    return "🐦" if cls == "bird" else "🐾"
 MIN_ANSWER_DISTANCE = 2  # two animals must differ in at least 2 answers; 1-answer twins confuse the game when answers are wrong
 
 # (attribute, player-facing question). Order is the order of the question file.
@@ -307,8 +329,13 @@ def wave() -> None:
         name = entry["label"][:1].upper() + entry["label"][1:]
         profession = CLASS_NAME[entry["cls"]].capitalize()
         url = f"https://{entry['lang']}.wikipedia.org/wiki/{urllib.parse.quote(entry['title'].replace(' ', '_'))}"
-        people.append({"id": identifier, "name": name, "country": "Animal", "profession": profession, "gender": "N",
-                       "birthYear": 2000, "alive": 1, "attributes": entry["traits"]})
+        person = {"id": identifier, "name": name, "country": "Animal", "profession": profession, "gender": "N",
+                  "birthYear": 2000, "alive": 1, "attributes": entry["traits"],
+                  "avatarSymbol": "bird.fill" if entry["cls"] == "bird" else "pawprint.fill",
+                  "emoji": emoji_for(name, entry["cls"])}
+        if (ART_DIR / f"{identifier}.png").is_file():
+            person["imageName"] = f"{identifier}.png"
+        people.append(person)
         sources.append({"id": identifier, "name": name, "profession": profession, "sourceTitle": entry["title"], "sourceURL": url,
                         "sourceExcerpt": entry["extract"].strip(), "sourceLicense": "CC BY-SA 4.0",
                         "sourceLicenseURL": "https://creativecommons.org/licenses/by-sa/4.0/", "lastVerified": today})

@@ -47,7 +47,7 @@ REQUIRED_PERSON_FIELDS = {
     "attributes",
     "avatarSymbol",
 }
-OPTIONAL_MEDIA_FIELDS = {"imageName"}
+OPTIONAL_MEDIA_FIELDS = {"imageName", "emoji"}  # emoji: fallback shown for animals without an illustration
 REQUIRED_QUESTION_FIELDS = {"id", "text", "attribute", "categories"}
 
 
@@ -87,8 +87,8 @@ def load_image_credits():
         require(ID_PATTERN.fullmatch(item["id"]), f"{label}.id deve ser um slug ASCII")
         require(item["id"] not in credits, f"Crédito de imagem duplicado: {item['id']}")
         require(item["reviewStatus"] == "approved-visual-and-credit-review", f"Retrato não aprovado: {item['id']}")
-        expected_file = f"iosApp/Resources/Characters/{item['id']}.jpg"
-        require(item["file"] == expected_file, f"Caminho de crédito inesperado para {item['id']}: {item['file']}")
+        require(item["file"] in (f"iosApp/Resources/Characters/{item['id']}.jpg", f"iosApp/Resources/Characters/{item['id']}.png"),
+                f"Caminho de crédito inesperado para {item['id']}: {item['file']}")
         image_path = ROOT / item["file"]
         require(image_path.is_file(), f"Arquivo creditado não existe: {item['file']}")
         credits[item["id"]] = item
@@ -101,8 +101,8 @@ def validate_media(person, label, image_credits):
     image_name = person["imageName"]
     require_string(image_name, f"{label}.imageName")
     require(Path(image_name).name == image_name, f"{label}.imageName deve conter somente o nome do arquivo")
-    require(Path(image_name).suffix == ".jpg", f"{label}.imageName deve usar extensão .jpg")
-    require(image_name == f"{person['id']}.jpg", f"{label}.imageName deve corresponder ao ID da pessoa")
+    require(Path(image_name).suffix in (".jpg", ".png"), f"{label}.imageName deve usar extensão .jpg ou .png")
+    require(Path(image_name).stem == person["id"], f"{label}.imageName deve corresponder ao ID da pessoa")
     require((CHARACTERS_PATH / image_name).is_file(), f"Imagem não encontrada para {person['id']}: {image_name}")
     require(person["id"] in image_credits, f"Imagem sem entrada de crédito: {person['id']}")
 
