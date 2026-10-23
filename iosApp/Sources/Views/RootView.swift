@@ -88,7 +88,7 @@ private struct BottomNavigation: View {
                         Text(tab.rawValue)
                             .font(.caption2.weight(.bold))
                     }
-                    .foregroundStyle(selected == tab ? DesignSystem.Palette.violet : .secondary)
+                    .foregroundStyle(selected == tab ? DesignSystem.Palette.accent : .secondary)
                     .frame(maxWidth: .infinity, minHeight: 52)
                     .background {
                         if selected == tab {
@@ -123,7 +123,7 @@ struct HomeView: View {
                             Text("QUEM SOU EU?")
                                 .font(.caption.weight(.black))
                                 .tracking(2.2)
-                                .foregroundStyle(DesignSystem.Palette.violet)
+                                .foregroundStyle(DesignSystem.Palette.accent)
                             Text("Sua próxima investigação começa aqui.")
                                 .font(.system(.largeTitle, design: .rounded, weight: .black))
                                 .foregroundStyle(DesignSystem.Palette.ink)

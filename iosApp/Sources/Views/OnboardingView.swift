@@ -11,7 +11,7 @@ struct OnboardingView: View {
                     Spacer()
                     Button("Pular", action: finish)
                         .font(.subheadline.weight(.bold))
-                        .foregroundStyle(DesignSystem.Palette.violet)
+                        .foregroundStyle(DesignSystem.Palette.accent)
                 }
 
                 Spacer(minLength: 8)

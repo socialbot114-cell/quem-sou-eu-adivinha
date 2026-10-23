@@ -70,6 +70,8 @@ struct GameEngine {
 
     let people: [Person]
     let questions: [Question]
+    /// How many distinct attributes the questions cover, which bounds the questions one round can ask.
+    let availableAttributes: Int
     /// Scores by person id, kept in step with `weights` for callers that look people up by id.
     private(set) var scores: [String: Double]
     private(set) var asked: Set<String> = []
@@ -112,6 +114,7 @@ struct GameEngine {
     ) {
         self.people = people
         self.questions = questions
+        self.availableAttributes = Set(questions.map(\.attribute)).count
         self.catalog = catalog
         self.chooseCandidateIndex = randomIndex
         self.smoothing = smoothing

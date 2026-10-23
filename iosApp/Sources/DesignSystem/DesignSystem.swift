@@ -4,11 +4,27 @@ import UIKit
 enum DesignSystem {
     enum Palette {
         static let violet = Color(red: 0.39, green: 0.12, blue: 0.94)
+        /// Violet for text and icons: the brand violet on light backgrounds, a lighter tint on dark ones
+        /// (the brand violet reaches only about 2.6:1 on the dark canvas).
+        static let accent = Color(uiColor: UIColor { traits in
+            traits.userInterfaceStyle == .dark
+                ? UIColor(red: 0.72, green: 0.55, blue: 1.00, alpha: 1)
+                : UIColor(red: 0.39, green: 0.12, blue: 0.94, alpha: 1)
+        })
+        /// Streak and points colours for text on the grouped canvas, at least 4.5:1 in both appearances.
+        static let amber = Color(uiColor: UIColor { $0.userInterfaceStyle == .dark
+            ? UIColor(red: 1.00, green: 0.62, blue: 0.04, alpha: 1)
+            : UIColor(red: 0.62, green: 0.31, blue: 0.00, alpha: 1) })
+        static let azure = Color(uiColor: UIColor { $0.userInterfaceStyle == .dark
+            ? UIColor(red: 0.40, green: 0.69, blue: 1.00, alpha: 1)
+            : UIColor(red: 0.00, green: 0.38, blue: 0.82, alpha: 1) })
         static let violetLight = Color(red: 0.64, green: 0.37, blue: 1.00)
         static let lime = Color(red: 0.68, green: 0.96, blue: 0.16)
         static let gold = Color(red: 1.00, green: 0.72, blue: 0.08)
         static let coral = Color(red: 1.00, green: 0.25, blue: 0.43)
         static let ink = Color(uiColor: .label)
+        /// Text and icons placed on a lime or gold fill. They stay dark in both appearances.
+        static let onBright = Color(red: 0.09, green: 0.07, blue: 0.16)
         static let canvas = Color(uiColor: .systemGroupedBackground)
         static let surface = Color(uiColor: .secondarySystemBackground)
         static let hairline = Color.primary.opacity(0.10)
@@ -70,9 +86,38 @@ struct DSCardModifier: ViewModifier {
     }
 }
 
+/// The question and result cards are white on the violet game screen in both appearances,
+/// so their content is drawn with the light palette; otherwise `.label` turns white on white in dark mode.
+struct DSGameCardModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .environment(\.colorScheme, .light)
+            .padding(24)
+            .background(.white, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+            .shadow(color: .black.opacity(0.2), radius: 24, y: 12)
+    }
+}
+
 extension View {
     func dsCard(padding: CGFloat = DesignSystem.Metric.spacingM) -> some View {
         modifier(DSCardModifier(padding: padding))
+    }
+
+    func dsGameCard() -> some View {
+        modifier(DSGameCardModifier())
+    }
+}
+
+/// Answer tiles press in slightly, like the primary buttons, unless Reduce Motion is on.
+struct AnswerButtonStyle: ButtonStyle {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .opacity(configuration.isPressed ? 0.8 : 1)
+            .scaleEffect(configuration.isPressed && !reduceMotion ? 0.97 : 1)
+            .animation(reduceMotion ? nil : .snappy(duration: 0.15), value: configuration.isPressed)
+            .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 }
 
@@ -103,9 +148,9 @@ struct SecondaryButtonStyle: ButtonStyle {
             .font(.headline.weight(.bold))
             .frame(maxWidth: .infinity, minHeight: DesignSystem.Metric.controlHeight)
             .padding(.horizontal, DesignSystem.Metric.spacingL)
-            .foregroundStyle(DesignSystem.Palette.violet)
+            .foregroundStyle(DesignSystem.Palette.accent)
             .background(DesignSystem.Palette.surface, in: Capsule())
-            .overlay { Capsule().stroke(DesignSystem.Palette.violet.opacity(0.45), lineWidth: 1.5) }
+            .overlay { Capsule().stroke(DesignSystem.Palette.accent.opacity(0.55), lineWidth: 1.5) }
             .opacity(isEnabled ? (configuration.isPressed ? 0.76 : 1) : 0.45)
             .scaleEffect(configuration.isPressed && !reduceMotion ? 0.98 : 1)
             .animation(reduceMotion ? nil : .snappy(duration: 0.18), value: configuration.isPressed)

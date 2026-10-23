@@ -304,6 +304,32 @@ final class GameEngineTests: XCTestCase {
         XCTAssertNil(engine.secondBest)
     }
 
+    func testProbablyAnswersCarryMoreWeightThanBefore() {
+        XCTAssertEqual(Answer.probablyYes.evidence, 0.85, accuracy: 1e-12)
+        XCTAssertEqual(Answer.probablyNo.evidence, 0.15, accuracy: 1e-12)
+
+        let people = [
+            Person(id: "sim", name: "Sim", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 1], avatarSymbol: "star.fill"),
+            Person(id: "nao", name: "Não", categories: [.all], country: "BR", profession: "Teste", attributes: ["x": 0], avatarSymbol: "star.fill")
+        ]
+        let question = Question(id: "x", text: "X?", attribute: "x", categories: [.all])
+        var engine = GameEngine(people: people, questions: [question], randomIndex: { _ in 0 })
+        engine.apply(.probablyYes, to: question)
+        XCTAssertEqual(engine.bestGuess?.id, "sim")
+        // With the floor at 0.18, 0.85 gives the matching person at least four times the weight of the other.
+        XCTAssertGreaterThan(engine.confidence, 0.8)
+    }
+
+    func testEngineReportsHowManyAttributesTheQuestionsCover() {
+        let questions = [
+            Question(id: "a", text: "A?", attribute: "x", categories: [.all]),
+            Question(id: "b", text: "B?", attribute: "x", categories: [.all]),
+            Question(id: "c", text: "C?", attribute: "y", categories: [.all])
+        ]
+        let engine = GameEngine(people: [], questions: questions)
+        XCTAssertEqual(engine.availableAttributes, 2)
+    }
+
     func testFullGameWithFiveThousandPeopleStaysResponsive() {
         let attributes = (0..<160).map { "a\($0)" }
         let questions = attributes.map { Question(id: "q-\($0)", text: "Pergunta?", attribute: $0, categories: [.all]) }

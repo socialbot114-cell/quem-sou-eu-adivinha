@@ -18,8 +18,8 @@ EXPANSION_PATH = ROOT / "iosApp/Resources/KnowledgeBase/character-expansion.json
 
 ANSWER_EVIDENCE = {
     "yes": 1.0,
-    "probablyYes": 0.75,
-    "probablyNo": 0.25,
+    "probablyYes": 0.85,
+    "probablyNo": 0.15,
     "no": 0.0,
 }
 ANSWER_ORDER = tuple(ANSWER_EVIDENCE)

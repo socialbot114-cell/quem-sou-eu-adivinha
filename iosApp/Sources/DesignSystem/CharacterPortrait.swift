@@ -21,7 +21,7 @@ struct CharacterPortrait: View {
                         DesignSystem.Gradient.celebration
                         Image(systemName: person.avatarSymbol)
                             .font(.system(size: size * 0.35, weight: .bold))
-                            .foregroundStyle(DesignSystem.Palette.violet)
+                            .foregroundStyle(DesignSystem.Palette.accent)
                     }
                 }
             }
@@ -78,7 +78,7 @@ private struct AnimalPortrait: View {
         } else {
             Image(systemName: person.avatarSymbol)
                 .font(.system(size: size * 0.5, weight: .bold))
-                .foregroundStyle(DesignSystem.Palette.violet)
+                .foregroundStyle(DesignSystem.Palette.accent)
         }
     }
 }

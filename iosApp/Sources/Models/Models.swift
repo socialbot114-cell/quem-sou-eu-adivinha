@@ -59,7 +59,7 @@ enum Answer: String, Codable, CaseIterable, Identifiable {
     case probablyNo = "Provavelmente não"
     case no = "Não"
     var id: String { rawValue }
-    var evidence: Double { switch self { case .yes: 1; case .probablyYes: 0.75; case .unknown: 0.5; case .probablyNo: 0.25; case .no: 0 } }
+    var evidence: Double { switch self { case .yes: 1; case .probablyYes: 0.85; case .unknown: 0.5; case .probablyNo: 0.15; case .no: 0 } }
 }
 
 struct Person: Codable, Identifiable, Equatable {

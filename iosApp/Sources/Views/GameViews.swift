@@ -16,7 +16,7 @@ struct CategoryView: View {
                         VStack(alignment: .leading, spacing: 5) {
                             Text("ESCOLHA SEU UNIVERSO")
                                 .font(.caption.weight(.black)).tracking(1.8)
-                                .foregroundStyle(DesignSystem.Palette.violet)
+                                .foregroundStyle(DesignSystem.Palette.accent)
                             Text("Quem está na sua cabeça?")
                                 .font(.system(.largeTitle, design: .rounded, weight: .black))
                             Text("Categorias menores deixam minhas pistas mais certeiras.")
@@ -36,12 +36,13 @@ struct CategoryView: View {
                             HStack(spacing: 16) {
                                 Image(systemName: Category.all.symbol)
                                     .font(.system(size: 28, weight: .black))
+                                    .foregroundStyle(DesignSystem.Palette.onBright)
                                     .frame(width: 56, height: 56)
                                     .background(DesignSystem.Palette.lime, in: Circle())
                                 VStack(alignment: .leading, spacing: 3) {
                                     Text("Modo livre").font(.title3.weight(.black))
                                     Text("Todas as \(base.people.count) personalidades")
-                                        .font(.subheadline).opacity(0.78)
+                                        .font(.subheadline).opacity(0.92)
                                 }
                                 Spacer()
                                 Image(systemName: "arrow.right.circle.fill").font(.title2)
@@ -71,26 +72,26 @@ private struct CategoryCard: View {
     let category: Category
     let count: Int
 
-    // Deepened so white card text reaches at least 4.5:1 (WCAG AA) on every gradient.
+    // Every gradient stop is at least 5.6:1 against white, so even the lighter caption stays above 4.5:1 (WCAG AA).
     private func rgb(_ red: Double, _ green: Double, _ blue: Double) -> Color {
         Color(red: red / 255, green: green / 255, blue: blue / 255)
     }
 
     private var colors: [Color] {
         switch category {
-        case .creators: [rgb(224, 40, 75), rgb(100, 31, 240)]
-        case .football: [rgb(35, 135, 61), rgb(35, 128, 145)]
-        case .artists: [rgb(153, 110, 12), rgb(173, 101, 0)]
+        case .creators: [rgb(197, 35, 66), rgb(100, 31, 240)]
+        case .football: [rgb(30, 117, 53), rgb(31, 113, 128)]
+        case .artists: [rgb(135, 97, 11), rgb(151, 88, 0)]
         case .politicians: [rgb(88, 86, 214), rgb(100, 31, 240)]
-        case .history: [rgb(139, 114, 81), rgb(173, 101, 0)]
-        case .world: [rgb(0, 113, 237), rgb(36, 126, 168)]
-        case .otherSports: [rgb(35, 135, 61), rgb(35, 128, 145)]
-        case .internationalMusic: [rgb(224, 40, 75), rgb(100, 31, 240)]
-        case .kpop: [rgb(224, 40, 75), rgb(166, 78, 211)]
-        case .cinema: [rgb(88, 86, 214), rgb(0, 113, 237)]
-        case .fashion: [rgb(173, 101, 0), rgb(224, 40, 75)]
-        case .technology: [rgb(36, 126, 168), rgb(100, 31, 240)]
-        case .animals: [rgb(0, 133, 127), rgb(139, 114, 81)]
+        case .history: [rgb(122, 100, 71), rgb(151, 88, 0)]
+        case .world: [rgb(0, 99, 209), rgb(31, 110, 146)]
+        case .otherSports: [rgb(30, 117, 53), rgb(31, 113, 128)]
+        case .internationalMusic: [rgb(197, 35, 66), rgb(100, 31, 240)]
+        case .kpop: [rgb(197, 35, 66), rgb(144, 68, 184)]
+        case .cinema: [rgb(88, 86, 214), rgb(0, 99, 209)]
+        case .fashion: [rgb(151, 88, 0), rgb(197, 35, 66)]
+        case .technology: [rgb(31, 110, 146), rgb(100, 31, 240)]
+        case .animals: [rgb(0, 116, 110), rgb(122, 100, 71)]
         case .all: [DesignSystem.Palette.violet, DesignSystem.Palette.violetLight]
         }
     }
@@ -104,7 +105,7 @@ private struct CategoryCard: View {
                 Text("\(count)")
                     .font(.caption.weight(.black))
                     .padding(.horizontal, 9).padding(.vertical, 5)
-                    .background(.white.opacity(0.22), in: Capsule())
+                    .background(.black.opacity(0.22), in: Capsule())
             }
             Spacer(minLength: 8)
             Text(category.rawValue)
@@ -112,7 +113,7 @@ private struct CategoryCard: View {
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)
             Text("Começar investigação")
-                .font(.caption.weight(.semibold)).opacity(0.8)
+                .font(.caption.weight(.semibold)).opacity(0.95)
         }
         .foregroundStyle(.white)
         .frame(maxWidth: .infinity, minHeight: 142, alignment: .leading)
@@ -162,7 +163,7 @@ struct GameView: View {
 
     private var questionLimit: Int {
         GuessPolicy.effectiveQuestionLimit(
-            availableAttributes: Set(engine.questions.map(\.attribute)).count,
+            availableAttributes: engine.availableAttributes,
             rejectedGuesses: rejectedPersonIDs.count,
             unknownAnswers: answers.filter { $0.answer == .unknown }.count,
             confidence: engine.confidence
@@ -208,7 +209,7 @@ struct GameView: View {
                 .accessibilityLabel("Sair e salvar partida")
                 Spacer()
                 VStack(spacing: 2) {
-                    Text(category.rawValue).font(.caption.weight(.bold)).opacity(0.75)
+                    Text(category.rawValue).font(.caption.weight(.bold)).opacity(0.92)
                     Text("Pergunta \(max(1, questionNumber + 1))").font(.headline.weight(.black))
                 }
                 Spacer()
@@ -248,7 +249,7 @@ struct GameView: View {
                     .accessibilityHint("Volta para a pergunta anterior para corrigir a resposta")
                 }
                 Text("Não existe resposta errada. Use “Não sei” quando tiver dúvida.")
-                    .foregroundStyle(.white.opacity(0.78)).font(.footnote.weight(.medium)).multilineTextAlignment(.center)
+                    .foregroundStyle(.white.opacity(0.92)).font(.footnote.weight(.medium)).multilineTextAlignment(.center)
             } else {
                 ProgressView("Organizando as pistas…").tint(DesignSystem.Palette.lime).foregroundStyle(.white).padding(50)
             }
@@ -446,9 +447,7 @@ private struct QuestionCard: View {
             .foregroundStyle(Color(red: 0.72, green: 0.13, blue: 0.11))
             .background(.red.opacity(0.11), in: Capsule())
         }
-        .padding(24)
-        .background(.white, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .shadow(color: .black.opacity(0.2), radius: 24, y: 12)
+        .dsGameCard()
     }
 }
 
@@ -468,7 +467,7 @@ private struct AnswerButton: View {
             .frame(maxWidth: .infinity, minHeight: 72)
             .background(color, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
         }
-        .buttonStyle(.plain)
+        .buttonStyle(AnswerButtonStyle())
     }
 }
 
@@ -505,7 +504,7 @@ private struct ResultCard: View {
                         Label("\(questions) pistas", systemImage: "questionmark.circle.fill")
                         Label("+20 moedas", systemImage: "sparkles")
                     }
-                    .font(.caption.weight(.bold)).foregroundStyle(DesignSystem.Palette.violet)
+                    .font(.caption.weight(.bold)).foregroundStyle(DesignSystem.Palette.accent)
 
                     ShareLink(item: "A Princesa Detetive descobriu \(person.name) em \(questions) pistas no Quem Sou Eu? Adivinha!") {
                         Label("Compartilhar resultado", systemImage: "square.and.arrow.up")
@@ -514,12 +513,10 @@ private struct ResultCard: View {
                 }
                 Button("Jogar novamente", action: playAgain).buttonStyle(PrimaryButtonStyle())
                 Button("Escolher outra categoria", action: otherCategory)
-                    .font(.subheadline.weight(.bold)).foregroundStyle(DesignSystem.Palette.violet)
+                    .font(.subheadline.weight(.bold)).foregroundStyle(DesignSystem.Palette.accent)
             }
         }
-        .padding(24)
-        .background(.white, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .shadow(color: .black.opacity(0.2), radius: 24, y: 12)
+        .dsGameCard()
     }
 
     private var assetName: String {
@@ -543,7 +540,7 @@ private struct UnavailableCard: View {
     let dismiss: () -> Void
     var body: some View {
         VStack(spacing: 16) {
-            Image(systemName: "person.2.slash").font(.system(size: 48)).foregroundStyle(DesignSystem.Palette.violet)
+            Image(systemName: "person.2.slash").font(.system(size: 48)).foregroundStyle(DesignSystem.Palette.accent)
             Text("Categoria em preparação").font(.title2.bold())
             Text("Ainda não há pistas suficientes para uma partida justa.").multilineTextAlignment(.center).foregroundStyle(.secondary)
             Button("Voltar às categorias", action: dismiss).buttonStyle(PrimaryButtonStyle())
@@ -604,9 +601,9 @@ struct ProgressViewScreen: View {
                     VStack(alignment: .leading, spacing: 20) {
                         Text("Sua coleção").font(.system(.largeTitle, design: .rounded, weight: .black))
                         HStack(spacing: 10) {
-                            MetricCard(value: "\(progress.wins)", label: "acertos", color: DesignSystem.Palette.violet)
-                            MetricCard(value: "\(progress.streak)", label: "dias", color: .orange)
-                            MetricCard(value: "\(progress.points)", label: "pontos", color: .blue)
+                            MetricCard(value: "\(progress.wins)", label: "acertos", color: DesignSystem.Palette.accent)
+                            MetricCard(value: "\(progress.streak)", label: "dias", color: DesignSystem.Palette.amber)
+                            MetricCard(value: "\(progress.points)", label: "pontos", color: DesignSystem.Palette.azure)
                         }
 
                         VStack(alignment: .leading, spacing: 4) {
@@ -707,7 +704,7 @@ private struct ProfileRowLabel: View {
     let subtitle: String
     var body: some View {
         HStack(spacing: 14) {
-            Image(systemName: icon).font(.title2.weight(.bold)).foregroundStyle(DesignSystem.Palette.violet).frame(width: 38)
+            Image(systemName: icon).font(.title2.weight(.bold)).foregroundStyle(DesignSystem.Palette.accent).frame(width: 38)
             VStack(alignment: .leading, spacing: 3) {
                 Text(title).font(.headline).foregroundStyle(DesignSystem.Palette.ink)
                 Text(subtitle).font(.subheadline).foregroundStyle(.secondary)
